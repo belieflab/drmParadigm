@@ -21,6 +21,15 @@ const mad = 'mad';
 const fear = 'fear';
 const enrage = 'enrage';
 
+let Anger = {
+    listNumber: 1,
+    listA: [hate, temper, ire, happy, hatred, calm],
+    listB: [rage, fury, wrath, fight, mean, emotion],
+    prototype: anger,
+    highestAssociates: [mad, fear],
+    lowestAssociate: enrage,
+};
+
 // define all variables in listNumber2 : Army
 const unitedStates = 'United States';
 const airForce = 'Air Force';
@@ -38,15 +47,6 @@ const army = 'army';
 const navy = 'navy';
 const soldier = 'soldier';
 const combat = 'combat';
-
-let Anger = {
-    listNumber: 1,
-    listA: [hate, temper, ire, happy, hatred, calm],
-    listB: [rage, fury, wrath, fight, mean, emotion],
-    prototype: anger,
-    highestAssociates: [mad, fear],
-    lowestAssociate: enrage,
-};
 
 let Army = {
     listNumber: 2,
