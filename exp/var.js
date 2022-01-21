@@ -99,11 +99,7 @@ let congruentHighestAssociate2 = Anger.highestAssociates[1];
 // keep looping through the randmoized list until there is no match between prototypes, leading to a truly incongruent prototype
 // i=0;
 // while (i < randomizedLists.length) {
-    if (randomizedLists[0].prototype === Anger.prototype) {
-        randomizedLists[0].shift;
-    } else {
-        //;
-    }
+
     // i++;
 // }
 let incongruentPrototype = randomizedLists[0].prototype;
@@ -126,11 +122,15 @@ let incongruentPrototype = randomizedLists[0].prototype;
 // re-randomize list to keep things as random as possible
 randomizedLists = jsPsych.randomization.repeat(randomizedLists, 1);
 
-// let listB = [];
-// // pushed stimulus objects into expStim  
-// for (let i=0; i<51; i++) {
-//     listA.push({stimulus: shuffleStimForPrelikingPhase[i], data: {test_part:"initial_rating", stim:shuffleStimForPrelikingPhase[i].slice(8,12)}}); //creating csv file "baseline_ratings" with liking ratings data saved
-//     //use underscores for data fields and headers and camel case for script
-//   }
+let testTrial = [];
+// pushes 6 items from listA
+for (let i=0; i<Anger.listA.length; i++) {
+    testTrial.push({stimulus: Anger.listA[i], data: {test_part:"test", stim: Anger.listA[i]}}); //creating csv file "baseline_ratings" with liking ratings data saved
+    //use underscores for data fields and headers and camel case for script
+}
+testTrial.push({stimulus: "TONE1"}); // pushes 7th item
+testTrial.push("prototypeDummy"); // pushes 8th item placeholder for prototype
+testTrial.push("placeholder"); // pushes 9th item placeholder for TONE2
+
 
 

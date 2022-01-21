@@ -6,12 +6,12 @@
 }
 
 body {
-  background-color: black;
+  background-color: white;
   font-family: Helvetica, Arial, sans-serif;   
 }
 
  p {
-  color:white;
+  color:black;
 }
 
 .attrition, .buttonHolder, .consent, .error, .instructions,  .task {
