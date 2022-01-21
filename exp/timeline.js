@@ -10,9 +10,7 @@ let instructions0 = {
 
 let test = {
   type: "html-keyboard-response",
-  stimulus: "<p> Hello and thank you for taking part in our experiment!</p>"+
-  "<p>It should take about 30 minutes.</p>"+
-  "<p> <i> Press spacebar to continue</i> </p>",
+  stimulus: jsPsych.timelineVariable('stimulus'),
   choices: [32]
 };
 
