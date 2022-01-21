@@ -6,12 +6,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bistable Perception</title>
+    <title>DRM Paradigm</title>
     <script type="text/javascript" src="db/validate.js"></script>
     <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="jsPsych/jspsych.js"></script>
+   <!-- loads in jspsych plugins -->
     <script type="text/javascript" src="jsPsych/plugins/jspsych-html-keyboard-response.js"></script>
     <script type="text/javascript" src="jsPsych/plugins/jspsych-image-keyboard-response.js"></script>
+    <script type="text/javascript" src="jsPsych/plugins/jspsych-audio-keyboard-response.js"></script>
+
     <link href="jsPsych/css/jspsych.css" rel="stylesheet" type="text/css"></link>
     <link rel="stylesheet" type="text/css" href="css/style.css"> 
   </head>
