@@ -39,26 +39,6 @@ const navy = 'navy';
 const soldier = 'soldier';
 const combat = 'combat';
 
-
-// class List {
-//     constructor(listNumber, listA, listB, prototype, highestAssociates, lowestAssociate) {
-//         this.listNumber = listNumber;
-//         this.listA = listA;
-//         this.listB = listB;
-//         this.prototype = prototype;
-//         this.highestAssociates = highestAssociates;
-//         this.lowestAssociate = lowestAssociate;
-//     }
-// }
-
-// let Anger = new List(1,
-//                     [hate, temper, ire, happy, hatred, calm],
-//                     [rage, fury, wrath, fight, mean, emotion],
-//                     anger,
-//                     [mad, fear],
-//                     enrage
-//                     );
-
 let Anger = {
     listNumber: 1,
     listA: [hate, temper, ire, happy, hatred, calm],
