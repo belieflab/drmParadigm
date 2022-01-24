@@ -57,10 +57,37 @@ let Army = {
     lowestAssociate: combat,
 };
 
+// define all variables in listNumber3 : Black
+const black = 'black';
+const cat = 'cat';
+const night = 'night';
+const color = 'color';
+const blue = 'blue';
+const ink = 'ink';
+const coal = 'coal';
+const charred = 'charred';
+const funeral = 'funeral';
+const grief = 'grief';
+const death = 'death';
+const bottom = 'bottom';
+const brown = 'brown'; 
+const white = 'white';
+const dark = 'dark';
+const gray = 'gray'; 
+
+let Black = {
+    listNumber: 3,
+    listA: [cat, night, color, blue, ink, coal],
+    listB: [charred, funeral, grief, death, bottom, brown],
+    prototype: black,
+    highestAssociates: [white, dark],
+    lowestAssociate: gray,
+};
+
 
 // ... after you have defined all of your lists
 
-let allLists = [Anger, Army]; // need to ad all other lists to this array
+let allLists = [Anger, Army, Black]; // need to ad all other lists to this array
 // and randomize
 let randomizedLists = jsPsych.randomization.repeat(allLists, 1);
 
