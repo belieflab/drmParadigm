@@ -84,10 +84,119 @@ let Black = {
     lowestAssociate: gray,
 };
 
+//Define variables for list 4:Bread
+const bread = 'bread';
+const eat = 'eat';
+const rye = 'rye';
+const milk = 'milk';
+const jelly = 'jelly';
+const crust = 'crust';
+const wine = 'wine';
+const  sandwich = 'sandwich';
+const jam = 'jam';
+const flour = 'flour';
+const dough = 'dough';
+const slice = 'slice';
+const loaf = 'loaf';
+const  butter = 'butter';
+const  food = 'food';
+const  toast = 'toast'; 
+
+let  Bread = {
+    listNumber: 4,
+    listA: [eat, rye, milk, jelly, crust, wine],
+    listB: [sandwich, jam, flour, dough, slice, loaf],
+    prototype: bread,
+    highestAssociates: [butter, food],
+    lowestAssociate: toast,
+};
+
+//Define all variables for list 5: Car
+const car  = 'car';
+const train = 'train';
+const  vehicle = 'vehicle';
+const jeep = 'jeep';
+const race = 'race';
+const garage = 'garage';
+const sedan = 'sedan';
+const  automobile = 'automobile';
+const drive = 'drive';
+const ford = 'ford';
+const keys = 'keys';
+const highway = 'highway';
+const van = 'van'; 
+const truck = 'truck';
+const bus = 'bus';
+const taxi = 'taxi'; 
+
+let Car = {
+    listNumber: 5,
+    listA: [train, vehicle, jeep, race, garage, sedan],
+    listB: [automobile, drive, ford, keys, highway, van],
+    prototype: car,
+    highestAssociates: [truck, bus],
+    lowestAssociate: taxi ,
+};
+
+//Define all variables for list 6: Chair
+const chair = 'chair';
+const legs = 'legs';
+const couch = 'couch';
+const recliner = 'recliner';
+const wood = 'wood';
+const swivel = 'swivel';
+const sitting = 'sitting';
+const seat = 'seat';
+const desk = 'desk';
+const sofa = 'sofa';
+const cushion = 'cushion';
+const stool = 'stool';
+const rocking = 'rocking'; 
+const table = 'table';
+const sit = 'sit';
+const bench = 'bench'; 
+
+let Chair = {
+    listNumber: 6,
+    listA: [legs, couch, recliner, wood, swivel, sitting],
+    listB: [seat, desk, sofa, cushion, stool, rocking],
+    prototype: chair,
+    highestAssociates: [table, sit],
+    lowestAssociate: bench,
+};
+
+//Define all variables for list 7: City
+const city = 'city';
+const state = 'state';
+const streets = 'streets';
+const country = 'country';
+const village = 'village';
+const big = 'big';
+const suburb = 'suburb';
+const capital = 'capital';
+const subway = 'subway';
+const newYork = "New York";
+const metropolis = 'metropolis';
+const chicago = 'chicago';
+const county = 'county'; 
+const town = 'town';
+const crowded = 'crowded';
+const urban = 'urban'; 
+
+let City = {
+    listNumber: 7,
+    listA: [state, streets, country, village, big, suburb],
+    listB: [capital, subway, newYork, metropolis, chicago, county],
+    prototype: city,
+    highestAssociates: [town, crowded],
+    lowestAssociate: urban,
+};
+
+
 
 // ... after you have defined all of your lists
 
-let allLists = [Anger, Army, Black]; // need to ad all other lists to this array
+let allLists = [Anger, Army, Black, Bread, Car, Chair, City]; // need to ad all other lists to this array
 // and randomize
 let randomizedLists = jsPsych.randomization.repeat(allLists, 1);
 
