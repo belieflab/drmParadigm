@@ -977,8 +977,27 @@ let Window = {
 
 let allLists = [Anger, Army, Black, Bread, Car, Chair, City, Cold, Cup, Doctor, Flag, Foot, Fruit, Girl, High, King, Lion, Man, Mountain, Music, Needle, Pen, River, Rough, Rubber, Shirt, Sleep, Slow, Smell, Smoke, Soft, Spider, Sweet, Thief, Trash, Window]; // need to add all other lists to
 
+
 // and randomize
 let randomizedLists = jsPsych.randomization.repeat(allLists, 1);
+
+let bucket1 = randomizedLists.slice(0,18); // takes first 18 lists of randomize dlists and places them into "bucket"
+let bucket2 = randomizedLists.slice(0,18); 
+let bucket3 = randomizedLists.slice(18,36); 
+let bucket4 = randomizedLists.slice(18,36); 
+
+let congruentPrototype = bucket1;
+let incongruentPrototype = bucket2; 
+let congruentHighestAssociate = [bucket3, bucket2];
+let incongruentHighestAssociate = [bucket4, bucket1]; 
+
+
+//trial types
+// Each trial type will be presented 18 times 
+//type 1 = congruent prototype 
+// type 2 = incongruent prototype
+// type 3 = congruent highest associate
+// type 4 = incongruent highest associate 
 
 // let listA = [];
 //pause
@@ -986,9 +1005,9 @@ let randomizedLists = jsPsych.randomization.repeat(allLists, 1);
 // some prototype or a list1A higher associate
 
 // congruent items
-let congruentPrototype = Anger.prototype;
-let congruentHighestAssociate1 = Anger.highestAssociates[0];
-let congruentHighestAssociate2 = Anger.highestAssociates[1];
+// let congruentPrototype = Anger.prototype;
+// let congruentHighestAssociate1 = Anger.highestAssociates[0];
+// let congruentHighestAssociate2 = Anger.highestAssociates[1]/;
 
 // incongruent items
 
@@ -998,7 +1017,7 @@ let congruentHighestAssociate2 = Anger.highestAssociates[1];
 
     // i++;
 // }
-let incongruentPrototype = randomizedLists[0].prototype;
+let incongruentPrototypeTrial1 = incongruentPrototype[0];
 
 
 // // keep looping through the randmoized list until there is no match between prototypes, leading to a truly incongruent prototype 
@@ -1020,8 +1039,8 @@ randomizedLists = jsPsych.randomization.repeat(randomizedLists, 1);
 
 let testTrial = [];
 // pushes 6 items from listA
-for (let i=0; i<Anger.listA.length; i++) {
-    testTrial.push({stimulus: Anger.listA[i], data: {test_part:"test", stim: Anger.listA[i]}}); //creating csv file "baseline_ratings" with liking ratings data saved
+for (let i=0; i<incongruentPrototypeTrial1.listA.length; i++) {
+    testTrial.push({stimulus: incongruentPrototypeTrial1.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial1.listA[i]}}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 testTrial.push({stimulus: "TONE1"}); // pushes 7th item
