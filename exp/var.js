@@ -1018,6 +1018,23 @@ let incongruentHighestAssociate = [bucket4, bucket1];
     // i++;
 // }
 let incongruentPrototypeTrial1 = incongruentPrototype[0];
+let incongruentPrototypeTrial2 = incongruentPrototype[1];
+let incongruentPrototypeTrial3 = incongruentPrototype[2];
+let incongruentPrototypeTrial4 = incongruentPrototype[3];
+let incongruentPrototypeTrial5 = incongruentPrototype[4];
+let incongruentPrototypeTrial6 = incongruentPrototype[5];
+let incongruentPrototypeTrial7 = incongruentPrototype[6];
+let incongruentPrototypeTrial8 = incongruentPrototype[7];
+let incongruentPrototypeTrial9 = incongruentPrototype[8];
+let incongruentPrototypeTrial10 = incongruentPrototype[9];
+let incongruentPrototypeTrial11 = incongruentPrototype[10];
+let incongruentPrototypeTrial12 = incongruentPrototype[11];
+let incongruentPrototypeTrial13 = incongruentPrototype[12];
+let incongruentPrototypeTrial14 = incongruentPrototype[13];
+let incongruentPrototypeTrial15 = incongruentPrototype[14];
+let incongruentPrototypeTrial16 = incongruentPrototype[15];
+let incongruentPrototypeTrial17 = incongruentPrototype[16];
+let incongruentPrototypeTrial18 = incongruentPrototype[17];
 
 
 // // keep looping through the randmoized list until there is no match between prototypes, leading to a truly incongruent prototype 
@@ -1037,15 +1054,23 @@ let incongruentPrototypeTrial1 = incongruentPrototype[0];
 // re-randomize list to keep things as random as possible
 randomizedLists = jsPsych.randomization.repeat(randomizedLists, 1);
 
-let testTrial = [];
+let incongruentPrototypeTrials = [];
 // pushes 6 items from listA
 for (let i=0; i<incongruentPrototypeTrial1.listA.length; i++) {
-    testTrial.push({stimulus: incongruentPrototypeTrial1.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial1.listA[i]}}); //creating csv file
+    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial1.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial1.listA[i]}}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-testTrial.push({stimulus: "TONE1"}); // pushes 7th item
-testTrial.push("prototypeDummy"); // pushes 8th item placeholder for prototype
-testTrial.push("placeholder"); // pushes 9th item placeholder for TONE2
+incongruentPrototypeTrials.push({stimulus: "TONE1"}); // pushes 7th item
+incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial18.prototype}); // pushes 8th item placeholder for prototype
+incongruentPrototypeTrials.push({stimulus: "TONE2"}); // pushes 9th item placeholder for TONE2
 
+// pushes 6 items from listA
+for (let i=0; i<incongruentPrototypeTrial2.listA.length; i++) {
+    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial2.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial2.listA[i]}}); //creating csv file
+    //use underscores for data fields and headers and camel case for script
+}
+incongruentPrototypeTrials.push({stimulus: "TONE1"}); // pushes 7th item
+incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial17.prototype}); // pushes 8th item placeholder for prototype
+incongruentPrototypeTrials.push({stimulus: "TONE2"}); // pushes 9th item placeholder for TONE2
 
 

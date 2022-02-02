@@ -6,21 +6,21 @@ let instructions0 = {
   "<p>It should take about 30 minutes.</p>"+
   "<p> <i> Press spacebar to continue</i> </p>",
   choices: [32],
-  on_finish: function() {
-    // this needs to be wrapped in a while loop
-    // checks against other protyotype vals to ensure inconrugency
-    if (randomizedLists[0].prototype === Anger.prototype) {
-      randomizedLists.push(randomizedLists.shift());
-      console.log("shifted");
-    } else {
-      console.log("not shifted");
-    }
-    testTrial.pop(); // pops the 9th item
-    testTrial.pop(); // pops the 8th item
-    testTrial.push({stimulus: randomizedLists[0].prototype, data: {test_part:"test", stim: randomizedLists[0].prototype}}); // pushes 8th item prototype
-    testTrial.push({stimulus: "TONE2"}); // pushes 9th item tone2
+  // on_finish: function() {
+  //   // this needs to be wrapped in a while loop
+  //   // checks against other protyotype vals to ensure inconrugency
+  //   if (randomizedLists[0].prototype === Anger.prototype) {
+  //     randomizedLists.push(randomizedLists.shift());
+  //     console.log("shifted");
+  //   } else {
+  //     console.log("not shifted");
+  //   }
+  //   incongruentPrototypeTrials.pop(); // pops the 9th item
+  //   incongruentPrototypeTrials.pop(); // pops the 8th item
+  //   incongruentPrototypeTrials.push({stimulus: randomizedLists[0].prototype, data: {test_part:"test", stim: randomizedLists[0].prototype}}); // pushes 8th item prototype
+  //   incongruentPrototypeTrials.push({stimulus: "TONE2"}); // pushes 9th item tone2
     
-  }
+  // }
 };
 
 let test = {

@@ -5,7 +5,7 @@
 let joshTest= {
     timeline:[test], 
     // defines which array to draw stimuli from 
-    timeline_variables: testTrial,
+    timeline_variables: incongruentPrototypeTrials,
     choices: [32],
 };
 
