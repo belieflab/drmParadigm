@@ -9,7 +9,14 @@ let joshTest= {
     choices: [32],
 };
 
+let deannaTest= {
+    timeline:[test], 
+    // defines which array to draw stimuli from 
+    timeline_variables: congruentPrototypeTrials,
+    choices: [32],
+};
+
 timeline.push(instructions0);
 timeline.push(joshTest);
-
+timeline.push(deannaTest);
 // timeline.push(instructions1);

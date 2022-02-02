@@ -1074,3 +1074,41 @@ incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial17.prototype
 incongruentPrototypeTrials.push({stimulus: "TONE2"}); // pushes 9th item placeholder for TONE2
 
 
+////// Here starts replicating structure of incongruent protype tirals to create trials for congruent prototype
+let congruentPrototypeTrial1 = congruentPrototype[0];
+let congruentPrototypeTrial2 = congruentPrototype[1];
+let congruentPrototypeTrial3 = congruentPrototype[2];
+let congruentPrototypeTrial4 = congruentPrototype[3];
+let congruentPrototypeTrial5 = congruentPrototype[4];
+let congruentPrototypeTrial6 = congruentPrototype[5];
+let congruentPrototypeTrial7 = congruentPrototype[6];
+let congruentPrototypeTrial8 = congruentPrototype[7];
+let congruentPrototypeTrial9 = congruentPrototype[8];
+let congruentPrototypeTrial10 = congruentPrototype[9];
+let congruentPrototypeTrial11 = congruentPrototype[10];
+let congruentPrototypeTrial12 = congruentPrototype[11];
+let congruentPrototypeTrial13 = congruentPrototype[12];
+let congruentPrototypeTrial14 = congruentPrototype[13];
+let congruentPrototypeTrial15 = congruentPrototype[14];
+let congruentPrototypeTrial16 = congruentPrototype[15];
+let congruentPrototypeTrial17 = congruentPrototype[16];
+
+
+
+let congruentPrototypeTrials = [];
+// pushes 6 items from listB
+for (let i=0; i<congruentPrototypeTrial1.listB.length; i++) {
+    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial1.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial1.listB[i]}}); //creating csv file
+    //use underscores for data fields and headers and camel case for script
+}
+congruentPrototypeTrials.push({stimulus: "TONE1"}); // pushes 7th item
+congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial1.prototype}); // pushes 8th item placeholder for prototype
+congruentPrototypeTrials.push({stimulus: "TONE2"}); // pushes 9th item placeholder for TONE2
+
+for (let i=0; i<congruentPrototypeTrial2.listB.length; i++) {
+    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial2.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial2.listB[i]}}); //creating csv file
+    //use underscores for data fields and headers and camel case for script
+}
+congruentPrototypeTrials.push({stimulus: "TONE1"}); // pushes 7th item
+congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial2.prototype}); // pushes 8th item placeholder for prototype
+congruentPrototypeTrials.push({stimulus: "TONE2"}); // pushes 9th item placeholder for TONE2
