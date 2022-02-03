@@ -1112,3 +1112,40 @@ for (let i=0; i<congruentPrototypeTrial2.listB.length; i++) {
 congruentPrototypeTrials.push({stimulus: "TONE1"}); // pushes 7th item
 congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial2.prototype}); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({stimulus: "TONE2"}); // pushes 9th item placeholder for TONE2
+
+/// trying to replicate structure from incongruent and congruent prototype trials to create incongruent highest associates 
+
+let incongruentHighestAssociateTrial1 = [incongruentHighestAssociate[0][0], incongruentHighestAssociate[1][0]];// in each trial,  add 1 to the number in the second set of brackets for each item
+let incongruentHighestAssociateTrial2 = [incongruentHighestAssociate[0][1], incongruentHighestAssociate[1][1]];
+let incongruentHighestAssociateTrial3 = [incongruentHighestAssociate[0][2], incongruentHighestAssociate[1][2]];
+
+
+let incongruentHighestAssociateTrials = [];
+// pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial1 array)
+for (let i=0; i<incongruentHighestAssociateTrial1[0].listA.length; i++) {
+    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial1[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial1[0].listA[i]}}); //creating csv file
+    //use underscores for data fields and headers and camel case for script
+}
+incongruentHighestAssociateTrials.push({stimulus: "TONE1"}); // pushes 7th item
+incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial1[1].highestAssociates[0]}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial1's 2nd list)
+incongruentHighestAssociateTrials.push({stimulus: "TONE2"}); // pushes 9th item placeholder for TONE2
+
+
+// pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial2 array)
+for (let i=0; i<incongruentHighestAssociateTrial2[0].listA.length; i++) {
+    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial2[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial2[0].listA[i]}}); //creating csv file
+    //use underscores for data fields and headers and camel case for script
+}
+incongruentHighestAssociateTrials.push({stimulus: "TONE1"}); // pushes 7th item
+incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial2[1].highestAssociates[0]}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial2's 2nd list)
+incongruentHighestAssociateTrials.push({stimulus: "TONE2"}); // pushes 9th item placeholder for TONE2
+
+
+// pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
+for (let i=0; i<incongruentHighestAssociateTrial3[0].listA.length; i++) {
+    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial3[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial3[0].listA[i]}}); //creating csv file
+    //use underscores for data fields and headers and camel case for script
+}
+incongruentHighestAssociateTrials.push({stimulus: "TONE1"}); // pushes 7th item
+incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial3[1].highestAssociates[0]}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+incongruentHighestAssociateTrials.push({stimulus: "TONE2"}); // pushes 9th item placeholder for TONE2
