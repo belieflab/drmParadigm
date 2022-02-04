@@ -16,15 +16,23 @@ let deannaTest= {
     choices: [32],
 };
 
-let deannaTestInCongruentHighestAssociate= {
+let deannaTestIncongruentHighestAssociate= {
     timeline:[test], 
     // defines which array to draw stimuli from 
     timeline_variables: incongruentHighestAssociateTrials,
     choices: [32],
 };
 
+let deannaTestCongruentHighestAssociate= {
+    timeline:[test], 
+    // defines which array to draw stimuli from 
+    timeline_variables: congruentHighestAssociateTrials,
+    choices: [32],
+};
+
 timeline.push(instructions0);
+timeline.push(deannaTestCongruentHighestAssociate);
 timeline.push(joshTest);
 timeline.push(deannaTest);
-timeline.push(deannaTestInCongruentHighestAssociate); 
+timeline.push(deannaTestIncongruentHighestAssociate); 
 // timeline.push(instructions1);

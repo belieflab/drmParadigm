@@ -988,7 +988,7 @@ let bucket4 = randomizedLists.slice(18,36);
 
 let congruentPrototype = bucket1;
 let incongruentPrototype = bucket2; 
-let congruentHighestAssociate = [bucket3, bucket2];
+let congruentHighestAssociate = bucket3; // since bucket 3 and bucket4 contain the same objects, when we make congruent highest associate trials, be sure to use the objects' B lists
 let incongruentHighestAssociate = [bucket4, bucket1]; 
 
 
@@ -1149,3 +1149,35 @@ for (let i=0; i<incongruentHighestAssociateTrial3[0].listA.length; i++) {
 incongruentHighestAssociateTrials.push({stimulus: "TONE1"}); // pushes 7th item
 incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial3[1].highestAssociates[0]}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({stimulus: "TONE2"}); // pushes 9th item placeholder for TONE2
+
+// trying to create structure for congruent highest associate trials
+let congruentHighestAssociateTrial1 = congruentHighestAssociate[0];
+
+// for congruent Highest associate tirals, the number of "i"s that are pushed will differ 
+// higheest associate will be palced in the 2-5 position. Since there are a total of 18 trials, create:
+// 5 with highest associate in 2nd word position 
+// 4 trials with highest associate in 3rd word position  
+// 4 with highest associate in 4th word positiion  
+// 5 with highest associate in 5th word position                                                                                          
+
+let congruentHighestAssociateTrials = [];
+
+//this section shows how to make  trial where the highest assocaite is in the 2nd word position 
+for (let i=0; i<1; i++) {
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial1.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial1.listB[i]}}); //creating csv file
+    //use underscores for data fields and headers and camel case for script
+}
+
+// push the highest associate into the list 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial1.highestAssociates[0]}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+
+
+//add in remaining list b items 
+for (let i=2; i<congruentHighestAssociateTrial1.listB.length; i++) {
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial1.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial1.listB[i]}}); //creating csv file
+    //use underscores for data fields and headers and camel case for script
+}
+
+congruentHighestAssociateTrials.push({stimulus: "TONE1"}); // pushes 7th item
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial1.highestAssociates[0]}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: "TONE2"}); // pushes 9th item placeholder for TONE2
