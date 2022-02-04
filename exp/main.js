@@ -31,8 +31,9 @@ let deannaTestCongruentHighestAssociate= {
 };
 
 timeline.push(instructions0);
-timeline.push(deannaTestCongruentHighestAssociate);
 timeline.push(joshTest);
 timeline.push(deannaTest);
 timeline.push(deannaTestIncongruentHighestAssociate); 
+timeline.push(deannaTestCongruentHighestAssociate);
+
 // timeline.push(instructions1);
