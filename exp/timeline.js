@@ -37,5 +37,37 @@ let instructions1 = {
   trial_ends_after_audio: true
 };
 
+let dataSave = {
+  type: "html-keyboard-response",
+  stimulus: "<p style='color:white;'>Data saving...</p>"+
+  '<div class="sk-cube-grid">'+
+  '<div class="sk-cube sk-cube1"></div>'+
+  '<div class="sk-cube sk-cube2"></div>'+
+  '<div class="sk-cube sk-cube3"></div>'+
+  '<div class="sk-cube sk-cube4"></div>'+
+  '<div class="sk-cube sk-cube5"></div>'+
+  '<div class="sk-cube sk-cube6"></div>'+
+  '<div class="sk-cube sk-cube7"></div>'+
+  '<div class="sk-cube sk-cube8"></div>'+
+  '<div class="sk-cube sk-cube9"></div>'+
+  '</div>'+
+  "<p style='color:white;'>Do not close this window until the text dissapears.</p>",
+  choices: jsPsych.NO_KEYS,
+  trial_duration: 5000,
+  on_finish: function() {
+    saveData("drm_" + workerId, jsPsych.data.get().csv()); //function with file name and which type of file as the 2 arguments
+    document.getElementById("unload").onbeforeunload=''; //removes popup (are you sure you want to exit) since data is saved now
+    // returns cursor functionality
+    $(document).ready(function() {
+    $("body").addClass("showCursor");
+    });
+      // at the end of each trial, update the progress bar
+      // based on the current value and the proportion to update for each trial
+      var curr_progress_bar_value = jsPsych.getProgressBarCompleted();
+      jsPsych.setProgressBar(curr_progress_bar_value + (1/720));
+  }
+};
+
+
 
 $.getScript("exp/main.js");
