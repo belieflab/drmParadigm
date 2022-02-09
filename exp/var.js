@@ -1060,9 +1060,9 @@ for (let i=0; i<incongruentPrototypeTrial1.listA.length; i++) {
     incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial1.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial1.listA[i]}}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentPrototypeTrials.push({stimulus: "TONE1"}); // pushes 7th item
-incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial18.prototype}); // pushes 8th item placeholder for prototype
-incongruentPrototypeTrials.push({stimulus: "TONE2"}); // pushes 9th item placeholder for TONE2
+incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1"}}); // pushes 7th item
+incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial18.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial18.prototype}}); // pushes 8th item placeholder for prototype
+incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2"}}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
 for (let i=0; i<incongruentPrototypeTrial2.listA.length; i++) {
@@ -1400,9 +1400,9 @@ for (let i=0; i<incongruentHighestAssociateTrial3[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial3[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial3[0].listA[i]}}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentHighestAssociateTrials.push({stimulus: "TONE1"}); // pushes 7th item
-incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial3[1].highestAssociates[0]}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
-incongruentHighestAssociateTrials.push({stimulus: "TONE2"}); // pushes 9th item placeholder for TONE2
+incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1"}}); // pushes 7th item
+incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial3[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial3[1].highestAssociates[0] }}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone1"}}); // pushes 9th item placeholder for TONE2
 
 // trying to create structure for congruent highest associate trials
 let congruentHighestAssociateTrial1 = congruentHighestAssociate[0];
