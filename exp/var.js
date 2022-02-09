@@ -1548,7 +1548,32 @@ incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"tes
 
 
 // trying to create structure for congruent highest associate trials
+//use for 2nd position trials
 let congruentHighestAssociateTrial1 = congruentHighestAssociate[0];
+let congruentHighestAssociateTrial2 = congruentHighestAssociate[1];
+let congruentHighestAssociateTrial3 = congruentHighestAssociate[2];
+let congruentHighestAssociateTrial4 = congruentHighestAssociate[3];
+let congruentHighestAssociateTrial5 = congruentHighestAssociate[4];
+
+//use for 3rd position trials
+let congruentHighestAssociateTrial6 = congruentHighestAssociate[5];
+let congruentHighestAssociateTrial7 = congruentHighestAssociate[6];
+let congruentHighestAssociateTrial8 = congruentHighestAssociate[7];
+let congruentHighestAssociateTrial9 = congruentHighestAssociate[8];
+
+// use for 4th position trials
+let congruentHighestAssociateTrial10 = congruentHighestAssociate[9];
+let congruentHighestAssociateTrial11 = congruentHighestAssociate[10];
+let congruentHighestAssociateTrial12 = congruentHighestAssociate[11];
+let congruentHighestAssociateTrial13 = congruentHighestAssociate[12];
+
+// use for 5th position trials
+let congruentHighestAssociateTrial14 = congruentHighestAssociate[13];
+let congruentHighestAssociateTrial15 = congruentHighestAssociate[14];
+let congruentHighestAssociateTrial16 = congruentHighestAssociate[15];
+let congruentHighestAssociateTrial17 = congruentHighestAssociate[16];
+let congruentHighestAssociateTrial18 = congruentHighestAssociate[17];
+
 
 // for congruent Highest associate tirals, the number of "i"s that are pushed will differ 
 // higheest associate will be palced in the 2-5 position. Since there are a total of 18 trials, create:
@@ -1577,4 +1602,65 @@ for (let i=2; i<congruentHighestAssociateTrial1.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({stimulus: "TONE1"}); // pushes 7th item
 congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial1.highestAssociates[0]}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: "TONE2"}); // pushes 9th item placeholder for TONE2
+
+
+// how to create trial for highest associate in 3rd position
+for (let i=0; i<2; i++) {
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial6.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial6.listB[i]}}); //creating csv file
+    //use underscores for data fields and headers and camel case for script
+}
+
+// push the highest associate into the list 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial6.highestAssociates[0]}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+
+//add in remaining list b items 
+for (let i=3; i<congruentHighestAssociateTrial6.listB.length; i++) {
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial6.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial6.listB[i]}}); //creating csv file
+    //use underscores for data fields and headers and camel case for script
+}
+
+congruentHighestAssociateTrials.push({stimulus: "TONE1"}); // pushes 7th item
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial6.highestAssociates[0]}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: "TONE2"}); // pushes 9th item placeholder for TONE2
+
+
+// how to create trial for highest associate in 4th position
+for (let i=0; i<3; i++) {
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial10.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial10.listB[i]}}); //creating csv file
+    //use underscores for data fields and headers and camel case for script
+}
+
+// push the highest associate into the list 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial10.highestAssociates[0]}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+
+
+//add in remaining list b items 
+for (let i=4; i<congruentHighestAssociateTrial10.listB.length; i++) {
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial10.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial10.listB[i]}}); //creating csv file
+    //use underscores for data fields and headers and camel case for script
+}
+
+congruentHighestAssociateTrials.push({stimulus: "TONE1"}); // pushes 7th item
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial10.highestAssociates[0]}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: "TONE2"}); // pushes 9th item placeholder for TONE2
+
+// how to create congruent highest associate trials with highests associate in 5th position
+for (let i=0; i<4; i++) {
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial14.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial14.listB[i]}}); //creating csv file
+    //use underscores for data fields and headers and camel case for script
+}
+
+// push the highest associate into the list 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial14.highestAssociates[0]}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+
+
+//add in remaining list b items 
+for (let i=5; i<congruentHighestAssociateTrial14.listB.length; i++) {
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial14.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial14.listB[i]}}); //creating csv file
+    //use underscores for data fields and headers and camel case for script
+}
+
+congruentHighestAssociateTrials.push({stimulus: "TONE1"}); // pushes 7th item
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial14.highestAssociates[0]}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 congruentHighestAssociateTrials.push({stimulus: "TONE2"}); // pushes 9th item placeholder for TONE2
