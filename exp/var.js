@@ -1208,6 +1208,17 @@ incongruentPrototypeTrials.push({stimulus: "TONE1"}); // pushes 7th item
 incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial2.prototype}); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({stimulus: "TONE2"}); // pushes 9th item placeholder for TONE2
 
+// pushes 6 items from listA
+for (let i=0; i<incongruentPrototypeTrial18.listA.length; i++) {
+    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial18.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial18.listA[i]}}); //creating csv file
+    //use underscores for data fields and headers and camel case for script
+}
+incongruentPrototypeTrials.push({stimulus: "TONE1"}); // pushes 7th item
+incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial1.prototype}); // pushes 8th item placeholder for prototype
+incongruentPrototypeTrials.push({stimulus: "TONE2"}); // pushes 9th item placeholder for TONE2
+
+
+
 ////// Here starts replicating structure of incongruent protype tirals to create trials for congruent prototype
 let congruentPrototypeTrial1 = congruentPrototype[0];
 let congruentPrototypeTrial2 = congruentPrototype[1];
@@ -1226,6 +1237,7 @@ let congruentPrototypeTrial14 = congruentPrototype[13];
 let congruentPrototypeTrial15 = congruentPrototype[14];
 let congruentPrototypeTrial16 = congruentPrototype[15];
 let congruentPrototypeTrial17 = congruentPrototype[16];
+let congruentPrototypeTrial18 = congruentPrototype[17];
 
 
 
@@ -1367,6 +1379,15 @@ congruentPrototypeTrials.push({stimulus: "TONE1"}); // pushes 7th item
 congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial17.prototype}); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({stimulus: "TONE2"}); // pushes 9th item placeholder for TONE2
 
+for (let i=0; i<congruentPrototypeTrial18.listB.length; i++) {
+    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial18.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial18.listB[i]}}); //creating csv file
+    //use underscores for data fields and headers and camel case for script
+}
+congruentPrototypeTrials.push({stimulus: "TONE1"}); // pushes 7th item
+congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial18.prototype}); // pushes 8th item placeholder for prototype
+congruentPrototypeTrials.push({stimulus: "TONE2"}); // pushes 9th item placeholder for TONE2
+
+
 /// trying to replicate structure from incongruent and congruent prototype trials to create incongruent highest associates 
 
 let incongruentHighestAssociateTrial1 = [incongruentHighestAssociate[0][0], incongruentHighestAssociate[1][0]];// in each trial,  add 1 to the number in the second set of brackets for each item
@@ -1386,6 +1407,8 @@ let incongruentHighestAssociateTrial14 = [incongruentHighestAssociate[0][13], in
 let incongruentHighestAssociateTrial15 = [incongruentHighestAssociate[0][14], incongruentHighestAssociate[1][14]];
 let incongruentHighestAssociateTrial16 = [incongruentHighestAssociate[0][15], incongruentHighestAssociate[1][15]];
 let incongruentHighestAssociateTrial17 = [incongruentHighestAssociate[0][16], incongruentHighestAssociate[1][16]];
+let incongruentHighestAssociateTrial18 = [incongruentHighestAssociate[0][17], incongruentHighestAssociate[1][17]];
+
 
 let incongruentHighestAssociateTrials = [];
 // pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial1 array)
@@ -1546,6 +1569,15 @@ incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"tes
 incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial17[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial17[1].highestAssociates[0] }}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone1"}}); // pushes 9th item placeholder for TONE2
 
+// pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
+for (let i=0; i<incongruentHighestAssociateTrial18[0].listA.length; i++) {
+    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial18[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial18[0].listA[i]}}); //creating csv file
+    //use underscores for data fields and headers and camel case for script
+}
+incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1"}}); // pushes 7th item
+incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial18[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial18[1].highestAssociates[0] }}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone1"}}); // pushes 9th item placeholder for TONE2
+
 
 // trying to create structure for congruent highest associate trials
 //use for 2nd position trials
@@ -1664,3 +1696,70 @@ for (let i=5; i<congruentHighestAssociateTrial14.listB.length; i++) {
 congruentHighestAssociateTrials.push({stimulus: "TONE1"}); // pushes 7th item
 congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial14.highestAssociates[0]}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 congruentHighestAssociateTrials.push({stimulus: "TONE2"}); // pushes 9th item placeholder for TONE2
+
+
+let interleavedFinalStim = []; 
+
+for (let i=0; i<=485; i++) {
+  interleavedFinalStim.push(i);
+}  
+
+
+randomizationScheme = [];
+
+for (let i=0; i<=17; i++) {
+  //zeros for incongruent prototype
+  randomizationScheme.push(0);
+}
+for (let i=0; i<=17; i++) {
+  //ones for congruent prototype
+  randomizationScheme.push(1);
+}
+
+for (let i=0; i<=17; i++) {
+    //2s for incongruent highest associate 
+    randomizationScheme.push(2);
+  }
+
+//   for (let i=0; i<=17; i++) {
+//     //3s for congruent highest associate 
+//     randomizationScheme.push(3);
+//   }
+
+randomizationFinal = jsPsych.randomization.repeat(randomizationScheme, 1); //shuffled array no repeats
+while (interleavedFinalStim.length>0) {
+  interleavedFinalStim.pop();
+}
+
+for (let i=0; i<=randomizationFinal.length; i++) {
+
+  if (randomizationFinal[i] === 0) {
+    // first add 9 incongruent prototype items 
+    for (let i=0; i<=8; i++) {
+      interleavedFinalStim.push(incongruentPrototypeTrials[i]);
+    }
+    // then remove 9 incongruent prototype items 
+    for (let i=0; i<=8; i++) {
+      incongruentPrototypeTrials.shift();
+    }
+  } else if (randomizationFinal[i] === 1) {
+    // then! ADD 9 congruent prototype items 
+    for (let i=0; i<=8; i++) {
+      interleavedFinalStim.push(congruentPrototypeTrials[i]);
+    }
+    // then! Remove 9 congruent prototype items
+    for (let i=0; i<=8; i++) {
+      congruentPrototypeTrials.shift();
+    }
+  }  else if (randomizationFinal[i] === 2) {
+    // then! ADD 9 items from incongruent highest associates trials
+    for (let i=0; i<=8; i++) {
+      interleavedFinalStim.push(incongruentHighestAssociateTrials[i]);
+    }
+    // then! Remove 9 incongruent highest associates items 
+    for (let i=0; i<=8; i++) {
+      incongruentHighestAssociateTrials.shift();
+    }
+  }
+
+  };

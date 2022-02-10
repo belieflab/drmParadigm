@@ -25,6 +25,7 @@ let instructions0 = {
 
 let test = {
   type: "html-keyboard-response",
+  //data: jsPsych.timelineVariable("data"),
   stimulus: jsPsych.timelineVariable('stimulus'),
   choices: [32]
 };
