@@ -1057,7 +1057,7 @@ randomizedLists = jsPsych.randomization.repeat(randomizedLists, 1);
 let incongruentPrototypeTrials = [];
 // pushes 6 items from listA
 for (let i=0; i<incongruentPrototypeTrial1.listA.length; i++) {
-    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial1.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial1.listA[i]}}); //creating csv file
+    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial1.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial1.listA[i], trial_type:"incongruentPrototype"}}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1"}}); // pushes 7th item
@@ -1244,7 +1244,7 @@ let congruentPrototypeTrial18 = congruentPrototype[17];
 let congruentPrototypeTrials = [];
 // pushes 6 items from listB
 for (let i=0; i<congruentPrototypeTrial1.listB.length; i++) {
-    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial1.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial1.listB[i]}}); //creating csv file
+    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial1.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial1.listB[i], trial_type: "congruentPrototype"}}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 congruentPrototypeTrials.push({stimulus: "TONE1"}); // pushes 7th item
@@ -1413,7 +1413,7 @@ let incongruentHighestAssociateTrial18 = [incongruentHighestAssociate[0][17], in
 let incongruentHighestAssociateTrials = [];
 // pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial1 array)
 for (let i=0; i<incongruentHighestAssociateTrial1[0].listA.length; i++) {
-    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial1[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial1[0].listA[i]}}); //creating csv file
+    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial1[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial1[0].listA[i], trial_type: "incongruentHighestAssociate"}}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 incongruentHighestAssociateTrials.push({stimulus: "TONE1"}); // pushes 7th item
@@ -1618,48 +1618,48 @@ let congruentHighestAssociateTrials = [];
 
 //this section shows how to make  trial where the highest assocaite is in the 2nd word position 
 for (let i=0; i<1; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial1.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial1.listB[i]}}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial1.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial1.listB[i], trial_type: "congruentHighestAssociate_2"}}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial1.highestAssociates[0]}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial1.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial1.highestAssociates[0], trial_type: "congruentHighestAssociate_2"}}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 
 //add in remaining list b items 
 for (let i=2; i<congruentHighestAssociateTrial1.listB.length; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial1.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial1.listB[i]}}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial1.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial1.listB[i], trial_type:"congruentHighestAssociate_2"}}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
-congruentHighestAssociateTrials.push({stimulus: "TONE1"}); // pushes 7th item
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial1.highestAssociates[0]}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
-congruentHighestAssociateTrials.push({stimulus: "TONE2"}); // pushes 9th item placeholder for TONE2
+congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "TONE1", trial_type: "congruentHighestAssociate_2"}}); // pushes 7th item
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial1.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial1.highestAssociates[0], trial_type: "congruentHighestAssociate_2"}}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: "TONE2",  data: {test_part:"test", stim: "TONE2", trial_type: "congruentHighestAssociate_2"}}); // pushes 9th item placeholder for TONE2
 
 
 // how to create trial for highest associate in 3rd position
 for (let i=0; i<2; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial6.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial6.listB[i]}}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial6.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial6.listB[i], trial_type:"congruentHighestAssociate_3"}}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial6.highestAssociates[0]}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial6.highestAssociates[0],  data: {test_part:"test", stim: congruentHighestAssociateTrial6.highestAssociates[0], trial_type:"congruentHighestAssociate_3"}}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 //add in remaining list b items 
 for (let i=3; i<congruentHighestAssociateTrial6.listB.length; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial6.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial6.listB[i]}}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial6.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial6.listB[i], trial_type: "congruentHighestAssociate_3"}}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
-congruentHighestAssociateTrials.push({stimulus: "TONE1"}); // pushes 7th item
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial6.highestAssociates[0]}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
-congruentHighestAssociateTrials.push({stimulus: "TONE2"}); // pushes 9th item placeholder for TONE2
+congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim:"TONE1", trial_type: "congruentHighestAssociate_3"}}); // pushes 7th item
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial6.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial6.highestAssociates[0], trial_type: "congruentHighestAssociate_3"}}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "TONE2", trial_type: "congruentHighestAssociate_3"}}); // pushes 9th item placeholder for TONE2
 
 
 // how to create trial for highest associate in 4th position
 for (let i=0; i<3; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial10.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial10.listB[i]}}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial10.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial10.listB[i], trial_type: "congruentHighestAssociate_4"}}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
@@ -1679,7 +1679,7 @@ congruentHighestAssociateTrials.push({stimulus: "TONE2"}); // pushes 9th item pl
 
 // how to create congruent highest associate trials with highests associate in 5th position
 for (let i=0; i<4; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial14.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial14.listB[i]}}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial14.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial14.listB[i], trial_type: "congruentHighestAssociate_5"}}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
@@ -1698,68 +1698,68 @@ congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial14
 congruentHighestAssociateTrials.push({stimulus: "TONE2"}); // pushes 9th item placeholder for TONE2
 
 
-let interleavedFinalStim = []; 
+// let interleavedFinalStim = []; 
 
-for (let i=0; i<=485; i++) {
-  interleavedFinalStim.push(i);
-}  
+// for (let i=0; i<=485; i++) {
+//   interleavedFinalStim.push(i);
+// }  
 
 
-randomizationScheme = [];
+// randomizationScheme = [];
 
-for (let i=0; i<=17; i++) {
-  //zeros for incongruent prototype
-  randomizationScheme.push(0);
-}
-for (let i=0; i<=17; i++) {
-  //ones for congruent prototype
-  randomizationScheme.push(1);
-}
+// for (let i=0; i<=17; i++) {
+//   //zeros for incongruent prototype
+//   randomizationScheme.push(0);
+// }
+// for (let i=0; i<=17; i++) {
+//   //ones for congruent prototype
+//   randomizationScheme.push(1);
+// }
 
-for (let i=0; i<=17; i++) {
-    //2s for incongruent highest associate 
-    randomizationScheme.push(2);
-  }
-
-//   for (let i=0; i<=17; i++) {
-//     //3s for congruent highest associate 
-//     randomizationScheme.push(3);
+// for (let i=0; i<=17; i++) {
+//     //2s for incongruent highest associate 
+//     randomizationScheme.push(2);
 //   }
 
-randomizationFinal = jsPsych.randomization.repeat(randomizationScheme, 1); //shuffled array no repeats
-while (interleavedFinalStim.length>0) {
-  interleavedFinalStim.pop();
-}
+// //   for (let i=0; i<=17; i++) {
+// //     //3s for congruent highest associate 
+// //     randomizationScheme.push(3);
+// //   }
 
-for (let i=0; i<=randomizationFinal.length; i++) {
+// randomizationFinal = jsPsych.randomization.repeat(randomizationScheme, 1); //shuffled array no repeats
+// while (interleavedFinalStim.length>0) {
+//   interleavedFinalStim.pop();
+// }
 
-  if (randomizationFinal[i] === 0) {
-    // first add 9 incongruent prototype items 
-    for (let i=0; i<=8; i++) {
-      interleavedFinalStim.push(incongruentPrototypeTrials[i]);
-    }
-    // then remove 9 incongruent prototype items 
-    for (let i=0; i<=8; i++) {
-      incongruentPrototypeTrials.shift();
-    }
-  } else if (randomizationFinal[i] === 1) {
-    // then! ADD 9 congruent prototype items 
-    for (let i=0; i<=8; i++) {
-      interleavedFinalStim.push(congruentPrototypeTrials[i]);
-    }
-    // then! Remove 9 congruent prototype items
-    for (let i=0; i<=8; i++) {
-      congruentPrototypeTrials.shift();
-    }
-  }  else if (randomizationFinal[i] === 2) {
-    // then! ADD 9 items from incongruent highest associates trials
-    for (let i=0; i<=8; i++) {
-      interleavedFinalStim.push(incongruentHighestAssociateTrials[i]);
-    }
-    // then! Remove 9 incongruent highest associates items 
-    for (let i=0; i<=8; i++) {
-      incongruentHighestAssociateTrials.shift();
-    }
-  }
+// for (let i=0; i<=randomizationFinal.length; i++) {
 
-  };
+//   if (randomizationFinal[i] === 0) {
+//     // first add 9 incongruent prototype items 
+//     for (let i=0; i<=8; i++) {
+//       interleavedFinalStim.push(incongruentPrototypeTrials[i]);
+//     }
+//     // then remove 9 incongruent prototype items 
+//     for (let i=0; i<=8; i++) {
+//       incongruentPrototypeTrials.shift();
+//     }
+//   } else if (randomizationFinal[i] === 1) {
+//     // then! ADD 9 congruent prototype items 
+//     for (let i=0; i<=8; i++) {
+//       interleavedFinalStim.push(congruentPrototypeTrials[i]);
+//     }
+//     // then! Remove 9 congruent prototype items
+//     for (let i=0; i<=8; i++) {
+//       congruentPrototypeTrials.shift();
+//     }
+//   }  else if (randomizationFinal[i] === 2) {
+//     // then! ADD 9 items from incongruent highest associates trials
+//     for (let i=0; i<=8; i++) {
+//       interleavedFinalStim.push(incongruentHighestAssociateTrials[i]);
+//     }
+//     // then! Remove 9 incongruent highest associates items 
+//     for (let i=0; i<=8; i++) {
+//       incongruentHighestAssociateTrials.shift();
+//     }
+//   }
+
+//   };
