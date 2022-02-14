@@ -5,7 +5,7 @@
 let joshTest= {
     timeline:[test], 
     // defines which array to draw stimuli from 
-    timeline_variables: incongruentPrototypeTrials,
+    timeline_variables: interleavedFinalStim,
     choices: [32],
 };
 
@@ -39,9 +39,9 @@ let deannaTestCongruentHighestAssociate= {
 
 timeline.push(instructions0);
 timeline.push(joshTest);
-timeline.push(deannaTest);
-timeline.push(deannaTestIncongruentHighestAssociate); 
-timeline.push(deannaTestCongruentHighestAssociate);
+//timeline.push(deannaTest);
+//timeline.push(deannaTestIncongruentHighestAssociate); 
+//timeline.push(deannaTestCongruentHighestAssociate);
 
 // timeline.push(instructions1);
 

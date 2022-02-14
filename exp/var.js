@@ -1961,69 +1961,98 @@ congruentHighestAssociateTrials.push({stimulus: "TONE1"}); // pushes 7th item
 congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial17.highestAssociates[0]}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 congruentHighestAssociateTrials.push({stimulus: "TONE2"}); // pushes 9th item placeholder for TONE2
 
+// how to create congruent highest associate trials with highests associate in 5th position
+for (let i=0; i<4; i++) {
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial18.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial18.listB[i], trial_type: "congruentHighestAssociate_5"}}); //creating csv file
+    //use underscores for data fields and headers and camel case for script
+}
 
-// let interleavedFinalStim = []; 
-
-// for (let i=0; i<=485; i++) {
-//   interleavedFinalStim.push(i);
-// }  
+// push the highest associate into the list 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial18.highestAssociates[0]}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 
-// randomizationScheme = [];
+//add in remaining list b items 
+for (let i=5; i<congruentHighestAssociateTrial18.listB.length; i++) {
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial18.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial18.listB[i]}}); //creating csv file
+    //use underscores for data fields and headers and camel case for script
+}
 
-// for (let i=0; i<=17; i++) {
-//   //zeros for incongruent prototype
-//   randomizationScheme.push(0);
-// }
-// for (let i=0; i<=17; i++) {
-//   //ones for congruent prototype
-//   randomizationScheme.push(1);
-// }
+congruentHighestAssociateTrials.push({stimulus: "TONE1"}); // pushes 7th item
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial18.highestAssociates[0]}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: "TONE2"}); // pushes 9th item placeholder for TONE2
 
-// for (let i=0; i<=17; i++) {
-//     //2s for incongruent highest associate 
-//     randomizationScheme.push(2);
-//   }
 
-// //   for (let i=0; i<=17; i++) {
-// //     //3s for congruent highest associate 
-// //     randomizationScheme.push(3);
-// //   }
 
-// randomizationFinal = jsPsych.randomization.repeat(randomizationScheme, 1); //shuffled array no repeats
-// while (interleavedFinalStim.length>0) {
-//   interleavedFinalStim.pop();
-// }
+let interleavedFinalStim = []; 
 
-// for (let i=0; i<=randomizationFinal.length; i++) {
+for (let i=0; i<=485; i++) {
+  interleavedFinalStim.push(i);
+}  
 
-//   if (randomizationFinal[i] === 0) {
-//     // first add 9 incongruent prototype items 
-//     for (let i=0; i<=8; i++) {
-//       interleavedFinalStim.push(incongruentPrototypeTrials[i]);
-//     }
-//     // then remove 9 incongruent prototype items 
-//     for (let i=0; i<=8; i++) {
-//       incongruentPrototypeTrials.shift();
-//     }
-//   } else if (randomizationFinal[i] === 1) {
-//     // then! ADD 9 congruent prototype items 
-//     for (let i=0; i<=8; i++) {
-//       interleavedFinalStim.push(congruentPrototypeTrials[i]);
-//     }
-//     // then! Remove 9 congruent prototype items
-//     for (let i=0; i<=8; i++) {
-//       congruentPrototypeTrials.shift();
-//     }
-//   }  else if (randomizationFinal[i] === 2) {
-//     // then! ADD 9 items from incongruent highest associates trials
-//     for (let i=0; i<=8; i++) {
-//       interleavedFinalStim.push(incongruentHighestAssociateTrials[i]);
-//     }
-//     // then! Remove 9 incongruent highest associates items 
-//     for (let i=0; i<=8; i++) {
-//       incongruentHighestAssociateTrials.shift();
-//     }
-//   }
 
-//   };
+randomizationScheme = [];
+
+for (let i=0; i<=17; i++) {
+  //zeros for incongruent prototype
+  randomizationScheme.push(0);
+}
+for (let i=0; i<=17; i++) {
+  //ones for congruent prototype
+  randomizationScheme.push(1);
+}
+
+for (let i=0; i<=17; i++) {
+    //2s for incongruent highest associate 
+    randomizationScheme.push(2);
+  }
+
+  for (let i=0; i<=17; i++) {
+    //3s for congruent highest associate 
+    randomizationScheme.push(3);
+  }
+//randomizationFinal = randomizationScheme; //shuffled array no repeats
+randomizationFinal = jsPsych.randomization.repeat(randomizationScheme, 1); //shuffled array no repeats
+while (interleavedFinalStim.length>0) {
+  interleavedFinalStim.pop();
+}
+
+for (let i=0; i<=randomizationFinal.length; i++) {
+
+  if (randomizationFinal[i] === 0) {
+    // first add 9 incongruent prototype items 
+    for (let i=0; i<=8; i++) {
+      interleavedFinalStim.push(incongruentPrototypeTrials[i]);
+    }
+    // then remove 9 incongruent prototype items 
+    for (let i=0; i<=8; i++) {
+      incongruentPrototypeTrials.shift();
+    }
+  } else if (randomizationFinal[i] === 1) {
+    // then! ADD 9 congruent prototype items 
+    for (let i=0; i<=8; i++) {
+      interleavedFinalStim.push(congruentPrototypeTrials[i]);
+    }
+    // then! Remove 9 congruent prototype items
+    for (let i=0; i<=8; i++) {
+      congruentPrototypeTrials.shift();
+    }
+  }  else if (randomizationFinal[i] === 2) {
+    // then! ADD 9 items from incongruent highest associates trials
+    for (let i=0; i<=8; i++) {
+      interleavedFinalStim.push(incongruentHighestAssociateTrials[i]);
+    }
+    // then! Remove 9 incongruent highest associates items 
+    for (let i=0; i<=8; i++) {
+      incongruentHighestAssociateTrials.shift();
+    }
+  } else if (randomizationFinal[i] === 3) {
+    // then! ADD 9 congruent highest associate items 
+    for (let i=0; i<=8; i++) {
+      interleavedFinalStim.push(congruentHighestAssociateTrials[i]);
+    }
+    // then! Remove 9 congruent highest associate items
+    for (let i=0; i<=8; i++) {
+      congruentHighestAssociateTrials.shift();
+    }
+  }
+  };
