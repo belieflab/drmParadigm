@@ -27,7 +27,7 @@ let test = {
   type: "html-keyboard-response",
   //data: jsPsych.timelineVariable("data"),
   stimulus: jsPsych.timelineVariable('stimulus'),
-  choices: [32]
+  choices: [32]// kind keys for f and j 
 };
 
 
