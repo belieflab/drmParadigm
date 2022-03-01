@@ -1061,7 +1061,7 @@ for (let i=0; i<incongruentPrototypeTrial1.listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}}); // pushes 7th item
-incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial18.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial18.prototype, drmTrial_type:"incongruentPrototype"}}); // pushes 8th item placeholder for prototype
+incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial18.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial18.prototype, drmTrial_type:"incongruentPrototype", correct_response: "70"}}); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
@@ -1070,7 +1070,7 @@ for (let i=0; i<incongruentPrototypeTrial2.listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}}); // pushes 7th item
-incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial17.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial17.prototype, drmTrial_type:"incongruentPrototype"}}); // pushes 8th item placeholder for prototype
+incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial17.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial17.prototype, drmTrial_type:"incongruentPrototype", correct_response: "70"}}); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
@@ -1248,7 +1248,7 @@ for (let i=0; i<congruentPrototypeTrial1.listB.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}}); // pushes 7th item
-congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial1.prototype, data: {test_part:"test", stim: congruentPrototypeTrial1.prototype, drmTrial_type: "congruentPrototype"}}); // pushes 8th item placeholder for prototype
+congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial1.prototype, data: {test_part:"test", stim: congruentPrototypeTrial1.prototype, drmTrial_type: "congruentPrototype", correct_response: "74"}}); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial2.listB.length; i++) {
@@ -1417,7 +1417,7 @@ for (let i=0; i<incongruentHighestAssociateTrial1[0].listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}}); // pushes 7th item
-incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial1[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial3[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate"}}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial1's 2nd list)
+incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial1[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial3[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate", correct_response: "70"}}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial1's 2nd list)
 incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}}); // pushes 9th item placeholder for TONE2
 
 
@@ -1633,7 +1633,7 @@ for (let i=2; i<congruentHighestAssociateTrial1.listB.length; i++) {
 }
 
 congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentHighestAssociate_2"}}); // pushes 7th item
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial1.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial1.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2"}}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial1.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial1.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2", correct_response: "74"}}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 congruentHighestAssociateTrials.push({stimulus: "TONE2",  data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentHighestAssociate_2"}}); // pushes 9th item placeholder for TONE2
 
 
