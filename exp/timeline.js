@@ -27,11 +27,11 @@ let test = {
   type: "html-keyboard-response",
   // prompt: jsPsych.timelineVariable("confidence"),
   data: jsPsych.timelineVariable("data"),
-  // stimulus: function(){
-  //   var html="<p>"+jsPsych.timelineVariable('stimulus', true)+jsPsych.timelineVariable('confidence', true)+"</p>";
-  //   return html;
-  // },
-  stimulus: jsPsych.timelineVariable('stimulus'),
+  stimulus: function(){
+    var html="<p>"+jsPsych.timelineVariable('stimulus', true)+jsPsych.timelineVariable('confidence', true)+"</p>";
+    return html;
+  },
+  // stimulus: jsPsych.timelineVariable('stimulus'),
   choices: [70, 74],
   on_finish: function(data){
     if (data.stim== "tone1") {
@@ -64,7 +64,7 @@ let instructions1 = {
 
 let dataSave = {
   type: "html-keyboard-response",
-  stimulus: "<p style='color:white;'>Data saving...</p>"+
+  stimulus: "<p style='color:black;'>Data saving...</p>"+
   '<div class="sk-cube-grid">'+
   '<div class="sk-cube sk-cube1"></div>'+
   '<div class="sk-cube sk-cube2"></div>'+
@@ -76,7 +76,7 @@ let dataSave = {
   '<div class="sk-cube sk-cube8"></div>'+
   '<div class="sk-cube sk-cube9"></div>'+
   '</div>'+
-  "<p style='color:white;'>Do not close this window until the text dissapears.</p>",
+  "<p style='color:black;'>Do not close this window until the text dissapears.</p>",
   choices: jsPsych.NO_KEYS,
   trial_duration: 5000,
   on_finish: function() {
