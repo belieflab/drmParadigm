@@ -1085,9 +1085,9 @@ for (let i=0; i<incongruentPrototypeTrial2.listA.length; i++) {
     incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial2.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial2.listA[i], drmTrial_type:"incongruentPrototype", word_position: "list"}, confidence: ""}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
-incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial17.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial17.prototype, drmTrial_type:"incongruentPrototype", word_position: "target", correct_response: "70"}, confidence: ""}); // pushes 8th item placeholder for prototype
-incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 7th item
+incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial17.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial17.prototype, drmTrial_type:"incongruentPrototype", word_position: "target", correct_response: "70"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
+incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
 for (let i=0; i<incongruentPrototypeTrial3.listA.length; i++) {
@@ -1095,7 +1095,7 @@ for (let i=0; i<incongruentPrototypeTrial3.listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
-incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial16.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial16.prototype, drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial16.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial16.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
@@ -1104,7 +1104,7 @@ for (let i=0; i<incongruentPrototypeTrial4.listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
-incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial15.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial15.prototype, drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial15.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial15.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
@@ -1113,7 +1113,7 @@ for (let i=0; i<incongruentPrototypeTrial5.listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
-incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial14.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial14.prototype, drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial14.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial14.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
@@ -1122,7 +1122,7 @@ for (let i=0; i<incongruentPrototypeTrial6.listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
-incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial13.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial13.prototype, drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial13.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial13.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
@@ -1131,7 +1131,7 @@ for (let i=0; i<incongruentPrototypeTrial7.listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
-incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial12.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial12.prototype, drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial12.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial12.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
@@ -1140,7 +1140,7 @@ for (let i=0; i<incongruentPrototypeTrial8.listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
-incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial11.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial11.prototype, drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial11.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial11.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
@@ -1149,7 +1149,7 @@ for (let i=0; i<incongruentPrototypeTrial9.listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
-incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial10.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial10.prototype, drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial10.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial10.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
@@ -1158,7 +1158,7 @@ for (let i=0; i<incongruentPrototypeTrial10.listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
-incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial9.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial9.prototype, drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial9.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial9.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
@@ -1167,7 +1167,7 @@ for (let i=0; i<incongruentPrototypeTrial11.listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
-incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial8.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial8.prototype, drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial8.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial8.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
@@ -1176,7 +1176,7 @@ for (let i=0; i<incongruentPrototypeTrial12.listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
-incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial7.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial7.prototype, drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial7.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial7.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
@@ -1185,7 +1185,7 @@ for (let i=0; i<incongruentPrototypeTrial13.listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
-incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial6.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial6.prototype, drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial6.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial6.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
@@ -1194,7 +1194,7 @@ for (let i=0; i<incongruentPrototypeTrial14.listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
-incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial5.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial5.prototype, drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial5.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial5.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
@@ -1203,7 +1203,7 @@ for (let i=0; i<incongruentPrototypeTrial15.listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
-incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial4.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial4.prototype, drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial4.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial4.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
@@ -1212,7 +1212,7 @@ for (let i=0; i<incongruentPrototypeTrial16.listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
-incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial3.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial3.prototype, drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial3.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial3.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
@@ -1221,7 +1221,7 @@ for (let i=0; i<incongruentPrototypeTrial17.listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
-incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial2.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial2.prototype, drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial2.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial2.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
@@ -1230,7 +1230,7 @@ for (let i=0; i<incongruentPrototypeTrial18.listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
-incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial1.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial1.prototype, drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial1.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial1.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 
@@ -1264,7 +1264,7 @@ for (let i=0; i<congruentPrototypeTrial1.listB.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
-congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial1.prototype, data: {test_part:"test", stim: congruentPrototypeTrial1.prototype, drmTrial_type: "congruentPrototype", word_position: "target", correct_response: "74"}, confidence: ""}); // pushes 8th item placeholder for prototype
+congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial1.prototype, data: {test_part:"test", stim: congruentPrototypeTrial1.prototype, drmTrial_type: "congruentPrototype", word_position: "target", correct_response: "74"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial2.listB.length; i++) {
@@ -1272,7 +1272,7 @@ for (let i=0; i<congruentPrototypeTrial2.listB.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
-congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial2.prototype, data: {test_part:"test", stim: congruentPrototypeTrial2.prototype, drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial2.prototype, data: {test_part:"test", stim: congruentPrototypeTrial2.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial3.listB.length; i++) {
@@ -1280,7 +1280,7 @@ for (let i=0; i<congruentPrototypeTrial3.listB.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
-congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial3.prototype, data: {test_part:"test", stim: congruentPrototypeTrial3.prototype, drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial3.prototype, data: {test_part:"test", stim: congruentPrototypeTrial3.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial4.listB.length; i++) {
@@ -1288,7 +1288,7 @@ for (let i=0; i<congruentPrototypeTrial4.listB.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
-congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial4.prototype, data: {test_part:"test", stim: congruentPrototypeTrial4.prototype, drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial4.prototype, data: {test_part:"test", stim: congruentPrototypeTrial4.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial5.listB.length; i++) {
@@ -1296,7 +1296,7 @@ for (let i=0; i<congruentPrototypeTrial5.listB.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
-congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial5.prototype, data: {test_part:"test", stim: congruentPrototypeTrial5.prototype, drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial5.prototype, data: {test_part:"test", stim: congruentPrototypeTrial5.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial6.listB.length; i++) {
@@ -1304,7 +1304,7 @@ for (let i=0; i<congruentPrototypeTrial6.listB.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
-congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial6.prototype, data: {test_part:"test", stim: congruentPrototypeTrial6.prototype, drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial6.prototype, data: {test_part:"test", stim: congruentPrototypeTrial6.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial7.listB.length; i++) {
@@ -1312,7 +1312,7 @@ for (let i=0; i<congruentPrototypeTrial7.listB.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
-congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial7.prototype, data: {test_part:"test", stim: congruentPrototypeTrial7.prototype, drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial7.prototype, data: {test_part:"test", stim: congruentPrototypeTrial7.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial8.listB.length; i++) {
@@ -1320,7 +1320,7 @@ for (let i=0; i<congruentPrototypeTrial8.listB.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
-congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial8.prototype, data: {test_part:"test", stim: congruentPrototypeTrial8.prototype, drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial8.prototype, data: {test_part:"test", stim: congruentPrototypeTrial8.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial9.listB.length; i++) {
@@ -1328,7 +1328,7 @@ for (let i=0; i<congruentPrototypeTrial9.listB.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
-congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial9.prototype, data: {test_part:"test", stim: congruentPrototypeTrial9.prototype, drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial9.prototype, data: {test_part:"test", stim: congruentPrototypeTrial9.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial10.listB.length; i++) {
@@ -1336,7 +1336,7 @@ for (let i=0; i<congruentPrototypeTrial10.listB.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
-congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial10.prototype, data: {test_part:"test", stim: congruentPrototypeTrial10.prototype, drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial10.prototype, data: {test_part:"test", stim: congruentPrototypeTrial10.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial11.listB.length; i++) {
@@ -1344,7 +1344,7 @@ for (let i=0; i<congruentPrototypeTrial11.listB.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
-congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial11.prototype, data: {test_part:"test", stim: congruentPrototypeTrial11.prototype, drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial11.prototype, data: {test_part:"test", stim: congruentPrototypeTrial11.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial12.listB.length; i++) {
@@ -1352,7 +1352,7 @@ for (let i=0; i<congruentPrototypeTrial12.listB.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
-congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial12.prototype, data: {test_part:"test", stim: congruentPrototypeTrial12.prototype, drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial12.prototype, data: {test_part:"test", stim: congruentPrototypeTrial12.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial13.listB.length; i++) {
@@ -1360,7 +1360,7 @@ for (let i=0; i<congruentPrototypeTrial13.listB.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
-congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial13.prototyp, data: {test_part:"test", stim: congruentPrototypeTrial13.prototype, drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial13.prototyp, data: {test_part:"test", stim: congruentPrototypeTrial13.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial14.listB.length; i++) {
@@ -1368,7 +1368,7 @@ for (let i=0; i<congruentPrototypeTrial14.listB.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
-congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial14.prototype, data: {test_part:"test", stim: congruentPrototypeTrial14.prototype, drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial14.prototype, data: {test_part:"test", stim: congruentPrototypeTrial14.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial15.listB.length; i++) {
@@ -1376,7 +1376,7 @@ for (let i=0; i<congruentPrototypeTrial15.listB.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
-congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial15.prototype, data: {test_part:"test", stim: congruentPrototypeTrial15.prototype, drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial15.prototype, data: {test_part:"test", stim: congruentPrototypeTrial15.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial16.listB.length; i++) {
@@ -1384,7 +1384,7 @@ for (let i=0; i<congruentPrototypeTrial16.listB.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
-congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial16.prototype, data: {test_part:"test", stim: congruentPrototypeTrial15.prototype, drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial16.prototype, data: {test_part:"test", stim: congruentPrototypeTrial15.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial17.listB.length; i++) {
@@ -1392,7 +1392,7 @@ for (let i=0; i<congruentPrototypeTrial17.listB.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
-congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial17.prototype, data: {test_part:"test", stim: congruentPrototypeTrial17.prototype, drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial17.prototype, data: {test_part:"test", stim: congruentPrototypeTrial17.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial18.listB.length; i++) {
@@ -1400,7 +1400,7 @@ for (let i=0; i<congruentPrototypeTrial18.listB.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
-congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial18.prototype, data: {test_part:"test", stim: congruentPrototypeTrial18.prototype, drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 8th item placeholder for prototype
+congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial18.prototype, data: {test_part:"test", stim: congruentPrototypeTrial18.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
 
 
