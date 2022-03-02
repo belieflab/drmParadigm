@@ -27,7 +27,26 @@ let test = {
   type: "html-keyboard-response",
   data: jsPsych.timelineVariable("data"),
   stimulus: jsPsych.timelineVariable('stimulus'),
-  choices: [70, 74]
+  choices: [70, 74], 
+  on_finish: function(data){
+    if (data.stim== "tone1") {
+      data.accuracy_test= "" ;
+     } else if (data.stim=="tone2") {
+      data.accuracy_test= "" ;
+     } else if (data.word_position=="list") {
+      data.accuracy_test= "" ;
+    //   (data.key_press==null){
+    //    data.accuracy_test = null;
+    
+    } else if (data.key_press == data.correct_response) {
+       console.log('correct');
+       data.accuracy_test = true;
+     } else if (data.key_press != data.correct_response) {
+     console.log('incorrect');
+       data.accuracy_test = false;
+     };
+    }
+
 };
 
 
