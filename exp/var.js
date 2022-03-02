@@ -1,6 +1,17 @@
 // starts counting of trials at 1 to display in output file as trial
 let trialIterator = 1;
 
+
+// progress bar container
+let progressBar = '<div id="counter" class="w3-container" style="color:black"><div class="w3-light-grey"><div class="w3-grey" id="keyBar" style="height:24px;width:0%;"></div></div><br><div>';
+let fillUp = '<p id="fillUp" style="color:black;"></p>';
+
+// feedback contrainer
+let feedbackGenerator = '<p id="feedbackGenerator" style="color:black;"></p>';
+
+// set the time remaining notification for participant
+let timeRemaining = '<p id="timeRemaining" style="text-align:center; color:black;"></p>';
+
 // define all language for experiment
 
 // define all variables in listNumber1 : Anger

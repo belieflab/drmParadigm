@@ -25,6 +25,7 @@ let instructions0 = {
 
 let test = {
   type: "html-keyboard-response",
+  prompt: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
   data: jsPsych.timelineVariable("data"),
   stimulus: jsPsych.timelineVariable('stimulus'),
   choices: [70, 74], 
@@ -45,7 +46,30 @@ let test = {
      console.log('incorrect');
        data.accuracy_test = false;
      };
-    }
+    },
+  on_load: function buttonPress(){
+    barFill = document.getElementById("fillUp");
+    barFill.innerHTML = 'Hold response key to indicate confidence level.';
+    document.getElementById("tapTap").focus(); //gives focus to the text box
+    $(document).ready(function(){
+        $("#tapTap").keypress(function(event){
+            var keycode = event.which;
+            if (barFill.innerHTML = 'Hold response key to indicate confidence level.') { // reused from eefrt, just needed a placeholder here
+              if (keycode == 48) {
+                document.getElementById("counter").setAttribute("onkeydown", "return moveConfidence()"); // event.charCode allows us to set specific keys to use
+                responseKey = 48;
+                // console.log(responseKey);
+              } else if (keycode == 49) {
+                document.getElementById("counter").setAttribute("onkeydown", "return moveConfidence()"); // event.charCode allows us to set specific keys to use
+                responseKey = 49;
+                // console.log(responseKey);
+              } else { // all other keys ignored
+                document.getElementById("counter").setAttribute("onkeydown", "return false"); // event.charCode allows us to set specific keys to use 
+              }
+          }
+        });
+    });
+  }
 
 };
 
