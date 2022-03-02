@@ -17,6 +17,7 @@
 
     <link href="jsPsych/css/jspsych.css" rel="stylesheet" type="text/css"></link>
     <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <link rel="stylesheet" type="text/css" href="css/w3.css"> <!-- styling for w3c progress bars -->
   </head>
   <body id='unload' onbeforeunload="return areYouSure()">  
     <?php

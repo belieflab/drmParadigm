@@ -3,9 +3,10 @@
 
 
 let joshTest= {
-    timeline:[test], 
+    timeline:[test],
     // defines which array to draw stimuli from 
     timeline_variables: interleavedFinalStim,
+    // timeline_variables: incongruentPrototypeTrials,
     choices: [32],
 };
 

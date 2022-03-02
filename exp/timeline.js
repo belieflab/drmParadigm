@@ -25,9 +25,14 @@ let instructions0 = {
 
 let test = {
   type: "html-keyboard-response",
+  // prompt: jsPsych.timelineVariable("confidence"),
   data: jsPsych.timelineVariable("data"),
+  // stimulus: function(){
+  //   var html="<p>"+jsPsych.timelineVariable('stimulus', true)+jsPsych.timelineVariable('confidence', true)+"</p>";
+  //   return html;
+  // },
   stimulus: jsPsych.timelineVariable('stimulus'),
-  choices: [70, 74], 
+  choices: [70, 74],
   on_finish: function(data){
     if (data.stim== "tone1") {
       data.accuracy_test= "" ;
