@@ -1082,7 +1082,7 @@ incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", sti
 
 // pushes 6 items from listA
 for (let i=0; i<incongruentPrototypeTrial2.listA.length; i++) {
-    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial2.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial2.listA[i], drmTrial_type:"incongruentPrototype", word_position: "list"}, confidence: ""}); //creating csv file
+    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial2.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial2.listA[i], drmTrial_type:"incongruentPrototype", word_position: "list"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 7th item
@@ -1091,147 +1091,147 @@ incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", sti
 
 // pushes 6 items from listA
 for (let i=0; i<incongruentPrototypeTrial3.listA.length; i++) {
-    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial3.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial3.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: ""}); //creating csv file
+    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial3.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial3.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
+incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 7th item
 incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial16.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial16.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
 for (let i=0; i<incongruentPrototypeTrial4.listA.length; i++) {
-    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial4.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial4.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: ""}); //creating csv file
+    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial4.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial4.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
+incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 7th item
 incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial15.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial15.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
 for (let i=0; i<incongruentPrototypeTrial5.listA.length; i++) {
-    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial5.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial5.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: ""}); //creating csv file
+    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial5.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial5.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
+incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 7th item
 incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial14.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial14.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
 for (let i=0; i<incongruentPrototypeTrial6.listA.length; i++) {
-    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial6.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial6.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: ""}); //creating csv file
+    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial6.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial6.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
+incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 7th item
 incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial13.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial13.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
 for (let i=0; i<incongruentPrototypeTrial7.listA.length; i++) {
-    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial7.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial7.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: ""}); //creating csv file
+    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial7.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial7.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
+incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 7th item
 incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial12.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial12.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
 for (let i=0; i<incongruentPrototypeTrial8.listA.length; i++) {
-    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial8.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial8.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: ""}); //creating csv file
+    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial8.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial8.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
+incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 7th item
 incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial11.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial11.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
 for (let i=0; i<incongruentPrototypeTrial9.listA.length; i++) {
-    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial9.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial9.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: ""}); //creating csv file
+    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial9.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial9.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
+incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 7th item
 incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial10.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial10.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
 for (let i=0; i<incongruentPrototypeTrial10.listA.length; i++) {
-    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial10.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial10.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: ""}); //creating csv file
+    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial10.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial10.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
+incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 7th item
 incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial9.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial9.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
 for (let i=0; i<incongruentPrototypeTrial11.listA.length; i++) {
-    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial11.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial11.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: ""}); //creating csv file
+    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial11.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial11.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
+incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 7th item
 incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial8.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial8.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
 for (let i=0; i<incongruentPrototypeTrial12.listA.length; i++) {
-    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial12.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial12.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: ""}); //creating csv file
+    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial12.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial12.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
+incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 7th item
 incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial7.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial7.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
 for (let i=0; i<incongruentPrototypeTrial13.listA.length; i++) {
-    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial13.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial13.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: ""}); //creating csv file
+    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial13.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial13.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
+incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 7th item
 incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial6.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial6.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
 for (let i=0; i<incongruentPrototypeTrial14.listA.length; i++) {
-    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial14.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial14.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: ""}); //creating csv file
+    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial14.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial14.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
+incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 7th item
 incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial5.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial5.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
 for (let i=0; i<incongruentPrototypeTrial15.listA.length; i++) {
-    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial15.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial15.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: ""}); //creating csv file
+    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial15.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial15.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
+incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 7th item
 incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial4.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial4.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
 for (let i=0; i<incongruentPrototypeTrial16.listA.length; i++) {
-    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial16.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial16.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: ""}); //creating csv file
+    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial16.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial16.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
+incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 7th item
 incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial3.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial3.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
 for (let i=0; i<incongruentPrototypeTrial17.listA.length; i++) {
-    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial17.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial17.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: ""}); //creating csv file
+    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial17.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial17.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
+incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 7th item
 incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial2.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial2.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from listA
 for (let i=0; i<incongruentPrototypeTrial18.listA.length; i++) {
-    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial18.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial18.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: ""}); //creating csv file
+    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial18.listA[i], data: {test_part:"test", stim: incongruentPrototypeTrial18.listA[i], drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 7th item
+incongruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 7th item
 incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial1.prototype, data: {test_part:"test", stim: incongruentPrototypeTrial1.prototype, drmTrial_type:"incongruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type:"incongruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 
 
@@ -1260,148 +1260,148 @@ let congruentPrototypeTrial18 = congruentPrototype[17];
 let congruentPrototypeTrials = [];
 // pushes 6 items from listB
 for (let i=0; i<congruentPrototypeTrial1.listB.length; i++) {
-    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial1.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial1.listB[i], drmTrial_type: "congruentPrototype", word_position: "list"}, confidence: ""}); //creating csv file
+    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial1.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial1.listB[i], drmTrial_type: "congruentPrototype", word_position: "list"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
+congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 7th item
 congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial1.prototype, data: {test_part:"test", stim: congruentPrototypeTrial1.prototype, drmTrial_type: "congruentPrototype", word_position: "target", correct_response: "74"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial2.listB.length; i++) {
-    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial2.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial2.listB[i], drmTrial_type: "congruentPrototype"}, confidence: ""}); //creating csv file
+    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial2.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial2.listB[i], drmTrial_type: "congruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
+congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 7th item
 congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial2.prototype, data: {test_part:"test", stim: congruentPrototypeTrial2.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial3.listB.length; i++) {
-    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial3.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial3.listB[i], drmTrial_type: "congruentPrototype"}, confidence: ""}); //creating csv file
+    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial3.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial3.listB[i], drmTrial_type: "congruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
+congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 7th item
 congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial3.prototype, data: {test_part:"test", stim: congruentPrototypeTrial3.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial4.listB.length; i++) {
-    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial4.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial4.listB[i], drmTrial_type: "congruentPrototype"}, confidence: ""}); //creating csv file
+    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial4.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial4.listB[i], drmTrial_type: "congruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
+congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 7th item
 congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial4.prototype, data: {test_part:"test", stim: congruentPrototypeTrial4.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial5.listB.length; i++) {
-    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial5.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial5.listB[i], drmTrial_type: "congruentPrototype"}, confidence: ""}); //creating csv file
+    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial5.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial5.listB[i], drmTrial_type: "congruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
+congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 7th item
 congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial5.prototype, data: {test_part:"test", stim: congruentPrototypeTrial5.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial6.listB.length; i++) {
-    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial6.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial6.listB[i], drmTrial_type: "congruentPrototype"}, confidence: ""}); //creating csv file
+    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial6.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial6.listB[i], drmTrial_type: "congruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
+congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 7th item
 congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial6.prototype, data: {test_part:"test", stim: congruentPrototypeTrial6.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial7.listB.length; i++) {
-    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial7.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial7.listB[i], drmTrial_type: "congruentPrototype"}, confidence: ""}); //creating csv file
+    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial7.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial7.listB[i], drmTrial_type: "congruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
+congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 7th item
 congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial7.prototype, data: {test_part:"test", stim: congruentPrototypeTrial7.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial8.listB.length; i++) {
-    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial8.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial8.listB[i], drmTrial_type: "congruentPrototype"}, confidence: ""}); //creating csv file
+    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial8.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial8.listB[i], drmTrial_type: "congruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
+congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 7th item
 congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial8.prototype, data: {test_part:"test", stim: congruentPrototypeTrial8.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial9.listB.length; i++) {
-    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial9.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial9.listB[i], drmTrial_type: "congruentPrototype"}, confidence: ""}); //creating csv file
+    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial9.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial9.listB[i], drmTrial_type: "congruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
+congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 7th item
 congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial9.prototype, data: {test_part:"test", stim: congruentPrototypeTrial9.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial10.listB.length; i++) {
-    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial10.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial10.listB[i], drmTrial_type: "congruentPrototype"}, confidence: ""}); //creating csv file
+    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial10.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial10.listB[i], drmTrial_type: "congruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
+congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 7th item
 congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial10.prototype, data: {test_part:"test", stim: congruentPrototypeTrial10.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial11.listB.length; i++) {
-    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial11.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial11.listB[i], drmTrial_type: "congruentPrototype"}, confidence: ""}); //creating csv file
+    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial11.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial11.listB[i], drmTrial_type: "congruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
+congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 7th item
 congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial11.prototype, data: {test_part:"test", stim: congruentPrototypeTrial11.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial12.listB.length; i++) {
-    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial12.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial12.listB[i], drmTrial_type: "congruentPrototype"}, confidence: ""}); //creating csv file
+    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial12.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial12.listB[i], drmTrial_type: "congruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
+congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 7th item
 congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial12.prototype, data: {test_part:"test", stim: congruentPrototypeTrial12.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial13.listB.length; i++) {
-    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial13.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial13.listB[i], drmTrial_type: "congruentPrototype"}, confidence: ""}); //creating csv file
+    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial13.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial13.listB[i], drmTrial_type: "congruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
+congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 7th item
 congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial13.prototyp, data: {test_part:"test", stim: congruentPrototypeTrial13.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial14.listB.length; i++) {
-    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial14.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial14.listB[i], drmTrial_type: "congruentPrototype"}, confidence: ""}); //creating csv file
+    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial14.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial14.listB[i], drmTrial_type: "congruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
+congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 7th item
 congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial14.prototype, data: {test_part:"test", stim: congruentPrototypeTrial14.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial15.listB.length; i++) {
-    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial15.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial15.listB[i], drmTrial_type: "congruentPrototype"}, confidence: ""}); //creating csv file
+    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial15.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial15.listB[i], drmTrial_type: "congruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
+congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 7th item
 congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial15.prototype, data: {test_part:"test", stim: congruentPrototypeTrial15.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial16.listB.length; i++) {
-    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial16.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial16.listB[i], drmTrial_type: "congruentPrototype"}, confidence: ""}); //creating csv file
+    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial16.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial16.listB[i], drmTrial_type: "congruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
+congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 7th item
 congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial16.prototype, data: {test_part:"test", stim: congruentPrototypeTrial15.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial17.listB.length; i++) {
-    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial17.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial17.listB[i], drmTrial_type: "congruentPrototype"}, confidence: ""}); //creating csv file
+    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial17.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial17.listB[i], drmTrial_type: "congruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
+congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 7th item
 congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial17.prototype, data: {test_part:"test", stim: congruentPrototypeTrial17.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial18.listB.length; i++) {
-    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial18.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial18.listB[i], drmTrial_type: "congruentPrototype"}, confidence: ""}); //creating csv file
+    congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial18.listB[i], data: {test_part:"test", stim: congruentPrototypeTrial18.listB[i], drmTrial_type: "congruentPrototype"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 7th item
+congruentPrototypeTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 7th item
 congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial18.prototype, data: {test_part:"test", stim: congruentPrototypeTrial18.prototype, drmTrial_type: "congruentPrototype"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
-congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentPrototypeTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 
 /// trying to replicate structure from incongruent and congruent prototype trials to create incongruent highest associates 
@@ -1429,170 +1429,170 @@ let incongruentHighestAssociateTrial18 = [incongruentHighestAssociate[0][17], in
 let incongruentHighestAssociateTrials = [];
 // pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial1 array)
 for (let i=0; i<incongruentHighestAssociateTrial1[0].listA.length; i++) {
-    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial1[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial1[0].listA[i], drmTrial_type: "incongruentHighestAssociate", word_position: "list"}, confidence: ""}); //creating csv file
+    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial1[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial1[0].listA[i], drmTrial_type: "incongruentHighestAssociate", word_position: "list"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 7th item
-incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial1[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial3[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate", word_position: "target", correct_response: "70"}, confidence: ""}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial1's 2nd list)
-incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 7th item
+incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial1[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial3[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate", word_position: "target", correct_response: "70"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial1's 2nd list)
+incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 
 // pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial2 array)
 for (let i=0; i<incongruentHighestAssociateTrial2[0].listA.length; i++) {
-    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial2[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial2[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); //creating csv file
+    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial2[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial2[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 7th item
-incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial2[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial2[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial2's 2nd list)
-incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 7th item
+incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial2[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial2[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial2's 2nd list)
+incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 
 // pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i=0; i<incongruentHighestAssociateTrial3[0].listA.length; i++) {
-    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial3[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial3[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); //creating csv file
+    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial3[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial3[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 7th item
-incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial3[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial3[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: ""}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
-incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 7th item
+incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial3[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial3[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 
 // pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i=0; i<incongruentHighestAssociateTrial4[0].listA.length; i++) {
-    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial4[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial4[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); //creating csv file
+    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial4[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial4[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 7th item
-incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial4[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial4[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: ""}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
-incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 7th item
+incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial4[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial4[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i=0; i<incongruentHighestAssociateTrial5[0].listA.length; i++) {
-    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial5[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial5[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); //creating csv file
+    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial5[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial5[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 7th item
-incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial5[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial5[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: ""}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
-incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 7th item
+incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial5[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial5[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 
 // pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i=0; i<incongruentHighestAssociateTrial6[0].listA.length; i++) {
-    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial6[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial6[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); //creating csv file
+    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial6[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial6[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 7th item
-incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial6[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial6[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: ""}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
-incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 7th item
+incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial6[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial6[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i=0; i<incongruentHighestAssociateTrial7[0].listA.length; i++) {
-    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial7[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial7[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); //creating csv file
+    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial7[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial7[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 7th item
-incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial7[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial7[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: ""}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
-incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 7th item
+incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial7[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial7[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i=0; i<incongruentHighestAssociateTrial8[0].listA.length; i++) {
-    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial8[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial8[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); //creating csv file
+    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial8[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial8[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 7th item
-incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial8[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial8[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: ""}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
-incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 7th item
+incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial8[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial8[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i=0; i<incongruentHighestAssociateTrial9[0].listA.length; i++) {
-    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial9[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial9[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); //creating csv file
+    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial9[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial9[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 7th item
-incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial9[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial9[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: ""}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
-incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 7th item
+incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial9[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial9[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i=0; i<incongruentHighestAssociateTrial10[0].listA.length; i++) {
-    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial10[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial10[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); //creating csv file
+    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial10[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial10[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 7th item
-incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial10[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial10[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: ""}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
-incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 7th item
+incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial10[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial10[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 
 // pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i=0; i<incongruentHighestAssociateTrial11[0].listA.length; i++) {
-    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial11[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial11[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); //creating csv file
+    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial11[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial11[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 7th item
-incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial11[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial11[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: ""}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
-incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 7th item
+incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial11[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial11[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i=0; i<incongruentHighestAssociateTrial12[0].listA.length; i++) {
-    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial12[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial12[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); //creating csv file
+    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial12[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial12[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 7th item
-incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial12[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial12[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: ""}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
-incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 7th item
+incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial12[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial12[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i=0; i<incongruentHighestAssociateTrial13[0].listA.length; i++) {
-    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial13[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial13[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); //creating csv file
+    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial13[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial13[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 7th item
-incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial13[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial13[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: ""}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
-incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 7th item
+incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial13[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial13[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i=0; i<incongruentHighestAssociateTrial14[0].listA.length; i++) {
-    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial14[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial14[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); //creating csv file
+    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial14[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial14[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 7th item
-incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial14[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial14[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: ""}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
-incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 7th item
+incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial14[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial14[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i=0; i<incongruentHighestAssociateTrial15[0].listA.length; i++) {
-    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial15[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial15[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); //creating csv file
+    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial15[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial15[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 7th item
-incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial15[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial15[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: ""}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
-incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 7th item
+incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial15[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial15[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i=0; i<incongruentHighestAssociateTrial16[0].listA.length; i++) {
-    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial16[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial16[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); //creating csv file
+    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial16[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial16[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 7th item
-incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial16[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial16[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: ""}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
-incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 7th item
+incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial16[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial16[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i=0; i<incongruentHighestAssociateTrial17[0].listA.length; i++) {
-    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial17[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial17[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); //creating csv file
+    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial17[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial17[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 7th item
-incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial17[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial17[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: ""}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
-incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 7th item
+incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial17[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial17[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i=0; i<incongruentHighestAssociateTrial18[0].listA.length; i++) {
-    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial18[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial18[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); //creating csv file
+    incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial18[0].listA[i], data: {test_part:"test", stim: incongruentHighestAssociateTrial18[0].listA[i], drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 7th item
-incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial18[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial18[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: ""}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
-incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+incongruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 7th item
+incongruentHighestAssociateTrials.push({stimulus: incongruentHighestAssociateTrial18[1].highestAssociates[0], data: {test_part:"test", stim:incongruentHighestAssociateTrial18[1].highestAssociates[0], drmTrial_type: "incongruentHighestAssociate" }, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+incongruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "incongruentHighestAssociate"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 
 // trying to create structure for congruent highest associate trials
@@ -1634,368 +1634,368 @@ let congruentHighestAssociateTrials = [];
 
 //this section shows how to make  trial where the highest assocaite is in the 2nd word position 
 for (let i=0; i<1; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial1.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial1.listB[i], drmTrial_type: "congruentHighestAssociate_2", word_position: "list"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial1.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial1.listB[i], drmTrial_type: "congruentHighestAssociate_2", word_position: "list"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial1.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial1.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2", word_position: "list"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial1.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial1.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2", word_position: "list"}, confidence: 'x'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 
 //add in remaining list b items 
 for (let i=2; i<congruentHighestAssociateTrial1.listB.length; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial1.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial1.listB[i], drmTrial_type:"congruentHighestAssociate_2", word_position: "list"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial1.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial1.listB[i], drmTrial_type:"congruentHighestAssociate_2", word_position: "list"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
-congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentHighestAssociate_2"}, confidence: ""}); // pushes 7th item
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial1.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial1.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2", word_position: "target", correct_response: "74"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
-congruentHighestAssociateTrials.push({stimulus: "TONE2",  data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentHighestAssociate_2"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentHighestAssociate_2"}, confidence: 'x'}); // pushes 7th item
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial1.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial1.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2", word_position: "target", correct_response: "74"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: "TONE2",  data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentHighestAssociate_2"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 
 //this section shows how to make  trial where the highest assocaite is in the 2nd word position 
 for (let i=0; i<1; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial2.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial2.listB[i], drmTrial_type: "congruentHighestAssociate_2"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial2.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial2.listB[i], drmTrial_type: "congruentHighestAssociate_2"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial2.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial2.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial2.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial2.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 
 //add in remaining list b items 
 for (let i=2; i<congruentHighestAssociateTrial2.listB.length; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial2.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial2.listB[i], drmTrial_type:"congruentHighestAssociate_2"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial2.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial2.listB[i], drmTrial_type:"congruentHighestAssociate_2"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
-congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentHighestAssociate_2"}, confidence: ""}); // pushes 7th item
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial2.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial2.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
-congruentHighestAssociateTrials.push({stimulus: "TONE2",  data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentHighestAssociate_2"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentHighestAssociate_2"}, confidence: 'x'}); // pushes 7th item
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial2.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial2.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: "TONE2",  data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentHighestAssociate_2"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 
 //this section shows how to make  trial where the highest assocaite is in the 2nd word position 
 for (let i=0; i<1; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial3.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial3.listB[i], drmTrial_type: "congruentHighestAssociate_2"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial3.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial3.listB[i], drmTrial_type: "congruentHighestAssociate_2"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial3.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial3.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial3.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial3.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 
 //add in remaining list b items 
 for (let i=2; i<congruentHighestAssociateTrial3.listB.length; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial3.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial3.listB[i], drmTrial_type:"congruentHighestAssociate_2"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial3.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial3.listB[i], drmTrial_type:"congruentHighestAssociate_2"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
-congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentHighestAssociate_2"}, confidence: ""}); // pushes 7th item
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial3.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial3.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
-congruentHighestAssociateTrials.push({stimulus: "TONE2",  data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentHighestAssociate_2"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentHighestAssociate_2"}, confidence: 'x'}); // pushes 7th item
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial3.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial3.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: "TONE2",  data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentHighestAssociate_2"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 
 //this section shows how to make  trial where the highest assocaite is in the 2nd word position 
 for (let i=0; i<1; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial4.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial4.listB[i], drmTrial_type: "congruentHighestAssociate_2"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial4.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial4.listB[i], drmTrial_type: "congruentHighestAssociate_2"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial4.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial4.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial4.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial4.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 
 //add in remaining list b items 
 for (let i=2; i<congruentHighestAssociateTrial4.listB.length; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial4.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial4.listB[i], drmTrial_type:"congruentHighestAssociate_2"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial4.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial4.listB[i], drmTrial_type:"congruentHighestAssociate_2"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
-congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentHighestAssociate_2"}, confidence: ""}); // pushes 7th item
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial4.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial4.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
-congruentHighestAssociateTrials.push({stimulus: "TONE2",  data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentHighestAssociate_2"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentHighestAssociate_2"}, confidence: 'x'}); // pushes 7th item
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial4.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial4.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: "TONE2",  data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentHighestAssociate_2"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 
 //this section shows how to make  trial where the highest assocaite is in the 2nd word position 
 for (let i=0; i<1; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial5.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial5.listB[i], drmTrial_type: "congruentHighestAssociate_2"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial5.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial5.listB[i], drmTrial_type: "congruentHighestAssociate_2"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial5.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial5.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial5.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial5.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2"}, confidence: 'x'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 
 //add in remaining list b items 
 for (let i=2; i<congruentHighestAssociateTrial5.listB.length; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial5.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial5.listB[i], drmTrial_type:"congruentHighestAssociate_2"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial5.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial5.listB[i], drmTrial_type:"congruentHighestAssociate_2"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
-congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentHighestAssociate_2"}, confidence: ""}); // pushes 7th item
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial5.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial5.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
-congruentHighestAssociateTrials.push({stimulus: "TONE2",  data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentHighestAssociate_2"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim: "tone1", drmTrial_type: "congruentHighestAssociate_2"}, confidence: 'x'}); // pushes 7th item
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial5.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial5.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: "TONE2",  data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentHighestAssociate_2"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 
 // how to create trial for highest associate in 3rd position
 for (let i=0; i<2; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial6.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial6.listB[i], drmTrial_type:"congruentHighestAssociate_3", word_position: "list"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial6.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial6.listB[i], drmTrial_type:"congruentHighestAssociate_3", word_position: "list"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial6.highestAssociates[0],  data: {test_part:"test", stim: congruentHighestAssociateTrial6.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_3", word_position: "list"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial6.highestAssociates[0],  data: {test_part:"test", stim: congruentHighestAssociateTrial6.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_3", word_position: "list"}, confidence: 'x'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 //add in remaining list b items 
 for (let i=3; i<congruentHighestAssociateTrial6.listB.length; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial6.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial6.listB[i], drmTrial_type: "congruentHighestAssociate_3", word_position: "list"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial6.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial6.listB[i], drmTrial_type: "congruentHighestAssociate_3", word_position: "list"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
-congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim:"tone1", drmTrial_type: "congruentHighestAssociate_3"}, confidence: ""}); // pushes 7th item
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial6.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial6.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_3", word_position: "target", correct_response: "74"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
-congruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentHighestAssociate_3"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim:"tone1", drmTrial_type: "congruentHighestAssociate_3"}, confidence: 'x'}); // pushes 7th item
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial6.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial6.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_3", word_position: "target", correct_response: "74"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentHighestAssociate_3"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 
 // how to create trial for highest associate in 3rd position
 for (let i=0; i<2; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial7.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial7.listB[i], drmTrial_type:"congruentHighestAssociate_3"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial7.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial7.listB[i], drmTrial_type:"congruentHighestAssociate_3"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial7.highestAssociates[0],  data: {test_part:"test", stim: congruentHighestAssociateTrial7.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_3"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial7.highestAssociates[0],  data: {test_part:"test", stim: congruentHighestAssociateTrial7.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_3"}, confidence: 'x'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 //add in remaining list b items 
 for (let i=3; i<congruentHighestAssociateTrial7.listB.length; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial7.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial7.listB[i], drmTrial_type: "congruentHighestAssociate_3"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial7.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial7.listB[i], drmTrial_type: "congruentHighestAssociate_3"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
-congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim:"tone1", drmTrial_type: "congruentHighestAssociate_3"}, confidence: ""}); // pushes 7th item
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial7.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial7.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_3"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
-congruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentHighestAssociate_3"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim:"tone1", drmTrial_type: "congruentHighestAssociate_3"}, confidence: 'x'}); // pushes 7th item
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial7.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial7.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_3"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentHighestAssociate_3"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 
 // how to create trial for highest associate in 3rd position
 for (let i=0; i<2; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial8.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial8.listB[i], drmTrial_type:"congruentHighestAssociate_3"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial8.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial8.listB[i], drmTrial_type:"congruentHighestAssociate_3"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial8.highestAssociates[0],  data: {test_part:"test", stim: congruentHighestAssociateTrial8.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_3"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial8.highestAssociates[0],  data: {test_part:"test", stim: congruentHighestAssociateTrial8.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_3"}, confidence: 'x'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 //add in remaining list b items 
 for (let i=3; i<congruentHighestAssociateTrial8.listB.length; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial8.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial8.listB[i], drmTrial_type: "congruentHighestAssociate_3"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial8.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial8.listB[i], drmTrial_type: "congruentHighestAssociate_3"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
-congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim:"tone1", drmTrial_type: "congruentHighestAssociate_3"}, confidence: ""}); // pushes 7th item
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial8.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial8.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_3"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
-congruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentHighestAssociate_3"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim:"tone1", drmTrial_type: "congruentHighestAssociate_3"}, confidence: 'x'}); // pushes 7th item
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial8.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial8.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_3"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentHighestAssociate_3"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 
 // how to create trial for highest associate in 3rd position
 for (let i=0; i<2; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial9.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial9.listB[i], drmTrial_type:"congruentHighestAssociate_3"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial9.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial9.listB[i], drmTrial_type:"congruentHighestAssociate_3"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial9.highestAssociates[0],  data: {test_part:"test", stim: congruentHighestAssociateTrial9.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_3"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial9.highestAssociates[0],  data: {test_part:"test", stim: congruentHighestAssociateTrial9.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_3"}, confidence: 'x'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 //add in remaining list b items 
 for (let i=3; i<congruentHighestAssociateTrial9.listB.length; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial9.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial9.listB[i], drmTrial_type: "congruentHighestAssociate_3"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial9.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial9.listB[i], drmTrial_type: "congruentHighestAssociate_3"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
-congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim:"tone1", drmTrial_type: "congruentHighestAssociate_3"}, confidence: ""}); // pushes 7th item
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial9.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial9.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_3"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
-congruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentHighestAssociate_3"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim:"tone1", drmTrial_type: "congruentHighestAssociate_3"}, confidence: 'x'}); // pushes 7th item
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial9.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial9.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_3"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentHighestAssociate_3"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 
 // how to create trial for highest associate in 4th position
 for (let i=0; i<3; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial10.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial10.listB[i], drmTrial_type: "congruentHighestAssociate_4", word_position: "list"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial10.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial10.listB[i], drmTrial_type: "congruentHighestAssociate_4", word_position: "list"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial10.highestAssociates[0],  data: {test_part:"test", stim: congruentHighestAssociateTrial10.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_4", word_position: "list"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial10.highestAssociates[0],  data: {test_part:"test", stim: congruentHighestAssociateTrial10.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_4", word_position: "list"}, confidence: 'x'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 
 //add in remaining list b items 
 for (let i=4; i<congruentHighestAssociateTrial10.listB.length; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial10.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial10.listB[i], drmTrial_type:"congruentHighestAssociate_4", word_position: "list"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial10.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial10.listB[i], drmTrial_type:"congruentHighestAssociate_4", word_position: "list"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
-congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim:"tone1", drmTrial_type: "congruentHighestAssociate_4"}, confidence: ""}); // pushes 7th item
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial10.highestAssociates[0],  data: {test_part:"test", stim: congruentHighestAssociateTrial10.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_4", word_position: "target", correct_response: "74"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
-congruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim:"tone2", drmTrial_type: "congruentHighestAssociate_4"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim:"tone1", drmTrial_type: "congruentHighestAssociate_4"}, confidence: 'x'}); // pushes 7th item
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial10.highestAssociates[0],  data: {test_part:"test", stim: congruentHighestAssociateTrial10.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_4", word_position: "target", correct_response: "74"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim:"tone2", drmTrial_type: "congruentHighestAssociate_4"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // how to create trial for highest associate in 4th position
 for (let i=0; i<3; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial11.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial11.listB[i], drmTrial_type: "congruentHighestAssociate_4"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial11.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial11.listB[i], drmTrial_type: "congruentHighestAssociate_4"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial11.highestAssociates[0],  data: {test_part:"test", stim: congruentHighestAssociateTrial11.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_4"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial11.highestAssociates[0],  data: {test_part:"test", stim: congruentHighestAssociateTrial11.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_4"}, confidence: 'x'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 
 //add in remaining list b items 
 for (let i=4; i<congruentHighestAssociateTrial11.listB.length; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial11.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial11.listB[i], drmTrial_type: "congruentHighestAssociate_4"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial11.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial11.listB[i], drmTrial_type: "congruentHighestAssociate_4"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
-congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim:"tone1", drmTrial_type: "congruentHighestAssociate_4"}, confidence: ""}); // pushes 7th item
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial11.highestAssociates[0],  data: {test_part:"test", stim: congruentHighestAssociateTrial11.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_4"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
-congruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim:"tone2", drmTrial_type: "congruentHighestAssociate_4"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim:"tone1", drmTrial_type: "congruentHighestAssociate_4"}, confidence: 'x'}); // pushes 7th item
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial11.highestAssociates[0],  data: {test_part:"test", stim: congruentHighestAssociateTrial11.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_4"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim:"tone2", drmTrial_type: "congruentHighestAssociate_4"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // how to create trial for highest associate in 4th position
 for (let i=0; i<3; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial12.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial12.listB[i], drmTrial_type: "congruentHighestAssociate_4"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial12.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial12.listB[i], drmTrial_type: "congruentHighestAssociate_4"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial12.highestAssociates[0],  data: {test_part:"test", stim: congruentHighestAssociateTrial12.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_4"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial12.highestAssociates[0],  data: {test_part:"test", stim: congruentHighestAssociateTrial12.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_4"}, confidence: 'x'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 
 //add in remaining list b items 
 for (let i=4; i<congruentHighestAssociateTrial12.listB.length; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial12.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial12.listB[i], drmTrial_type: "congruentHighestAssociate_4"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial12.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial12.listB[i], drmTrial_type: "congruentHighestAssociate_4"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
-congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim:"tone1", drmTrial_type: "congruentHighestAssociate_4"}, confidence: ""}); // pushes 7th item
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial12.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial12.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_4"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
-congruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim:"tone2", drmTrial_type: "congruentHighestAssociate_4"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim:"tone1", drmTrial_type: "congruentHighestAssociate_4"}, confidence: 'x'}); // pushes 7th item
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial12.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial12.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_4"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim:"tone2", drmTrial_type: "congruentHighestAssociate_4"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // how to create trial for highest associate in 4th position
 for (let i=0; i<3; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial13.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial13.listB[i], drmTrial_type: "congruentHighestAssociate_4"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial13.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial13.listB[i], drmTrial_type: "congruentHighestAssociate_4"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial13.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial13.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_4"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial13.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial13.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_4"}, confidence: 'x'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 
 //add in remaining list b items 
 for (let i=4; i<congruentHighestAssociateTrial13.listB.length; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial13.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial13.listB[i], drmTrial_type: "congruentHighestAssociate_4"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial13.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial13.listB[i], drmTrial_type: "congruentHighestAssociate_4"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
-congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim:"tone1", drmTrial_type: "congruentHighestAssociate_4"}, confidence: ""}); // pushes 7th item
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial13.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial13.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_4"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
-congruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim:"tone2", drmTrial_type: "congruentHighestAssociate_4"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim:"tone1", drmTrial_type: "congruentHighestAssociate_4"}, confidence: 'x'}); // pushes 7th item
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial13.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial13.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_4"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim:"tone2", drmTrial_type: "congruentHighestAssociate_4"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // how to create congruent highest associate trials with highests associate in 5th position
 for (let i=0; i<4; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial14.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial14.listB[i], drmTrial_type: "congruentHighestAssociate_5", word_position: "list"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial14.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial14.listB[i], drmTrial_type: "congruentHighestAssociate_5", word_position: "list"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial14.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial14.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5", word_position: "list"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial14.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial14.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5", word_position: "list"}, confidence: 'x'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 
 //add in remaining list b items 
 for (let i=5; i<congruentHighestAssociateTrial14.listB.length; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial14.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial14.listB[i], drmTrial_type: "congruentHighestAssociate_5", word_position: "list"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial14.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial14.listB[i], drmTrial_type: "congruentHighestAssociate_5", word_position: "list"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
-congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim:"tone1", drmTrial_type: "congruentHighestAssociate_5"}, confidence: ""}); // pushes 7th item
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial14.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial14.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5", word_position: "target", correct_response: "74"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
-congruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim:"tone2", drmTrial_type: "congruentHighestAssociate_5"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim:"tone1", drmTrial_type: "congruentHighestAssociate_5"}, confidence: 'x'}); // pushes 7th item
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial14.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial14.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5", word_position: "target", correct_response: "74"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim:"tone2", drmTrial_type: "congruentHighestAssociate_5"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // how to create congruent highest associate trials with highests associate in 5th position
 for (let i=0; i<4; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial15.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial15.listB[i], drmTrial_type: "congruentHighestAssociate_5"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial15.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial15.listB[i], drmTrial_type: "congruentHighestAssociate_5"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial15.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial15.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial15.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial15.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5"}, confidence: 'x'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 
 //add in remaining list b items 
 for (let i=5; i<congruentHighestAssociateTrial15.listB.length; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial15.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial15.listB[i], drmTrial_type: "congruentHighestAssociate_5"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial15.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial15.listB[i], drmTrial_type: "congruentHighestAssociate_5"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
-congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim:"tone1", drmTrial_type: "congruentHighestAssociate_5"}, confidence: ""}); // pushes 7th item
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial15.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial15.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
-congruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim:"tone2", drmTrial_type: "congruentHighestAssociate_5"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim:"tone1", drmTrial_type: "congruentHighestAssociate_5"}, confidence: 'x'}); // pushes 7th item
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial15.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial15.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim:"tone2", drmTrial_type: "congruentHighestAssociate_5"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // how to create congruent highest associate trials with highests associate in 5th position
 for (let i=0; i<4; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial16.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial16.listB[i], drmTrial_type: "congruentHighestAssociate_5"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial16.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial16.listB[i], drmTrial_type: "congruentHighestAssociate_5"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial16.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial15.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial16.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial15.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5"}, confidence: 'x'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 
 //add in remaining list b items 
 for (let i=5; i<congruentHighestAssociateTrial16.listB.length; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial16.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial16.listB[i], drmTrial_type: "congruentHighestAssociate_5"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial16.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial16.listB[i], drmTrial_type: "congruentHighestAssociate_5"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
-congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim:"tone1", drmTrial_type: "congruentHighestAssociate_5"}, confidence: ""}); // pushes 7th item
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial16.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial16.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
-congruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim:"tone2", drmTrial_type: "congruentHighestAssociate_5"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim:"tone1", drmTrial_type: "congruentHighestAssociate_5"}, confidence: 'x'}); // pushes 7th item
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial16.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial16.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim:"tone2", drmTrial_type: "congruentHighestAssociate_5"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // how to create congruent highest associate trials with highests associate in 5th position
 for (let i=0; i<4; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial17.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial17.listB[i], drmTrial_type: "congruentHighestAssociate_5"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial17.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial17.listB[i], drmTrial_type: "congruentHighestAssociate_5"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial17.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial17.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial17.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial17.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5"}, confidence: 'x'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 
 //add in remaining list b items 
 for (let i=5; i<congruentHighestAssociateTrial17.listB.length; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial17.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial17.listB[i], drmTrial_type: "congruentHighestAssociate_5"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial17.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial17.listB[i], drmTrial_type: "congruentHighestAssociate_5"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
-congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim:"tone1", drmTrial_type: "congruentHighestAssociate_5"}, confidence: ""}); // pushes 7th item
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial17.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial17.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
-congruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim:"tone2", drmTrial_type: "congruentHighestAssociate_5"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim:"tone1", drmTrial_type: "congruentHighestAssociate_5"}, confidence: 'x'}); // pushes 7th item
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial17.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial17.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim:"tone2", drmTrial_type: "congruentHighestAssociate_5"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // how to create congruent highest associate trials with highests associate in 5th position
 for (let i=0; i<4; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial18.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial18.listB[i], drmTrial_type: "congruentHighestAssociate_5"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial18.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial18.listB[i], drmTrial_type: "congruentHighestAssociate_5"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial18.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial18.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial18.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial18.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5"}, confidence: 'x'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 
 //add in remaining list b items 
 for (let i=5; i<congruentHighestAssociateTrial18.listB.length; i++) {
-    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial18.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial18.listB[i], drmTrial_type: "congruentHighestAssociate_5"}, confidence: ""}); //creating csv file
+    congruentHighestAssociateTrials.push({stimulus:congruentHighestAssociateTrial18.listB[i], data: {test_part:"test", stim: congruentHighestAssociateTrial18.listB[i], drmTrial_type: "congruentHighestAssociate_5"}, confidence: 'x'}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 
-congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim:"tone1", drmTrial_type: "congruentHighestAssociate_5"}, confidence: ""}); // pushes 7th item
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial18.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial18.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5"}, confidence: ""}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
-congruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim:"tone2", drmTrial_type: "congruentHighestAssociate_5"}, confidence: ""}); // pushes 9th item placeholder for TONE2
+congruentHighestAssociateTrials.push({stimulus: "TONE1", data: {test_part:"test", stim:"tone1", drmTrial_type: "congruentHighestAssociate_5"}, confidence: 'x'}); // pushes 7th item
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial18.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial18.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: "TONE2", data: {test_part:"test", stim:"tone2", drmTrial_type: "congruentHighestAssociate_5"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 
 
