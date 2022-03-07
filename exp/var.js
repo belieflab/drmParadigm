@@ -19,6 +19,59 @@ let timeRemaining = '<p id="timeRemaining" style="text-align:center; color:black
 
 // define all language for experiment
 
+//First, create words to be used in practice trials
+const atom = 'atom';
+const molecule = 'molecule';
+const bond = 'bond';
+const gas = 'gas';
+const electron = 'electron';
+const oxygen = 'oxygen';
+const chemistry = 'chemistry';
+
+const shark = 'shark';
+const island = 'island';
+const waves = 'waves';
+const shrimp = 'shrimp';
+const whale = 'whale';
+const ocean = 'ocean';
+
+let practiceOne = {
+    listA: [atom, molecule, bond, gas, electron, oxygen],
+    prototype: chemistry,
+};
+
+let practiceTwo = {
+    listA: [shark, island, waves, shrimp, ocean, whale],
+    prototype: ocean,
+};
+
+
+let practiceLists= [practiceOne, practiceTwo];
+
+let practiceTrial1 = practiceLists[0];
+let practiceTrial2 = practiceLists[1];
+
+let practiceTrials = [];
+// pushes 6 items from listA
+for (let i=0; i<practiceTrial1.listA.length; i++) {
+    practiceTrials.push({stimulus: practiceTrial1.listA[i], data: {test_part:"practice", stim: practiceTrial1.listA[i], drmTrial_type:"practice", word_position:"list"}, confidence: 'x'}); //creating csv file
+    //use underscores for data fields and headers and camel case for script
+}
+practiceTrials.push({stimulus: "TONE1", data: {test_part:"practice", stim: "tone1", drmTrial_type:"practice"}, confidence: 'x'}); // pushes 7th item
+practiceTrials.push({stimulus: practiceTrial1.prototype, data: {test_part:"practice", stim: practiceTrial1.prototype, drmTrial_type:"practice", word_position:"target", correct_response: "70"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
+practiceTrials.push({stimulus: "TONE2", data: {test_part:"practice", stim: "tone2", drmTrial_type:"practice"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
+
+for (let i=0; i<practiceTrial2.listA.length; i++) {
+    practiceTrials.push({stimulus: practiceTrial2.listA[i], data: {test_part:"practice", stim: practiceTrial2.listA[i], drmTrial_type:"practice", word_position:"list"}, confidence: 'x'}); //creating csv file
+    //use underscores for data fields and headers and camel case for script
+}
+practiceTrials.push({stimulus: "TONE1", data: {test_part:"practice", stim: "tone1", drmTrial_type:"practice"}, confidence: 'x'}); // pushes 7th item
+practiceTrials.push({stimulus: practiceTrial2.prototype, data: {test_part:"practice", stim: practiceTrial2.prototype, drmTrial_type:"practice", word_position:"target", correct_response: "74"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
+practiceTrials.push({stimulus: "TONE2", data: {test_part:"practice", stim: "tone2", drmTrial_type:"practice"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
+
+
+
+
 // define all variables in listNumber1 : Anger
 const anger = 'anger';
 const hate = 'hate';

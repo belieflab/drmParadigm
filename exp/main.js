@@ -2,6 +2,14 @@
 // main order in which things are pushed to timeline 
 
 
+let practiceSection= {
+    timeline:[practice],
+    // defines which array to draw stimuli from 
+    timeline_variables: practiceTrials,
+    // timeline_variables: incongruentPrototypeTrials,
+   // choices: [32],
+};
+
 let joshTest= {
     timeline:[test],
     // defines which array to draw stimuli from 
@@ -39,6 +47,7 @@ let joshTest= {
 // };
 
 timeline.push(instructions0);
+timeline.push(practiceSection);
 timeline.push(joshTest);
 //timeline.push(deannaTest);
 //timeline.push(deannaTestIncongruentHighestAssociate); 

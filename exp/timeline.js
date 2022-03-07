@@ -23,6 +23,38 @@ let instructions0 = {
   // }
 };
 
+let practice = {
+  type: "html-keyboard-response",
+  // prompt: jsPsych.timelineVariable("confidence"),
+  data: jsPsych.timelineVariable("data"),
+  stimulus: function(){
+    var html="<p>"+jsPsych.timelineVariable('stimulus', true)+jsPsych.timelineVariable('confidence', true)+"</p>";
+    return html;
+  },
+  // stimulus: jsPsych.timelineVariable('stimulus'),
+  choices: [70, 74],
+  // on_finish: function(data){
+  //   if (data.stim== "tone1") {
+  //     data.accuracy_test= "" ;
+  //    } else if (data.stim=="tone2") {
+  //     data.accuracy_test= "" ;
+  //    } else if (data.word_position=="list") {
+  //     data.accuracy_test= "" ;
+  //   //   (data.key_press==null){
+  //   //    data.accuracy_test = null;
+    
+  //   } else if (data.key_press == data.correct_response) {
+  //      console.log('correct');
+  //      data.accuracy_test = true;
+  //    } else if (data.key_press != data.correct_response) {
+  //    console.log('incorrect');
+  //      data.accuracy_test = false;
+  //    };
+  //   }
+
+};
+
+
 let test = {
   type: "html-keyboard-response",
   // prompt: jsPsych.timelineVariable("confidence"),
