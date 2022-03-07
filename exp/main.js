@@ -47,7 +47,13 @@ let joshTest= {
 // };
 
 timeline.push(instructions0);
+timeline.push(instructions1);
+timeline.push(instructions2);
+timeline.push(instructions3);
+timeline.push(instructions4);
+timeline.push(instructions5);
 timeline.push(practiceSection);
+timeline.push(instructions6);
 timeline.push(joshTest);
 //timeline.push(deannaTest);
 //timeline.push(deannaTestIncongruentHighestAssociate); 

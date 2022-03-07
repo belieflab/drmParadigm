@@ -3,8 +3,9 @@ let timeline = [];
 let instructions0 = {
   type: "html-keyboard-response",
   stimulus: "<p> Hello and thank you for taking part in our experiment!</p>"+
+  "<p>This experiment will be presnted entirely in an auditory format.</p>"+
   "<p>It should take about 30 minutes.</p>"+
-  "<p> <i> Press spacebar to continue</i> </p>",
+  "<p> <i> Press spacebar to begin listening to your instructions. </i> </p>",
   choices: [32],
   // on_finish: function() {
   //   // this needs to be wrapped in a while loop
@@ -21,6 +22,55 @@ let instructions0 = {
   //   incongruentPrototypeTrials.push({stimulus: "TONE2"}); // pushes 9th item tone2
     
   // }
+};
+
+let instructions1 = {
+  type: "html-keyboard-response",
+  stimulus: "<p> This experiment assesses your ability to remember whether a particular word was presented in a list of words.</p>"+
+  "<p>First, you will hear a list of six words. At the conclusion of the list, you will hear a short tone. </p>"+
+  "<p> <i> Press the spacebar to hear the short tone now. </i> </p>",
+  choices: [32],
+  
+};
+
+let instructions2 = {
+  type: "html-keyboard-response",
+  stimulus: "<p> After the short tone, you will hear one word. </p>"+
+  "<p> Your job is to indicate whether that word was or was not on the list that you heard before the tone. </p>"+
+  "<p> If the word was on the list, press the “j” key. If the word was not on the list, press the “f” key. </p>" +
+  "<p> <i> Press either the f or j key to hear additional instructions. </i> </p>",
+  choices: [70, 74],
+  
+};
+
+//need to add in confidence bar here 
+let instructions3 = {
+  type: "html-keyboard-response",
+  stimulus: "<p> You can indicate your confidence in your response by varying the amount of time you hold down the “f” or “j” key. </p>"+
+  "<p> If you are very confident in your response, hold the key down for []. If you are unsure about your response,  simply tap the key. </p>"+
+  "<p> A tone will play when you press and/or hold down the f or j keys. The longer you hold down the key, the higher in frequency the tone will go. </p>" +
+  "<p> <i> Hold down either the f or j key to hear what it sounds like when you are very confident in your response. </i> </p>",
+  choices: [70, 74],
+  
+};
+
+
+let instructions4 = {
+  type: "html-keyboard-response",
+  stimulus: "<p> Please give your response as quickly as possible.  </p>"+
+  "<p> At the end of the response period, you will hear a long low tone. This tone indicates that the response period has ended. </p>"+
+  "<p> <i> Press the spacebar to hear the long low tone now. </i> </p>",
+  choices: [32],
+  
+};
+
+let instructions5 = {
+  type: "html-keyboard-response",
+  stimulus: "<p> After you hear the long low tone,  the next trial will begin. </p>"+
+  "<p> To continue to a couiple of practice trials, please press either the f or j key. </p>"+
+  "<p> <i> Alternatively, if you would like to hear the instructions again, press the spacebar. </i> </p>",
+  choices: [32, 70, 74],
+  
 };
 
 let practice = {
@@ -55,6 +105,18 @@ let practice = {
 };
 
 
+let instructions6 = {
+  type: "html-keyboard-response",
+  stimulus: "<p> You have successfully completed the practice trials!. </p>"+
+  "<p> You are now ready to begin the experiment. </p>"+
+  "<p> Remember, pressing the f key means that you think the word was not on the list and pressing the j key means that you think the word was on the list.  </p>"+
+  "<p> <i> Press either the f or j key to begin now. </i> </p>",
+  choices: [70, 74],
+  
+};
+
+
+
 let test = {
   type: "html-keyboard-response",
   // prompt: jsPsych.timelineVariable("confidence"),
@@ -87,12 +149,12 @@ let test = {
 };
 
 
-let instructions1 = {
-  type: 'audio-keyboard-response',
-  stimulus: 'stim/audio_instructions/DRM_instructions_1.mp3',
-  choices: "NO_KEYS",
-  trial_ends_after_audio: true
-};
+// let instructions1 = {
+//   type: 'audio-keyboard-response',
+//   stimulus: 'stim/audio_instructions/DRM_instructions_1.mp3',
+//   choices: "NO_KEYS",
+//   trial_ends_after_audio: true
+// };
 
 let dataSave = {
   type: "html-keyboard-response",
