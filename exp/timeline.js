@@ -1,6 +1,6 @@
 let timeline = [];
 
-let instructions0 = {
+let instructions_audio_0 = {
   type: "html-keyboard-response",
   stimulus: "<p> Hello and thank you for taking part in our experiment!</p>"+
   "<p>This experiment will be presnted entirely in an auditory format.</p>"+
@@ -24,7 +24,7 @@ let instructions0 = {
   // }
 };
 
-let instructions1 = {
+let instructions_audio_1 = {
   type: "html-keyboard-response",
   stimulus: "<p> This experiment assesses your ability to remember whether a particular word was presented in a list of words.</p>"+
   "<p>First, you will hear a list of six words. At the conclusion of the list, you will hear a short tone. </p>"+
@@ -33,7 +33,7 @@ let instructions1 = {
   
 };
 
-let instructions2 = {
+let instructions_audio_2 = {
   type: "html-keyboard-response",
   stimulus: "<p> After the short tone, you will hear one word. </p>"+
   "<p> Your job is to indicate whether that word was or was not on the list that you heard before the tone. </p>"+
@@ -44,7 +44,7 @@ let instructions2 = {
 };
 
 //need to add in confidence bar here 
-let instructions3 = {
+let instructions_audio_3 = {
   type: "html-keyboard-response",
   stimulus: "<p> You can indicate your confidence in your response by varying the amount of time you hold down the “f” or “j” key. </p>"+
   "<p> If you are very confident in your response, hold the key down for []. If you are unsure about your response,  simply tap the key. </p>"+
@@ -55,7 +55,7 @@ let instructions3 = {
 };
 
 
-let instructions4 = {
+let instructions_audio_4 = {
   type: "html-keyboard-response",
   stimulus: "<p> Please give your response as quickly as possible.  </p>"+
   "<p> At the end of the response period, you will hear a long low tone. This tone indicates that the response period has ended. </p>"+
@@ -64,7 +64,7 @@ let instructions4 = {
   
 };
 
-let instructions5 = {
+let instructions_audio_5 = {
   type: "html-keyboard-response",
   stimulus: "<p> After you hear the long low tone,  the next trial will begin. </p>"+
   "<p> To continue to a couiple of practice trials, please press either the f or j key. </p>"+
@@ -72,6 +72,57 @@ let instructions5 = {
   choices: [32, 70, 74],
   
 };
+
+let instructions_visual_0 = {
+  type: "html-keyboard-response",
+  stimulus: "<p> Hello and thank you for taking part in our experiment!</p>"+
+  "<p>It should take about 45 minutes.</p>"+
+  "<p> <i> Press the spacebar to view your instructions. </i> </p>",
+  choices: [32],
+  
+};
+
+let instructions_visual_1 = {
+  type: "html-keyboard-response",
+  stimulus: "<p> This experiment assesses your ability to remember whether a particular word was presented in a list of words.</p>"+
+  "<p>First, you will be presented a list of six words, with one word appearing on the screen at a time. </p>"+
+  "<p> <i> Press the spacebar to view more instructions. </i> </p>",
+  choices: [32],
+  
+};
+
+let instructions_visual_2 = {
+  type: "html-keyboard-response",
+  stimulus: "<p> After viewing the list of six words, you will be asked whether a particular word was on the list. </p>"+
+  "<p> Your job is to indicate whether that word was or was not on the list. </p>"+
+  "<p> If the word was on the list, press the “j” key. If the word was not on the list, press the “f” key. </p>" +
+  "<p> <i> Press either the "f" or "j" key to view additional instructions. </i> </p>",
+  choices: [70, 74],
+  
+};
+
+//need to add in confidence bar here 
+let instructions_visual_3 = {
+  type: "html-keyboard-response",
+  stimulus: "<p> You can indicate your confidence in your response by varying the amount of time you hold down the “f” or “j” key. </p>"+
+  "<p> If you are very confident in your response, hold the key down for []. If you are unsure about your response,  simply tap the key. </p>"+
+  "<p>The confidence meter (see below) keeps track of how confident you are in your response. The longer you hold down the key, the more the confidence meter will fill up. </p>" +
+  "<p> <i> Hold down either the f or j key to see what it looks like when the confidence meter fills up. </i> </p>",
+  choices: [70, 74],
+  
+};
+
+
+let instructions_visual_4 = {
+  type: "html-keyboard-response",
+  stimulus: "<p> At the end of the response period, you automatically will be brought to a page that begins the next trial. </p>"+
+  "<p> You are now ready to proceed to some practice trials!</p>" +
+  "<p> <i> To continue to a couiple of practice trials, please press either the f or j key. </i> </p>",
+  choices: [70, 74],
+  
+};
+
+
 
 let practice = {
   type: "html-keyboard-response",
@@ -105,12 +156,22 @@ let practice = {
 };
 
 
-let instructions6 = {
+let instructions_audio_6 = {
   type: "html-keyboard-response",
   stimulus: "<p> You have successfully completed the practice trials!. </p>"+
   "<p> You are now ready to begin the experiment. </p>"+
   "<p> Remember, pressing the f key means that you think the word was not on the list and pressing the j key means that you think the word was on the list.  </p>"+
   "<p> <i> Press either the f or j key to begin now. </i> </p>",
+  choices: [70, 74],
+  
+};
+
+let instructions_visual_5 = {
+  type: "html-keyboard-response",
+  stimulus: "<p> You have successfully completed the practice trials!. </p>"+
+  "<p> You are now ready to begin the experiment. </p>"+
+  "<p> Remember, pressing the f key means that you think the word was not on the list and pressing the j key means that you think the word was on the list.  </p>"+
+  "<p> <i> Press either the f or j key to begin the experiment now. </i> </p>",
   choices: [70, 74],
   
 };
