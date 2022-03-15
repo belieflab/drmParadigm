@@ -46,19 +46,34 @@ let joshTest= {
 //     choices: [32],
 // };
 
-timeline.push(instructions0);
-timeline.push(instructions1);
-timeline.push(instructions2);
-timeline.push(instructions3);
-timeline.push(instructions4);
-timeline.push(instructions5);
+// timeline.push(instructions_audio_0);
+// timeline.push(instructions_audio_1);
+// timeline.push(instructions_audio_2);
+// timeline.push(instructions_audio_3);
+// timeline.push(instructions_audio_4);
+// timeline.push(instructions_audio_5);
+// timeline.push(practiceSection);
+// timeline.push(instructions_audio_6);
+// timeline.push(joshTest);
+
+// timeline.push(deannaTest);
+// timeline.push(deannaTestIncongruentHighestAssociate); 
+// timeline.push(deannaTestCongruentHighestAssociate);
+
+// timeline.push(instructions1);
+
+
+timeline.push(instructions_visual_0);
+timeline.push(instructions_visual_1);
+timeline.push(instructions_visual_2);
+timeline.push(instructions_visual_3);
+timeline.push(instructions_visual_4);
 timeline.push(practiceSection);
-timeline.push(instructions6);
+timeline.push(instructions_visual_5);
 timeline.push(joshTest);
 //timeline.push(deannaTest);
 //timeline.push(deannaTestIncongruentHighestAssociate); 
 //timeline.push(deannaTestCongruentHighestAssociate);
 
-// timeline.push(instructions1);
 
 timeline.push(dataSave);
