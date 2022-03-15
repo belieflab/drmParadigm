@@ -132,6 +132,8 @@ let practice = {
     var html="<p>"+jsPsych.timelineVariable('stimulus', true)+jsPsych.timelineVariable('confidence', true)+"</p>";
     return html;
   },
+trial_duration: jsPsych.timelineVariable("duration"),
+response_ends_trial:jsPsych.timelineVariable("response_ends_trial"),
   // stimulus: jsPsych.timelineVariable('stimulus'),
   choices: [70, 74],
   // on_finish: function(data){
