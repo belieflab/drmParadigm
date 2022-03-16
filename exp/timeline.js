@@ -1,4 +1,6 @@
 let timeline = [];
+const numberOfTrials = 486;
+
 
 let instructions_audio_0 = {
   type: "html-keyboard-response",
@@ -7,6 +9,9 @@ let instructions_audio_0 = {
   "<p>It should take about 30 minutes.</p>"+
   "<p> <i> Press spacebar to begin listening to your instructions. </i> </p>",
   choices: [32],
+  on_start: function(){
+    jsPsych.setProgressBar(0);
+  }
   // on_finish: function() {
   //   // this needs to be wrapped in a while loop
   //   // checks against other protyotype vals to ensure inconrugency
@@ -79,6 +84,9 @@ let instructions_visual_0 = {
   "<p>It should take about 45 minutes.</p>"+
   "<p> <i> Press the spacebar to view your instructions. </i> </p>",
   choices: [32],
+  on_start: function(){
+    jsPsych.setProgressBar(0);
+  }
   
 };
 
@@ -189,6 +197,11 @@ let test = {
   },
   // stimulus: jsPsych.timelineVariable('stimulus'),
   choices: [70, 74],
+  on_start: function(){
+    //update progress bar with each iteration
+    var currentProgressBarValue=jsPsych.getProgressBarCompleted();
+    jsPsych.setProgressBar(currentProgressBarValue+(1/numberOfTrials));
+  },
   on_finish: function(data){
     if (data.stim== "tone1") {
       data.accuracy_test= "" ;
