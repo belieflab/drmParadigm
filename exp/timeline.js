@@ -126,10 +126,9 @@ let instructions_visual_4 = {
 
 let practice = {
   type: "html-keyboard-response",
-  // prompt: jsPsych.timelineVariable("confidence"),
   data: jsPsych.timelineVariable("data"),
   stimulus: function(){
-    var html="<p>"+jsPsych.timelineVariable('stimulus', true)+jsPsych.timelineVariable('confidence', true)+"</p>";
+    var html="<p>"+jsPsych.timelineVariable('prompt', true)+jsPsych.timelineVariable('stimulus', true)+jsPsych.timelineVariable('prompt_end', true)+jsPsych.timelineVariable('confidence', true)+"</p>";
     return html;
   },
 trial_duration: jsPsych.timelineVariable("duration"),
