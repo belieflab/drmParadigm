@@ -196,7 +196,31 @@ let test = {
     return html;
   },
   // stimulus: jsPsych.timelineVariable('stimulus'),
-  choices: [70, 74],
+  //choices: [70, 74],
+  choices: [jsPsych.NO_KEYS],
+  on_load: function buttonPress(data){
+    barFill = document.getElementById("fillUp");
+    barFill.innerHTML = 'Hold response key to indicate confidence level.';
+    document.getElementById("tapTap").focus(); //gives focus to the text box
+    $(document).ready(function(){
+        $("#tapTap").keypress(function(event){
+            var keycode = event.which;
+            if (barFill.innerHTML = 'Hold response key to indicate confidence level.') { // reused from eefrt, just needed a placeholder here
+              if (keycode == 70) {
+                document.getElementById("counter").setAttribute("onkeydown", "return moveConfidence()"); // event.charCode allows us to set specific keys to use
+                responseKey = 70;
+                console.log(responseKey);
+              } else if (keycode == 74) {
+                document.getElementById("counter").setAttribute("onkeydown", "return moveConfidence()"); // event.charCode allows us to set specific keys to use
+                responseKey = 74;
+                console.log(responseKey);
+              } else { // all other keys ignored
+                document.getElementById("counter").setAttribute("onkeydown", "return false"); // event.charCode allows us to set specific keys to use 
+              }
+          }
+        });
+    });
+},
   on_start: function(){
     //update progress bar with each iteration
     var currentProgressBarValue=jsPsych.getProgressBarCompleted();
