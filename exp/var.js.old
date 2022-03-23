@@ -840,7 +840,7 @@ let Soft = {
 
 //Define all variables for list 32: Spider
 const spider  = 'spider';
-const big2 = 'big2';
+const big2 = 'big';
 const fly = 'fly';
 const crawl = 'crawl';
 const poison = 'poison';

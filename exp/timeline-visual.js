@@ -165,11 +165,11 @@ let practice = {
     var html="<p>"+jsPsych.timelineVariable('prompt', true)+jsPsych.timelineVariable('stimulus', true)+jsPsych.timelineVariable('prompt_end', true)+jsPsych.timelineVariable('confidence', true)+"</p>";
     return html;
   },
-trial_duration: jsPsych.timelineVariable("duration"),
+  trial_duration: jsPsych.timelineVariable("duration"),
 response_ends_trial:jsPsych.timelineVariable("response_ends_trial"),
-  // stimulus: jsPsych.timelineVariable('stimulus'),
+ // stimulus: jsPsych.timelineVariable('stimulus'),
   choices: [jsPsych.NO_KEYS],
-  response_ends_trial: false,
+  // response_ends_trial: false,
   // trial_duration: 30000,
   on_load: function buttonPress(data){
     barFill = document.getElementById("fillUp");
@@ -248,6 +248,8 @@ let test = {
   },
   // stimulus: jsPsych.timelineVariable('stimulus'),
   //choices: [70, 74],
+  trial_duration: jsPsych.timelineVariable("duration"),
+// response_ends_trial:jsPsych.timelineVariable("response_ends_trial"),
   choices: [jsPsych.NO_KEYS],
   trial_duration: 3000,
   response_ends_trial: false,
