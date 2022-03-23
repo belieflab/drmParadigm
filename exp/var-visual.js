@@ -102,7 +102,7 @@ let Anger = {
 
 // define all variables in listNumber2 : Army
 const unitedStates = 'United States';
-const airForce = 'Air Force';
+const airForce = 'air force';
 const military = "military";
 const march = 'march';
 const captain = 'captain';
@@ -247,7 +247,7 @@ const capital = 'capital';
 const subway = 'subway';
 const newYork = "New York";
 const metropolis = 'metropolis';
-const chicago = 'chicago';
+const chicago = 'Chicago';
 const county = 'county'; 
 const town = 'town';
 const crowded = 'crowded';
@@ -356,7 +356,7 @@ const national = 'national';
 const emblem = 'emblem';
 const freedom = 'freedom'; 
 const banner = 'banner';
-const american = 'american';
+const american = 'American';
 const pendant = 'pendant'; 
 
 let Flag = {
@@ -491,7 +491,7 @@ const rule = 'rule';
 const monarch = 'monarch';
 const leader = 'leader'; 
 const queen = 'queen';
-const england = 'england';
+const england = 'England';
 const reign = 'reign'; 
 
 let King = {
@@ -560,7 +560,7 @@ let Man = {
 //Define all variables for list 19: Mountain
 const mountain  = 'mountain';
 const climb = 'climb';
-const top2 = 'top2';
+const top2 = 'top';
 const peak = 'peak';
 const glacier = 'glacier';
 const bike = 'bike';
@@ -673,7 +673,7 @@ const swim = 'swim';
 const run = 'run';
 const creek = 'creek';
 const fish = 'fish';
-const mississippi = 'mississippi';
+const mississippi = 'Mississippi';
 const tide = 'tide';
 const flow = 'flow';
 const barge = 'barge';
@@ -910,7 +910,7 @@ let Soft = {
 
 //Define all variables for list 32: Spider
 const spider  = 'spider';
-const big2 = 'big2';
+const big2 = 'big';
 const fly = 'fly';
 const crawl = 'crawl';
 const poison = 'poison';
@@ -1017,7 +1017,7 @@ let Trash = {
 };
 
 //Define all variables for list 36: Window
-const window2  = 'window2';
+const window2  = 'window';
 const pane = 'pane';
 const ledge = 'ledge';
 const house = 'house';
