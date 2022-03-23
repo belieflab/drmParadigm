@@ -115,10 +115,35 @@ let instructions_visual_3 = {
   stimulus: "<p> You can indicate your confidence in your response by varying the amount of time you hold down the “f” or “j” key. </p>"+
   "<p> If you are very confident in your response, hold the key down for []. If you are unsure about your response,  simply tap the key. </p>"+
   "<p>The confidence meter (see below) keeps track of how confident you are in your response. The longer you hold down the key, the more the confidence meter will fill up. </p>" +
-  progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">' +
-
+  // progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'+
   "<p> <i> Hold down either the f or j key to see what it looks like when the confidence meter fills up. </i> </p>",
-  choices: [70, 74],
+ prompt: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+  choices: [jsPsych.NO_KEYS],
+  response_ends_trial: false,
+  trial_duration: 30000,
+  on_load: function buttonPress(data){
+    barFill = document.getElementById("fillUp");
+    barFill.innerHTML = 'Hold response key to indicate confidence level.';
+    document.getElementById("tapTap").focus(); //gives focus to the text box
+    $(document).ready(function(){
+        $("#tapTap").keypress(function(event){
+            var keycode = event.which;
+            if (barFill.innerHTML = 'Hold response key to indicate confidence level.') { // reused from eefrt, just needed a placeholder here
+              if (keycode == 102) {
+                document.getElementById("counter").setAttribute("onkeydown", "return moveConfidence()"); // event.charCode allows us to set specific keys to use
+                responseKey = 102;
+                // console.log(responseKey);
+              } else if (keycode == 106) {
+                document.getElementById("counter").setAttribute("onkeydown", "return moveConfidence()"); // event.charCode allows us to set specific keys to use
+                responseKey = 106;
+                // console.log(responseKey);
+              } else { // all other keys ignored
+                document.getElementById("counter").setAttribute("onkeydown", "return false"); // event.charCode allows us to set specific keys to use 
+              }
+          }
+        });
+    });
+},
   
 };
 
@@ -143,7 +168,32 @@ let practice = {
 trial_duration: jsPsych.timelineVariable("duration"),
 response_ends_trial:jsPsych.timelineVariable("response_ends_trial"),
   // stimulus: jsPsych.timelineVariable('stimulus'),
-  choices: [70, 74],
+  choices: [jsPsych.NO_KEYS],
+  response_ends_trial: false,
+  // trial_duration: 30000,
+  on_load: function buttonPress(data){
+    barFill = document.getElementById("fillUp");
+    barFill.innerHTML = 'Hold response key to indicate confidence level.';
+    document.getElementById("tapTap").focus(); //gives focus to the text box
+    $(document).ready(function(){
+        $("#tapTap").keypress(function(event){
+            var keycode = event.which;
+            if (barFill.innerHTML = 'Hold response key to indicate confidence level.') { // reused from eefrt, just needed a placeholder here
+              if (keycode == 102) {
+                document.getElementById("counter").setAttribute("onkeydown", "return moveConfidence()"); // event.charCode allows us to set specific keys to use
+                responseKey = 102;
+                // console.log(responseKey);
+              } else if (keycode == 106) {
+                document.getElementById("counter").setAttribute("onkeydown", "return moveConfidence()"); // event.charCode allows us to set specific keys to use
+                responseKey = 106;
+                // console.log(responseKey);
+              } else { // all other keys ignored
+                document.getElementById("counter").setAttribute("onkeydown", "return false"); // event.charCode allows us to set specific keys to use 
+              }
+          }
+        });
+    });
+},
   // on_finish: function(data){
   //   if (data.stim== "tone1") {
   //     data.accuracy_test= "" ;
@@ -199,6 +249,8 @@ let test = {
   // stimulus: jsPsych.timelineVariable('stimulus'),
   //choices: [70, 74],
   choices: [jsPsych.NO_KEYS],
+  trial_duration: 3000,
+  response_ends_trial: false,
   on_load: function buttonPress(data){
     barFill = document.getElementById("fillUp");
     barFill.innerHTML = 'Hold response key to indicate confidence level.';
@@ -207,13 +259,13 @@ let test = {
         $("#tapTap").keypress(function(event){
             var keycode = event.which;
             if (barFill.innerHTML = 'Hold response key to indicate confidence level.') { // reused from eefrt, just needed a placeholder here
-              if (keycode == 70) {
+              if (keycode == 102) {
                 document.getElementById("counter").setAttribute("onkeydown", "return moveConfidence()"); // event.charCode allows us to set specific keys to use
-                responseKey = 70;
+                responseKey = 102;
                 console.log(responseKey);
-              } else if (keycode == 74) {
+              } else if (keycode == 106) {
                 document.getElementById("counter").setAttribute("onkeydown", "return moveConfidence()"); // event.charCode allows us to set specific keys to use
-                responseKey = 74;
+                responseKey = 106;
                 console.log(responseKey);
               } else { // all other keys ignored
                 document.getElementById("counter").setAttribute("onkeydown", "return false"); // event.charCode allows us to set specific keys to use 
