@@ -63,7 +63,7 @@
 </div>
 <script>$("button.loadMain").click(function(){
         // $.getScript("exp/rand.js");
-      $.getScript("exp/timeline.js");
+      $.getScript("exp/timeline-visual.js");
       // $.getScript("exp/main.js");
   }); </script>
 <script>
