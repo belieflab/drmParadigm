@@ -63,13 +63,13 @@ let joshTest= {
 // timeline.push(instructions1);
 
 
-timeline.push(instructions_visual_0);
-timeline.push(instructions_visual_1);
-timeline.push(instructions_visual_2);
-timeline.push(instructions_visual_3);
-timeline.push(instructions_visual_4);
+timeline.push(instructions_0);
+timeline.push(instructions_1);
+timeline.push(instructions_2);
+timeline.push(instructions_3);
+timeline.push(instructions_4);
 timeline.push(practiceSection);
-timeline.push(instructions_visual_5);
+timeline.push(instructions_5);
 timeline.push(joshTest);
 //timeline.push(deannaTest);
 //timeline.push(deannaTestIncongruentHighestAssociate); 

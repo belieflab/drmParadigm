@@ -1135,7 +1135,7 @@ incongruentPrototypeTrials.push({stimulus: "TONE2", duration: fixationDuration, 
 
 // pushes 6 items from listA
 for (let i=0; i<incongruentPrototypeTrial2.listA.length; i++) {
-    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial2.listA[i], word_position: "list", data: {test_part:"test", stim: incongruentPrototypeTrial2.listA[i], drmTrial_type:"incongruentPrototype", word_position:"list"}, confidence: ''}); //creating csv file
+    incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial2.listA[i], duration: durationForListWords, word_position: "list", data: {test_part:"test", stim: incongruentPrototypeTrial2.listA[i], drmTrial_type:"incongruentPrototype", word_position:"list"}, confidence: ''}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
 incongruentPrototypeTrials.push({stimulus: incongruentPrototypeTrial17.prototype, duration: durationForTargetWords, data: {test_part:"test", stim: incongruentPrototypeTrial17.prototype, drmTrial_type:"incongruentPrototype", word_position: "target", correct_response: "102"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
@@ -1383,7 +1383,7 @@ for (let i=0; i<congruentPrototypeTrial13.listB.length; i++) {
     congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial13.listB[i], duration: durationForListWords, data: {test_part:"test", stim: congruentPrototypeTrial13.listB[i], drmTrial_type: "congruentPrototype", word_position:"list"}, confidence: ''}); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial13.prototyp, duration: durationForTargetWords, data: {test_part:"test", stim: congruentPrototypeTrial13.prototype, drmTrial_type: "congruentPrototype", word_position: "target", correct_response: "102"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
+congruentPrototypeTrials.push({stimulus: congruentPrototypeTrial13.prototype, duration: durationForTargetWords, data: {test_part:"test", stim: congruentPrototypeTrial13.prototype, drmTrial_type: "congruentPrototype", word_position: "target", correct_response: "102"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({stimulus: "TONE2", duration: fixationDuration, data: {test_part:"test", stim: "tone2", drmTrial_type: "congruentPrototype"}, confidence: ''}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<congruentPrototypeTrial14.listB.length; i++) {
@@ -1659,7 +1659,7 @@ for (let i=0; i<1; i++) {
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial2.highestAssociates[0], duration: durationForTargetWords, data: {test_part:"test", stim: congruentHighestAssociateTrial2.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2", word_position: "target", correct_response: "106"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial2.highestAssociates[0], duration: durationForListWords, data: {test_part:"test", stim: congruentHighestAssociateTrial2.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2", word_position: "list"}, confidence: '' }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 
 //add in remaining list b items 
@@ -1679,7 +1679,7 @@ for (let i=0; i<1; i++) {
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial3.highestAssociates[0], duration: durationForTargetWords, data: {test_part:"test", stim: congruentHighestAssociateTrial3.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2", word_position: "target", correct_response: "106"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial3.highestAssociates[0], duration: durationForListWords, data: {test_part:"test", stim: congruentHighestAssociateTrial3.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2", word_position: "list"}, confidence: ''});
 
 
 //add in remaining list b items 
@@ -1699,7 +1699,7 @@ for (let i=0; i<1; i++) {
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial4.highestAssociates[0], duration: durationForTargetWords, data: {test_part:"test", stim: congruentHighestAssociateTrial4.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2", word_position: "target", correct_response: "106"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial4.highestAssociates[0], duration: durationForListWords, data: {test_part:"test", stim: congruentHighestAssociateTrial4.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2", word_position: "list"}, confidence: ''});
 
 
 //add in remaining list b items 
@@ -1719,7 +1719,7 @@ for (let i=0; i<1; i++) {
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial5.highestAssociates[0], duration: durationForTargetWords, data: {test_part:"test", stim: congruentHighestAssociateTrial5.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2", word_position: "target", correct_response: "106"}, confidence: ''}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial5.highestAssociates[0], duration: durationForListWords, data: {test_part:"test", stim: congruentHighestAssociateTrial5.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2", word_position: "list"}, confidence: ''}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 
 //add in remaining list b items 
@@ -1758,7 +1758,7 @@ for (let i=0; i<2; i++) {
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial7.highestAssociates[0], duration: durationForTargetWords, data: {test_part:"test", stim: congruentHighestAssociateTrial7.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_3", word_position: "target", correct_response: "106"}, confidence: ''}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial7.highestAssociates[0], duration: durationForListWords, data: {test_part:"test", stim: congruentHighestAssociateTrial7.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_3", word_position: "list"}, confidence: ''}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 //add in remaining list b items 
 for (let i=3; i<congruentHighestAssociateTrial7.listB.length; i++) {
@@ -1777,7 +1777,7 @@ for (let i=0; i<2; i++) {
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial8.highestAssociates[0], duration: durationForTargetWords, data: {test_part:"test", stim: congruentHighestAssociateTrial8.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_3", word_position: "target", correct_response: "106"}, confidence: ''}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial8.highestAssociates[0], duration: durationForListWords, data: {test_part:"test", stim: congruentHighestAssociateTrial8.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_3", word_position: "list"}, confidence: ''}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 //add in remaining list b items 
 for (let i=3; i<congruentHighestAssociateTrial8.listB.length; i++) {
@@ -1796,7 +1796,7 @@ for (let i=0; i<2; i++) {
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial9.highestAssociates[0], duration: durationForTargetWords, data: {test_part:"test", stim: congruentHighestAssociateTrial9.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_3", word_position: "target", correct_response: "106"}, confidence: ''}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial9.highestAssociates[0], duration: durationForListWords, data: {test_part:"test", stim: congruentHighestAssociateTrial9.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_3", word_position: "list"}, confidence: ''}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 //add in remaining list b items 
 for (let i=3; i<congruentHighestAssociateTrial9.listB.length; i++) {
@@ -1834,7 +1834,7 @@ for (let i=0; i<3; i++) {
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial11.highestAssociates[0], duration: durationForTargetWords, data: {test_part:"test", stim: congruentHighestAssociateTrial11.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_4", word_position: "target", correct_response: "106"}, confidence: ''}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial11.highestAssociates[0], duration: durationForListWords, data: {test_part:"test", stim: congruentHighestAssociateTrial11.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_4", word_position: "list"}, confidence: ''}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 
 //add in remaining list b items 
@@ -1853,7 +1853,7 @@ for (let i=0; i<3; i++) {
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial12.highestAssociates[0], duration: durationForTargetWords, data: {test_part:"test", stim: congruentHighestAssociateTrial12.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_4", word_position: "target", correct_response: "106"}, confidence: ''}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial12.highestAssociates[0], duration: durationForListWords, data: {test_part:"test", stim: congruentHighestAssociateTrial12.highestAssociates[0], drmTrial_type:"congruentHighestAssociate_4", word_position: "list"}, confidence: ''}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 
 //add in remaining list b items 
@@ -1872,7 +1872,7 @@ for (let i=0; i<3; i++) {
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial13.highestAssociates[0], duration: durationForTargetWords, data: {test_part:"test", stim: congruentHighestAssociateTrial13.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_4", word_position: "target", correct_response: "106"}, confidence: ''}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial13.highestAssociates[0], duration: durationForListWords, data: {test_part:"test", stim: congruentHighestAssociateTrial13.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_4", word_position: "list"}, confidence: ''}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 
 //add in remaining list b items 
@@ -1891,7 +1891,7 @@ for (let i=0; i<4; i++) {
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial14.highestAssociates[0], data: {test_part:"test", stim: congruentHighestAssociateTrial14.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5", word_position:"list"}, confidence: ''}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial14.highestAssociates[0], duration: durationForListWords, data: {test_part:"test", stim: congruentHighestAssociateTrial14.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5", word_position:"list"}, confidence: ''}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 
 //add in remaining list b items 
@@ -1910,7 +1910,7 @@ for (let i=0; i<4; i++) {
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial15.highestAssociates[0], duration: durationForTargetWords, data: {test_part:"test", stim: congruentHighestAssociateTrial15.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5", word_position: "target", correct_response: "106"}, confidence: ''}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial15.highestAssociates[0], duration: durationForListWords, data: {test_part:"test", stim: congruentHighestAssociateTrial15.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5", word_position: "list"}, confidence: ''}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 
 //add in remaining list b items 
@@ -1929,7 +1929,7 @@ for (let i=0; i<4; i++) {
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial16.highestAssociates[0], duration: durationForTargetWords, data: {test_part:"test", stim: congruentHighestAssociateTrial15.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5", word_position: "target", correct_response: "106"}, confidence: ''}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial16.highestAssociates[0], duration: durationForListWords, data: {test_part:"test", stim: congruentHighestAssociateTrial15.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5", word_position: "list"}, confidence: ''}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 
 //add in remaining list b items 
@@ -1948,7 +1948,7 @@ for (let i=0; i<4; i++) {
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial17.highestAssociates[0], duration: durationForTargetWords, data: {test_part:"test", stim: congruentHighestAssociateTrial17.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5", word_position: "target", correct_response: "106"}, confidence: ''}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial17.highestAssociates[0], duration: durationForListWords, data: {test_part:"test", stim: congruentHighestAssociateTrial17.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5", word_position: "list"}, confidence: ''}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 
 //add in remaining list b items 
@@ -1967,7 +1967,7 @@ for (let i=0; i<4; i++) {
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial18.highestAssociates[0], duration: durationForTargetWords, data: {test_part:"test", stim: congruentHighestAssociateTrial18.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5", word_position: "target", correct_response: "106"}, confidence: ''}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial18.highestAssociates[0], duration: durationForListWords, data: {test_part:"test", stim: congruentHighestAssociateTrial18.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_5", word_position: "list"}, confidence: ''}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 
 //add in remaining list b items 
