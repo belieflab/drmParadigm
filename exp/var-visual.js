@@ -8,7 +8,7 @@ let feedbackGenerator = '<p id="feedbackGenerator" style="color:black;"></p>';
 // tracks total taps per trial
 let totalConfidence = [0]; // must be 0 to compensate for participant should they miss first trial
 
-// // user selection of allergy or no-allergy
+// // user selection of yes or no
 let responseKey;
 
 // progress bar container
@@ -17,6 +17,8 @@ let fillUp = '<p id="fillUp" style="color:black;"></p>';
 
 // set the time remaining notification for participant
 let timeRemaining = '<p id="timeRemaining" style="text-align:center; color:black;"></p>';
+
+let responseKeySelectionFigure=   "<img src='stim/drm-keypressoptions.png' height='200px' width='400px'>"
 
 // define all language for experiment
 
@@ -59,7 +61,7 @@ for (let i=0; i<practiceTrial1.listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 //practiceTrials.push({stimulus: "TONE1", data: {test_part:"practice", stim: "tone1", drmTrial_type:"practice"}, confidence: ''}); // pushes 7th item
-practiceTrials.push({prompt: "Did you see the word ", stimulus: practiceTrial1.prototype, prompt_end:"?", duration: durationForTargetWords, response_ends_trial:false, data: {test_part:"practice", stim: practiceTrial1.prototype, drmTrial_type:"practice", word_position:"target", correct_response: "102"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
+practiceTrials.push({prompt: "Did you see the word ", stimulus: practiceTrial1.prototype, prompt_end:"?", duration: durationForTargetWords, response_ends_trial:false, data: {test_part:"practice", stim: practiceTrial1.prototype, drmTrial_type:"practice", word_position:"target", correct_response: "102"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + responseKeySelectionFigure + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 practiceTrials.push({prompt: "", stimulus: "+", prompt_end:"", duration: fixationDuration, data: {test_part:"practice", stim: "fixation", drmTrial_type:"practice"}, confidence: ''}); // pushes 9th item placeholder for TONE2
 
 for (let i=0; i<practiceTrial2.listA.length; i++) {
@@ -67,7 +69,7 @@ for (let i=0; i<practiceTrial2.listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 //practiceTrials.push({stimulus: "TONE1", data: {test_part:"practice", stim: "tone1", drmTrial_type:"practice"}, confidence: ''}); // pushes 7th item
-practiceTrials.push({prompt: "Did you see the word ", stimulus: practiceTrial2.prototype, prompt_end:"?", data: {test_part:"practice", stim: practiceTrial2.prototype, duration: durationForTargetWords, response_ends_trial:false, drmTrial_type:"practice", word_position:"target", correct_response: "106"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
+practiceTrials.push({prompt: "Did you see the word ", stimulus: practiceTrial2.prototype, prompt_end:"?", data: {test_part:"practice", stim: practiceTrial2.prototype, duration: durationForTargetWords, response_ends_trial:false, drmTrial_type:"practice", word_position:"target", correct_response: "106"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + responseKeySelectionFigure + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // pushes 8th item placeholder for prototype
 //practiceTrials.push({prompt:"",stimulus: "+", prompt_end: "", duration: fixationDuration, data: {test_part:"practice", stim: "fixation", drmTrial_type:"practice"}, confidence: ''}); // pushes 9th item placeholder for TONE2
 
 

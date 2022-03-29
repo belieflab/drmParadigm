@@ -18,6 +18,14 @@ body {
   display: none; 
 }
 
+.keyFigure {
+  float:center;
+  padding: 25px 25px 25px 25px;
+  width:400px;
+  height:200px;
+}
+
+
 .likingScale {
   float:center;
   padding: 25px 25px 25px 25px;
