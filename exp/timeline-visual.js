@@ -86,15 +86,13 @@ let practice = {
   type: "html-keyboard-response",
   data: jsPsych.timelineVariable("data"),
   stimulus: function(){
-    var html="<p>"+jsPsych.timelineVariable('prompt', true)+jsPsych.timelineVariable('stimulus', true)+jsPsych.timelineVariable('prompt_end', true)+jsPsych.timelineVariable('confidence', true)+"</p>";
-    return html;
+    var html="<p>"+jsPsych.timelineVariable('prompt', true)+"</p>"+ "<p class='words'>"+ jsPsych.timelineVariable('stimulus', true)+"</p>"+ "<p>"+jsPsych.timelineVariable('confidence', true)+"</p>";
+   return html;
   },
   trial_duration: jsPsych.timelineVariable("duration"),
-response_ends_trial:jsPsych.timelineVariable("response_ends_trial"),
- // stimulus: jsPsych.timelineVariable('stimulus'),
+//response_ends_trial:jsPsych.timelineVariable("response_ends_trial"),
   choices: [jsPsych.NO_KEYS],
-  // response_ends_trial: false,
-  // trial_duration: 30000,
+  response_ends_trial: false,
   on_load: function buttonPress(data){
     barFill = document.getElementById("fillUp");
     barFill.innerHTML = 'Hold response key to indicate confidence level.';
@@ -158,20 +156,14 @@ let test = {
   // prompt: jsPsych.timelineVariable("confidence"),
   data: jsPsych.timelineVariable("data"),
   stimulus: function(){
-  //  var html="<p>"+jsPsych.timelineVariable('prompt', true)+jsPsych.timelineVariable('stimulus', true)+jsPsych.timelineVariable('prompt_end', true)+jsPsych.timelineVariable('confidence', true)+"</p>";
-   // return html;
- // },
- var html="<p>"+jsPsych.timelineVariable('prompt', true)+"</p>"+ "<p class='words'>"+ jsPsych.timelineVariable('stimulus', true)+jsPsych.timelineVariable('prompt_end', true)+"</p>"+ "<p>"+jsPsych.timelineVariable('confidence', true)+"</p>";
+  var html="<p>"+jsPsych.timelineVariable('prompt', true)+"</p>"+ "<p class='words'>"+ jsPsych.timelineVariable('stimulus', true)+"</p>"+ "<p>"+jsPsych.timelineVariable('confidence', true)+"</p>";
  return html;
 },
 
-  //var html= "<img class='stim' src='"+jsPsych.timelineVariable('stimulus1', true)+"' style='float:left'>" +
-  // stimulus: jsPsych.timelineVariable('stimulus'),
   //choices: [70, 74],
   trial_duration: jsPsych.timelineVariable("duration"),
 // response_ends_trial:jsPsych.timelineVariable("response_ends_trial"),
   choices: [jsPsych.NO_KEYS],
-  //trial_duration: 3000,
   response_ends_trial: false,
   on_load: function buttonPress(data){
     barFill = document.getElementById("fillUp");
