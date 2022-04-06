@@ -18,7 +18,7 @@ let fillUp = '<p id="fillUp" style="color:black;"></p>';
 // set the time remaining notification for participant
 let timeRemaining = '<p id="timeRemaining" style="text-align:center; color:black;"></p>';
 
-let responseKeySelectionFigure=   "<img src='stim/drm-keypressoptions.png' height='200px' width='400px'>"
+let responseKeySelectionFigure=   "<img src='stim/newdrm-keypressoptions.png'>"
 
 // define all language for experiment
 

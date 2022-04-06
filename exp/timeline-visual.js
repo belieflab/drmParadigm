@@ -158,9 +158,14 @@ let test = {
   // prompt: jsPsych.timelineVariable("confidence"),
   data: jsPsych.timelineVariable("data"),
   stimulus: function(){
-    var html="<p>"+jsPsych.timelineVariable('prompt', true)+jsPsych.timelineVariable('stimulus', true)+jsPsych.timelineVariable('prompt_end', true)+jsPsych.timelineVariable('confidence', true)+"</p>";
-    return html;
-  },
+  //  var html="<p>"+jsPsych.timelineVariable('prompt', true)+jsPsych.timelineVariable('stimulus', true)+jsPsych.timelineVariable('prompt_end', true)+jsPsych.timelineVariable('confidence', true)+"</p>";
+   // return html;
+ // },
+ var html="<p>"+jsPsych.timelineVariable('prompt', true)+"</p>"+ "<p class='words'>"+ jsPsych.timelineVariable('stimulus', true)+jsPsych.timelineVariable('prompt_end', true)+"</p>"+ "<p>"+jsPsych.timelineVariable('confidence', true)+"</p>";
+ return html;
+},
+
+  //var html= "<img class='stim' src='"+jsPsych.timelineVariable('stimulus1', true)+"' style='float:left'>" +
   // stimulus: jsPsych.timelineVariable('stimulus'),
   //choices: [70, 74],
   trial_duration: jsPsych.timelineVariable("duration"),
