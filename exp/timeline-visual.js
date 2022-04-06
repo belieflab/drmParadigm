@@ -116,24 +116,57 @@ let practice = {
         });
     });
 },
-  // on_finish: function(data){
-  //   if (data.stim== "tone1") {
-  //     data.accuracy_test= "" ;
-  //    } else if (data.stim=="tone2") {
-  //     data.accuracy_test= "" ;
+  on_finish: function(data){
+    data.response = responseKey;
+
+   if  (data.word_position!="target") {
+      data.responseKey= "";
+      data.confidence="";
+      data.accuracy_practice= "" ;
+     } else if (responseKey == data.correct_response) {
+      data.accuracy_practice = 1;
+      data.confidence = totalConfidence;
+  } else if (responseKey != data.correct_response) {
+      data.accuracy_practice = 0;
+      data.confidence = totalConfidence;
+      responseKey = '';
+  }; 
+  
+  // else {
+  //     data.accuracy = '';
+  //     data.confidence = '';
+  //     responseKey = '';
+  // }
+
+
+
+  //   if  (data.stim=="fixation") {
+  //     data.responseKey= "";
+  //     data.confidence="";
+  //     data.accuracy_practice= "" ;
   //    } else if (data.word_position=="list") {
-  //     data.accuracy_test= "" ;
+  //     data.responseKey= "";
+  //     data.confidence="";
+  //     data.accuracy_practice= "" ;
   //   //   (data.key_press==null){
   //   //    data.accuracy_test = null;
     
-  //   } else if (data.key_press == data.correct_response) {
+  //   } else if (data.responseKey == data.correct_response) {
   //      console.log('correct');
-  //      data.accuracy_test = true;
-  //    } else if (data.key_press != data.correct_response) {
+  //      data.accuracy_practice = true;
+  //      data.confidence = totalConfidence;
+  //      responseKey = '';
+  //    } else if (data.responseKey != data.correct_response) {
   //    console.log('incorrect');
-  //      data.accuracy_test = false;
-  //    };
-  //   }
+  //      data.accuracy_practice = false;
+  //      data.confidence = totalConfidence;
+  //      responseKey = '';
+  //    } else  {
+  //     data.accuracy_practice = '';
+  //     data.confidence = '';
+  //     responseKey = '';
+  // };
+    }
 
 };
 
