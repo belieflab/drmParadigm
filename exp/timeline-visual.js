@@ -68,7 +68,13 @@ let instructions_3 = {
         });
     });
 },
-  
+on_finish: function(data){
+//add in this section so that if someone does not answer on first practice trial, then the response will be blank. 
+  data.confidence = '';
+  responseKey = '';
+}
+
+
 };
 
 
@@ -118,54 +124,29 @@ let practice = {
 },
   on_finish: function(data){
     data.response = responseKey;
-
+    //in missed trials, the data files shows a blank in the response colum,
+    //a 0 for incorrect in the accuracy column, and
+    // and 0 for the confidence 
    if  (data.word_position!="target") {
-      data.responseKey= "";
+      data.response= "";
       data.confidence="";
       data.accuracy_practice= "" ;
-     } else if (responseKey == data.correct_response) {
-      data.accuracy_practice = 1;
-      data.confidence = totalConfidence;
-  } else if (responseKey != data.correct_response) {
-      data.accuracy_practice = 0;
-      data.confidence = totalConfidence;
-      responseKey = '';
-  }; 
-  
-  // else {
-  //     data.accuracy = '';
-  //     data.confidence = '';
-  //     responseKey = '';
-  // }
+   } else  if (responseKey == data.correct_response) {
+    data.accuracy_practice = 1;
+    data.confidence = totalConfidence;
+    responseKey = '';
+   } else if (responseKey == data.incorrect_response) {
+    data.accuracy_practice = 0;
+    data.confidence = totalConfidence;
+    responseKey = '';
+   } else if (responseKey == "") {
+    data.accuracy_practice = 0;
+    data.confidence = 0;
+    responseKey = '';
+   };
 
 
 
-  //   if  (data.stim=="fixation") {
-  //     data.responseKey= "";
-  //     data.confidence="";
-  //     data.accuracy_practice= "" ;
-  //    } else if (data.word_position=="list") {
-  //     data.responseKey= "";
-  //     data.confidence="";
-  //     data.accuracy_practice= "" ;
-  //   //   (data.key_press==null){
-  //   //    data.accuracy_test = null;
-    
-  //   } else if (data.responseKey == data.correct_response) {
-  //      console.log('correct');
-  //      data.accuracy_practice = true;
-  //      data.confidence = totalConfidence;
-  //      responseKey = '';
-  //    } else if (data.responseKey != data.correct_response) {
-  //    console.log('incorrect');
-  //      data.accuracy_practice = false;
-  //      data.confidence = totalConfidence;
-  //      responseKey = '';
-  //    } else  {
-  //     data.accuracy_practice = '';
-  //     data.confidence = '';
-  //     responseKey = '';
-  // };
     }
 
 };
