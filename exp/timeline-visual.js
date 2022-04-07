@@ -76,7 +76,7 @@ let instructions_4 = {
   type: "html-keyboard-response",
   stimulus: "<p> At the end of the response period, you automatically will be brought to a page that begins the next trial. </p>"+
   "<p> You are now ready to proceed to some practice trials!</p>" +
-  "<p> <i> To continue to a couiple of practice trials, please press either the f or j key. </i> </p>",
+  "<p> <i> To continue to some practice trials, please press either the f or j key. </i> </p>",
   choices: [70, 74],
   
 };
