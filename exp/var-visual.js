@@ -1641,7 +1641,7 @@ for (let i=0; i<1; i++) {
 }
 
 // push the highest associate into the list 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial1.highestAssociates[0], duration: durationForListWords, prompt: " ", prompt_end: " ", data: {test_part:"test", stim: congruentHighestAssociateTrial1.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2", word_position:"list"}, confidence: ''}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial1.highestAssociates[1], duration: durationForListWords, prompt: " ", prompt_end: " ", data: {test_part:"test", stim: congruentHighestAssociateTrial1.highestAssociates[1], drmTrial_type: "congruentHighestAssociate_2", word_position:"list"}, confidence: ''}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 
 
 //add in remaining list b items 
@@ -1650,7 +1650,7 @@ for (let i=2; i<congruentHighestAssociateTrial1.listB.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 
-congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial1.highestAssociates[0], duration: durationForTargetWords, prompt: "Did you see the word?", prompt_end:" ", data: {test_part:"test", stim: congruentHighestAssociateTrial1.highestAssociates[0], drmTrial_type: "congruentHighestAssociate_2", word_position: "target", correct_response: "106", incorrect_response: "102"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + responseKeySelectionFigure + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
+congruentHighestAssociateTrials.push({stimulus: congruentHighestAssociateTrial1.highestAssociates[1], duration: durationForTargetWords, prompt: "Did you see the word?", prompt_end:" ", data: {test_part:"test", stim: congruentHighestAssociateTrial1.highestAssociates[1], drmTrial_type: "congruentHighestAssociate_2", word_position: "target", correct_response: "106", incorrect_response: "102"}, confidence: progressBar + fillUp + feedbackGenerator + timeRemaining + responseKeySelectionFigure + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists. 
 congruentHighestAssociateTrials.push({stimulus: "+", duration: fixationDuration, prompt: " ", prompt_end: " ", data: {test_part:"test", stim: "fixation", drmTrial_type: "congruentHighestAssociate_2"}, confidence: ''}); // pushes 9th item placeholder for TONE2
 
 
