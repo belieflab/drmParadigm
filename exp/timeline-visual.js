@@ -234,16 +234,10 @@ let test = {
 };
 
 
-// let instructions1 = {
-//   type: 'audio-keyboard-response',
-//   stimulus: 'stim/audio_instructions/DRM_instructions_1.mp3',
-//   choices: "NO_KEYS",
-//   trial_ends_after_audio: true
-// };
 
 let dataSave = {
   type: "html-keyboard-response",
-  stimulus: "<p style='color:black;'>Data saving...</p>"+
+  stimulus: "<p style='color:white;'>Data saving...</p>"+
   '<div class="sk-cube-grid">'+
   '<div class="sk-cube sk-cube1"></div>'+
   '<div class="sk-cube sk-cube2"></div>'+
@@ -255,7 +249,7 @@ let dataSave = {
   '<div class="sk-cube sk-cube8"></div>'+
   '<div class="sk-cube sk-cube9"></div>'+
   '</div>'+
-  "<p style='color:black;'>Do not close this window until the text dissapears.</p>",
+  "<p style='color:white;'>Do not close this window until the text dissapears.</p>",
   choices: jsPsych.NO_KEYS,
   trial_duration: 5000,
   on_finish: function() {
@@ -272,6 +266,19 @@ let dataSave = {
   }
 };
 
+let end = {
+  type: "html-keyboard-response",
+  stimulus:   "<p style='color:white;'>Thank you!</p>"+
+  "<p style='color:white;'>You have successfully completed the experiment and your data has been saved.</p>"+
+  "<p style='color:white;'>To proceed to the next section of this experiment, please click the following link:</p>"+
+  "<p style='color:white;'><a href="+feedbackLink+">Continue to questionnaires!</a></p>",
+  // "<p style='color:white;'>Please wait for the experimenter to continue.</p>"+
+  // "<p style='color:white;'><i>You may now close the experiment window at anytime.</i></p>",
+  choices: jsPsych.NO_KEYS,
+  // on_load: function() {
+  //   alert(reward);
+  // }
+};
 
 
 $.getScript("exp/main.js");
