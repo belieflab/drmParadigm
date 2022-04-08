@@ -70,7 +70,7 @@ timeline.push(instructions_3);
 timeline.push(instructions_4);
 timeline.push(practiceSection);
 timeline.push(instructions_5);
-//timeline.push(joshTest);
+timeline.push(joshTest);
 //timeline.push(deannaTest);
 //timeline.push(deannaTestIncongruentHighestAssociate); 
 //timeline.push(deannaTestCongruentHighestAssociate);

@@ -1006,7 +1006,7 @@ const scraps = 'scraps';
 const dump = 'dump';
 const debris = 'debris';
 const garbage = 'garbage';
-const waster = 'waster'; 
+const waste = 'waste'; 
 const litter = 'litter';
 
 let Trash = {
@@ -1014,7 +1014,7 @@ let Trash = {
     listA: [can, sewage, junk, sweep, pile, landfill],
     listB: [refuse, bag, rubbish, scraps, dump, debris],
     prototype: trash,
-    highestAssociates: [garbage, waster],
+    highestAssociates: [garbage, waste],
     lowestAssociate: litter,
 };
 
