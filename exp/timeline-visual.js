@@ -61,9 +61,7 @@ let instructions_3 = {
                 document.getElementById("counter").setAttribute("onkeydown", "return moveConfidence()"); // event.charCode allows us to set specific keys to use
                 responseKey = 106;
                 // console.log(responseKey);
-              } else { // all other keys ignored
-                document.getElementById("counter").setAttribute("onkeydown", "return false"); // event.charCode allows us to set specific keys to use 
-              }
+              } 
           }
         });
     });
