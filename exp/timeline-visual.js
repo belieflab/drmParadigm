@@ -113,8 +113,6 @@ let practice = {
                 document.getElementById("counter").setAttribute("onkeydown", "return moveConfidence()"); // event.charCode allows us to set specific keys to use
                 responseKey = 106;
                 // console.log(responseKey);
-              } else { // all other keys ignored
-                document.getElementById("counter").setAttribute("onkeydown", "return false"); // event.charCode allows us to set specific keys to use 
               }
           }
         });
@@ -130,15 +128,15 @@ let practice = {
       data.confidence="";
       data.accuracy_practice= "" ;
    } else  if (responseKey == data.correct_response) {
-    data.accuracy_practice = 1;
+    data.accuracy_practice = "correct";
     data.confidence = totalConfidence;
     responseKey = '';
    } else if (responseKey == data.incorrect_response) {
-    data.accuracy_practice = 0;
+    data.accuracy_practice = "incorrect";
     data.confidence = totalConfidence;
     responseKey = '';
    } else if (responseKey == "") {
-    data.accuracy_practice = 0;
+    data.accuracy_practice = "incorrect";
     data.confidence = 0;
     responseKey = '';
    };
@@ -193,9 +191,7 @@ let test = {
                 document.getElementById("counter").setAttribute("onkeydown", "return moveConfidence()"); // event.charCode allows us to set specific keys to use
                 responseKey = 106;
                 console.log(responseKey);
-              } else { // all other keys ignored
-                document.getElementById("counter").setAttribute("onkeydown", "return false"); // event.charCode allows us to set specific keys to use 
-              }
+              } 
           }
         });
     });
@@ -213,17 +209,17 @@ let test = {
    if  (data.word_position!="target") {
       data.response= "";
       data.confidence="";
-      data.accuracy_practice= "" ;
+      data.accuracy_experiment= "" ;
    } else  if (responseKey == data.correct_response) {
-    data.accuracy_practice = 1;
+    data.accuracy_experiment = "correct";
     data.confidence = totalConfidence;
     responseKey = '';
    } else if (responseKey == data.incorrect_response) {
-    data.accuracy_practice = 0;
+    data.accuracy_experiment = "incorrect";
     data.confidence = totalConfidence;
     responseKey = '';
    } else if (responseKey == "") {
-    data.accuracy_practice = 0;
+    data.accuracy_experiment = "incorrect";
     data.confidence = 0;
     responseKey = '';
    };
