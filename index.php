@@ -39,29 +39,72 @@
     <script type="text/javascript" src="exp/var-visual.js"></script>
     <script type="text/javascript" src="exp/fn2.js"></script>
     <script type="text/javascript">
-      // declare NDA required variables
-      let GUID;
-      let subjectID;
-      let sexAtBirth;
-      let siteNumber;
-      let ageAtAssessment;
-      let feedbackLink;
-
-      if (db_connection === false) {
+    // declare NDA required variables
+    let GUID;
+    let subjectID;
+    let sexAtBirth;
+    let siteNumber;
+    let ageAtAssessment;
+    let feedbackLink;
+    let visit;
+    let week;
+    if (workerId != "") {
+      GUID = "";
+      subjectID = "";
+      sexAtBirth = "";
+      siteNumber = "";
+      ageAtAssessment = "";
+      feedbackLink = "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_5Bi22xVNKYaykjI?interview_age=<?php echo $ageInMonths ?>&src_subject_id=<?php echo $consortId ?>&study_id=<?php echo $labId ?>&subjectkey=<?php echo $subjectKey ?>&site=<?php echo $institutionAlias ?>&sex=<?php echo $sexAtBirth ?>&phenotype=<?php echo $groupStatus ?>&candidateId=<?php echo $candidateId ?>&visit=<?php echo $visit ?>";
+      visit = "";
+      week = "";
+    } else {
+      if (db_connection == false) {
         GUID = "";
         subjectID = "";
         sexAtBirth = "";
         siteNumber = "";
         ageAtAssessment = "";
-        feedbackLink = "";
-      } else if (db_connection === true) {
-        GUID = "<?php echo $subjectKey?>";
-        subjectID = "<?php echo $consortId?>";
-        sexAtBirth = "<?php echo $sexAtBirth?>";
-        siteNumber = "<?php echo $institutionAlias?>";
-        ageAtAssessment = "<?php echo $ageInMonths?>";
-        feedbackLink = "https://belieflab.yale.edu/omnibus/eCRFs/feedback/tasks/kamin.php?candidateId=<?php echo $candidateId?>&studyId=<?php echo $studyId?>";
+        ffeedbackLink = "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_5Bi22xVNKYaykjI?interview_age=<?php echo $ageInMonths ?>&src_subject_id=<?php echo $consortId ?>&study_id=<?php echo $labId ?>&subjectkey=<?php echo $subjectKey ?>&site=<?php echo $institutionAlias ?>&sex=<?php echo $sexAtBirth ?>&phenotype=<?php echo $groupStatus ?>&candidateId=<?php echo $candidateId ?>&visit=<?php echo $visit ?>";
+        visit = "";
+        week = "";
+      } else if (db_connection == true) {
+        GUID = "<?php echo $subjectKey ?>";
+        subjectID = "<?php echo $consortId ?>";
+        workerId = "<?php echo $consortId ?>";
+        labId = "<?php echo $labId ?>";
+        sexAtBirth = "<?php echo $sexAtBirth ?>";
+        siteNumber = "<?php echo $institutionAlias ?>";
+        ageAtAssessment = "<?php echo $ageInMonths ?>";
+        groupStatus = "<?php echo $groupStatus ?>";
+        visit = "<?php echo $visit ?>";
+        week = "<?php echo $week ?>";
+        feedbackLink = "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_5Bi22xVNKYaykjI?interview_age=<?php echo $ageInMonths ?>&src_subject_id=<?php echo $consortId ?>&study_id=<?php echo $labId ?>&subjectkey=<?php echo $subjectKey ?>&site=<?php echo $institutionAlias ?>&sex=<?php echo $sexAtBirth ?>&phenotype=<?php echo $groupStatus ?>&candidateId=<?php echo $candidateId ?>&visit=<?php echo $visit ?>";
       }
-    </script>
+    }
+
+    if (turkprime_online === true) {
+
+    } else if (db_connection === false) {
+      GUID = "";
+      subjectID = "";
+      sexAtBirth = "";
+      siteNumber = "";
+      ageAtAssessment = "";
+      feedbackLink = "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_5Bi22xVNKYaykjI?workerId=<?php echo $workerId ?>";
+      visit = "";
+      week = "";
+    } else if (db_connection === true) {
+      GUID = "<?php echo $subjectKey ?>";
+      workerId = "<?php echo $consortId ?>"; // this is necessary so that the data save with the correct id
+      subjectID = "<?php echo $consortId ?>";
+      sexAtBirth = "<?php echo $sexAtBirth ?>";
+      siteNumber = "<?php echo $institutionAlias ?>";
+      ageAtAssessment = "<?php echo $ageInMonths ?>";
+      visit = "<?php echo $visit ?>";
+      week = "<?php echo $week ?>";
+      feedbackLink = "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_5Bi22xVNKYaykjI?workerId=<?php echo $workerId ?>";
+
+    }
+  </script>
   </footer>
 </html>
