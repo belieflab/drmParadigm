@@ -37,7 +37,7 @@ let instructions_3 = {
     type: "html-keyboard-response",
     stimulus:
         "<p> You can indicate your confidence in your response by varying the amount of time you hold down the “f” or “j” key. </p>" +
-        "<p> If you are very confident in your response, hold the key down. If you are unsure about your response,  simply tap the key. </p>" +
+        "<p> If you are very confident in your response, hold down the key. If you are unsure about your response,  simply tap the key. </p>" +
         "<p>The confidence meter (see below) keeps track of how confident you are in your response. The longer you hold down the key, the more the confidence meter will fill up. </p>" +
         // progressBar + fillUp + feedbackGenerator + timeRemaining + '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">'+
         "<p> <i> Hold down either the f or j key to see what it looks like when the confidence meter fills up. </i> </p>",
