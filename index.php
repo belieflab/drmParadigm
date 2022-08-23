@@ -20,17 +20,20 @@
     <link rel="stylesheet" type="text/css" href="css/w3.css"> <!-- styling for w3c progress bars -->
   </head>
   <body id='unload' onbeforeunload="return areYouSure()">  
-    <?php
-      if ($db_connection_status == true) {
-        include_once "include/nda.php";
+  <?php
+      if ($turkprime_online == true) {
+        include_once "include/consent.php";
         // echo'<br>';
         // echo'connected';
+      } else if ($db_connection_status == true) {
+          include_once "include/nda.php";
+          // echo'<br>';
+          // echo'connected';
       } else if ($db_connection_status == false) {
-       // include_once "include/intake.php";
-        include_once "include/nda.php";
+        include_once "include/intake.php";
         // echo'<br>';
         // echo'not connected';
-      };
+      }
     ?>
   </body>
   <footer>

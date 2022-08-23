@@ -11,8 +11,8 @@
     <h1 class="loading">Loading...</h1>
   </div>
   <div id="consentHolder" class="consent centeredDiv">
-  <h3 id="consentPreamble" class="consent">In order for us to conduct this test online, we need to include the standard consent form below. <br /> <br /> </h3>
-  <div id="consentForm" class="consent consent-box"> 
+  <h3 style="color:white" id="consentPreamble" class="consent">In order for us to conduct this test online, we need to include the standard consent form below. <br /> <br /> </h3>
+  <div style="color:black" id="consentForm" class="consent consent-box"> 
     <h2 id="consentHeading" class="consent">
       CONSENT FOR PARTICIPATION IN A RESERCH PROJECT 200 FR. 1 (2016-2)
       <br>
@@ -78,6 +78,19 @@
 
 
   <div id="nextButtonHolder" class="buttonHolder">
-  <button id="nextButton" onclick="startExperiment()">CONSENT/NEXT</button>
+  <button id="nextButton" class="noCursor" onclick="startExperiment()">LOAD</button>
+<!-- <p id="nextButton" style="display: none" >please make sure you are in a quiet place. When you are ready to begin, click 'START'</p> -->
+<br>
+</div>
+<script>$("button.loadMain").click(function(){
+      //   $.getScript("exp/rand.js");
+      $.getScript("exp/timeline-visual.js");
+      // $.getScript("exp/main.js");
+  }); </script>
+<script>
+$("button.noCursor").click(function(){
+$("body").addClass("hideCursor");
+}); 
+</script>
 </div>
 
