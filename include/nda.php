@@ -20,12 +20,12 @@
     <label class="container">Screen brightness is up to 100% &nbsp&nbsp&nbsp&nbsp  
     <input type="checkbox" name="brightness" id="brightness" value="1"/>
     </label>
-    <br>
+    <!-- <br>
     <br>
     <label class="container">Browser window is in full screen &nbsp&nbsp&nbsp&nbsp&nbsp
     <input type="checkbox" name="fullscreen" id="fullscreen" value="1"/>
     </label>
-    <p style="color:black">(Please press F11 on Windows or Linux, or Command + Ctrl + F on Mac)</p> 
+    <p style="color:black">(Please press F11 on Windows or Linux, or Command + Ctrl + F on Mac)</p>  -->
     <!-- <br>
     <label class="container">Headphones plugged in? &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp      
     <input type="checkbox" name="headphones" id="headphones" value="1"/>
@@ -47,7 +47,7 @@
   </label>
 </form>
 <br> -->
-<button id="submitButton" class="btn btn-primary btn-lg loadMain" onclick="validateHandedness(), validateBrightness(), validateFullscreen(), /*validateHeadphones(), validateVolume(),*/ submitIntake()" type="button">SUBMIT</button>
+<button id="submitButton" class="btn btn-primary btn-lg loadMain" onclick="validateHandedness(), validateBrightness(), /*validateFullscreen(), validateHeadphones(), validateVolume(),*/ submitIntake()" type="button">SUBMIT</button>
 </div>
 <div id="validation" style="display: none">
     <br>
@@ -56,8 +56,9 @@
 </div>
 
 <div id="load" style="display: none">
-<h3>All validation rules were passed successfully. Click to load the experiment.</h3>
-<button id="nextButton" class="noCursor" onclick="startExperiment()">LOAD</button>
+<h3>All validation rules were passed successfully!</h3>
+<h3>Please keep your browser in fullscreen for the duration of the experiment.</h3>
+<h3>Click to load the experiment.</h3><button id="nextButton" class="noCursor" onclick="startExperiment()">LOAD</button>
 <!-- <p id="nextButton" style="display: none" >please make sure you are in a quiet place. When you are ready to begin, click 'START'</p> -->
 <br>
 </div>

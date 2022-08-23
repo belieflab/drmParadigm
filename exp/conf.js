@@ -1,9 +1,9 @@
-  //******************************************//
- //   DRM PARADIGM                           //
+//******************************************//
+//   DRM PARADIGM                           //
 //******************************************//
 
-let workerId = getParamFromURL( 'workerId' );
+workerId = getParamFromURL("workerId");
 
-const durationForListWords=150;
-const durationForTargetWords=3000; 
-const fixationDuration=1000;
+const durationForListWords = 150;
+const durationForTargetWords = 3000;
+const fixationDuration = 1000;

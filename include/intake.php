@@ -103,7 +103,7 @@
 <br>
 </div>
 <script>$("button.loadMain").click(function(){
-      $.getScript("exp/timeline.js");
+      $.getScript("exp/timeline-visual.js");
   }); </script>
 <script>
 $("button.noCursor").click(function(){

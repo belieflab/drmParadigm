@@ -37,10 +37,7 @@
     ?>
   </body>
   <footer>
-    <script type="text/javascript" src="exp/fn.js"></script>
-    <script type="text/javascript" src="exp/conf.js"></script>
-    <script type="text/javascript" src="exp/var-visual.js"></script>
-    <script type="text/javascript" src="exp/fn2.js"></script>
+
     <script type="text/javascript">
     // declare NDA required variables
     let GUID;
@@ -108,6 +105,14 @@
       feedbackLink = "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_5Bi22xVNKYaykjI?workerId=<?php echo $workerId ?>";
 
     }
-  </script>
+    </script>
+    <script type="text/javascript" src="exp/fn.js"></script>
+    <script type="text/javascript" src="exp/conf.js"></script>
+
+
+    <script type="text/javascript" src="exp/var-visual.js"></script>
+    <script type="text/javascript" src="exp/timeline-visual.js"></script>
+    <script type="text/javascript" src="exp/fn2.js"></script>
+
   </footer>
 </html>

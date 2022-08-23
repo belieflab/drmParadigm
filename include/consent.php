@@ -22,8 +22,8 @@
     <h2>
       
     </h2>
-    <p id="consentInstructions" class="consent">
-      <b>Study Title:</b> Perception and Decisions
+    <p style="color:black" id="consentInstructions" class="consent">
+      <b >Study Title:</b> Perception and Decisions
       <br><br>
       <b>Principal Investigator:</b> Philip R. Corlett, PhD
       <br><br>
@@ -77,20 +77,8 @@
 
 
 
-  <div id="nextButtonHolder" class="buttonHolder">
-  <button id="nextButton" class="noCursor" onclick="startExperiment()">LOAD</button>
-<!-- <p id="nextButton" style="display: none" >please make sure you are in a quiet place. When you are ready to begin, click 'START'</p> -->
-<br>
+<div id="nextButtonHolder" class="buttonHolder">
+  <button id="nextButton" onclick="startExperiment()">CONSENT/NEXT</button>
 </div>
-<script>$("button.loadMain").click(function(){
-      //   $.getScript("exp/rand.js");
-      $.getScript("exp/timeline-visual.js");
-      // $.getScript("exp/main.js");
-  }); </script>
-<script>
-$("button.noCursor").click(function(){
-$("body").addClass("hideCursor");
-}); 
-</script>
-</div>
+
 
