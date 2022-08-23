@@ -5,7 +5,7 @@ let instructions_0 = {
     type: "html-keyboard-response",
     stimulus:
         "<p> Hello and thank you for taking part in our experiment!</p>" +
-        "<p>It should take about 45 minutes.</p>" +
+        "<p>It should take about 10 minutes.</p>" +
         "<p> <i> Press the spacebar to view your instructions. </i> </p>",
     choices: [32],
     on_start: function () {
