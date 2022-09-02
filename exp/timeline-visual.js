@@ -27,7 +27,8 @@ let instructions_2 = {
     stimulus:
         "<p> After viewing the list of six words, you will be asked whether a particular word was on the list. </p>" +
         "<p> Your job is to indicate whether that word was or was not on the list. </p>" +
-        "<p> If the word was on the list, press the “j” key. If the word was not on the list, press the “f” key. </p>" +
+        "<p> If the word was not on the list, press the “f” key. </p>" + 
+        "<p> If the word was on the list, press the “j” key. </p>" +
         "<p> <i> Press either the f or j key to view additional instructions. </i> </p>",
         prompt: responseKeySelectionFigure,
     choices: [70, 74],
@@ -129,18 +130,21 @@ let practice = {
         $(document).ready(function () {
             $("#tapTap").keypress(function (event) {
                 var keycode = event.which;
+                // console.log(keycode)
                 if (
                     (barFill.innerHTML =
                         "Hold response key to indicate confidence level.")
                 ) {
                     // reused from eefrt, just needed a placeholder here
+                    // document.getElementById("counter")
                     if (keycode == 102) {
                         document
                             .getElementById("counter")
                             .setAttribute(
                                 "onkeydown",
                                 "return moveConfidence()"
-                            ); // event.charCode allows us to set specific keys to use
+                            )
+                            // .addEventListener("keyup", alert("bad user")); // event.charCode allows us to set specific keys to use
                         responseKey = 102;
                         // console.log(responseKey);
                     } else if (keycode == 106) {
@@ -149,7 +153,8 @@ let practice = {
                             .setAttribute(
                                 "onkeydown",
                                 "return moveConfidence()"
-                            ); // event.charCode allows us to set specific keys to use
+                            )
+                            // .addEventListener("keyup", alert("bad user")); // event.charCode allows us to set specific keys to use
                         responseKey = 106;
                         // console.log(responseKey);
                     }
@@ -185,7 +190,7 @@ let practice = {
 let instructions_5 = {
     type: "html-keyboard-response",
     stimulus:
-        "<p> You have successfully completed the practice trials!. </p>" +
+        "<p> You have successfully completed the practice trials! </p>" +
         "<p> You are now ready to begin the experiment. </p>" +
         "<p> Remember, pressing the f key means that you think the word was not on the list and pressing the j key means that you think the word was on the list.  </p>" +
         "<p> <i> Press either the f or j key to begin the experiment now. </i> </p>",
