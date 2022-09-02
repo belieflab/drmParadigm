@@ -29,6 +29,7 @@ let instructions_2 = {
         "<p> Your job is to indicate whether that word was or was not on the list. </p>" +
         "<p> If the word was on the list, press the “j” key. If the word was not on the list, press the “f” key. </p>" +
         "<p> <i> Press either the f or j key to view additional instructions. </i> </p>",
+        prompt: responseKeySelectionFigure,
     choices: [70, 74],
 };
 
