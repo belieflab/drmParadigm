@@ -96,7 +96,7 @@ practiceTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 practiceTrials.push({
     prompt: "",
@@ -148,7 +148,7 @@ practiceTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 practiceTrials.push({
     prompt: "",
@@ -1280,7 +1280,7 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: "",
@@ -1332,7 +1332,7 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: "",
@@ -1383,7 +1383,7 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: "",
@@ -1434,7 +1434,7 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: "",
@@ -1485,7 +1485,7 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: "",
@@ -1536,7 +1536,7 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: "",
@@ -1587,7 +1587,7 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: "",
@@ -1638,7 +1638,7 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: "",
@@ -1689,7 +1689,7 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: "",
@@ -1740,7 +1740,7 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: "",
@@ -1791,7 +1791,7 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: "",
@@ -1842,7 +1842,7 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: "",
@@ -1893,7 +1893,7 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: "",
@@ -1944,7 +1944,7 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: "",
@@ -1995,7 +1995,7 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: "",
@@ -2046,7 +2046,7 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: "",
@@ -2097,7 +2097,7 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: "",
@@ -2148,7 +2148,7 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: "",
@@ -2220,7 +2220,7 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: "",
@@ -2270,7 +2270,7 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: "",
@@ -2320,7 +2320,7 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: "",
@@ -2370,7 +2370,7 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: "",
@@ -2420,7 +2420,7 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: "",
@@ -2470,7 +2470,7 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: "",
@@ -2520,7 +2520,7 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: "",
@@ -2570,7 +2570,7 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: "",
@@ -2620,7 +2620,7 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: "",
@@ -2670,7 +2670,7 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: "",
@@ -2720,7 +2720,7 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: "",
@@ -2770,7 +2770,7 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: "",
@@ -2820,7 +2820,7 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: "",
@@ -2870,7 +2870,7 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: "",
@@ -2920,7 +2920,7 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: "",
@@ -2970,7 +2970,7 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: "",
@@ -3020,7 +3020,7 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: "",
@@ -3070,7 +3070,7 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: "",
@@ -3197,7 +3197,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial1's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: "",
@@ -3248,7 +3248,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial2's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: "",
@@ -3299,7 +3299,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: "",
@@ -3350,7 +3350,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: "",
@@ -3401,7 +3401,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: "",
@@ -3452,7 +3452,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: "",
@@ -3503,7 +3503,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: "",
@@ -3554,7 +3554,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: "",
@@ -3605,7 +3605,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: "",
@@ -3656,7 +3656,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: "",
@@ -3707,7 +3707,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: "",
@@ -3758,7 +3758,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: "",
@@ -3809,7 +3809,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: "",
@@ -3860,7 +3860,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: "",
@@ -3911,7 +3911,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: "",
@@ -3962,7 +3962,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: "",
@@ -4013,7 +4013,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: "",
@@ -4064,7 +4064,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: "",
@@ -4185,7 +4185,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: "",
@@ -4270,7 +4270,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: "",
@@ -4355,7 +4355,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: "",
@@ -4440,7 +4440,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: "",
@@ -4525,7 +4525,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: "",
@@ -4610,7 +4610,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: "",
@@ -4695,7 +4695,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: "",
@@ -4780,7 +4780,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: "",
@@ -4865,7 +4865,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: "",
@@ -4950,7 +4950,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: "",
@@ -5035,7 +5035,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: "",
@@ -5120,7 +5120,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: "",
@@ -5205,7 +5205,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: "",
@@ -5290,7 +5290,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: "",
@@ -5375,7 +5375,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: "",
@@ -5460,7 +5460,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: "",
@@ -5545,7 +5545,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: "",
@@ -5630,7 +5630,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         responseKeySelectionFigure +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+        '<form autocomplete="off"><input autocomplete="off" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="" display="none"></form>',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: "",
