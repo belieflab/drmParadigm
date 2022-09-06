@@ -27,10 +27,10 @@ let instructions_2 = {
     stimulus:
         "<p> After viewing the list of six words, you will be asked whether a particular word was on the list. </p>" +
         "<p> Your job is to indicate whether that word was or was not on the list. </p>" +
-        "<p> If the word was not on the list, press the “f” key. </p>" + 
+        "<p> If the word was not on the list, press the “f” key. </p>" +
         "<p> If the word was on the list, press the “j” key. </p>" +
         "<p> <i> Press either the f or j key to view additional instructions. </i> </p>",
-        prompt: responseKeySelectionFigure,
+    prompt: responseKeySelectionFigure,
     choices: [70, 74],
 };
 
@@ -136,25 +136,37 @@ let practice = {
                         "Hold response key to indicate confidence level.")
                 ) {
                     // reused from eefrt, just needed a placeholder here
-                    // document.getElementById("counter")
+                    // checks if the key pressed is f or j
                     if (keycode == 102) {
+                        // if the f key is held down, then the confidence bar will move
                         document
                             .getElementById("counter")
                             .setAttribute(
                                 "onkeydown",
                                 "return moveConfidence()"
-                            )
-                            // .addEventListener("keyup", alert("bad user")); // event.charCode allows us to set specific keys to use
+                            );
+                        // if the f key is released, then the confidence bar will stop moving and trial will end
+                        document.getElementById("counter").onkeyup = () => {
+                            document
+                                .getElementById("counter")
+                                .setAttribute(jsPsych.finishTrial());
+                        };
                         responseKey = 102;
                         // console.log(responseKey);
                     } else if (keycode == 106) {
+                        // if the j key is held down, then the confidence bar will move
                         document
                             .getElementById("counter")
                             .setAttribute(
                                 "onkeydown",
                                 "return moveConfidence()"
-                            )
-                            // .addEventListener("keyup", alert("bad user")); // event.charCode allows us to set specific keys to use
+                            );
+                        // if the j key is released, then the confidence bar will stop moving and trial will end
+                        document.getElementById("counter").onkeyup = () => {
+                            document
+                                .getElementById("counter")
+                                .setAttribute(jsPsych.finishTrial());
+                        };
                         responseKey = 106;
                         // console.log(responseKey);
                     }
@@ -232,24 +244,39 @@ let test = {
                         "Hold response key to indicate confidence level.")
                 ) {
                     // reused from eefrt, just needed a placeholder here
+                    // checks if the key pressed is f or j
                     if (keycode == 102) {
+                        // if the f key is held down, then the confidence bar will move
                         document
                             .getElementById("counter")
                             .setAttribute(
                                 "onkeydown",
                                 "return moveConfidence()"
-                            ); // event.charCode allows us to set specific keys to use
+                            );
+                        // if the f key is released, then the confidence bar will stop moving and trial will end
+                        document.getElementById("counter").onkeyup = () => {
+                            document
+                                .getElementById("counter")
+                                .setAttribute(jsPsych.finishTrial());
+                        };
                         responseKey = 102;
-                        console.log(responseKey);
+                        // console.log(responseKey);
                     } else if (keycode == 106) {
+                        // if the j key is held down, then the confidence bar will move
                         document
                             .getElementById("counter")
                             .setAttribute(
                                 "onkeydown",
                                 "return moveConfidence()"
-                            ); // event.charCode allows us to set specific keys to use
+                            );
+                        // if the j key is released, then the confidence bar will stop moving and trial will end
+                        document.getElementById("counter").onkeyup = () => {
+                            document
+                                .getElementById("counter")
+                                .setAttribute(jsPsych.finishTrial());
+                        };
                         responseKey = 106;
-                        console.log(responseKey);
+                        // console.log(responseKey);
                     }
                 }
             });

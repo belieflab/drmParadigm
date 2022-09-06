@@ -18,8 +18,7 @@
 
 <script>
 
-function getParamFromURL(name)
-{
+function getParamFromURL(name) {
   name = name.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
   var regexS = "[\?&]"+name+"=([^&#]*)";
   var regex = new RegExp( regexS );
@@ -37,8 +36,7 @@ links[0]="index.php" +"?workerId="+usernameFromParamString; // Expt 1: Paranoia 
 
 
 
-function randomizeURL(linkArray)
-{
+function randomizeURL(linkArray) {
 	window.location=linkArray[Math.floor(Math.random()*linkArray.length)];
 }
 
