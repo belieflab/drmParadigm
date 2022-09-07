@@ -54,7 +54,7 @@
       sexAtBirth = "";
       siteNumber = "";
       ageAtAssessment = "";
-      feedbackLink = "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_5Bi22xVNKYaykjI?interview_age=<?php echo $ageInMonths ?>&src_subject_id=<?php echo $consortId ?>&study_id=<?php echo $labId ?>&subjectkey=<?php echo $subjectKey ?>&site=<?php echo $institutionAlias ?>&sex=<?php echo $sexAtBirth ?>&phenotype=<?php echo $groupStatus ?>&candidateId=<?php echo $candidateId ?>&visit=<?php echo $visit ?>";
+      feedbackLink = "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_5Bi22xVNKYaykjI?interview_age=<?php echo $ageInMonths ?>&src_subject_id=<?php echo $consortId ?>&study_id=<?php echo $labId ?>&subjectkey=<?php echo $subjectKey ?>&site=<?php echo $institutionAlias ?>&sex=<?php echo $sexAtBirth ?>&phenotype=<?php echo $groupStatus ?>&candidateId=<?php echo $candidateId ?>&visit=<?php echo $visit ?>&workerId=<?php echo $workerId ?>";
       visit = "";
       week = "";
     } else {
@@ -64,7 +64,7 @@
         sexAtBirth = "";
         siteNumber = "";
         ageAtAssessment = "";
-        ffeedbackLink = "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_5Bi22xVNKYaykjI?interview_age=<?php echo $ageInMonths ?>&src_subject_id=<?php echo $consortId ?>&study_id=<?php echo $labId ?>&subjectkey=<?php echo $subjectKey ?>&site=<?php echo $institutionAlias ?>&sex=<?php echo $sexAtBirth ?>&phenotype=<?php echo $groupStatus ?>&candidateId=<?php echo $candidateId ?>&visit=<?php echo $visit ?>";
+        ffeedbackLink = "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_5Bi22xVNKYaykjI?interview_age=<?php echo $ageInMonths ?>&src_subject_id=<?php echo $consortId ?>&study_id=<?php echo $labId ?>&subjectkey=<?php echo $subjectKey ?>&site=<?php echo $institutionAlias ?>&sex=<?php echo $sexAtBirth ?>&phenotype=<?php echo $groupStatus ?>&candidateId=<?php echo $candidateId ?>&visit=<?php echo $visit ?>&workerId=<?php echo $workerId ?>";
         visit = "";
         week = "";
       } else if (db_connection == true) {
@@ -78,7 +78,7 @@
         groupStatus = "<?php echo $groupStatus ?>";
         visit = "<?php echo $visit ?>";
         week = "<?php echo $week ?>";
-        feedbackLink = "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_5Bi22xVNKYaykjI?interview_age=<?php echo $ageInMonths ?>&src_subject_id=<?php echo $consortId ?>&study_id=<?php echo $labId ?>&subjectkey=<?php echo $subjectKey ?>&site=<?php echo $institutionAlias ?>&sex=<?php echo $sexAtBirth ?>&phenotype=<?php echo $groupStatus ?>&candidateId=<?php echo $candidateId ?>&visit=<?php echo $visit ?>";
+        feedbackLink = "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_5Bi22xVNKYaykjI?interview_age=<?php echo $ageInMonths ?>&src_subject_id=<?php echo $consortId ?>&study_id=<?php echo $labId ?>&subjectkey=<?php echo $subjectKey ?>&site=<?php echo $institutionAlias ?>&sex=<?php echo $sexAtBirth ?>&phenotype=<?php echo $groupStatus ?>&candidateId=<?php echo $candidateId ?>&visit=<?php echo $visit ?>&workerId=<?php echo $workerId ?>";
       }
     }
 
