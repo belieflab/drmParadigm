@@ -5,7 +5,7 @@ let instructions_audio_0 = {
     type: "html-keyboard-response",
     stimulus:
         "<p> Hello and thank you for taking part in our experiment!</p>" +
-        "<p>This experiment will be presnted entirely in an auditory format.</p>" +
+        "<p>This experiment will be presented entirely in an auditory format.</p>" +
         "<p>It should take about 30 minutes.</p>" +
         "<p> <i> Press spacebar to begin listening to your instructions. </i> </p>",
     choices: [32],

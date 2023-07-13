@@ -108,10 +108,9 @@
     </script>
     <script type="text/javascript" src="exp/fn.js"></script>
     <script type="text/javascript" src="exp/conf.js"></script>
-
-
-    <script type="text/javascript" src="exp/var-visual.js"></script>
-    <script type="text/javascript" src="exp/timeline-visual.js"></script>
+    
+    <script type="text/javascript" src="exp/var-audio.js"></script>
+    <script type="text/javascript" src="exp/timeline-audio.js"></script>
     <script type="text/javascript" src="exp/fn2.js"></script>
 
   </footer>
