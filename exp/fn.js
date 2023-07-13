@@ -31,7 +31,7 @@ function moveConfidence(data) {
     if (width >= 99) {
         // set to record 100 taps
         trialComplete = 1;
-        totalConfidence = 100
+        totalConfidence = 100;
         width = document.getElementById("keyBar").style.width = "0%"; // reset to 0
         jsPsych.finishTrial();
         // return (event.charCode == 48 || event.charCode == 49)
