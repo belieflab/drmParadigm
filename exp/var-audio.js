@@ -5461,3 +5461,147 @@ for (let i = 0; i <= randomizationFinal.length; i++) {
         }
     }
 }
+
+
+
+{/* <html>
+<head>
+  <title>Online Experiment</title>
+</head>
+<body>
+
+  <audio id="audioPlayer" controls style="display: none;"></audio>
+  <button onclick="playWords()">Play Words</button>
+
+  <div id="wordQuestion" style="display: none;">
+    <label for="wordInput">Enter the word you heard:</label>
+    <input type="text" id="wordInput">
+    <button onclick="checkWord()">Check</button>
+    <p id="result"></p>
+  </div>
+
+  <script>
+    const words = ["apple", "banana", "orange", "grape", "kiwi"];
+    let playedWords = [];
+    let targetWord;
+
+    function playWords() {
+      document.getElementById("wordQuestion").style.display = "none";
+      document.getElementById("result").textContent = "";
+
+      // Randomly select the target word
+      targetWord = words[Math.floor(Math.random() * words.length)];
+
+      // Shuffle the words array to randomize the order of playback
+      const shuffledWords = words.slice().sort(() => Math.random() - 0.5);
+
+      // Play each word in the shuffled order
+      let currentIndex = 0;
+      function playNextWord() {
+        if (currentIndex >= shuffledWords.length) {
+          // All words have been played, show the question
+          document.getElementById("wordQuestion").style.display = "block";
+          return;
+        }
+
+        const audioPlayer = document.getElementById("audioPlayer");
+        audioPlayer.src = `path/to/audio/${shuffledWords[currentIndex]}.mp3`;
+        audioPlayer.play()
+          .then(() => {
+            playedWords.push(shuffledWords[currentIndex]);
+            currentIndex++;
+            playNextWord();
+          })
+          .catch((error) => {
+            console.error("Error playing audio:", error);
+            currentIndex++;
+            playNextWord();
+          });
+      }
+
+      playNextWord();
+    }
+
+    function checkWord() {
+      const wordInput = document.getElementById("wordInput").value.trim().toLowerCase();
+
+      if (wordInput === targetWord) {
+        document.getElementById("result").textContent = "Correct! You heard the target word.";
+      } else {
+        document.getElementById("result").textContent = "Incorrect! The target word was not heard.";
+      }
+
+      // Display the list of words played
+      document.getElementById("result").textContent += `\nWords played: ${playedWords.join(", ")}`;
+    }
+  </script>
+</body>
+</html> */}
+
+{/* <audio id="audioPlayer" controls style="display: none;"></audio>
+<button onclick="playWords()">Play Words</button>
+
+<div id="wordQuestion" style="display: none;">
+  <label for="wordInput">Enter the word you heard:</label>
+  <input type="text" id="wordInput">
+  <button onclick="checkWord()">Check</button>
+  <p id="result"></p>
+</div>
+
+<script>
+  const words = ["apple", "banana", "orange", "grape", "kiwi"];
+  let playedWords = [];
+  let targetWord;
+
+  function playWords() {
+    document.getElementById("wordQuestion").style.display = "none";
+    document.getElementById("result").textContent = "";
+
+    // Randomly select the target word
+    targetWord = words[Math.floor(Math.random() * words.length)];
+
+    // Shuffle the words array to randomize the order of playback
+    const shuffledWords = words.slice().sort(() => Math.random() - 0.5);
+
+    // Play each word in the shuffled order
+    let currentIndex = 0;
+    function playNextWord() {
+      if (currentIndex >= shuffledWords.length) {
+        // All words have been played, show the question
+        document.getElementById("wordQuestion").style.display = "block";
+        return;
+      }
+
+      // Pause between words to make it more distinguishable
+      setTimeout(() => {
+        const audioPlayer = document.getElementById("audioPlayer");
+        audioPlayer.src = `path/to/audio/${shuffledWords[currentIndex]}.mp3`;
+        audioPlayer.play()
+          .then(() => {
+            playedWords.push(shuffledWords[currentIndex]);
+            currentIndex++;
+            playNextWord();
+          })
+          .catch((error) => {
+            console.error("Error playing audio:", error);
+            currentIndex++;
+            playNextWord();
+          });
+      }, 1000); // 1-second pause between words (adjust as needed)
+    }
+
+    playNextWord();
+  }
+
+  function checkWord() {
+    const wordInput = document.getElementById("wordInput").value.trim().toLowerCase();
+
+    if (wordInput === targetWord) {
+      document.getElementById("result").textContent = "Correct! You heard the target word.";
+    } else {
+      document.getElementById("result").textContent = "Incorrect! The target word was not heard.";
+    }
+
+    // Display the list of words played
+    document.getElementById("result").textContent += `\nWords played: ${playedWords.join(", ")}`;
+  } */}
