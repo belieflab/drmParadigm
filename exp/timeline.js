@@ -1,3 +1,15 @@
+// "use strict";
+
+startExperiment = () => {
+    jsPsych.init({
+        timeline: timeline,
+        show_progress_bar: true,
+        preload_images: [],
+        preload_audio: [],
+        preload_video: [],
+    });
+};
+
 let timeline = [];
 
 let instructions0 = {
@@ -81,37 +93,67 @@ let instructions1 = {
   trial_ends_after_audio: true
 };
 
-let dataSave = {
+const dataSave = {
   type: "html-keyboard-response",
-  stimulus: "<p style='color:white;'>Data saving...</p>"+
-  '<div class="sk-cube-grid">'+
-  '<div class="sk-cube sk-cube1"></div>'+
-  '<div class="sk-cube sk-cube2"></div>'+
-  '<div class="sk-cube sk-cube3"></div>'+
-  '<div class="sk-cube sk-cube4"></div>'+
-  '<div class="sk-cube sk-cube5"></div>'+
-  '<div class="sk-cube sk-cube6"></div>'+
-  '<div class="sk-cube sk-cube7"></div>'+
-  '<div class="sk-cube sk-cube8"></div>'+
-  '<div class="sk-cube sk-cube9"></div>'+
-  '</div>'+
-  "<p style='color:white;'>Do not close this window until the text dissapears.</p>",
-  choices: jsPsych.NO_KEYS,
+  stimulus: dataSaveAnimation(),
+  choices: "NO_KEYS",
   trial_duration: 5000,
-  on_finish: function() {
-    saveData("drm_" + workerId, jsPsych.data.get().csv()); //function with file name and which type of file as the 2 arguments
-    document.getElementById("unload").onbeforeunload=''; //removes popup (are you sure you want to exit) since data is saved now
-    // returns cursor functionality
-    $(document).ready(function() {
-    $("body").addClass("showCursor");
-    });
-      // at the end of each trial, update the progress bar
-      // based on the current value and the proportion to update for each trial
-      var curr_progress_bar_value = jsPsych.getProgressBarCompleted();
-      jsPsych.setProgressBar(curr_progress_bar_value + (1/720));
-  }
-};
+  on_finish: () => {
+    var curr_progress_bar_value = jsPsych.getProgressBarCompleted();
+    jsPsych.setProgressBar(curr_progress_bar_value + (1/720));
+      // const updatedScore =
+      //     typeof score !== "undefined"
+      //         ? score
+      //         : jsPsych.data.get().select("score").values.slice(-1)[0]; // Replace 'score' with actual data key if necessary
+      // Now, generate the thank you message with the updated score
+      const thankYou = instructions[10];
 
+      saveDataPromise(
+          `${experimentAlias}_${subjectId}`,
+          jsPsych.data.get().csv()
+      )
+          .then((response) => {
+              console.log("Data saved successfully.", response);
+              // Update the stimulus content directly via DOM manipulation
+              document.querySelector("#jspsych-content").innerHTML = thankYou;
+          })
+          .catch((error) => {
+              console.log("Failed to save data.", error);
+              // Check if the error object has 'error' property and use it, otherwise convert object to string
+              let errorMessage = error.error || JSON.stringify(error);
+              switch (errorMessage) {
+                  case '{"success":false}':
+                      errorMessage =
+                          "The ./data directory does not exit on this server.";
+                      break;
+                  case "Not Found":
+                      errorMessage =
+                          "There was an error saving the file to disk.";
+                      break;
+                  default:
+                      errorMessage = "Unknown error.";
+              }
+              // Update the stimulus content directly via DOM manipulation
+              const dataFailure = `
+              <div class="error-page">
+                  <p>Oh no!</p>
+                  <p>An error has occured and your data has not been saved:</p>
+                  <p>${errorMessage}</p>
+                  <p>Please wait for the experimenter to continue.</p>
+              </div>`;
+              document.querySelector("#jspsych-content").innerHTML =
+                  dataFailure;
+          })
+          .finally(() => {
+              document.getElementById("unload").onbeforeunload = ""; // Removes popup
+              $("body").addClass("showCursor"); // Returns cursor functionality
+              closeFullscreen(); // Kill fullscreen
+              if (!src_subject_id) {
+                  window.location.replace(feedbackLink);
+              }
+          });
+  },
+};
 
 
 $.getScript("exp/main.js");
