@@ -38,3 +38,7 @@ const repetitions = {
     production: 0,
     debug: 0,
 };
+
+const durationForListWords=150;
+const durationForTargetWords=3000; 
+const fixationDuration=1000;

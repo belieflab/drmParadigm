@@ -14,9 +14,6 @@
 // starts counting of trials at 1 to display in output file as trial
 let trialIterator = 1;
 
-// feedback contrainer
-let feedbackGenerator = '<p id="feedbackGenerator" style="color:black;"></p>';
-
 // tracks total taps per trial
 let totalConfidence = [0]; // must be 0 to compensate for participant should they miss first trial
 
