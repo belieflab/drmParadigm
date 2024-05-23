@@ -19,7 +19,7 @@ const language = "english"; // Language setting for the experiment
 // Options: "light", "dark", "white" (useful for images with white backgrounds)
 const theme = "light"; // Default theme setting for the user interface
 
-const version = "audio"; // Current version of the experiment (audio/visual)
+const version = "visual"; // Current version of the experiment (audio/visual)
 // Add additional global configuration constants here
 
 // Note: Uncomment the desired options. Ensure only one option per setting is active at a time.
