@@ -39,6 +39,8 @@ const repetitions = {
     debug: 0,
 };
 
-const durationForListWords=150;
-const durationForTargetWords=3000; 
-const fixationDuration=1000;
+const durationForListWords = 150;
+const durationForTargetWords = 3000;
+const fixationDuration = 1000;
+
+const numberOfTrials = 486;
