@@ -1,4 +1,3 @@
-<script>
 "use strict";
 
 // starts counting of trials at 1 to display in output file as trial
@@ -5654,7 +5653,7 @@ for (let i = 0; i <= 575; i++) {
     interleavedFinalStim.push(i);
 }
 
-randomizationScheme = [];
+let randomizationScheme = [];
 
 for (let i = 0; i <= 17; i++) {
     //zeros for incongruent prototype
@@ -5675,7 +5674,7 @@ for (let i = 0; i <= 17; i++) {
     randomizationScheme.push(3);
 }
 //randomizationFinal = randomizationScheme; //shuffled array no repeats
-randomizationFinal = jsPsych.randomization.repeat(randomizationScheme, 1); //shuffled array no repeats
+let randomizationFinal = jsPsych.randomization.repeat(randomizationScheme, 1); //shuffled array no repeats
 while (interleavedFinalStim.length > 0) {
     interleavedFinalStim.pop();
 }
@@ -5719,4 +5718,3 @@ for (let i = 0; i <= randomizationFinal.length; i++) {
         }
     }
 }
-</script>
