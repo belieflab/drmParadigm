@@ -1,4 +1,4 @@
-# Bistable Perception
+# drmParadigm
 
 ## Development Guide
 
@@ -21,15 +21,15 @@
 
 7. Clone into htdocs:
 
-        git clone https://github.com/belieflab/pessiglionne.git
+        git clone https://github.com/belieflab/drmParadigm.git
 
 #### Modifty permissions:
 8. Copy this text into your terminal from the htdocs folder (the folder you are already in).
 
-        sudo chmod -R 777 pessiglionne/
+        sudo chmod -R 777 drmParadigm/
         
 #### Start experiment:     
-9. Click this URL: [http://localhost:8080/pessiglionne](http://localhost:8080/pessiglionne)
+9. Click this URL: [http://localhost:8080/drmParadigm](http://localhost:8080/drmParadigm)
       
       
       

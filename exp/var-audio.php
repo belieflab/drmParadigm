@@ -1,7 +1,21 @@
+<!-- Purpose of var.js: To include all global variables (e.g., trialIterator) -->
+<!-- And any php server side logic -->
+
+<?php
+// include any php code here
+?>
+
+
+<!-- define all javascript globals here -->
+
+<script>
+"use strict";
+
 // starts counting of trials at 1 to display in output file as trial
 let trialIterator = 1;
 
 
+<<<<<<<< HEAD:exp/var-audio.js
 // feedback contrainer
 let feedbackGenerator = '<p id="feedbackGenerator" style="color:black;"></p>';
 
@@ -11,10 +25,18 @@ let totalConfidence = [0]; // must be 0 to compensate for participant should the
 // // user selection of allergy or no-allergy
 let responseKey;
 
+========
+>>>>>>>> wrap:exp/var.php
 // progress bar container
 let progressBar = '<div id="counter" class="w3-container" style="color:black"><div class="w3-light-grey"><div class="w3-grey" id="keyBar" style="height:24px;width:0%;"></div></div><br><div>';
 let fillUp = '<p id="fillUp" style="color:black;"></p>';
 
+<<<<<<<< HEAD:exp/var-audio.js
+========
+// feedback contrainer
+let feedbackGenerator = '<p id="feedbackGenerator" style="color:black;"></p>';
+
+>>>>>>>> wrap:exp/var.php
 // set the time remaining notification for participant
 let timeRemaining = '<p id="timeRemaining" style="text-align:center; color:black;"></p>';
 
@@ -434,7 +456,7 @@ const young = 'young';
 const pretty = 'pretty';
 const niece = 'niece';
 const beautiful = 'beautiful';
-const date = 'date';
+const outing = 'date';
 const daughter = 'daughter'; 
 const boy = 'boy';
 const dolls = 'dolls';
@@ -443,7 +465,7 @@ const sister = 'sister';
 let Girl = {
     listNumber: 14,
     listA: [female, dress, hair, dance, cute, aunt],
-    listB: [young, pretty, niece, beautiful, date, daughter],
+    listB: [young, pretty, niece, beautiful, outing, daughter],
     prototype: girl,
     highestAssociates: [boy, dolls],
     lowestAssociate: sister,
@@ -2059,8 +2081,7 @@ for (let i=0; i<=485; i++) {
   interleavedFinalStim.push(i);
 }
 
-
-randomizationScheme = [];
+let randomizationScheme = [];
 
 for (let i=0; i<=17; i++) {
   //zeros for incongruent prototype
@@ -2081,7 +2102,7 @@ for (let i=0; i<=17; i++) {
     randomizationScheme.push(3);
   }
 //randomizationFinal = randomizationScheme; //shuffled array no repeats
-randomizationFinal = jsPsych.randomization.repeat(randomizationScheme, 1); //shuffled array no repeats
+let randomizationFinal = jsPsych.randomization.repeat(randomizationScheme, 1); //shuffled array no repeats
 while (interleavedFinalStim.length>0) {
   interleavedFinalStim.pop();
 }
@@ -2126,3 +2147,5 @@ for (let i=0; i<=randomizationFinal.length; i++) {
     }
   }
   };
+</script>
+
