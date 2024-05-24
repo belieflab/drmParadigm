@@ -63,8 +63,40 @@ let instructions_3 = {
     choices: "NO_KEYS", // key_press handled instead by responseKey
     response_ends_trial: false,
     trial_duration: 30000,
-    on_load: () => {
-        buttonPress(102, 106);
+    on_load: function buttonPress(data) {
+        const barFill = document.getElementById("fillUp");
+        barFill.innerHTML = "Hold response key to indicate confidence level.";
+        document.getElementById("tapTap").focus(); //gives focus to the text box
+        $(document).ready(function () {
+            $("#tapTap").keypress(function (event) {
+                var keycode = event.which;
+                if (
+                    (barFill.innerHTML =
+                        "Hold response key to indicate confidence level.")
+                ) {
+                    // reused from eefrt, just needed a placeholder here
+                    if (keycode == 102) {
+                        document
+                            .getElementById("counter")
+                            .setAttribute(
+                                "onkeydown",
+                                "return moveConfidence()"
+                            ); // event.charCode allows us to set specific keys to use
+                        responseKey = 102;
+                        // console.log(responseKey);
+                    } else if (keycode == 106) {
+                        document
+                            .getElementById("counter")
+                            .setAttribute(
+                                "onkeydown",
+                                "return moveConfidence()"
+                            ); // event.charCode allows us to set specific keys to use
+                        responseKey = 106;
+                        // console.log(responseKey);
+                    }
+                }
+            });
+        });
     },
     on_finish: function (data) {
         //add in this section so that if someone does not answer on first practice trial, then the response will be blank.
@@ -102,8 +134,40 @@ let practice = {
     //response_ends_trial:jsPsych.timelineVariable("response_ends_trial"),
     choices: ["NO_KEYS"],
     response_ends_trial: false,
-    on_load: () => {
-        buttonPress(102, 106);
+    on_load: function buttonPress() {
+        const barFill = document.getElementById("fillUp");
+        barFill.innerHTML = "Hold response key to indicate confidence level.";
+        document.getElementById("tapTap").focus(); //gives focus to the text box
+        $(document).ready(function () {
+            $("#tapTap").keypress(function (event) {
+                var keycode = event.which;
+                if (
+                    (barFill.innerHTML =
+                        "Hold response key to indicate confidence level.")
+                ) {
+                    // reused from eefrt, just needed a placeholder here
+                    if (keycode == 102) {
+                        document
+                            .getElementById("counter")
+                            .setAttribute(
+                                "onkeydown",
+                                "return moveConfidence()"
+                            ); // event.charCode allows us to set specific keys to use
+                        responseKey = 102;
+                        // console.log(responseKey);
+                    } else if (keycode == 106) {
+                        document
+                            .getElementById("counter")
+                            .setAttribute(
+                                "onkeydown",
+                                "return moveConfidence()"
+                            ); // event.charCode allows us to set specific keys to use
+                        responseKey = 106;
+                        // console.log(responseKey);
+                    }
+                }
+            });
+        });
     },
     on_finish: function (data) {
         data.response = responseKey;
@@ -162,8 +226,40 @@ let test = {
     // response_ends_trial:jsPsych.timelineVariable("response_ends_trial"),
     choices: ["NO_KEYS"],
     response_ends_trial: false,
-    on_load: () => {
-        buttonPress(102, 106);
+    on_load: function buttonPress(data) {
+        const barFill = document.getElementById("fillUp");
+        barFill.innerHTML = "Hold response key to indicate confidence level.";
+        document.getElementById("tapTap").focus(); //gives focus to the text box
+        $(document).ready(function () {
+            $("#tapTap").keypress(function (event) {
+                var keycode = event.which;
+                if (
+                    (barFill.innerHTML =
+                        "Hold response key to indicate confidence level.")
+                ) {
+                    // reused from eefrt, just needed a placeholder here
+                    if (keycode == 102) {
+                        document
+                            .getElementById("counter")
+                            .setAttribute(
+                                "onkeydown",
+                                "return moveConfidence()"
+                            ); // event.charCode allows us to set specific keys to use
+                        responseKey = 102;
+                        // console.log(responseKey);
+                    } else if (keycode == 106) {
+                        document
+                            .getElementById("counter")
+                            .setAttribute(
+                                "onkeydown",
+                                "return moveConfidence()"
+                            ); // event.charCode allows us to set specific keys to use
+                        responseKey = 106;
+                        // console.log(responseKey);
+                    }
+                }
+            });
+        });
     },
     on_start: function () {
         //update progress bar with each iteration
