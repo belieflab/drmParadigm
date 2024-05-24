@@ -1,51 +1,53 @@
 "use strict";
 
-const startExperiment = () => {
-    jsPsych.init({
-        timeline: timeline,
-        show_progress_bar: true,
-        preload_images: [],
-        preload_audio: [],
-        preload_video: [],
-    });
-};
+const jsPsych = initJsPsych({
+    show_progress_bar: true,
+    message_progress_bar: "Completion Progress",
+    auto_update_progress_bar: false,
+});
 
 let timeline = [];
 
+const preload = {
+    type: jsPsychPreload,
+    images: [],
+    show_detailed_errors: true,
+};
+
 let instructions_0 = {
-    type: "html-keyboard-response",
+    type: jsPsychHtmlKeyboardResponse,
     stimulus:
         "<p> Hello and thank you for taking part in our experiment!</p>" +
         "<p>It should take about 45 minutes.</p>" +
         "<p> <i> Press the spacebar to view your instructions. </i> </p>",
-    choices: [32],
+    choices: [" "], //ascii spacebar
     on_start: function () {
         jsPsych.setProgressBar(0);
     },
 };
 
 let instructions_1 = {
-    type: "html-keyboard-response",
+    type: jsPsychHtmlKeyboardResponse,
     stimulus:
         "<p> This experiment assesses your ability to remember whether a particular word was presented in a list of words.</p>" +
         "<p>First, you will be presented a list of six words, with one word appearing on the screen at a time. </p>" +
         "<p> <i> Press the spacebar to view more instructions. </i> </p>",
-    choices: [32],
+    choices: [" "], //ascii spacebar
 };
 
 let instructions_2 = {
-    type: "html-keyboard-response",
+    type: jsPsychHtmlKeyboardResponse,
     stimulus:
         "<p> After viewing the list of six words, you will be asked whether a particular word was on the list. </p>" +
         "<p> Your job is to indicate whether that word was or was not on the list. </p>" +
         "<p> If the word was on the list, press the “j” key. If the word was not on the list, press the “f” key. </p>" +
         "<p> <i> Press either the f or j key to view additional instructions. </i> </p>",
-    choices: [70, 74],
+    choices: ["f", "j"],
 };
 
 //need to add in confidence bar here
 let instructions_3 = {
-    type: "html-keyboard-response",
+    type: jsPsychHtmlKeyboardResponse,
     stimulus:
         "<p> You can indicate your confidence in your response by varying the amount of time you hold down the “f” or “j” key. </p>" +
         "<p> If you are very confident in your response, hold the key down for []. If you are unsure about your response,  simply tap the key. </p>" +
@@ -58,43 +60,11 @@ let instructions_3 = {
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-    choices: [jsPsych.NO_KEYS],
+    choices: ["NO_KEYS"],
     response_ends_trial: false,
     trial_duration: 30000,
-    on_load: function buttonPress(data) {
-        barFill = document.getElementById("fillUp");
-        barFill.innerHTML = "Hold response key to indicate confidence level.";
-        document.getElementById("tapTap").focus(); //gives focus to the text box
-        $(document).ready(function () {
-            $("#tapTap").keypress(function (event) {
-                var keycode = event.which;
-                if (
-                    (barFill.innerHTML =
-                        "Hold response key to indicate confidence level.")
-                ) {
-                    // reused from eefrt, just needed a placeholder here
-                    if (keycode == 102) {
-                        document
-                            .getElementById("counter")
-                            .setAttribute(
-                                "onkeydown",
-                                "return moveConfidence()"
-                            ); // event.charCode allows us to set specific keys to use
-                        responseKey = 102;
-                        // console.log(responseKey);
-                    } else if (keycode == 106) {
-                        document
-                            .getElementById("counter")
-                            .setAttribute(
-                                "onkeydown",
-                                "return moveConfidence()"
-                            ); // event.charCode allows us to set specific keys to use
-                        responseKey = 106;
-                        // console.log(responseKey);
-                    }
-                }
-            });
-        });
+    on_load: () => {
+        buttonPress(102, 106);
     },
     on_finish: function (data) {
         //add in this section so that if someone does not answer on first practice trial, then the response will be blank.
@@ -104,16 +74,16 @@ let instructions_3 = {
 };
 
 let instructions_4 = {
-    type: "html-keyboard-response",
+    type: jsPsychHtmlKeyboardResponse,
     stimulus:
         "<p> At the end of the response period, you automatically will be brought to a page that begins the next trial. </p>" +
         "<p> You are now ready to proceed to some practice trials!</p>" +
         "<p> <i> To continue to some practice trials, please press either the f or j key. </i> </p>",
-    choices: [70, 74],
+    choices: ["f", "j"],
 };
 
 let practice = {
-    type: "html-keyboard-response",
+    type: jsPsychHtmlKeyboardResponse,
     data: jsPsych.timelineVariable("data"),
     stimulus: function () {
         var html =
@@ -130,42 +100,10 @@ let practice = {
     },
     trial_duration: jsPsych.timelineVariable("duration"),
     //response_ends_trial:jsPsych.timelineVariable("response_ends_trial"),
-    choices: [jsPsych.NO_KEYS],
+    choices: ["NO_KEYS"],
     response_ends_trial: false,
-    on_load: function buttonPress(data) {
-        barFill = document.getElementById("fillUp");
-        barFill.innerHTML = "Hold response key to indicate confidence level.";
-        document.getElementById("tapTap").focus(); //gives focus to the text box
-        $(document).ready(function () {
-            $("#tapTap").keypress(function (event) {
-                var keycode = event.which;
-                if (
-                    (barFill.innerHTML =
-                        "Hold response key to indicate confidence level.")
-                ) {
-                    // reused from eefrt, just needed a placeholder here
-                    if (keycode == 102) {
-                        document
-                            .getElementById("counter")
-                            .setAttribute(
-                                "onkeydown",
-                                "return moveConfidence()"
-                            ); // event.charCode allows us to set specific keys to use
-                        responseKey = 102;
-                        // console.log(responseKey);
-                    } else if (keycode == 106) {
-                        document
-                            .getElementById("counter")
-                            .setAttribute(
-                                "onkeydown",
-                                "return moveConfidence()"
-                            ); // event.charCode allows us to set specific keys to use
-                        responseKey = 106;
-                        // console.log(responseKey);
-                    }
-                }
-            });
-        });
+    on_load: () => {
+        buttonPress(102, 106);
     },
     on_finish: function (data) {
         data.response = responseKey;
@@ -193,17 +131,17 @@ let practice = {
 };
 
 let instructions_5 = {
-    type: "html-keyboard-response",
+    type: jsPsychHtmlKeyboardResponse,
     stimulus:
         "<p> You have successfully completed the practice trials!. </p>" +
         "<p> You are now ready to begin the experiment. </p>" +
         "<p> Remember, pressing the f key means that you think the word was not on the list and pressing the j key means that you think the word was on the list.  </p>" +
         "<p> <i> Press either the f or j key to begin the experiment now. </i> </p>",
-    choices: [70, 74],
+    choices: ["f", "j"],
 };
 
 let test = {
-    type: "html-keyboard-response",
+    type: jsPsychHtmlKeyboardResponse,
     // prompt: jsPsych.timelineVariable("confidence"),
     data: jsPsych.timelineVariable("data"),
     stimulus: function () {
@@ -220,45 +158,12 @@ let test = {
         return html;
     },
 
-    //choices: [70, 74],
     trial_duration: jsPsych.timelineVariable("duration"),
     // response_ends_trial:jsPsych.timelineVariable("response_ends_trial"),
-    choices: [jsPsych.NO_KEYS],
+    choices: ["NO_KEYS"],
     response_ends_trial: false,
-    on_load: function buttonPress(data) {
-        barFill = document.getElementById("fillUp");
-        barFill.innerHTML = "Hold response key to indicate confidence level.";
-        document.getElementById("tapTap").focus(); //gives focus to the text box
-        $(document).ready(function () {
-            $("#tapTap").keypress(function (event) {
-                var keycode = event.which;
-                if (
-                    (barFill.innerHTML =
-                        "Hold response key to indicate confidence level.")
-                ) {
-                    // reused from eefrt, just needed a placeholder here
-                    if (keycode == 102) {
-                        document
-                            .getElementById("counter")
-                            .setAttribute(
-                                "onkeydown",
-                                "return moveConfidence()"
-                            ); // event.charCode allows us to set specific keys to use
-                        responseKey = 102;
-                        console.log(responseKey);
-                    } else if (keycode == 106) {
-                        document
-                            .getElementById("counter")
-                            .setAttribute(
-                                "onkeydown",
-                                "return moveConfidence()"
-                            ); // event.charCode allows us to set specific keys to use
-                        responseKey = 106;
-                        console.log(responseKey);
-                    }
-                }
-            });
-        });
+    on_load: () => {
+        buttonPress(102, 106);
     },
     on_start: function () {
         //update progress bar with each iteration
@@ -291,7 +196,7 @@ let test = {
 };
 
 const dataSave = {
-    type: "html-keyboard-response",
+    type: jsPsychHtmlKeyboardResponse,
     stimulus: dataSaveAnimation(),
     choices: "NO_KEYS",
     trial_duration: 5000,

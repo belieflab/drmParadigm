@@ -1,19 +1,21 @@
 "use strict";
 
-const startExperiment = () => {
-    jsPsych.init({
-        timeline: timeline,
-        show_progress_bar: true,
-        preload_images: [],
-        preload_audio: [],
-        preload_video: [],
-    });
-};
+const jsPsych = initJsPsych({
+    show_progress_bar: true,
+    message_progress_bar: "Completion Progress",
+    auto_update_progress_bar: false,
+});
 
 let timeline = [];
 
+const preload = {
+    type: jsPsychPreload,
+    images: [],
+    show_detailed_errors: true,
+};
+
 let instructions_audio_0 = {
-    type: "html-keyboard-response",
+    type: jsPsychHtmlKeyboardResponse,
     stimulus:
         "<p> Hello and thank you for taking part in our experiment!</p>" +
         "<p>This experiment will be presnted entirely in an auditory format.</p>" +
@@ -41,7 +43,7 @@ let instructions_audio_0 = {
 };
 
 let instructions_audio_1 = {
-    type: "html-keyboard-response",
+    type: jsPsychHtmlKeyboardResponse,
     stimulus:
         "<p> This experiment assesses your ability to remember whether a particular word was presented in a list of words.</p>" +
         "<p>First, you will hear a list of six words. At the conclusion of the list, you will hear a short tone. </p>" +
@@ -50,7 +52,7 @@ let instructions_audio_1 = {
 };
 
 let instructions_audio_2 = {
-    type: "html-keyboard-response",
+    type: jsPsychHtmlKeyboardResponse,
     stimulus:
         "<p> After the short tone, you will hear one word. </p>" +
         "<p> Your job is to indicate whether that word was or was not on the list that you heard before the tone. </p>" +
@@ -61,7 +63,7 @@ let instructions_audio_2 = {
 
 //need to add in confidence bar here
 let instructions_audio_3 = {
-    type: "html-keyboard-response",
+    type: jsPsychHtmlKeyboardResponse,
     stimulus:
         "<p> You can indicate your confidence in your response by varying the amount of time you hold down the “f” or “j” key. </p>" +
         "<p> If you are very confident in your response, hold the key down for []. If you are unsure about your response,  simply tap the key. </p>" +
@@ -71,7 +73,7 @@ let instructions_audio_3 = {
 };
 
 let instructions_audio_4 = {
-    type: "html-keyboard-response",
+    type: jsPsychHtmlKeyboardResponse,
     stimulus:
         "<p> Please give your response as quickly as possible.  </p>" +
         "<p> At the end of the response period, you will hear a long low tone. This tone indicates that the response period has ended. </p>" +
@@ -80,7 +82,7 @@ let instructions_audio_4 = {
 };
 
 let instructions_audio_5 = {
-    type: "html-keyboard-response",
+    type: jsPsychHtmlKeyboardResponse,
     stimulus:
         "<p> After you hear the long low tone,  the next trial will begin. </p>" +
         "<p> To continue to a couiple of practice trials, please press either the f or j key. </p>" +
@@ -89,7 +91,7 @@ let instructions_audio_5 = {
 };
 
 let instructions_visual_0 = {
-    type: "html-keyboard-response",
+    type: jsPsychHtmlKeyboardResponse,
     stimulus:
         "<p> Hello and thank you for taking part in our experiment!</p>" +
         "<p>It should take about 45 minutes.</p>" +
@@ -101,7 +103,7 @@ let instructions_visual_0 = {
 };
 
 let instructions_visual_1 = {
-    type: "html-keyboard-response",
+    type: jsPsychHtmlKeyboardResponse,
     stimulus:
         "<p> This experiment assesses your ability to remember whether a particular word was presented in a list of words.</p>" +
         "<p>First, you will be presented a list of six words, with one word appearing on the screen at a time. </p>" +
@@ -110,7 +112,7 @@ let instructions_visual_1 = {
 };
 
 let instructions_visual_2 = {
-    type: "html-keyboard-response",
+    type: jsPsychHtmlKeyboardResponse,
     stimulus:
         "<p> After viewing the list of six words, you will be asked whether a particular word was on the list. </p>" +
         "<p> Your job is to indicate whether that word was or was not on the list. </p>" +
@@ -121,7 +123,7 @@ let instructions_visual_2 = {
 
 //need to add in confidence bar here
 let instructions_visual_3 = {
-    type: "html-keyboard-response",
+    type: jsPsychHtmlKeyboardResponse,
     stimulus:
         "<p> You can indicate your confidence in your response by varying the amount of time you hold down the “f” or “j” key. </p>" +
         "<p> If you are very confident in your response, hold the key down for []. If you are unsure about your response,  simply tap the key. </p>" +
@@ -134,7 +136,7 @@ let instructions_visual_3 = {
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-    choices: [jsPsych.NO_KEYS],
+    choices: ["NO_KEYS"],
     response_ends_trial: false,
     trial_duration: 30000,
     on_load: function buttonPress(data) {
@@ -180,7 +182,7 @@ let instructions_visual_3 = {
 };
 
 let instructions_visual_4 = {
-    type: "html-keyboard-response",
+    type: jsPsychHtmlKeyboardResponse,
     stimulus:
         "<p> At the end of the response period, you automatically will be brought to a page that begins the next trial. </p>" +
         "<p> You are now ready to proceed to some practice trials!</p>" +
@@ -189,7 +191,7 @@ let instructions_visual_4 = {
 };
 
 let practice = {
-    type: "html-keyboard-response",
+    type: jsPsychHtmlKeyboardResponse,
     data: jsPsych.timelineVariable("data"),
     stimulus: function () {
         var html =
@@ -204,7 +206,7 @@ let practice = {
     trial_duration: jsPsych.timelineVariable("duration"),
     response_ends_trial: jsPsych.timelineVariable("response_ends_trial"),
     // stimulus: jsPsych.timelineVariable('stimulus'),
-    choices: [jsPsych.NO_KEYS],
+    choices: ["NO_KEYS"],
     response_ends_trial: false,
     // trial_duration: 30000,
     on_load: function buttonPress(data) {
@@ -268,7 +270,7 @@ let practice = {
 };
 
 let instructions_audio_6 = {
-    type: "html-keyboard-response",
+    type: jsPsychHtmlKeyboardResponse,
     stimulus:
         "<p> You have successfully completed the practice trials!. </p>" +
         "<p> You are now ready to begin the experiment. </p>" +
@@ -278,7 +280,7 @@ let instructions_audio_6 = {
 };
 
 let instructions_visual_5 = {
-    type: "html-keyboard-response",
+    type: jsPsychHtmlKeyboardResponse,
     stimulus:
         "<p> You have successfully completed the practice trials!. </p>" +
         "<p> You are now ready to begin the experiment. </p>" +
@@ -288,7 +290,7 @@ let instructions_visual_5 = {
 };
 
 let test = {
-    type: "html-keyboard-response",
+    type: jsPsychHtmlKeyboardResponse,
     // prompt: jsPsych.timelineVariable("confidence"),
     data: jsPsych.timelineVariable("data"),
     stimulus: function () {
@@ -301,7 +303,7 @@ let test = {
     },
     // stimulus: jsPsych.timelineVariable('stimulus'),
     //choices: [70, 74],
-    choices: [jsPsych.NO_KEYS],
+    choices: ["NO_KEYS"],
     trial_duration: 3000,
     response_ends_trial: false,
     on_load: function buttonPress(data) {
@@ -376,7 +378,7 @@ let test = {
 // };
 
 const dataSave = {
-    type: "html-keyboard-response",
+    type: jsPsychHtmlKeyboardResponse,
     stimulus: dataSaveAnimation(),
     choices: "NO_KEYS",
     trial_duration: 5000,

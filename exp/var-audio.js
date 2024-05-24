@@ -2,6 +2,9 @@
 // starts counting of trials at 1 to display in output file as trial
 let trialIterator = 1;
 
+var responseOptions =
+    "1 Allergy&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp0 No Reaction <br><br> Hold response key to indicate confidence level.";
+
 // feedback contrainer
 let feedbackGenerator = '<p id="feedbackGenerator" style="color:black;"></p>';
 
@@ -1142,7 +1145,7 @@ let allLists = [
 ]; // need to add all other lists to
 
 // and randomize
-let randomizedLists = jsPsych.randomization.repeat(allLists, 1);
+let randomizedLists = shuffleArray(allLists);
 
 let bucket1 = randomizedLists.slice(0, 18); // takes first 18 lists of randomize dlists and places them into "bucket"
 let bucket2 = randomizedLists.slice(0, 18);
@@ -1211,7 +1214,7 @@ let incongruentPrototypeTrial18 = incongruentPrototype[17];
 // let incongruentHighestAssociate5 = randomizedLists[0].highestAssociates[1];
 
 // re-randomize list to keep things as random as possible
-randomizedLists = jsPsych.randomization.repeat(randomizedLists, 1);
+randomizedLists = shuffleArray(randomizedLists);
 
 let incongruentPrototypeTrials = [];
 // pushes 6 items from listA
@@ -5418,7 +5421,7 @@ for (let i = 0; i <= 17; i++) {
     randomizationScheme.push(3);
 }
 //randomizationFinal = randomizationScheme; //shuffled array no repeats
-let randomizationFinal = jsPsych.randomization.repeat(randomizationScheme, 1); //shuffled array no repeats
+let randomizationFinal = shuffleArray(randomizationScheme); //shuffled array no repeats
 while (interleavedFinalStim.length > 0) {
     interleavedFinalStim.pop();
 }
