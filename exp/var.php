@@ -7,10 +7,14 @@
 
 <script>
 
-if (version === "audio") {
-    $.getScript("exp/var-audio.js");
-} else if (version === "visual") {
-    $.getScript("exp/var-visual.js");
+switch (version) {
+    case "audio":
+        $.getScript("exp/var-audio.js");
+        break;
+    case "visual":
+        $.getScript("exp/var-visual.js");
+        break;
 }
+
 
 </script>
