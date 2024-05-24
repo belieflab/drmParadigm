@@ -32,9 +32,11 @@
   <?php
     if (isset($_GET["workerId"]) || isset($_GET["PROLIFIC_PID"]) || isset($_GET["participantId"])) {
       include_once "./wrap/include/consent.php";
-    } else if (isset($_GET["src_subject_id"])) {
+    }
+    if (isset($_GET["src_subject_id"])) {
       include_once "./wrap/include/nda.php";
-    } else {
+    } 
+    if (!isset($_GET["workerId"]) && !isset($_GET["PROLIFIC_PID"]) && !isset($_GET["participantId"]) && !isset($_GET["src_subject_id"])) {
       include_once "./wrap/include/intake.php";
     }
   ?>
