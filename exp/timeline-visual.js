@@ -59,8 +59,8 @@ let instructions_3 = {
         fillUp +
         feedbackGenerator +
         timeRemaining +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-    choices: ["NO_KEYS"],
+        '<form autocomplete="off" action=""> <input autocomplete="false" name="hidden" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none;" onkeypress="">',
+    choices: "NO_KEYS", // key_press handled instead by responseKey
     response_ends_trial: false,
     trial_duration: 30000,
     on_load: () => {

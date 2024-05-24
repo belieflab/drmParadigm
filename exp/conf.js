@@ -17,7 +17,7 @@ const language = "english"; // Language setting for the experiment
 
 // User Interface Theme
 // Options: "light", "dark", "white" (useful for images with white backgrounds)
-const theme = "light"; // Default theme setting for the user interface
+const theme = "dark"; // Default theme setting for the user interface
 
 // Current version of the experiment
 // Options: "audio", "visual"

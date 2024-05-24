@@ -21,9 +21,12 @@
     <!-- loads in jspsych plugins -->
     <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@1.1.2"></script>  
     <script src="https://unpkg.com/@jspsych/plugin-preload@1.1.3"></script>
-\    <link rel="stylesheet" type="text/css" href="./wrap/lib/style.css"> 
-    <link rel="stylesheet" type="text/css" href="css/style.css"> 
-    <link rel="stylesheet" type="text/css" href="css/w3.css"> <!-- styling for w3c progress bars -->
+    <!-- general styling -->
+    <link rel="stylesheet" type="text/css" href="./wrap/lib/style.css">
+    <!-- confidence bar styling -->
+    <link rel="stylesheet" type="text/css" href="./css/confidence.css">
+    <!-- stimuli styling -->
+    <link rel="stylesheet" type="text/css" href="./css/exp.css">
   </head>
   <body id='unload' onbeforeunload="return areYouSure()">  
   <?php
