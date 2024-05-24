@@ -1,7 +1,13 @@
-if (version === "audio") {
-    $.getScript("exp/timeline-audio.js");
-} else if (version === "visual") {
-    $.getScript("exp/timeline-visual.js");
-} else {
-    $.getScript("exp/timeline.js");
+// handle the timeline for the experiment
+
+// Handle the timeline for the experiment directly based on the version
+switch (version) {
+    case "audio":
+        $.getScript("exp/timeline-audio.js");
+        break;
+    case "visual":
+        $.getScript("exp/timeline-visual.js");
+        break;
+    default:
+        $.getScript("exp/timeline.js");
 }

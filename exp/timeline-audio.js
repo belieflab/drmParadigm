@@ -1,6 +1,6 @@
-// "use strict";
+"use strict";
 
-startExperiment = () => {
+const startExperiment = () => {
     jsPsych.init({
         timeline: timeline,
         show_progress_bar: true,
