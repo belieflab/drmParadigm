@@ -8,6 +8,4 @@ switch (version) {
     case "visual":
         $.getScript("exp/timeline-visual.js");
         break;
-    default:
-        $.getScript("exp/timeline.js");
 }
