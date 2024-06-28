@@ -1,4 +1,5 @@
 "use strict";
+
 // starts counting of trials at 1 to display in output file as trial
 let trialIterator = 1;
 
@@ -26,7 +27,8 @@ let timeRemaining =
 // define all language for experiment
 
 //First, create words to be used in practice trials
-const atom = "atom";
+
+const atom = "atom"; //stimDecInstructions1.push("stim/audio_stimuli/africa.mp3");
 const molecule = "molecule";
 const bond = "bond";
 const gas = "gas";

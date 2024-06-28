@@ -3,6 +3,7 @@
 
 <?php
 // include any php code here
+// Directory paths for different stimulus types
 $instructionPath = './stim/audio_instructions/';
 $stimuliPath = './stim/audio_stimuli/';
 
@@ -32,11 +33,25 @@ $stimuliArrayJSON = json_encode($stimuliArray);
 
 switch (version) {
     case "audio":
-        $.getScript("exp/var-audio.js");
         // Arrays of stimuli, parsed from JSON provided by PHP
         const instructionsAudio = <?php echo $instructionsArrayJSON; ?>;
         const stimuliAudio = <?php echo $stimuliArrayJSON; ?>;
+
+        // Function to create stimulus objects for an array of file paths
+        function createStimuli(array, part) {
+            return array.map(stimulus => ({
+                stimulus,
+                    data: { test_part: part, stim: stimulus },
+                }));
+        }
+
+        // Stimulus objects for each category
+        const instr_audio = createStimuli(instructionsAudio, "instr");
+        const stim_audio = createStimuli(stimuliAudio, "stim");
+
+        $.getScript("exp/var-audio.js");
         break;
+
     case "visual":
         $.getScript("exp/var-visual.js");
         break;
