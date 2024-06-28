@@ -14,9 +14,9 @@ const preload = {
     show_detailed_errors: true,
 };
 
-let instructions_audio_0 = {
+let instructions_0 = {
     type: jsPsychHtmlKeyboardResponse,
-    stimulus:
+    stimulus: 
         "<p> Hello and thank you for taking part in our experiment!</p>" +
         "<p>This experiment will be presnted entirely in an auditory format.</p>" +
         "<p>It should take about 30 minutes.</p>" +
@@ -42,7 +42,7 @@ let instructions_audio_0 = {
     // }
 };
 
-let instructions_audio_1 = {
+let instructions_1 = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus:
         "<p> This experiment assesses your ability to remember whether a particular word was presented in a list of words.</p>" +
@@ -51,7 +51,44 @@ let instructions_audio_1 = {
     choices: [32],
 };
 
-let instructions_audio_2 = {
+// let instructions_audio_0 = {
+//     type: jsPsychAudioKeyboardResponse,
+//     prompt:
+//         "<p> Hello and thank you for taking part in our experiment!</p>" +
+//         "<p>This experiment will be presnted entirely in an auditory format.</p>" +
+//         "<p>It should take about 30 minutes.</p>" +
+//         "<p> <i> Press spacebar to begin listening to your instructions. </i> </p>",
+//         stimulus: jsPsych.timelineVariable("stimulus"),
+//     choices: [32],
+//     on_start: function () {
+//         jsPsych.setProgressBar(0);
+//     },
+//     // on_finish: function() {
+//     //   // this needs to be wrapped in a while loop
+//     //   // checks against other protyotype vals to ensure inconrugency
+//     //   if (randomizedLists[0].prototype === Anger.prototype) {
+//     //     randomizedLists.push(randomizedLists.shift());
+//     //     console.log("shifted");
+//     //   } else {
+//     //     console.log("not shifted");
+//     //   }
+//     //   incongruentPrototypeTrials.pop(); // pops the 9th item
+//     //   incongruentPrototypeTrials.pop(); // pops the 8th item
+//     //   incongruentPrototypeTrials.push({stimulus: randomizedLists[0].prototype, data: {test_part:"test", stim: randomizedLists[0].prototype}}); // pushes 8th item prototype
+//     //   incongruentPrototypeTrials.push({stimulus: "TONE2"}); // pushes 9th item tone2
+//     // }
+// };
+ 
+// let instructions_audio_1 = {
+//     type: jsPsychHtmlKeyboardResponse,
+//     stimulus:
+//         "<p> This experiment assesses your ability to remember whether a particular word was presented in a list of words.</p>" +
+//         "<p>First, you will hear a list of six words. At the conclusion of the list, you will hear a short tone. </p>" +
+//         "<p> <i> Press the spacebar to hear the short tone now. </i> </p>",
+//     choices: [32],
+// };
+
+let instructions_2 = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus:
         "<p> After the short tone, you will hear one word. </p>" +
@@ -62,7 +99,7 @@ let instructions_audio_2 = {
 };
 
 //need to add in confidence bar here
-let instructions_audio_3 = {
+let instructions_3 = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus:
         "<p> You can indicate your confidence in your response by varying the amount of time you hold down the “f” or “j” key. </p>" +
@@ -72,7 +109,7 @@ let instructions_audio_3 = {
     choices: [70, 74],
 };
 
-let instructions_audio_4 = {
+let instructions_4 = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus:
         "<p> Please give your response as quickly as possible.  </p>" +
@@ -81,7 +118,7 @@ let instructions_audio_4 = {
     choices: [32],
 };
 
-let instructions_audio_5 = {
+let instructions_5 = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus:
         "<p> After you hear the long low tone,  the next trial will begin. </p>" +

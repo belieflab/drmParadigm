@@ -21,7 +21,7 @@ const theme = "dark"; // Default theme setting for the user interface
 
 // Current version of the experiment
 // Options: "audio", "visual"
-const version = "visual";
+const version = "audio"//"visual";
 
 // Note: Uncomment the desired options. Ensure only one option per setting is active at a time.
 const adminEmail = undefined;
