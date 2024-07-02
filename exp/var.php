@@ -19,17 +19,21 @@ function getFilePaths($dirPath) {
     return $fileArray;
 }
 
+echo("lol");
 // Arrays of file paths for each stimulus type
 $instructionsArray = getFilePaths($instructionPath);
+//print_r($instructionsArray);
 $stimuliArray = getFilePaths($stimuliPath);
-
+//print_r($stimuliArray);
 // JSON-encoded strings for use in JavaScript
 $instructionsArrayJSON = json_encode($instructionsArray);
+echo($instructionsArrayJSON);
 $stimuliArrayJSON = json_encode($stimuliArray);
 
 ?>
 
 <script>
+"use strict";
 
 switch (version) {
     case "audio":
