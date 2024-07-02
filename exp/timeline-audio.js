@@ -17,15 +17,12 @@ const preload = {
 
 let instructions_0 = {
     type: jsPsychAudioKeyboardResponse,
-    // prompt:
-    //     "<p> Hello and thank you for taking part in our experiment!</p>" +
-    //     "<p>This experiment will be presnted entirely in an auditory format.</p>" +
-    //     "<p>It should take about 30 minutes.</p>" +
-    //     "<p> <i> Press spacebar to begin listening to your instructions. </i> </p>",
-    stimulus: function instruction() {
-        var html = "<audio controls><source src='stim/audio_instructions/DRM_instructions_1.mp3' type='audio/mp3'></audio>"; 
-        return html 
-    },
+    prompt:
+         "<p> Hello and thank you for taking part in our experiment!</p>" +
+         "<p>This experiment will be presnted entirely in an auditory format.</p>" +
+         "<p>It should take about 30 minutes.</p>" +
+         "<p> <i> Press spacebar to begin listening to your instructions. </i> </p>",
+    stimulus: "stim/audio_instructions/DRM_instructions_1.mp3",
     choices: [" "],
     on_start: function () {
         jsPsych.setProgressBar(0);
