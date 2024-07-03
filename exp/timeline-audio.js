@@ -22,7 +22,7 @@ let instructions_0 = {
          "<p>This experiment will be presnted entirely in an auditory format.</p>" +
          "<p>It should take about 30 minutes.</p>" +
          "<p> <i> Press spacebar to begin listening to your instructions. </i> </p>",
-    stimulus: "stim/audio_instructions/DRM_instructions_1.mp3",
+    stimulus: "stim/audio_instructions/DRM_instructions_0.mp3",
     choices: [" "],
     on_start: function () {
         jsPsych.setProgressBar(0);
@@ -71,11 +71,12 @@ let instructions_0 = {
 // };
 
 let instructions_1 = {
-    type: jsPsychHtmlKeyboardResponse,
-    stimulus:
+    type: jsPsychAudioKeyboardResponse,
+       prompt: 
         "<p> This experiment assesses your ability to remember whether a particular word was presented in a list of words.</p>" +
         "<p>First, you will hear a list of six words. At the conclusion of the list, you will hear a short tone. </p>" +
         "<p> <i> Press the spacebar to hear the short tone now. </i> </p>",
+    stimulus: "stim/audio_instructions/DRM_instructions_0.mp3",
     choices: [" "],
 };
 
