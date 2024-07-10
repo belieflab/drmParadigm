@@ -34,13 +34,11 @@ let instructions_1 = {
     type: jsPsychAudioKeyboardResponse,
        prompt: 
         "<p> This experiment assesses your ability to remember whether a particular word was presented in a list of words.</p>" +
-        "<p>First, you will hear a list of six words. At the conclusion of the list, you will hear a short tone. </p>" +
-        "<p> <i> Press the spacebar to hear the short tone now. </i> </p>",
+        "<p>First, you will hear a list of six words. At the conclusion of the list, you will be asked if a particular word was on the list. </p>" +
+        "<p> <i> Press the spacebar to hear more instructions. </i> </p>",
     stimulus: "stim/audio_instructions/DRM_instructions_1.mp3",
-    choices: [" "],
+    choices: ["f", "j"],
 };
-
-///add in trial instuction 2 with just tone
 
 let instructions_2 = {
     type: jsPsychHtmlKeyboardResponse,

@@ -28,7 +28,7 @@ let timeRemaining =
 
 //First, create words to be used in practice trials
 
-const atom = "atom"; //stimDecInstructions1.push("stim/audio_stimuli/africa.mp3");
+const atom = "stim/atom.mp3"; //stimDecInstructions1.push("stim/audio_stimuli/africa.mp3");
 const molecule = "molecule";
 const bond = "bond";
 const gas = "gas";
