@@ -40,18 +40,9 @@ let instructions_1 = {
     choices: ["f", "j"],
 };
 
-let instructions_2 = {
-    type: jsPsychHtmlKeyboardResponse,
-    stimulus:
-        "<p> After the short tone, you will hear one word. </p>" +
-        "<p> Your job is to indicate whether that word was or was not on the list that you heard before the tone. </p>" +
-        "<p> If the word was on the list, press the “j” key. If the word was not on the list, press the “f” key. </p>" +
-        "<p> <i> Press either the f or j key to hear additional instructions. </i> </p>",
-    choices: ["f", "j"],
-};
 
 //need to add in confidence bar here
-let instructions_3 = {
+let instructions_2 = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus:
         "<p> You can indicate your confidence in your response by varying the amount of time you hold down the “f” or “j” key. </p>" +
@@ -61,16 +52,16 @@ let instructions_3 = {
     choices: ["f", "j"],
 };
 
-let instructions_4 = {
+let instructions_3 = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus:
         "<p> Please give your response as quickly as possible.  </p>" +
-        "<p> At the end of the response period, you will hear a long low tone. This tone indicates that the response period has ended. </p>" +
-        "<p> <i> Press the spacebar to hear the long low tone now. </i> </p>",
+        "<p> At the end of the response period, you will hear white noise. This noise indicates that the response period has ended. </p>" +
+        "<p> <i> Press the spacebar to hear the white noise now. </i> </p>",
     choices: [" "],
 };
 
-let instructions_5 = {
+let instructions_4 = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus:
         "<p> After you hear the long low tone,  the next trial will begin. </p>" +
