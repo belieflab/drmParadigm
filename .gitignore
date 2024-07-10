@@ -1,4 +1,5 @@
 stim/audio_stimuli/._*
+stim/._*
 data/*
 !data/.gitkeep
 .DS_Store

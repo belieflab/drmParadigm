@@ -1,67 +1,59 @@
 <?php
-  require_once 'db/data.php';
-  require_once 'db/config.php';
+  require_once './wrap/lib/ids.php';
 ?>
 
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DRM Paradigm</title>
-    <script type="text/javascript" src="db/validate.js"></script>
-    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="jsPsych/jspsych.js"></script>
-   <!-- loads in jspsych plugins -->
-    <script type="text/javascript" src="jsPsych/plugins/jspsych-html-keyboard-response.js"></script>
-    <script type="text/javascript" src="jsPsych/plugins/jspsych-image-keyboard-response.js"></script>
-    <script type="text/javascript" src="jsPsych/plugins/jspsych-audio-keyboard-response.js"></script>
-
-    <link href="jsPsych/css/jspsych.css" rel="stylesheet" type="text/css"></link>
-    <link rel="stylesheet" type="text/css" href="css/style.css"> 
-    <link rel="stylesheet" type="text/css" href="css/w3.css"> <!-- styling for w3c progress bars -->
+    <!-- add the title of the experiment that would be seen in the browser -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.title = `${experimentAlias.toUpperCase()}`;
+    });
+  </script>
+    <!-- favicon -->
+    <script type="image/ico" rel="icon" src="./wrap/favicon.ico" ></script>
+    <!-- PHP wrapper libraries -->
+    <script type="text/javascript" src="./wrap/lib/validate.js"></script>
+    <script type="text/javascript" src="./wrap/lib/jquery-3.5.1.min.js"></script>
+    <!-- jsPsych CDN (content delivery network) libraries -->
+    <script src="https://unpkg.com/jspsych@7.3.3"></script>
+    <link href="https://unpkg.com/jspsych@7.3.3/css/jspsych.css" rel="stylesheet" type="text/css"/>
+    <!-- loads in jspsych plugins -->
+    <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@1.1.2"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-audio-keyboard-response@1.1.3"></script>  
+    <script src="https://unpkg.com/@jspsych/plugin-preload@1.1.3"></script>
+   
+    <!-- general styling -->
+    <link rel="stylesheet" type="text/css" href="./wrap/lib/style.css">
+    
+    <!-- confidence bar styling -->
+    <link rel="stylesheet" type="text/css" href="./css/confidence.css">
+    
+    <!-- stimuli styling -->
+    <link rel="stylesheet" type="text/css" href="./css/exp.css">
   </head>
   <body id='unload' onbeforeunload="return areYouSure()">  
-    <?php
-      if ($db_connection_status == true) {
-        include_once "include/nda.php";
-        // echo'<br>';
-        // echo'connected';
-      } else if ($db_connection_status == false) {
-       // include_once "include/intake.php";
-        include_once "include/nda.php";
-        // echo'<br>';
-        // echo'not connected';
-      };
-    ?>
+  <?php
+    if (isset($_GET["workerId"]) || isset($_GET["PROLIFIC_PID"]) || isset($_GET["participantId"])) {
+      include_once "./wrap/include/consent.php";
+    }
+    if (isset($_GET["src_subject_id"])) {
+      include_once "./wrap/include/nda.php";
+    } 
+    if (!isset($_GET["workerId"]) && !isset($_GET["PROLIFIC_PID"]) && !isset($_GET["participantId"]) && !isset($_GET["src_subject_id"])) {
+      include_once "./wrap/include/intake.php";
+    }
+  ?>
   </body>
   <footer>
-    <script type="text/javascript" src="exp/fn.js"></script>
-    <script type="text/javascript" src="exp/conf.js"></script>
-    <script type="text/javascript" src="exp/var.js"></script>
-    <script type="text/javascript" src="exp/fn2.js"></script>
-    <script type="text/javascript">
-      // declare NDA required variables
-      let GUID;
-      let subjectID;
-      let sexAtBirth;
-      let siteNumber;
-      let ageAtAssessment;
-      let feedbackLink;
-
-      if (db_connection === false) {
-        GUID = "";
-        subjectID = "";
-        sexAtBirth = "";
-        siteNumber = "";
-        ageAtAssessment = "";
-        feedbackLink = "";
-      } else if (db_connection === true) {
-        GUID = "<?php echo $subjectKey?>";
-        subjectID = "<?php echo $consortId?>";
-        sexAtBirth = "<?php echo $sexAtBirth?>";
-        siteNumber = "<?php echo $institutionAlias?>";
-        ageAtAssessment = "<?php echo $ageInMonths?>";
-        feedbackLink = "https://belieflab.yale.edu/omnibus/eCRFs/feedback/tasks/kamin.php?candidateId=<?php echo $candidateId?>&studyId=<?php echo $studyId?>";
-      }
-    </script>
+    <!-- load config first! -->
+    <script type="text/javascript" src="./exp/conf.js"></script>
+    <!-- load wrapper dependencies -->
+    <script type="text/javascript" src="./wrap/lib/fn.js"></script>
+    <!-- load experiment dependencies -->
+    <script type="text/javascript" src="./exp/fn.js"></script>
+    <?php require_once './exp/var.php'; ?>
+    <script type="text/javascript" src="./exp/lang.js"></script>
   </footer>
 </html>
