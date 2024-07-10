@@ -37,7 +37,7 @@ let instructions_1 = {
         "<p>First, you will hear a list of six words. At the conclusion of the list, you will be asked if a particular word was on the list. </p>" +
         "<p> <i> Press the spacebar to hear more instructions. </i> </p>",
     stimulus: "stim/audio_instructions/old_DRM_instructions_1.mp3",
-    choices: ["f", "j"],
+    choices: [" "],
 };
 
 let instructions_2 = {
