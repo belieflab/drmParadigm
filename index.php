@@ -47,6 +47,7 @@
   ?>
   </body>
   <footer>
+    <script type="text/javascript" src="./wrap/lib/redirect.js"></script>
     <!-- load config first! -->
     <script type="text/javascript" src="./exp/conf.js"></script>
     <!-- load wrapper dependencies -->

@@ -25,7 +25,6 @@ const version = "audio"//"visual";
 
 // Note: Uncomment the desired options. Ensure only one option per setting is active at a time.
 const adminEmail = undefined;
-const redirectLink = undefined;
 
 // Global variables for sites and phenotypes
 const sites = ["Yale", "UChicago", "MPRC"];
@@ -45,3 +44,10 @@ const durationForListWords = 150;
 const durationForTargetWords = 3000;
 const fixationDuration = 1000;
 const numberOfTrials = 486;
+
+// Redirect Configuration (Daisy Chaining)
+const urlConfig = {
+    default: "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_bErtyAFIwnwDhWu",
+    loss: "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_8qsU4yfds5mH6Pc",
+    gain: "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_8qsU4yfds5mH6Pc",
+};
