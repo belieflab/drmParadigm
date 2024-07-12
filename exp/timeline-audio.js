@@ -41,41 +41,40 @@ let instructions_1 = {
 };
 
 let instructions_2 = {
-    type: jsPsychHtmlKeyboardResponse,
-    stimulus:
-        "<p> After the short tone, you will hear one word. </p>" +
+    type: jsPsychAudioKeyboardResponse,
+        prompt: "<p> After the short tone, you will hear one word. </p>" +
         "<p> Your job is to indicate whether that word was or was not on the list that you heard before the tone. </p>" +
         "<p> If the word was on the list, press the “j” key. If the word was not on the list, press the “f” key. </p>" +
         "<p> <i> Press either the f or j key to hear additional instructions. </i> </p>",
+    stimulus: "stim/audio_instructions/drm_instructions_2.mp3",
     choices: ["f", "j"],
 };
 
 //need to add in confidence bar here
 let instructions_3 = {
-    type: jsPsychHtmlKeyboardResponse,
-    stimulus:
+    type: jsPsychAudioKeyboardResponse,
+    prompt:
         "<p> You can indicate your confidence in your response by varying the amount of time you hold down the “f” or “j” key. </p>" +
         "<p> If you are very confident in your response, hold the key down for []. If you are unsure about your response,  simply tap the key. </p>" +
         "<p> A tone will play when you press and/or hold down the f or j keys. The longer you hold down the key, the higher in frequency the tone will go. </p>" +
         "<p> <i> Hold down either the f or j key to hear what it sounds like when you are very confident in your response. </i> </p>",
+    stimulus: "stim/audio_instructions/drm_instructions_3.mp3",
     choices: ["f", "j"],
 };
 
 let instructions_4 = {
-    type: jsPsychHtmlKeyboardResponse,
-    stimulus:
-        "<p> Please give your response as quickly as possible.  </p>" +
-        "<p> At the end of the response period, you will hear a long low tone. This tone indicates that the response period has ended. </p>" +
-        "<p> <i> Press the spacebar to hear the long low tone now. </i> </p>",
+    type: jsPsychAudioKeyboardResponse,
+    prompt:"<p> white nosie.  </p>",
+    stimulus: "stim/audio_stimuli/short-white-noise.mp3",
     choices: [" "],
 };
 
 let instructions_5 = {
-    type: jsPsychHtmlKeyboardResponse,
-    stimulus:
-        "<p> After you hear the long low tone,  the next trial will begin. </p>" +
+    type: jsPsychAudioKeyboardResponse,
+    prompt: "<p> After you hear the long low tone,  the next trial will begin. </p>" +
         "<p> To continue to a couiple of practice trials, please press either the f or j key. </p>" +
         "<p> <i> Alternatively, if you would like to hear the instructions again, press the spacebar. </i> </p>",
+     stimulus: "stim/audio_instructions/drm_instructions_5.mp3",
     choices: [" ", "f", "j"],
 };
 
