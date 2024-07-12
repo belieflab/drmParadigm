@@ -93,18 +93,19 @@ let instructions_visual_0 = {
 };
 
 let practice = {
-    type: jsPsychHtmlKeyboardResponse,
+    type: jsPsychAudioKeyboardResponse,
     data: jsPsych.timelineVariable("data"),
-    stimulus: function () {
-        var html =
-            "<p>" +
-            jsPsych.timelineVariable("prompt", true) +
-            jsPsych.timelineVariable("stimulus", true) +
-            jsPsych.timelineVariable("prompt_end", true) +
-            jsPsych.timelineVariable("confidence", true) +
-            "</p>";
-        return html;
-    },
+    stimulus: jsPsych.timelineVariable("stimulus"),
+    // stimulus: function () {
+    //     var html =
+    //         "<p>" +
+    //         jsPsych.timelineVariable("prompt", true) +
+    //         jsPsych.timelineVariable("stimulus", true) +
+    //         jsPsych.timelineVariable("prompt_end", true) +
+    //         jsPsych.timelineVariable("confidence", true) +
+    //         "</p>";
+     //   return html;
+    //},
     trial_duration: jsPsych.timelineVariable("duration"),
     response_ends_trial: jsPsych.timelineVariable("response_ends_trial"),
     // stimulus: jsPsych.timelineVariable('stimulus'),

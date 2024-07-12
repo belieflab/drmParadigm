@@ -28,20 +28,20 @@ let timeRemaining =
 
 //First, create words to be used in practice trials
 
-const atom = "stim/atom.mp3"; //stimDecInstructions1.push("stim/audio_stimuli/africa.mp3");
-const molecule = "molecule";
-const bond = "bond";
-const gas = "gas";
-const electron = "electron";
-const oxygen = "oxygen";
-const chemistry = "chemistry";
+const atom = "stim/audio_practice/atom.mp3"; //stimDecInstructions1.push("stim/audio_stimuli/africa.mp3");
+const molecule = "stim/audio_practice/molecule.mp3";
+const bond = "stim/audio_practice/bond.mp3";
+const gas = "stim/audio_practice/gas.mp3";
+const electron = "stim/audio_practice/electron.mp3";
+const oxygen = "stim/audio_practice/oxygen.mp3";
+const chemistry = "stim/audio_practice/chemistry.mp3";
 
-const shark = "shark";
-const island = "island";
-const waves = "waves";
-const shrimp = "shrimp";
-const whale = "whale";
-const ocean = "ocean";
+const shark = "stim/audio_practice/shark.mp3";
+const island = "stim/audio_practice/island.mp3";
+const waves = "stim/audio_practice/waves.mp3";
+const shrimp = "stim/audio_practice/shrimp.mp3";
+const whale = "stim/audio_practice/whale.mp3";
+const ocean = "stim/audio_practice/ocean.mp3";
 
 let practiceOne = {
     listA: [atom, molecule, bond, gas, electron, oxygen],
