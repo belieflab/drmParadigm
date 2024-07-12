@@ -65,7 +65,7 @@ let instructions_3 = {
 let instructions_4 = {
     type: jsPsychAudioKeyboardResponse,
     prompt:"<p> white nosie.  </p>",
-    stimulus: "stim/audio_stimuli/short-white-noise.mp3",
+    stimulus: "stim/audio_stimuli/2s_white_noise.mp3",
     choices: [" "],
 };
 
