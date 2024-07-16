@@ -10,9 +10,18 @@ let timeline = [];
 
 const preload = {
     type: jsPsychPreload,
-    images: [],
-    // audio: [instructionsAudio, stimuliAudio],
+    // images: [],
+    audio: [...practiceTrial1.listA, ...practiceTrial2.listA],
     show_detailed_errors: true,
+    on_success: function (file) {
+        console.log("File successfully preloaded:", file);
+    },
+    on_error: function (file) {
+        console.error("Error preloading file:", file);
+    },
+    on_complete: function (data) {
+        console.log("Preloading completed");
+    },
 };
 
 let instructions_0 = {
