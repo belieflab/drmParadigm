@@ -157,22 +157,22 @@ practiceTrials.push({stimulus: tone_2, duration: fixationDuration, data: {test_p
 
 
 // define all variables in listNumber1 : Anger
-const anger = "anger";
-const hate = "hate";
-const temper = "temper";
-const ire = "ire";
-const happy = "happy";
-const hatred = "hatred";
-const calm = "calm";
-const rage = "rage";
-const fury = "fury";
-const wrath = "wrath";
-const fight = "fight";
-const mean = "mean";
-const emotion = "emotion";
-const mad = "mad";
-const fear = "fear";
-const enrage = "enrage";
+const anger = "stim/audio_stimuli/anger.mp3";
+const hate = "stim/audio_stimuli/hate.mp3";
+const temper = "stim/audio_stimuli/temper.mp3";
+const ire = "stim/audio_stimuli/ire.mp3";
+const happy = "stim/audio_stimuli/happy.mp3";
+const hatred = "stim/audio_stimuli/hatred.mp3";
+const calm = "stim/audio_stimuli/calm.mp3";
+const rage = "stim/audio_stimuli/rage.mp3";
+const fury = "stim/audio_stimuli/fury.mp3";
+const wrath = "stim/audio_stimuli/wrath.mp3";
+const fight = "stim/audio_stimuli/fight.mp3";
+const mean = "stim/audio_stimuli/mean.mp3";
+const emotion = "stim/audio_stimuli/emotion.mp3";
+const mad = "stim/audio_stimuli/mad.mp3";
+const fear = "stim/audio_stimuli/fear.mp3";
+const enrage = "stim/audio_stimuli/enrage.mp3";
 
 let Anger = {
     listNumber: 1,
@@ -184,22 +184,22 @@ let Anger = {
 };
 
 // define all variables in listNumber2 : Army
-const unitedStates = "United States";
-const airForce = "Air Force";
-const military = "military";
-const march = "march";
-const captain = "captain";
-const uniform = "uniform";
-const rifle = "rifle";
-const draft = "draft";
-const marines = "marines";
-const infantry = "infantry";
-const war = "war";
-const pilot = "pilot";
-const army = "army";
-const navy = "navy";
-const soldier = "soldier";
-const combat = "combat";
+const unitedStates = "stim/audio_stimuli/unitedStates.mp3";
+const airForce = "stim/audio_stimuli/airForce.mp3";
+const military = "stim/audio_stimuli/military.mp3";
+const march = "stim/audio_stimuli/march.mp3";
+const captain = "stim/audio_stimuli/captain.mp3";
+const uniform = "stim/audio_stimuli/uniform.mp3";
+const rifle = "stim/audio_stimuli/rifle.mp3";
+const draft = "stim/audio_stimuli/draft.mp3";
+const marines = "stim/audio_stimuli/marines.mp3";
+const infantry = "stim/audio_stimuli/infantry.mp3";
+const war = "stim/audio_stimuli/war.mp3";
+const pilot = "stim/audio_stimuli/pilot.mp3";
+const army = "stim/audio_stimuli/army.mp3";
+const navy = "stim/audio_stimuli/navy.mp3";
+const soldier = "stim/audio_stimuli/soldier.mp3";
+const combat = "stim/audio_stimuli/combat.mp3";
 
 let Army = {
     listNumber: 2,
@@ -211,22 +211,22 @@ let Army = {
 };
 
 // define all variables in listNumber3 : Black
-const black = "black";
-const cat = "cat";
-const night = "night";
-const color = "color";
-const blue = "blue";
-const ink = "ink";
-const coal = "coal";
-const charred = "charred";
-const funeral = "funeral";
-const grief = "grief";
-const death = "death";
-const bottom = "bottom";
-const brown = "brown";
-const white = "white";
-const dark = "dark";
-const gray = "gray";
+const black = "stim/audio_stimuli/black.mp3";
+const cat = "stim/audio_stimuli/cat.mp3";
+const night = "stim/audio_stimuli/night.mp3";
+const color = "stim/audio_stimuli/color.mp3";
+const blue = "stim/audio_stimuli/blue.mp3";
+const ink = "stim/audio_stimuli/ink.mp3";
+const coal = "stim/audio_stimuli/coal.mp3";
+const charred = "stim/audio_stimuli/charred.mp3";
+const funeral = "stim/audio_stimuli/funeral.mp3";
+const grief = "stim/audio_stimuli/grief.mp3";
+const death = "stim/audio_stimuli/death.mp3";
+const bottom = "stim/audio_stimuli/bottom.mp3";
+const brown = "stim/audio_stimuli/brown.mp3";
+const white = "stim/audio_stimuli/white.mp3";
+const dark = "stim/audio_stimuli/dark.mp3";
+const gray = "stim/audio_stimuli/gray.mp3";
 
 let Black = {
     listNumber: 3,
@@ -238,22 +238,22 @@ let Black = {
 };
 
 //Define variables for list 4:Bread
-const bread = "bread";
-const eat = "eat";
-const rye = "rye";
-const milk = "milk";
-const jelly = "jelly";
-const crust = "crust";
-const wine = "wine";
-const sandwich = "sandwich";
-const jam = "jam";
-const flour = "flour";
-const dough = "dough";
-const slice = "slice";
-const loaf = "loaf";
-const butter = "butter";
-const food = "food";
-const toast = "toast";
+const bread = "stim/audio_stimuli/bread.mp3";
+const eat = "stim/audio_stimuli/eat.mp3";
+const rye = "stim/audio_stimuli/rye.mp3";
+const milk = "stim/audio_stimuli/milk.mp3";
+const jelly = "stim/audio_stimuli/jelly.mp3";
+const crust = "stim/audio_stimuli/crust.mp3";
+const wine = "stim/audio_stimuli/wine.mp3";
+const sandwich = "stim/audio_stimuli/sandwich.mp3";
+const jam = "stim/audio_stimuli/jam.mp3";
+const flour = "stim/audio_stimuli/flour.mp3";
+const dough = "stim/audio_stimuli/dough.mp3";
+const slice = "stim/audio_stimuli/slice.mp3";
+const loaf = "stim/audio_stimuli/loaf.mp3";
+const butter = "stim/audio_stimuli/butter.mp3";
+const food = "stim/audio_stimuli/food.mp3";
+const toast = "stim/audio_stimuli/toast.mp3";
 
 let Bread = {
     listNumber: 4,
@@ -265,22 +265,22 @@ let Bread = {
 };
 
 //Define all variables for list 5: Car
-const car = "car";
-const train = "train";
-const vehicle = "vehicle";
-const jeep = "jeep";
-const race = "race";
-const garage = "garage";
-const sedan = "sedan";
-const automobile = "automobile";
-const drive = "drive";
-const ford = "ford";
-const keys = "keys";
-const highway = "highway";
-const van = "van";
-const truck = "truck";
-const bus = "bus";
-const taxi = "taxi";
+const car = "stim/audio_stimuli/car.mp3";
+const train = "stim/audio_stimuli/train.mp3";
+const vehicle = "stim/audio_stimuli/vehicle.mp3";
+const jeep = "stim/audio_stimuli/jeep.mp3";
+const race = "stim/audio_stimuli/race.mp3";
+const garage = "stim/audio_stimuli/garage.mp3";
+const sedan = "stim/audio_stimuli/sedan.mp3";
+const automobile = "stim/audio_stimuli/automobile.mp3";
+const drive = "stim/audio_stimuli/drive.mp3";
+const ford = "stim/audio_stimuli/ford.mp3";
+const keys = "stim/audio_stimuli/keys.mp3";
+const highway = "stim/audio_stimuli/highway.mp3";
+const van = "stim/audio_stimuli/van.mp3";
+const truck = "stim/audio_stimuli/truck.mp3";
+const bus = "stim/audio_stimuli/bus.mp3";
+const taxi = "stim/audio_stimuli/taxi.mp3";
 
 let Car = {
     listNumber: 5,
@@ -292,22 +292,22 @@ let Car = {
 };
 
 //Define all variables for list 6: Chair
-const chair = "chair";
-const legs = "legs";
-const couch = "couch";
-const recliner = "recliner";
-const wood = "wood";
-const swivel = "swivel";
-const sitting = "sitting";
-const seat = "seat";
-const desk = "desk";
-const sofa = "sofa";
-const cushion = "cushion";
-const stool = "stool";
-const rocking = "rocking";
-const table = "table";
-const sit = "sit";
-const bench = "bench";
+const chair = "stim/audio_stimuli/chair.mp3";
+const legs = "stim/audio_stimuli/legs.mp3";
+const couch = "stim/audio_stimuli/couch.mp3";
+const recliner = "stim/audio_stimuli/recliner.mp3";
+const wood = "stim/audio_stimuli/wood.mp3";
+const swivel = "stim/audio_stimuli/swivel.mp3";
+const sitting = "stim/audio_stimuli/sitting.mp3";
+const seat = "stim/audio_stimuli/seat.mp3";
+const desk = "stim/audio_stimuli/desk.mp3";
+const sofa = "stim/audio_stimuli/sofa.mp3";
+const cushion = "stim/audio_stimuli/cushion.mp3";
+const stool = "stim/audio_stimuli/stool.mp3";
+const rocking = "stim/audio_stimuli/rocking.mp3";
+const table = "stim/audio_stimuli/table.mp3";
+const sit = "stim/audio_stimuli/sit.mp3";
+const bench = "stim/audio_stimuli/bench.mp3";
 
 let Chair = {
     listNumber: 6,
@@ -319,22 +319,22 @@ let Chair = {
 };
 
 //Define all variables for list 7: City
-const city = "city";
-const state = "state";
-const streets = "streets";
-const country = "country";
-const village = "village";
-const big = "big";
-const suburb = "suburb";
-const capital = "capital";
-const subway = "subway";
-const newYork = "New York";
-const metropolis = "metropolis";
-const chicago = "chicago";
-const county = "county";
-const town = "town";
-const crowded = "crowded";
-const urban = "urban";
+const city = "stim/audio_stimuli/city.mp3";
+const state = "stim/audio_stimuli/state.mp3";
+const streets = "stim/audio_stimuli/streets.mp3";
+const country = "stim/audio_stimuli/country.mp3";
+const village = "stim/audio_stimuli/village.mp3";
+const big = "stim/audio_stimuli/big.mp3";
+const suburb = "stim/audio_stimuli/suburb.mp3";
+const capital = "stim/audio_stimuli/capital.mp3";
+const subway = "stim/audio_stimuli/subway.mp3";
+const newYork = "stim/audio_stimuli/newYork.mp3";
+const metropolis = "stim/audio_stimuli/metropolis.mp3";
+const chicago = "stim/audio_stimuli/chicago.mp3";
+const county = "stim/audio_stimuli/county.mp3";
+const town = "stim/audio_stimuli/town.mp3";
+const crowded = "stim/audio_stimuli/crowded.mp3";
+const urban = "stim/audio_stimuli/urban.mp3";
 
 let City = {
     listNumber: 7,
@@ -345,22 +345,22 @@ let City = {
     lowestAssociate: urban,
 };
 
-const cold = "cold";
-const warm = "warm";
-const ice = "ice";
-const frigid = "frigid";
-const heat = " heat";
-const freeze = " freeze";
-const shiver = "shiver";
-const winter = "winter";
-const wet = "wet";
-const chilly = "chilly";
-const weather = "weather";
-const air = "air";
-const arctic = "arctic";
-const hot = "hot";
-const snow = "snow";
-const frost = "frost";
+const cold = "stim/audio_stimuli/cold.mp3";
+const warm = "stim/audio_stimuli/warm.mp3";
+const ice = "stim/audio_stimuli/ice.mp3";
+const frigid = "stim/audio_stimuli/frigid.mp3";
+const heat = "stim/audio_stimuli/heat.mp3";
+const freeze = "stim/audio_stimuli/freeze.mp3";
+const shiver = "stim/audio_stimuli/shiver.mp3";
+const winter = "stim/audio_stimuli/winter.mp3";
+const wet = "stim/audio_stimuli/wet.mp3";
+const chilly = "stim/audio_stimuli/chilly.mp3";
+const weather = "stim/audio_stimuli/weather.mp3";
+const air = "stim/audio_stimuli/air.mp3";
+const arctic = "stim/audio_stimuli/arctic.mp3";
+const hot = "stim/audio_stimuli/hot.mp3";
+const snow = "stim/audio_stimuli/snow.mp3";
+const frost = "stim/audio_stimuli/frost.mp3";
 
 let Cold = {
     listNumber: 8,
@@ -371,22 +371,22 @@ let Cold = {
     lowestAssociate: frost,
 };
 //Define all variables for list 9: Cup
-const cup = "cup";
-const tea = "tea";
-const coaster = "coaster";
-const handle = "handle";
-const straw = "straw";
-const soup = "soup";
-const drink = "drink";
-const measuring = "measuring";
-const lid = "lid";
-const coffee = "coffee";
-const goblet = "goblet";
-const stein = "stein";
-const plastic = "plastic";
-const mug = "mug";
-const saucer = "saucer";
-const sip = "sip";
+const cup = "stim/audio_stimuli/cup.mp3";
+const tea = "stim/audio_stimuli/tea.mp3";
+const coaster = "stim/audio_stimuli/coaster.mp3";
+const handle = "stim/audio_stimuli/handle.mp3";
+const straw = "stim/audio_stimuli/straw.mp3";
+const soup = "stim/audio_stimuli/soup.mp3";
+const drink = "stim/audio_stimuli/drink.mp3";
+const measuring = "stim/audio_stimuli/measuring.mp3";
+const lid = "stim/audio_stimuli/lid.mp3";
+const coffee = "stim/audio_stimuli/coffee.mp3";
+const goblet = "stim/audio_stimuli/goblet.mp3";
+const stein = "stim/audio_stimuli/stein.mp3";
+const plastic = "stim/audio_stimuli/plastic.mp3";
+const mug = "stim/audio_stimuli/mug.mp3";
+const saucer = "stim/audio_stimuli/saucer.mp3";
+const sip = "stim/audio_stimuli/sip.mp3";
 
 let Cup = {
     listNumber: 9,
@@ -398,22 +398,22 @@ let Cup = {
 };
 
 //Define all variables for list 10: Doctor
-const doctor = "doctor";
-const lawyer = "lawyer";
-const health = "health";
-const dentist = "dentist";
-const ill = "ill";
-const office = "office";
-const surgeon = "surgeon";
-const medicine = "medicine";
-const hospital = "hospital";
-const physician = "physician";
-const patient = "patient";
-const stethoscope = "stethoscope";
-const clinic = "clinic";
-const nurse = "nurse";
-const sick = "sick";
-const cure = "cure";
+const doctor = "stim/audio_stimuli/doctor.mp3";
+const lawyer = "stim/audio_stimuli/lawyer.mp3";
+const health = "stim/audio_stimuli/health.mp3";
+const dentist = "stim/audio_stimuli/dentist.mp3";
+const ill = "stim/audio_stimuli/ill.mp3";
+const office = "stim/audio_stimuli/office.mp3";
+const surgeon = "stim/audio_stimuli/surgeon.mp3";
+const medicine = "stim/audio_stimuli/medicine.mp3";
+const hospital = "stim/audio_stimuli/hospital.mp3";
+const physician = "stim/audio_stimuli/physician.mp3";
+const patient = "stim/audio_stimuli/patient.mp3";
+const stethoscope = "stim/audio_stimuli/stethoscope.mp3";
+const clinic = "stim/audio_stimuli/clinic.mp3";
+const nurse = "stim/audio_stimuli/nurse.mp3";
+const sick = "stim/audio_stimuli/sick.mp3";
+const cure = "stim/audio_stimuli/cure.mp3";
 
 let Doctor = {
     listNumber: 10,
@@ -425,22 +425,22 @@ let Doctor = {
 };
 
 //Define all variables for list 11: Flag
-const flag = "flag";
-const symbol = "symbol";
-const anthem = "anthem";
-const pole = "pole";
-const raised = "raised";
-const checkered = "checkered";
-const sign = "sign";
-const stars = "stars";
-const stripes = "stripes";
-const wave = "wave";
-const national = "national";
-const emblem = "emblem";
-const freedom = "freedom";
-const banner = "banner";
-const american = "american";
-const pendant = "pendant";
+const flag = "stim/audio_stimuli/flag.mp3";
+const symbol = "stim/audio_stimuli/symbol.mp3";
+const anthem = "stim/audio_stimuli/anthem.mp3";
+const pole = "stim/audio_stimuli/pole.mp3";
+const raised = "stim/audio_stimuli/raised.mp3";
+const checkered = "stim/audio_stimuli/checkered.mp3";
+const sign = "stim/audio_stimuli/sign.mp3";
+const stars = "stim/audio_stimuli/stars.mp3";
+const stripes = "stim/audio_stimuli/stripes.mp3";
+const wave = "stim/audio_stimuli/wave.mp3";
+const national = "stim/audio_stimuli/national.mp3";
+const emblem = "stim/audio_stimuli/emblem.mp3";
+const freedom = "stim/audio_stimuli/freedom.mp3";
+const banner = "stim/audio_stimuli/banner.mp3";
+const american = "stim/audio_stimuli/american.mp3";
+const pendant = "stim/audio_stimuli/pendant.mp3";
 
 let Flag = {
     listNumber: 11,
@@ -452,22 +452,22 @@ let Flag = {
 };
 
 //Define all variables for list 12: Foot
-const foot = "foot";
-const toe = "toe";
-const sandals = "sandals";
-const yard = "yard";
-const ankle = "ankle";
-const boot = "boot";
-const sock = "sock";
-const kick = "kick";
-const soccer = "soccer";
-const walk = "walk";
-const arm = "arm";
-const inch = "inch";
-const knee = "knee";
-const shoe = "shoe";
-const hand = "hand";
-const mouth = "mouth";
+const foot = "stim/audio_stimuli/foot.mp3";
+const toe = "stim/audio_stimuli/toe.mp3";
+const sandals = "stim/audio_stimuli/sandals.mp3";
+const yard = "stim/audio_stimuli/yard.mp3";
+const ankle = "stim/audio_stimuli/ankle.mp3";
+const boot = "stim/audio_stimuli/boot.mp3";
+const sock = "stim/audio_stimuli/sock.mp3";
+const kick = "stim/audio_stimuli/kick.mp3";
+const soccer = "stim/audio_stimuli/soccer.mp3";
+const walk = "stim/audio_stimuli/walk.mp3";
+const arm = "stim/audio_stimuli/arm.mp3";
+const inch = "stim/audio_stimuli/inch.mp3";
+const knee = "stim/audio_stimuli/knee.mp3";
+const shoe = "stim/audio_stimuli/shoe.mp3";
+const hand =  "stim/audio_stimuli/hand.mp3";
+const mouth = "stim/audio_stimuli/mouth.mp3";
 
 let Foot = {
     listNumber: 12,
@@ -479,22 +479,22 @@ let Foot = {
 };
 
 //Define all variables for list 13: Fruit
-const fruit = "fruit";
-const orange = "orange";
-const citrus = "citrus";
-const pear = "pear";
-const berry = "berry";
-const basket = "basket";
-const salad = "salad";
-const kiwi = "kiwi";
-const ripe = "ripe";
-const banana = "banana";
-const cherry = "cherry";
-const juice = "juice";
-const bowl = "bowl";
-const apple = "apple";
-const vegetable = "vegetable";
-const cocktail = "cocktail";
+const fruit = "stim/audio_stimuli/fruit.mp3";
+const orange = "stim/audio_stimuli/orange.mp3";
+const citrus = "stim/audio_stimuli/citrus.mp3";
+const pear = "stim/audio_stimuli/pear.mp3";
+const berry = "stim/audio_stimuli/berry.mp3";
+const basket = "stim/audio_stimuli/basket.mp3";
+const salad = "stim/audio_stimuli/salad.mp3";
+const kiwi = "stim/audio_stimuli/kiwi.mp3";
+const ripe = "stim/audio_stimuli/ripe.mp3";
+const banana = "stim/audio_stimuli/banana.mp3";
+const cherry = "stim/audio_stimuli/cherry.mp3";
+const juice = "stim/audio_stimuli/juice.mp3";
+const bowl = "stim/audio_stimuli/bowl.mp3";
+const apple = "stim/audio_stimuli/apple.mp3";
+const vegetable = "stim/audio_stimuli/vegetable.mp3";
+const cocktail = "stim/audio_stimuli/cocktail.mp3";
 
 let Fruit = {
     listNumber: 13,
@@ -506,22 +506,22 @@ let Fruit = {
 };
 
 //Define all variables for list 14: Girl
-const girl = "girl";
-const female = "female";
-const dress = "dress";
-const hair = "hair";
-const dance = "dance";
-const cute = "cute";
-const aunt = "aunt";
-const young = "young";
-const pretty = "pretty";
-const niece = "niece";
-const beautiful = "beautiful";
-const outing = "date";
-const daughter = "daughter";
-const boy = "boy";
-const dolls = "dolls";
-const sister = "sister";
+const girl = "stim/audio_stimuli/girl.mp3";
+const female = "stim/audio_stimuli/female.mp3";
+const dress = "stim/audio_stimuli/dress.mp3";
+const hair = "stim/audio_stimuli/hair.mp3";
+const dance = "stim/audio_stimuli/dance.mp3";
+const cute = "stim/audio_stimuli/cute.mp3";
+const aunt = "stim/audio_stimuli/aunt.mp3";
+const young = "stim/audio_stimuli/young.mp3";
+const pretty = "stim/audio_stimuli/pretty.mp3";
+const niece = "stim/audio_stimuli/niece.mp3";
+const beautiful = "stim/audio_stimuli/beautiful.mp3";
+const outing = "stim/audio_stimuli/date.mp3";
+const daughter = "stim/audio_stimuli/daughter.mp3";
+const boy = "stim/audio_stimuli/boy.mp3";
+const dolls = "stim/audio_stimuli/dolls.mp3";
+const sister = "stim/audio_stimuli/sister.mp3";
 
 let Girl = {
     listNumber: 14,
@@ -533,22 +533,22 @@ let Girl = {
 };
 
 //Define all variables for list 15: High
-const high = "high";
-const up = "up";
-const tower = "tower";
-const above = "above";
-const noon = "noon";
-const sky = "sky";
-const airplane = "airplane";
-const tall = "tall";
-const jump = "jump";
-const building = "building";
-const cliff = "cliff";
-const over = "over";
-const dive = "dive";
-const low = "low";
-const clouds = "clouds";
-const elevate = "elevate";
+const high = "stim/audio_stimuli/high.mp3";
+const up = "stim/audio_stimuli/up.mp3";
+const tower = "stim/audio_stimuli/tower.mp3";
+const above = "stim/audio_stimuli/above.mp3";
+const noon = "stim/audio_stimuli/noon.mp3";
+const sky = "stim/audio_stimuli/sky.mp3";
+const airplane = "stim/audio_stimuli/airplane.mp3";
+const tall = "stim/audio_stimuli/tall.mp3";
+const jump = "stim/audio_stimuli/jump.mp3";
+const building = "stim/audio_stimuli/building.mp3";
+const cliff = "stim/audio_stimuli/cliff.mp3";
+const over = "stim/audio_stimuli/over.mp3";
+const dive = "stim/audio_stimuli/dive.mp3";
+const low = "stim/audio_stimuli/low.mp3";
+const clouds = "stim/audio_stimuli/clouds.mp3";
+const elevate = "stim/audio_stimuli/elevate.mp3";
 
 let High = {
     listNumber: 15,
@@ -560,22 +560,22 @@ let High = {
 };
 
 //Define all variables for list 16: King
-const king = "king";
-const crown = "crown";
-const george = "george";
-const palace = "palace";
-const chess = "chess";
-const subjects = "subjects";
-const royal = "royal";
-const prince = "prince";
-const dictator = "dictator";
-const throne = "throne";
-const rule = "rule";
-const monarch = "monarch";
-const leader = "leader";
-const queen = "queen";
-const england = "england";
-const reign = "reign";
+const king = "stim/audio_stimuli/king.mp3";
+const crown = "stim/audio_stimuli/crown.mp3";
+const george = "stim/audio_stimuli/george.mp3";
+const palace = "stim/audio_stimuli/palace.mp3";
+const chess = "stim/audio_stimuli/chess.mp3";
+const subjects = "stim/audio_stimuli/subjects.mp3";
+const royal = "stim/audio_stimuli/royal.mp3";
+const prince = "stim/audio_stimuli/prince.mp3";
+const dictator = "stim/audio_stimuli/dictator.mp3";
+const throne = "stim/audio_stimuli/throne.mp3";
+const rule = "stim/audio_stimuli/rule.mp3";
+const monarch = "stim/audio_stimuli/monarch.mp3";
+const leader = "stim/audio_stimuli/leader.mp3";
+const queen = "stim/audio_stimuli/queen.mp3";
+const england = "stim/audio_stimuli/england.mp3";
+const reign = "stim/audio_stimuli/reign.mp3";
 
 let King = {
     listNumber: 16,
@@ -587,22 +587,22 @@ let King = {
 };
 
 //Define all variables for list 17: Lion
-const lion = "lion";
-const jungle = "jungle";
-const den = "den";
-const africa = "africa";
-const cage = "cage";
-const roar = "roar";
-const bears = "bears";
-const tamer = "tamer";
-const cub = "cub";
-const mane = "mane";
-const feline = "feline";
-const fierce = "fierce";
-const hunt = "hunt";
-const tiger = "tiger";
-const circus = "circus";
-const pride = "pride";
+const lion = "stim/audio_stimuli/lion.mp3";
+const jungle = "stim/audio_stimuli/jungle.mp3";
+const den = "stim/audio_stimuli/den.mp3";
+const africa = "stim/audio_stimuli/africa.mp3";
+const cage = "stim/audio_stimuli/cage.mp3";
+const roar = "stim/audio_stimuli/roar.mp3";
+const bears = "stim/audio_stimuli/bears.mp3";
+const tamer = "stim/audio_stimuli/tamer.mp3";
+const cub =  "stim/audio_stimuli/cub.mp3";
+const mane = "stim/audio_stimuli/mane.mp3";
+const feline = "stim/audio_stimuli/feline.mp3";
+const fierce = "stim/audio_stimuli/fierce.mp3";
+const hunt = "stim/audio_stimuli/hunt.mp3";
+const tiger = "stim/audio_stimuli/tiger.mp3";
+const circus = "stim/audio_stimuli/circus.mp3";
+const pride = "stim/audio_stimuli/pride.mp3";
 
 let Lion = {
     listNumber: 17,
