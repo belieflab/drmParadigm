@@ -42,7 +42,7 @@ const repetitions = {
 
 const durationForListWords = 1000;
 const durationForTargetWords = 1000;//3000;
-const fixationDuration = 1000;
+const fixationDuration = 2000;
 const numberOfTrials = 486;
 
 // Redirect Configuration (Daisy Chaining)

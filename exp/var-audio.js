@@ -26,6 +26,12 @@ let timeRemaining =
 
 // define all language for experiment
 
+//define tones that are used between list and target presentation and at ITI
+const tone_1 = "stim/audio_tones/tone_1.mp3"; 
+const tone_2 = "stim/audio_tones/tone_2.mp3"; 
+
+
+
 //First, create words to be used in practice trials
 
 const atom = "stim/audio_practice/atom.mp3"; //stimDecInstructions1.push("stim/audio_stimuli/africa.mp3");
@@ -75,7 +81,11 @@ for (let i = 0; i < practiceTrial1.listA.length; i++) {
     }); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-//practiceTrials.push({stimulus: "TONE1", data: {test_part:"practice", stim: "tone1", drmTrial_type:"practice"}, confidence: 'x'}); // pushes 7th item
+
+//pushes tone 1
+practiceTrials.push({stimulus: tone_1, duration: durationForListWords, data: {test_part:"practice", stim: "tone1", drmTrial_type:"practice"}, confidence: 'x'}); // pushes 7th item
+
+//pushes target word 
 practiceTrials.push({
     prompt: "Did you see the word ",
     stimulus: practiceTrial1.prototype,
@@ -95,8 +105,9 @@ practiceTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
-//practiceTrials.push({stimulus: "TONE2", data: {test_part:"practice", stim: "tone2", drmTrial_type:"practice"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
+});
+//pushes tone 2 which is played at the end of a trial. 
+practiceTrials.push({stimulus: tone_2, duration: fixationDuration, data: {test_part:"practice", stim: "tone2", drmTrial_type:"practice"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 for (let i = 0; i < practiceTrial2.listA.length; i++) {
     practiceTrials.push({
@@ -113,7 +124,10 @@ for (let i = 0; i < practiceTrial2.listA.length; i++) {
     }); //creating csv file
     //use underscores for data fields and headers and camel case for script
 }
-//practiceTrials.push({stimulus: "TONE1", data: {test_part:"practice", stim: "tone1", drmTrial_type:"practice"}, confidence: 'x'}); // pushes 7th item
+
+//pushes tone 1
+practiceTrials.push({stimulus: tone_1, duration: durationForListWords, data: {test_part:"practice", stim: "tone1", drmTrial_type:"practice"}, confidence: 'x'}); // pushes 7th item
+
 practiceTrials.push({
     prompt: "Did you see the word ",
     stimulus: practiceTrial2.prototype,
@@ -134,7 +148,9 @@ practiceTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
-//practiceTrials.push({stimulus: "TONE2", data: {test_part:"practice", stim: "tone2", drmTrial_type:"practice"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
+
+//pushes tone 2 which is played at the end of a trial.. 
+practiceTrials.push({stimulus: tone_2, duration: fixationDuration, data: {test_part:"practice", stim: "tone2", drmTrial_type:"practice"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 // define all variables in listNumber1 : Anger
 const anger = "anger";
