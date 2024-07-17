@@ -132,6 +132,8 @@ practiceTrials.push({
     prompt: "Did you see the word ",
     stimulus: practiceTrial2.prototype,
     prompt_end: "?",
+    duration: durationForTargetWords,
+    response_ends_trial: false,
     data: {
         test_part: "practice",
         stim: practiceTrial2.prototype,
@@ -151,6 +153,8 @@ practiceTrials.push({
 
 //pushes tone 2 which is played at the end of a trial.. 
 practiceTrials.push({stimulus: tone_2, duration: fixationDuration, data: {test_part:"practice", stim: "tone2", drmTrial_type:"practice"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
+
+
 
 // define all variables in listNumber1 : Anger
 const anger = "anger";

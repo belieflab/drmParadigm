@@ -181,6 +181,20 @@ let practice = {
     //   }
 };
 
+
+
+let instructions_6 = {
+    type: jsPsychAudioKeyboardResponse,
+    prompt: "<p> After you hear the long low tone,  the next trial will begin. </p>" +
+        "<p> To continue to a couiple of practice trials, please press either the f or j key. </p>" +
+        "<p> <i> Alternatively, if you would like to hear the instructions again, press the spacebar. </i> </p>",
+     stimulus: "stim/audio_instructions/drm_instructions_4.mp3",
+    choices: [" ", "f", "j"],
+};
+
+
+
+
 let instructions_audio_6 = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus:
