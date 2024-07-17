@@ -74,7 +74,7 @@ let instructions_3 = {
 let instructions_4 = {
     type: jsPsychAudioKeyboardResponse,
     prompt:"<p> white nosie.  </p>",
-    stimulus: "stim/audio_stimuli/2s_white_noise.mp3",
+    stimulus: "stim/audio_tones/tone_2.mp3",
     choices: "NO_KEYS",
     response_ends_trial: false,
     trial_ends_after_audio: true,
@@ -89,17 +89,6 @@ let instructions_5 = {
     choices: [" ", "f", "j"],
 };
 
-let instructions_visual_0 = {
-    type: jsPsychHtmlKeyboardResponse,
-    stimulus:
-        "<p> Hello and thank you for taking part in our experiment!</p>" +
-        "<p>It should take about 45 minutes.</p>" +
-        "<p> <i> Press the spacebar to view your instructions. </i> </p>",
-    choices: [32],
-    on_start: function () {
-        jsPsych.setProgressBar(0);
-    },
-};
 
 let practice = {
     type: jsPsychAudioKeyboardResponse,
@@ -192,18 +181,6 @@ let instructions_6 = {
     choices: [" ", "f", "j"],
 };
 
-
-
-
-let instructions_audio_6 = {
-    type: jsPsychHtmlKeyboardResponse,
-    stimulus:
-        "<p> You have successfully completed the practice trials!. </p>" +
-        "<p> You are now ready to begin the experiment. </p>" +
-        "<p> Remember, pressing the f key means that you think the word was not on the list and pressing the j key means that you think the word was on the list.  </p>" +
-        "<p> <i> Press either the f or j key to begin now. </i> </p>",
-    choices: [70, 74],
-};
 
 let instructions_visual_5 = {
     type: jsPsychHtmlKeyboardResponse,
