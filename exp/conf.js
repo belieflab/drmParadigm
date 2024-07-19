@@ -44,6 +44,7 @@ const durationForListWords = 1000;
 const durationForTargetWords = 1000;//3000;
 const fixationDuration = 2000;
 const numberOfTrials = 486;
+const durationForTone1 = 1000;
 
 // Redirect Configuration (Daisy Chaining)
 const urlConfig = {
