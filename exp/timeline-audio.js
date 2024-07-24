@@ -96,77 +96,16 @@ let practice = {
     stimulus: jsPsych.timelineVariable("stimulus"),
     prompt: () => {
         var html =
-            "<p>" +
-            // jsPsych.timelineVariable("prompt", true) +
-            // jsPsych.timelineVariable("prompt_end", true) +
-            jsPsych.timelineVariable("confidence", true) +
-            "</p>";
+            "<p>" + jsPsych.timelineVariable("confidence", true) + "</p>";
         return html;
     },
     trial_duration: jsPsych.timelineVariable("duration"),
     response_ends_trial: jsPsych.timelineVariable("response_ends_trial"),
-    // stimulus: jsPsych.timelineVariable('stimulus'),
-    choices: ["NO_KEYS"],
-    response_ends_trial: false,
-    // trial_duration: 30000,
-    on_load: function buttonPress(data) {
-        barFill = document.getElementById("fillUp");
-        barFill.innerHTML = "Hold response key to indicate confidence level.";
-        document.getElementById("tapTap").focus(); //gives focus to the text box
-        $(document).ready(function () {
-            $("#tapTap").keypress(function (event) {
-                var keycode = event.which;
-                if (
-                    (barFill.innerHTML =
-                        "Hold response key to indicate confidence level.")
-                ) {
-                    // reused from eefrt, just needed a placeholder here
-                    if (keycode == 102) {
-                        document
-                            .getElementById("counter")
-                            .setAttribute(
-                                "onkeydown",
-                                "return moveConfidence()"
-                            ); // event.charCode allows us to set specific keys to use
-                        responseKey = 102;
-                        // console.log(responseKey);
-                    } else if (keycode == 106) {
-                        document
-                            .getElementById("counter")
-                            .setAttribute(
-                                "onkeydown",
-                                "return moveConfidence()"
-                            ); // event.charCode allows us to set specific keys to use
-                        responseKey = 106;
-                        // console.log(responseKey);
-                    } else {
-                        // all other keys ignored
-                        document
-                            .getElementById("counter")
-                            .setAttribute("onkeydown", "return false"); // event.charCode allows us to set specific keys to use
-                    }
-                }
-            });
-        });
-    },
-    // on_finish: function(data){
-    //   if (data.stim== "tone1") {
-    //     data.accuracy_test= "" ;
-    //    } else if (data.stim=="tone2") {
-    //     data.accuracy_test= "" ;
-    //    } else if (data.word_position=="list") {
-    //     data.accuracy_test= "" ;
-    //   //   (data.key_press==null){
-    //   //    data.accuracy_test = null;
+    choices: ["NO KEYS"], // handled instead by buttonPress()
 
-    //   } else if (data.key_press == data.correct_response) {
-    //      console.log('correct');
-    //      data.accuracy_test = true;
-    //    } else if (data.key_press != data.correct_response) {
-    //    console.log('incorrect');
-    //      data.accuracy_test = false;
-    //    };
-    //   }
+    on_load: () => {
+        buttonPressWithArguments(70, 74);
+    },
 };
 
 let instructions_6 = {

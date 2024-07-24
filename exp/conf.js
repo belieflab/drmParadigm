@@ -23,6 +23,10 @@ const theme = "dark"; // Default theme setting for the user interface
 // Options: "audio", "visual"
 const version = "audio"; //"visual";
 
+const counterbalance = false; // Ensures that the experiment's order can be randomized to control for potential biases.
+
+let phase = null; // Tracks the stage of the experiment to apply different logic or content depending on the current phase.
+
 // Note: Uncomment the desired options. Ensure only one option per setting is active at a time.
 const adminEmail = undefined;
 
@@ -41,7 +45,7 @@ const repetitions = {
 };
 
 const durationForListWords = 1000;
-const durationForTargetWords = 10000; //3000;
+const durationForTargetWords = 100000; //3000;
 const fixationDuration = 2000;
 const numberOfTrials = 486;
 const durationForTone1 = 1000;
