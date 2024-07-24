@@ -11,7 +11,7 @@ let timeline = [];
 const preload = {
     type: jsPsychPreload,
     // images: [],
-    audio: [...practiceTrial1.listA, ...practiceTrial2.listA],
+    audio: [...practiceTrial1.listA, ...practiceTrial2.listA, trialStartTone, responsePromptTone],
     show_detailed_errors: true,
     on_success: function (file) {
         console.log("File successfully preloaded:", file);
@@ -73,8 +73,8 @@ let instructions_3 = {
 
 let instructions_4 = {
     type: jsPsychAudioKeyboardResponse,
-    prompt:"<p> white nosie.  </p>",
-    stimulus: "stim/audio_tones/tone_2.mp3",
+    prompt:"<p>Trial Start Tone</p>",
+    stimulus: trialStartTone,
     choices: "NO_KEYS",
     response_ends_trial: false,
     trial_ends_after_audio: true,
@@ -91,31 +91,31 @@ let instructions_5 = {
 
 
 let practice = {
-    type: jsPsychAudioKeyboardResponse,
+    type: jsPsychHtmlKeyboardResponse,
     data: jsPsych.timelineVariable("data"),
-    stimulus: jsPsych.timelineVariable("stimulus"),
-    // stimulus: function () {
-    //     var html =
-    //         "<p>" +
-    //         jsPsych.timelineVariable("prompt", true) +
-    //         jsPsych.timelineVariable("stimulus", true) +
-    //         jsPsych.timelineVariable("prompt_end", true) +
-    //         jsPsych.timelineVariable("confidence", true) +
-    //         "</p>";
-     //   return html;
-    //},
+    // stimulus: jsPsych.timelineVariable("stimulus"),
+    stimulus: function () {
+        var html =
+            "<p>" +
+            jsPsych.timelineVariable("prompt", true) +
+            jsPsych.timelineVariable("stimulus", true) +
+            jsPsych.timelineVariable("prompt_end", true) +
+            jsPsych.timelineVariable("confidence", true) +
+            "</p>";
+       return html;
+    },
     trial_duration: jsPsych.timelineVariable("duration"),
     response_ends_trial: jsPsych.timelineVariable("response_ends_trial"),
     // stimulus: jsPsych.timelineVariable('stimulus'),
     choices: ["NO_KEYS"],
     response_ends_trial: false,
     // trial_duration: 30000,
-    on_load: function buttonPress(data) {
+    on_load: () =>  {
         barFill = document.getElementById("fillUp");
         barFill.innerHTML = "Hold response key to indicate confidence level.";
         document.getElementById("tapTap").focus(); //gives focus to the text box
-        $(document).ready(function () {
-            $("#tapTap").keypress(function (event) {
+        $(document).ready( () => {
+            $("#tapTap").keypress( (event) => {
                 var keycode = event.which;
                 if (
                     (barFill.innerHTML =

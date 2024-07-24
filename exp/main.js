@@ -60,7 +60,7 @@ let joshTest = {
 // timeline.push(deannaTestCongruentHighestAssociate);
 
 // timeline.push(instructions1);
-
+timeline.push(preload);
 timeline.push(instructions_0);
 timeline.push(instructions_1);
 timeline.push(instructions_2);
