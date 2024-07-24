@@ -11,7 +11,7 @@ let timeline = [];
 const preload = {
     type: jsPsychPreload,
     // images: [],
-    audio: [...practiceTrial1.listA, ...practiceTrial2.listA, trialStartTone, responsePromptTone],
+    audio: [...practiceTrial1.listA, ...practiceTrial2.listA],
     show_detailed_errors: true,
     on_success: function (file) {
         console.log("File successfully preloaded:", file);
@@ -27,10 +27,10 @@ const preload = {
 let instructions_0 = {
     type: jsPsychAudioKeyboardResponse,
     prompt:
-         "<p> Hello and thank you for taking part in our experiment!</p>" +
-         "<p>This experiment will be presnted entirely in an auditory format.</p>" +
-         "<p>It should take about 30 minutes.</p>" +
-         "<p> <i> Press spacebar to begin listening to your instructions. </i> </p>",
+        "<p> Hello and thank you for taking part in our experiment!</p>" +
+        "<p>This experiment will be presnted entirely in an auditory format.</p>" +
+        "<p>It should take about 30 minutes.</p>" +
+        "<p> <i> Press spacebar to begin listening to your instructions. </i> </p>",
     stimulus: "stim/audio_instructions/DRM_instructions_0.mp3",
     choices: [" "],
     on_start: function () {
@@ -38,10 +38,9 @@ let instructions_0 = {
     },
 };
 
-
 let instructions_1 = {
     type: jsPsychAudioKeyboardResponse,
-       prompt: 
+    prompt:
         "<p> This experiment assesses your ability to remember whether a particular word was presented in a list of words.</p>" +
         "<p>First, you will hear a list of six words. At the conclusion of the list, you will be asked if a particular word was on the list. </p>" +
         "<p> <i> Press the spacebar to hear more instructions. </i> </p>",
@@ -51,7 +50,8 @@ let instructions_1 = {
 
 let instructions_2 = {
     type: jsPsychAudioKeyboardResponse,
-        prompt: "<p> After the short tone, you will hear one word. </p>" +
+    prompt:
+        "<p> After the short tone, you will hear one word. </p>" +
         "<p> Your job is to indicate whether that word was or was not on the list that you heard before the tone. </p>" +
         "<p> If the word was on the list, press the “j” key. If the word was not on the list, press the “f” key. </p>" +
         "<p> <i> Press either the f or j key to hear additional instructions. </i> </p>",
@@ -73,7 +73,7 @@ let instructions_3 = {
 
 let instructions_4 = {
     type: jsPsychAudioKeyboardResponse,
-    prompt:"<p>Trial Start Tone</p>",
+    prompt: "<p> white nosie.  </p>",
     stimulus: trialStartTone,
     choices: "NO_KEYS",
     response_ends_trial: false,
@@ -82,27 +82,26 @@ let instructions_4 = {
 
 let instructions_5 = {
     type: jsPsychAudioKeyboardResponse,
-    prompt: "<p> After you hear the long low tone,  the next trial will begin. </p>" +
+    prompt:
+        "<p> After you hear the long low tone,  the next trial will begin. </p>" +
         "<p> To continue to a couiple of practice trials, please press either the f or j key. </p>" +
         "<p> <i> Alternatively, if you would like to hear the instructions again, press the spacebar. </i> </p>",
-     stimulus: "stim/audio_instructions/drm_instructions_4.mp3",
+    stimulus: "stim/audio_instructions/drm_instructions_4.mp3",
     choices: [" ", "f", "j"],
 };
 
-
 let practice = {
-    type: jsPsychHtmlKeyboardResponse,
+    type: jsPsychAudioKeyboardResponse,
     data: jsPsych.timelineVariable("data"),
-    // stimulus: jsPsych.timelineVariable("stimulus"),
-    stimulus: function () {
+    stimulus: jsPsych.timelineVariable("stimulus"),
+    prompt: () => {
         var html =
             "<p>" +
-            jsPsych.timelineVariable("prompt", true) +
-            jsPsych.timelineVariable("stimulus", true) +
-            jsPsych.timelineVariable("prompt_end", true) +
+            // jsPsych.timelineVariable("prompt", true) +
+            // jsPsych.timelineVariable("prompt_end", true) +
             jsPsych.timelineVariable("confidence", true) +
             "</p>";
-       return html;
+        return html;
     },
     trial_duration: jsPsych.timelineVariable("duration"),
     response_ends_trial: jsPsych.timelineVariable("response_ends_trial"),
@@ -110,12 +109,12 @@ let practice = {
     choices: ["NO_KEYS"],
     response_ends_trial: false,
     // trial_duration: 30000,
-    on_load: () =>  {
+    on_load: function buttonPress(data) {
         barFill = document.getElementById("fillUp");
         barFill.innerHTML = "Hold response key to indicate confidence level.";
         document.getElementById("tapTap").focus(); //gives focus to the text box
-        $(document).ready( () => {
-            $("#tapTap").keypress( (event) => {
+        $(document).ready(function () {
+            $("#tapTap").keypress(function (event) {
                 var keycode = event.which;
                 if (
                     (barFill.innerHTML =
@@ -170,17 +169,15 @@ let practice = {
     //   }
 };
 
-
-
 let instructions_6 = {
     type: jsPsychAudioKeyboardResponse,
-    prompt: "<p> After you hear the long low tone,  the next trial will begin. </p>" +
+    prompt:
+        "<p> After you hear the long low tone,  the next trial will begin. </p>" +
         "<p> To continue to a couiple of practice trials, please press either the f or j key. </p>" +
         "<p> <i> Alternatively, if you would like to hear the instructions again, press the spacebar. </i> </p>",
-     stimulus: "stim/audio_instructions/drm_instructions_4.mp3",
+    stimulus: "stim/audio_instructions/drm_instructions_4.mp3",
     choices: [" ", "f", "j"],
 };
-
 
 let instructions_visual_5 = {
     type: jsPsychHtmlKeyboardResponse,

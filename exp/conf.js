@@ -21,7 +21,7 @@ const theme = "dark"; // Default theme setting for the user interface
 
 // Current version of the experiment
 // Options: "audio", "visual"
-const version = "audio"//"visual";
+const version = "audio"; //"visual";
 
 // Note: Uncomment the desired options. Ensure only one option per setting is active at a time.
 const adminEmail = undefined;
@@ -41,7 +41,7 @@ const repetitions = {
 };
 
 const durationForListWords = 1000;
-const durationForTargetWords = 1000;//3000;
+const durationForTargetWords = 10000; //3000;
 const fixationDuration = 2000;
 const numberOfTrials = 486;
 const durationForTone1 = 1000;
