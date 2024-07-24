@@ -67,7 +67,8 @@ let practiceTrials = [];
 //pushes tone 1
 practiceTrials.push({
     stimulus: trialStartTone,
-    trial_duration: durationForListWords,
+    duration: durationForListWords,
+    response_ends_trial: false,
     data: {
         test_part: "practice",
         stim: "trialStartTone",
@@ -80,7 +81,7 @@ practiceTrials.push({
 for (let i = 0; i < practiceTrial1.listA.length; i++) {
     practiceTrials.push({
         stimulus: practiceTrial1.listA[i],
-        trial_duration: durationForListWords,
+        duration: durationForListWords,
         response_ends_trial: false,
         data: {
             test_part: "practice",
@@ -96,7 +97,7 @@ for (let i = 0; i < practiceTrial1.listA.length; i++) {
 //pushes tone 2
 practiceTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "practice",
@@ -127,7 +128,7 @@ practiceTrials.push({
     prompt: "Did you hear the word ",
     stimulus: practiceTrial1.prototype,
     prompt_end: "?",
-    trial_duration: durationForTargetWords,
+    duration: durationForTargetWords,
     response_ends_trial: false,
     data: {
         test_part: "practice",
@@ -147,7 +148,7 @@ practiceTrials.push({
 //pushes tone 1
 practiceTrials.push({
     stimulus: trialStartTone,
-    trial_duration: durationForListWords,
+    duration: durationForListWords,
     data: {
         test_part: "practice",
         stim: "trialStartTone",
@@ -158,7 +159,7 @@ practiceTrials.push({
 for (let i = 0; i < practiceTrial2.listA.length; i++) {
     practiceTrials.push({
         stimulus: practiceTrial2.listA[i],
-        trial_duration: durationForListWords,
+        duration: durationForListWords,
         response_ends_trial: false,
         data: {
             test_part: "practice",
@@ -174,7 +175,7 @@ for (let i = 0; i < practiceTrial2.listA.length; i++) {
 //pushes tone 2
 practiceTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    duration: durationForListWords,
     data: {
         test_part: "practice",
         stim: "responsePromptTone",
@@ -186,12 +187,12 @@ practiceTrials.push({
     prompt: "Did you hear the word ",
     stimulus: practiceTrial2.prototype,
     prompt_end: "?",
-    trial_duration: durationForTargetWords,
+    duration: durationForTargetWords,
     response_ends_trial: false,
     data: {
         test_part: "practice",
         stim: practiceTrial2.prototype,
-        trial_duration: durationForTargetWords,
+        duration: durationForTargetWords,
         response_ends_trial: false,
         drmTrial_type: "practice",
         word_position: "target",
@@ -1292,7 +1293,7 @@ let incongruentPrototypeTrials = [];
 for (let i = 0; i < incongruentPrototypeTrial1.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial1.listA[i],
-        trial_duration: durationForListWords,
+        duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial1.listA[i],
@@ -1305,7 +1306,7 @@ for (let i = 0; i < incongruentPrototypeTrial1.listA.length; i++) {
 }
 incongruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForTone1,
+    duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1332,7 +1333,7 @@ incongruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    trial_duration: fixationDuration,
+    duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1346,7 +1347,7 @@ incongruentPrototypeTrials.push({
 for (let i = 0; i < incongruentPrototypeTrial2.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial2.listA[i],
-        trial_duration: durationForListWords,
+        duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial2.listA[i],
@@ -1359,7 +1360,7 @@ for (let i = 0; i < incongruentPrototypeTrial2.listA.length; i++) {
 }
 incongruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForTone1,
+    duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1386,7 +1387,7 @@ incongruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    trial_duration: fixationDuration,
+    duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1400,7 +1401,7 @@ incongruentPrototypeTrials.push({
 for (let i = 0; i < incongruentPrototypeTrial3.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial3.listA[i],
-        trial_duration: durationForListWords,
+        duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial3.listA[i],
@@ -1413,7 +1414,7 @@ for (let i = 0; i < incongruentPrototypeTrial3.listA.length; i++) {
 }
 incongruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForTone1,
+    duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1440,7 +1441,7 @@ incongruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    trial_duration: fixationDuration,
+    duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1454,7 +1455,7 @@ incongruentPrototypeTrials.push({
 for (let i = 0; i < incongruentPrototypeTrial4.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial4.listA[i],
-        trial_duration: durationForListWords,
+        duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial4.listA[i],
@@ -1467,7 +1468,7 @@ for (let i = 0; i < incongruentPrototypeTrial4.listA.length; i++) {
 }
 incongruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForTone1,
+    duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1494,7 +1495,7 @@ incongruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    trial_duration: fixationDuration,
+    duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1508,7 +1509,7 @@ incongruentPrototypeTrials.push({
 for (let i = 0; i < incongruentPrototypeTrial5.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial5.listA[i],
-        trial_duration: durationForListWords,
+        duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial5.listA[i],
@@ -1521,7 +1522,7 @@ for (let i = 0; i < incongruentPrototypeTrial5.listA.length; i++) {
 }
 incongruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForTone1,
+    duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1548,7 +1549,7 @@ incongruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    trial_duration: fixationDuration,
+    duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1562,7 +1563,7 @@ incongruentPrototypeTrials.push({
 for (let i = 0; i < incongruentPrototypeTrial6.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial6.listA[i],
-        trial_duration: durationForListWords,
+        duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial6.listA[i],
@@ -1575,7 +1576,7 @@ for (let i = 0; i < incongruentPrototypeTrial6.listA.length; i++) {
 }
 incongruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForTone1,
+    duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1602,7 +1603,7 @@ incongruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    trial_duration: fixationDuration,
+    duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
