@@ -27,9 +27,8 @@ let timeRemaining =
 // define all language for experiment
 
 //define tones that are used between list and target presentation and at ITI
-const tone_1 = "stim/audio_tones/tone_1.mp3"; 
-const tone_2 = "stim/audio_tones/tone_2.mp3"; 
-
+const tone1 = "stim/audio_tones/tone1.mp3"; 
+const tone2 = "stim/audio_tones/tone2.mp3"; 
 
 
 //First, create words to be used in practice trials
@@ -65,6 +64,21 @@ let practiceTrial1 = practiceLists[0];
 let practiceTrial2 = practiceLists[1];
 
 let practiceTrials = [];
+
+//pushes tone 1
+practiceTrials.push(
+    {
+    stimulus: tone1,
+    duration: durationForListWords,
+    data: {
+        test_part:"practice",
+        stim: "tone1",
+        drmTrial_type:"practice"
+        },
+    confidence: 'x'
+    }
+); // pushes 7th item
+
 // pushes 6 items from listA
 for (let i = 0; i < practiceTrial1.listA.length; i++) {
     practiceTrials.push({
@@ -82,12 +96,39 @@ for (let i = 0; i < practiceTrial1.listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 
-//pushes tone 1
-practiceTrials.push({stimulus: tone_1, duration: durationForListWords, data: {test_part:"practice", stim: "tone1", drmTrial_type:"practice"}, confidence: 'x'}); // pushes 7th item
+//pushes tone 2
+practiceTrials.push(
+    {
+    stimulus: tone2,
+    duration: durationForListWords,
+    data: {
+        test_part:"practice",
+        stim: "tone2",
+        drmTrial_type:"practice"
+        },
+    confidence: 'x'
+    }
+); // pushes 7th item
+
+// // objects
+
+// class: phone
+// object: cellphone, landline, nokia, apple iPone
+
+// class: person
+// objects: person1, person2
+// properties: name, eye color, favorite food
+
+// laura = {
+//     firstrName: "Laura",
+//     lastName: "Dragusha",
+//     eyeColor: "blue",
+//     favoriteFood: "Lasagna"
+// }
 
 //pushes target word 
 practiceTrials.push({
-    prompt: "Did you see the word ",
+    prompt: "Did you hear the word ",
     stimulus: practiceTrial1.prototype,
     prompt_end: "?",
     duration: durationForTargetWords,
@@ -106,9 +147,20 @@ practiceTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 });
-//pushes tone 2 which is played at the end of a trial. 
-practiceTrials.push({stimulus: tone_2, duration: fixationDuration, data: {test_part:"practice", stim: "tone2", drmTrial_type:"practice"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
+//pushes tone 1
+practiceTrials.push(
+    {
+    stimulus: tone1,
+    duration: durationForListWords,
+    data: {
+        test_part:"practice",
+        stim: "tone1",
+        drmTrial_type:"practice"
+        },
+    confidence: 'x'
+    }
+); // pushes 7th item
 for (let i = 0; i < practiceTrial2.listA.length; i++) {
     practiceTrials.push({
         stimulus: practiceTrial2.listA[i],
@@ -125,11 +177,21 @@ for (let i = 0; i < practiceTrial2.listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 
-//pushes tone 1
-practiceTrials.push({stimulus: tone_1, duration: durationForListWords, data: {test_part:"practice", stim: "tone1", drmTrial_type:"practice"}, confidence: 'x'}); // pushes 7th item
-
+//pushes tone 2
+practiceTrials.push(
+    {
+    stimulus: tone2,
+    duration: durationForListWords,
+    data: {
+        test_part:"practice",
+        stim: "tone2",
+        drmTrial_type:"practice"
+        },
+    confidence: 'x'
+    }
+); // pushes 7th item
 practiceTrials.push({
-    prompt: "Did you see the word ",
+    prompt: "Did you hear the word ",
     stimulus: practiceTrial2.prototype,
     prompt_end: "?",
     duration: durationForTargetWords,
@@ -151,8 +213,6 @@ practiceTrials.push({
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
 
-//pushes tone 2 which is played at the end of a trial.. 
-practiceTrials.push({stimulus: tone_2, duration: fixationDuration, data: {test_part:"practice", stim: "tone2", drmTrial_type:"practice"}, confidence: 'x'}); // pushes 9th item placeholder for TONE2
 
 
 
@@ -1255,7 +1315,7 @@ for (let i = 0; i < incongruentPrototypeTrial1.listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 incongruentPrototypeTrials.push({
-    stimulus: tone_1,
+    stimulus: tone2,
     duration: durationForTone1,
     response_ends_trial: false,
     data: {
@@ -1282,7 +1342,7 @@ incongruentPrototypeTrials.push({
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
-    stimulus: tone_2,
+    stimulus: tone1,
     duration: fixationDuration,
     response_ends_trial: false,
     data: {
@@ -1309,7 +1369,7 @@ for (let i = 0; i < incongruentPrototypeTrial2.listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 incongruentPrototypeTrials.push({
-    stimulus: tone_1,
+    stimulus: tone2,
     duration: durationForTone1,
     response_ends_trial: false,
     data: {
@@ -1336,7 +1396,7 @@ incongruentPrototypeTrials.push({
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
-    stimulus: tone_2,
+    stimulus: tone1,
     duration: fixationDuration,
     response_ends_trial: false,
     data: {
@@ -1363,7 +1423,7 @@ for (let i = 0; i < incongruentPrototypeTrial3.listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 incongruentPrototypeTrials.push({
-    stimulus: tone_1,
+    stimulus: tone2,
     duration: durationForTone1,
     response_ends_trial: false,
     data: {
@@ -1390,7 +1450,7 @@ incongruentPrototypeTrials.push({
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
-    stimulus: tone_2,
+    stimulus: tone1,
     duration: fixationDuration,
     response_ends_trial: false,
     data: {
@@ -1417,7 +1477,7 @@ for (let i = 0; i < incongruentPrototypeTrial4.listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 incongruentPrototypeTrials.push({
-    stimulus: tone_1,
+    stimulus: tone2,
     duration: durationForTone1,
     response_ends_trial: false,
     data: {
@@ -1444,7 +1504,7 @@ incongruentPrototypeTrials.push({
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
-    stimulus: tone_2,
+    stimulus: tone1,
     duration: fixationDuration,
     response_ends_trial: false,
     data: {
@@ -1471,7 +1531,7 @@ for (let i = 0; i < incongruentPrototypeTrial5.listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 incongruentPrototypeTrials.push({
-    stimulus: tone_1,
+    stimulus: tone2,
     duration: durationForTone1,
     response_ends_trial: false,
     data: {
@@ -1498,7 +1558,7 @@ incongruentPrototypeTrials.push({
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
-    stimulus: tone_2,
+    stimulus: tone1,
     duration: fixationDuration,
     response_ends_trial: false,
     data: {
@@ -1525,7 +1585,7 @@ for (let i = 0; i < incongruentPrototypeTrial6.listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 incongruentPrototypeTrials.push({
-    stimulus: tone_1,
+    stimulus: tone2,
     duration: durationForTone1,
     response_ends_trial: false,
     data: {
@@ -1552,7 +1612,7 @@ incongruentPrototypeTrials.push({
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
-    stimulus: tone_2,
+    stimulus: tone1,
     duration: fixationDuration,
     response_ends_trial: false,
     data: {
