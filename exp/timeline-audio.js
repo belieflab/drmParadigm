@@ -96,7 +96,10 @@ let practice = {
     stimulus: jsPsych.timelineVariable("stimulus"),
     prompt: () => {
         var html =
-            "<p>" + jsPsych.timelineVariable("confidence", true) + "</p>";
+            "<p>" +
+            jsPsych.timelineVariable("confidence", true) +
+            "</p>" +
+            '<audio id="beep" src="stim/audio_tones/confidence.mp3"></audio>';
         return html;
     },
     trial_duration: jsPsych.timelineVariable("duration"),
@@ -104,7 +107,7 @@ let practice = {
     choices: ["NO KEYS"], // handled instead by buttonPress()
 
     on_load: () => {
-        buttonPressWithArguments(70, 74);
+        buttonPressWithArguments(70, 74, true);
     },
 };
 
@@ -146,9 +149,24 @@ let test = {
     trial_duration: 3000,
     response_ends_trial: false,
     on_load: function buttonPress(data) {
+        let audioElement = document.createElement("audio");
+        audioElement.id = "beep";
+        audioElement.src = "stim/audio_tones/tone_1.mp3"; // Use the actual file path
+        audioElement.preload = "auto"; // Preload the audio
+        document.body.appendChild(audioElement);
+
+        console.log("Audio element created:", audioElement);
+
+        audioElement.addEventListener("canplaythrough", function () {
+            console.log("Audio can play through");
+        });
+
+        audioElement.addEventListener("error", function (e) {
+            console.error("Audio error:", e);
+        });
         barFill = document.getElementById("fillUp");
         barFill.innerHTML = "Hold response key to indicate confidence level.";
-        document.getElementById("tapTap").focus(); //gives focus to the text box
+        document.getElementById("tapTap").focus();
         $(document).ready(function () {
             $("#tapTap").keypress(function (event) {
                 var keycode = event.which;
@@ -156,34 +174,29 @@ let test = {
                     (barFill.innerHTML =
                         "Hold response key to indicate confidence level.")
                 ) {
-                    // reused from eefrt, just needed a placeholder here
-                    if (keycode == 102) {
+                    if (keycode == 102 || keycode == 106) {
                         document
                             .getElementById("counter")
                             .setAttribute(
                                 "onkeydown",
-                                "return moveConfidence()"
-                            ); // event.charCode allows us to set specific keys to use
-                        responseKey = 102;
-                        console.log(responseKey);
-                    } else if (keycode == 106) {
-                        document
-                            .getElementById("counter")
-                            .setAttribute(
-                                "onkeydown",
-                                "return moveConfidence()"
-                            ); // event.charCode allows us to set specific keys to use
-                        responseKey = 106;
-                        console.log(responseKey);
+                                "return moveConfidenceWithBeep()"
+                            );
+                        responseKey = keycode;
+                        console.log("Response key:", responseKey);
                     } else {
-                        // all other keys ignored
                         document
                             .getElementById("counter")
-                            .setAttribute("onkeydown", "return false"); // event.charCode allows us to set specific keys to use
+                            .setAttribute("onkeydown", "return false");
                     }
                 }
             });
         });
+        // Resume audio context if it's suspended (this is often needed due to autoplay policies)
+        if (audioContext.state === "suspended") {
+            audioContext
+                .resume()
+                .then(() => console.log("Audio context resumed"));
+        }
     },
     on_start: function () {
         //update progress bar with each iteration
