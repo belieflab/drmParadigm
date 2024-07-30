@@ -17,6 +17,7 @@ const preload = {
         trialStartTone,
         responsePromptTone,
         "stim/audio_tones/confidence.mp3",
+        audioFiles,
     ],
     show_detailed_errors: true,
     on_success: function (file) {
@@ -96,7 +97,31 @@ let instructions_5 = {
     choices: [" ", "f", "j"],
 };
 
-let practice = {
+let instructions_6 = {
+    type: jsPsychAudioKeyboardResponse,
+    prompt:
+        "<p> After you hear the long low tone,  the next trial will begin. </p>" +
+        "<p> To continue to a couiple of practice trials, please press either the f or j key. </p>" +
+        "<p> <i> Alternatively, if you would like to hear the instructions again, press the spacebar. </i> </p>",
+    stimulus: "stim/audio_instructions/drm_instructions_4.mp3",
+    choices: [" ", "f", "j"],
+    response_ends_trial: true,
+    trial_duration: 10000,
+};
+
+let instructions_visual_5 = {
+    type: jsPsychHtmlKeyboardResponse,
+    stimulus:
+        "<p> You have successfully completed the practice trials!. </p>" +
+        "<p> You are now ready to begin the experiment. </p>" +
+        "<p> Remember, pressing the f key means that you think the word was not on the list and pressing the j key means that you think the word was on the list.  </p>" +
+        "<p> <i> Press either the f or j key to begin the experiment now. </i> </p>",
+    response_ends_trial: true,
+    trial_duration: 10000,
+    choices: ["f", "j"],
+};
+
+let trials = {
     type: jsPsychAudioKeyboardResponse,
     data: jsPsych.timelineVariable("data"),
     stimulus: jsPsych.timelineVariable("stimulus"),
@@ -108,108 +133,19 @@ let practice = {
             '<audio id="beep" src="stim/audio_tones/confidence.mp3"></audio>';
         return html;
     },
-    trial_duration: jsPsych.timelineVariable("duration"),
+    trial_duration: jsPsych.timelineVariable("trial_duration"),
     response_ends_trial: jsPsych.timelineVariable("response_ends_trial"),
     choices: ["NO KEYS"], // handled instead by buttonPress()
 
     on_load: () => {
         buttonPressWithArguments(70, 74, true);
     },
-};
-
-let instructions_6 = {
-    type: jsPsychAudioKeyboardResponse,
-    prompt:
-        "<p> After you hear the long low tone,  the next trial will begin. </p>" +
-        "<p> To continue to a couiple of practice trials, please press either the f or j key. </p>" +
-        "<p> <i> Alternatively, if you would like to hear the instructions again, press the spacebar. </i> </p>",
-    stimulus: "stim/audio_instructions/drm_instructions_4.mp3",
-    choices: [" ", "f", "j"],
-};
-
-let instructions_visual_5 = {
-    type: jsPsychHtmlKeyboardResponse,
-    stimulus:
-        "<p> You have successfully completed the practice trials!. </p>" +
-        "<p> You are now ready to begin the experiment. </p>" +
-        "<p> Remember, pressing the f key means that you think the word was not on the list and pressing the j key means that you think the word was on the list.  </p>" +
-        "<p> <i> Press either the f or j key to begin the experiment now. </i> </p>",
-    choices: [70, 74],
-};
-
-let test = {
-    type: jsPsychHtmlKeyboardResponse,
-    // prompt: jsPsych.timelineVariable("confidence"),
-    data: jsPsych.timelineVariable("data"),
-    stimulus: function () {
-        var html =
-            "<p>" +
-            jsPsych.timelineVariable("stimulus", true) +
-            jsPsych.timelineVariable("confidence", true) +
-            "</p>";
-        return html;
-    },
-    // stimulus: jsPsych.timelineVariable('stimulus'),
-    //choices: [70, 74],
-    choices: ["NO_KEYS"],
-    trial_duration: 3000,
-    response_ends_trial: false,
-    on_load: function buttonPress(data) {
-        let audioElement = document.createElement("audio");
-        audioElement.id = "beep";
-        audioElement.src = "stim/audio_tones/tone_1.mp3"; // Use the actual file path
-        audioElement.preload = "auto"; // Preload the audio
-        document.body.appendChild(audioElement);
-
-        console.log("Audio element created:", audioElement);
-
-        audioElement.addEventListener("canplaythrough", function () {
-            console.log("Audio can play through");
-        });
-
-        audioElement.addEventListener("error", function (e) {
-            console.error("Audio error:", e);
-        });
-        barFill = document.getElementById("fillUp");
-        barFill.innerHTML = "Hold response key to indicate confidence level.";
-        document.getElementById("tapTap").focus();
-        $(document).ready(function () {
-            $("#tapTap").keypress(function (event) {
-                var keycode = event.which;
-                if (
-                    (barFill.innerHTML =
-                        "Hold response key to indicate confidence level.")
-                ) {
-                    if (keycode == 102 || keycode == 106) {
-                        document
-                            .getElementById("counter")
-                            .setAttribute(
-                                "onkeydown",
-                                "return moveConfidenceWithBeep()"
-                            );
-                        responseKey = keycode;
-                        console.log("Response key:", responseKey);
-                    } else {
-                        document
-                            .getElementById("counter")
-                            .setAttribute("onkeydown", "return false");
-                    }
-                }
-            });
-        });
-        // Resume audio context if it's suspended (this is often needed due to autoplay policies)
-        if (audioContext.state === "suspended") {
-            audioContext
-                .resume()
-                .then(() => console.log("Audio context resumed"));
-        }
-    },
-    on_start: function () {
+    on_start: () => {
         //update progress bar with each iteration
         var currentProgressBarValue = jsPsych.getProgressBarCompleted();
         jsPsych.setProgressBar(currentProgressBarValue + 1 / numberOfTrials);
     },
-    on_finish: function (data) {
+    on_finish: (data) => {
         if (data.stim == "tone1") {
             data.accuracy_test = "";
         } else if (data.stim == "tone2") {
@@ -227,13 +163,6 @@ let test = {
         }
     },
 };
-
-// let instructions1 = {
-//   type: 'audio-keyboard-response',
-//   stimulus: 'stim/audio_instructions/old_DRM_instructions_1.mp3',
-//   choices: "NO_KEYS",
-//   trial_ends_after_audio: true
-// };
 
 const dataSave = {
     type: jsPsychHtmlKeyboardResponse,
