@@ -4,7 +4,7 @@
 let trialIterator = 1;
 
 var responseOptions =
-    "1 Allergy&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp0 No Reaction <br><br> Hold response key to indicate confidence level.";
+    "f&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspj <br><br> Hold response key to indicate confidence level.";
 
 // feedback contrainer
 let feedbackGenerator = '<p id="feedbackGenerator" style="color:black;"></p>';
@@ -62,149 +62,18 @@ let practiceLists = [practiceOne, practiceTwo];
 let practiceTrial1 = practiceLists[0];
 let practiceTrial2 = practiceLists[1];
 
+// Create practice trials
 let practiceTrials = [];
-
-//pushes tone 1
-practiceTrials.push({
-    stimulus: trialStartTone,
-    trial_duration: durationForListWords,
-    response_ends_trial: false,
-    data: {
-        test_part: "practice",
-        stim: trialStartTone,
-        drmTrial_type: "practice",
-    },
-    confidence: "x",
-}); // pushes 7th item
-
-// pushes 6 items from listA
-for (let i = 0; i < practiceTrial1.listA.length; i++) {
-    practiceTrials.push({
-        stimulus: practiceTrial1.listA[i],
-        trial_duration: durationForListWords,
-        response_ends_trial: false,
-        data: {
-            test_part: "practice",
-            stim: practiceTrial1.listA[i],
-            drmTrial_type: "practice",
-            word_position: "list",
-        },
-        confidence: "x",
-    });
-    //use underscores for data fields and headers and camel case for script
-}
-
-//pushes tone 2
-practiceTrials.push({
-    stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
-    response_ends_trial: false,
-    data: {
-        test_part: "practice",
-        stim: responsePromptTone,
-        drmTrial_type: "practice",
-    },
-    confidence: "x",
-}); // pushes 7th item
-
-// // objects
-
-// class: phone
-// object: cellphone, landline, nokia, apple iPone
-
-// class: person
-// objects: person1, person2
-// properties: name, eye color, favorite food
-
-// laura = {
-//     firstrName: "Laura",
-//     lastName: "Dragusha",
-//     eyeColor: "blue",
-//     favoriteFood: "Lasagna"
-// }
-
-//pushes target word
-practiceTrials.push({
-    prompt: "Did you hear the word ",
-    stimulus: practiceTrial1.prototype,
-    prompt_end: "?",
-    trial_duration: durationForTargetWords,
-    response_ends_trial: false,
-    data: {
-        test_part: "practice",
-        stim: practiceTrial1.prototype,
-        drmTrial_type: "practice",
-        word_position: "target",
-        correct_response: "70",
-    },
-    confidence:
-        progressBar +
-        fillUp +
-        feedbackGenerator +
-        timeRemaining +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+[practiceTrial1, practiceTrial2].forEach((trial, index) => {
+    practiceTrials.push(createTrial({ stimulus: trialStartTone }, "practice"));
+    trial.listA.forEach((word) =>
+        practiceTrials.push(createTrial({ stimulus: word }, "practice"))
+    );
+    practiceTrials.push(
+        createTrial({ stimulus: responsePromptTone }, "practice")
+    );
+    practiceTrials.push(createTargetTrial(trial.prototype, "practice"));
 });
-
-//pushes tone 1
-practiceTrials.push({
-    stimulus: trialStartTone,
-    trial_duration: durationForListWords,
-    data: {
-        test_part: "practice",
-        stim: trialStartTone,
-        drmTrial_type: "practice",
-    },
-    confidence: "x",
-}); // pushes 7th item
-for (let i = 0; i < practiceTrial2.listA.length; i++) {
-    practiceTrials.push({
-        stimulus: practiceTrial2.listA[i],
-        trial_duration: durationForListWords,
-        response_ends_trial: false,
-        data: {
-            test_part: "practice",
-            stim: practiceTrial2.listA[i],
-            drmTrial_type: "practice",
-            word_position: "list",
-        },
-        confidence: "x",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
-}
-
-//pushes tone 2
-practiceTrials.push({
-    stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
-    data: {
-        test_part: "practice",
-        stim: responsePromptTone,
-        drmTrial_type: "practice",
-    },
-    confidence: "x",
-}); // pushes 7th item
-practiceTrials.push({
-    prompt: "Did you hear the word ",
-    stimulus: practiceTrial2.prototype,
-    prompt_end: "?",
-    trial_duration: durationForTargetWords,
-    response_ends_trial: false,
-    data: {
-        test_part: "practice",
-        stim: practiceTrial2.prototype,
-        trial_duration: durationForTargetWords,
-        response_ends_trial: false,
-        drmTrial_type: "practice",
-        word_position: "target",
-        correct_response: "74",
-    },
-    confidence:
-        progressBar +
-        fillUp +
-        feedbackGenerator +
-        timeRemaining +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
 
 // define all variables in listNumber1 : Anger
 const anger = "stim/audio_stimuli/anger.mp3";
