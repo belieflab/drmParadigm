@@ -1270,7 +1270,7 @@ for (let trialNum = 1; trialNum <= 18; trialNum++) {
                 congruentHighestAssociateTrials.push({
                     stimulus: listBCopy[i],
                     response_ends_trial: false,
-                    trial_duration: 1000,
+                    trial_duration: durationForListWords,
                     data: {
                         test_part: "test",
                         stim: listBCopy[i],
