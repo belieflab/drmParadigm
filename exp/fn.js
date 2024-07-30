@@ -1,3 +1,7 @@
+"use strict";
+
+// Helper functions (keep the shuffleArray function as is)
+
 function createTrial(
     list,
     trialType,
@@ -37,4 +41,26 @@ function createTargetTrial(stimulus, trialType, isPractice = false) {
             timeRemaining +
             '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
     };
+}
+
+function createTrialSet(list, trialType, isPractice = false) {
+    let trials = [];
+    trials.push(
+        createTrial({ stimulus: trialStartTone }, trialType, "list", isPractice)
+    );
+    list.listA.forEach((word) =>
+        trials.push(
+            createTrial({ stimulus: word }, trialType, "list", isPractice)
+        )
+    );
+    trials.push(
+        createTrial(
+            { stimulus: responsePromptTone },
+            trialType,
+            "list",
+            isPractice
+        )
+    );
+    trials.push(createTargetTrial(list.prototype, trialType, isPractice));
+    return trials;
 }
