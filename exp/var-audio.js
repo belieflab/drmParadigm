@@ -18,11 +18,11 @@ let responseKey;
 // progress bar container
 let progressBar =
     '<div id="counter" class="w3-container" style="color:black"><div class="w3-light-grey"><div class="w3-grey" id="keyBar" style="height:24px;width:0%;"></div></div><br><div>';
-let fillUp = '<p id="fillUp" style="color:black;"></p>';
+let fillUp = '<p id="fillUp" style="color:white;"></p>';
 
 // set the time remaining notification for participant
 let timeRemaining =
-    '<p id="timeRemaining" style="text-align:center; color:black;"></p>';
+    '<p id="timeRemaining" style="text-align:center; color:white;"></p>';
 
 // define all language for experiment
 
@@ -67,7 +67,7 @@ let practiceTrials = [];
 //pushes tone 1
 practiceTrials.push({
     stimulus: trialStartTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "practice",
@@ -81,7 +81,7 @@ practiceTrials.push({
 for (let i = 0; i < practiceTrial1.listA.length; i++) {
     practiceTrials.push({
         stimulus: practiceTrial1.listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         response_ends_trial: false,
         data: {
             test_part: "practice",
@@ -97,7 +97,7 @@ for (let i = 0; i < practiceTrial1.listA.length; i++) {
 //pushes tone 2
 practiceTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "practice",
@@ -128,7 +128,7 @@ practiceTrials.push({
     prompt: "Did you hear the word ",
     stimulus: practiceTrial1.prototype,
     prompt_end: "?",
-    duration: durationForTargetWords,
+    trial_duration: durationForTargetWords,
     response_ends_trial: false,
     data: {
         test_part: "practice",
@@ -148,7 +148,7 @@ practiceTrials.push({
 //pushes tone 1
 practiceTrials.push({
     stimulus: trialStartTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     data: {
         test_part: "practice",
         stim: trialStartTone,
@@ -159,7 +159,7 @@ practiceTrials.push({
 for (let i = 0; i < practiceTrial2.listA.length; i++) {
     practiceTrials.push({
         stimulus: practiceTrial2.listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         response_ends_trial: false,
         data: {
             test_part: "practice",
@@ -175,7 +175,7 @@ for (let i = 0; i < practiceTrial2.listA.length; i++) {
 //pushes tone 2
 practiceTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     data: {
         test_part: "practice",
         stim: responsePromptTone,
@@ -187,12 +187,12 @@ practiceTrials.push({
     prompt: "Did you hear the word ",
     stimulus: practiceTrial2.prototype,
     prompt_end: "?",
-    duration: durationForTargetWords,
+    trial_duration: durationForTargetWords,
     response_ends_trial: false,
     data: {
         test_part: "practice",
         stim: practiceTrial2.prototype,
-        duration: durationForTargetWords,
+        trial_duration: durationForTargetWords,
         response_ends_trial: false,
         drmTrial_type: "practice",
         word_position: "target",
@@ -775,7 +775,7 @@ let Needle = {
 const pen = "stim/audio_stimuli/pen.mp3";
 const fountain = "stim/audio_stimuli/fountain.mp3";
 const quill = "stim/audio_stimuli/quill.mp3";
-const bic = "stim/audio_stimuli/bic.mp3";
+// const bic = "stim/audio_stimuli/bic.mp3";
 const crayon = "stim/audio_stimuli/crayon.mp3";
 const tip = "stim/audio_stimuli/tip.mp3";
 const red = "stim/audio_stimuli/red.mp3";
@@ -791,7 +791,8 @@ const letter = "stim/audio_stimuli/letter.mp3";
 
 let Pen = {
     listNumber: 22,
-    listA: [fountain, quill, bic, crayon, tip, red],
+    listA: [fountain, quill, crayon, tip, red],
+    // listA: [fountain, quill, bic, crayon, tip, red],
     listB: [leak, felt, scribble, cross, marker, cap],
     prototype: pen,
     highestAssociates: [pencil, write],
@@ -862,7 +863,7 @@ const latex = "stim/audio_stimuli/latex.mp3";
 const flexible = "stim/audio_stimuli/flexible.mp3";
 const tire = "stim/audio_stimuli/tire.mp3";
 const eraser = "stim/audio_stimuli/eraser.mp3";
-const foam = "stim/audio_stimuli/foam.mp3";
+// const foam = "stim/audio_stimuli/foam.mp3";
 const soles = "stim/audio_stimuli/soles.mp3";
 const glue = "stim/audio_stimuli/glue.mp3";
 const resilient = "stim/audio_stimuli/resilient.mp3";
@@ -873,7 +874,8 @@ const stretch = "stim/audio_stimuli/stretch.mp3";
 let Rubber = {
     listNumber: 25,
     listA: [gloves, ball, springy, galoshes, latex, flexible],
-    listB: [tire, eraser, foam, soles, glue, resilient],
+    listB: [tire, eraser, soles, glue, resilient],
+    // listB: [tire, eraser, foam, soles, glue, resilient],
     prototype: rubber,
     highestAssociates: [elastic, bounce],
     lowestAssociate: stretch,
@@ -935,14 +937,14 @@ let Sleep = {
 
 //Define all variables for list 28: Slow
 const slow = "stim/audio_stimuli/slow.mp3";
-const stop = "stim/audio_stimuli/stop.mp3";
+const stops = "stim/audio_stimuli/stop.mp3";
 const snail = "stim/audio_stimuli/snail.mp3";
 const delay = "stim/audio_stimuli/delay.mp3";
 const turtle = "stim/audio_stimuli/turtle.mp3";
 const speed = "stim/audio_stimuli/speed.mp3";
 const sluggish = "stim/audio_stimuli/sluggish.mp3";
 const listless = "stim/audio_stimuli/listless.mp3";
-const cautious = "stim/audio_stimuli/cautious.mp3";
+// const cautious = "stim/audio_stimuli/cautious.mp3";
 const traffic = "stim/audio_stimuli/traffic.mp3";
 const hesitant = "stim/audio_stimuli/hesitant.mp3";
 const quick = "stim/audio_stimuli/quick.mp3";
@@ -953,8 +955,9 @@ const molasses = "stim/audio_stimuli/molasses.mp3";
 
 let Slow = {
     listNumber: 28,
-    listA: [stop, snail, delay, turtle, speed, sluggish],
-    listB: [listless, cautious, traffic, hesitant, quick, wait],
+    listA: [stops, snail, delay, turtle, speed, sluggish],
+    listB: [listless, traffic, hesitant, quick, wait],
+    // listB: [listless, cautious, traffic, hesitant, quick, wait],
     prototype: slow,
     highestAssociates: [fast, lethargic],
     lowestAssociate: molasses,
@@ -1150,7 +1153,7 @@ let Trash = {
 };
 
 //Define all variables for list 36: Window
-const window2 = "stim/audio_stimuli/window2.mp3";
+const windows = "stim/audio_stimuli/window.mp3";
 const pane = "stim/audio_stimuli/pane.mp3";
 const ledge = "stim/audio_stimuli/ledge.mp3";
 const house = "stim/audio_stimuli/house.mp3";
@@ -1159,19 +1162,19 @@ const view = "stim/audio_stimuli/view.mp3";
 const sash = "stim/audio_stimuli/sash.mp3";
 const shade = "stim/audio_stimuli/shade.mp3";
 const sill = "stim/audio_stimuli/sill.mp3";
-const open = "stim/audio_stimuli/open.mp3";
+const opens = "stim/audio_stimuli/open.mp3";
 const frame = "stim/audio_stimuli/frame.mp3";
 const breeze = "stim/audio_stimuli/breeze.mp3";
-const screen = "stim/audio_stimuli/screen.mp3";
+const screens = "stim/audio_stimuli/screen.mp3";
 const door = "stim/audio_stimuli/door.mp3";
 const glass = "stim/audio_stimuli/glass.mp3";
 const shutter = "stim/audio_stimuli/shutter.mp3";
 
-let Window = {
+let Windows = {
     listNumber: 36,
     listA: [pane, ledge, house, curtain, view, sash],
-    listB: [shade, sill, open, frame, breeze, screen],
-    prototype: window2,
+    listB: [shade, sill, opens, frame, breeze, screens],
+    prototype: windows,
     highestAssociates: [door, glass],
     lowestAssociate: shutter,
 };
@@ -1213,7 +1216,7 @@ let allLists = [
     Sweet,
     Thief,
     Trash,
-    Window,
+    Windows,
 ]; // need to add all other lists to
 
 // and randomize
@@ -1293,7 +1296,7 @@ let incongruentPrototypeTrials = [];
 for (let i = 0; i < incongruentPrototypeTrial1.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial1.listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial1.listA[i],
@@ -1306,7 +1309,7 @@ for (let i = 0; i < incongruentPrototypeTrial1.listA.length; i++) {
 }
 incongruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForTone1,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1333,7 +1336,7 @@ incongruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1347,7 +1350,7 @@ incongruentPrototypeTrials.push({
 for (let i = 0; i < incongruentPrototypeTrial2.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial2.listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial2.listA[i],
@@ -1360,7 +1363,7 @@ for (let i = 0; i < incongruentPrototypeTrial2.listA.length; i++) {
 }
 incongruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForTone1,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1387,7 +1390,7 @@ incongruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1401,7 +1404,7 @@ incongruentPrototypeTrials.push({
 for (let i = 0; i < incongruentPrototypeTrial3.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial3.listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial3.listA[i],
@@ -1414,7 +1417,7 @@ for (let i = 0; i < incongruentPrototypeTrial3.listA.length; i++) {
 }
 incongruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForTone1,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1441,7 +1444,7 @@ incongruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1455,7 +1458,7 @@ incongruentPrototypeTrials.push({
 for (let i = 0; i < incongruentPrototypeTrial4.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial4.listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial4.listA[i],
@@ -1468,7 +1471,7 @@ for (let i = 0; i < incongruentPrototypeTrial4.listA.length; i++) {
 }
 incongruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForTone1,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1495,7 +1498,7 @@ incongruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1509,7 +1512,7 @@ incongruentPrototypeTrials.push({
 for (let i = 0; i < incongruentPrototypeTrial5.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial5.listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial5.listA[i],
@@ -1522,7 +1525,7 @@ for (let i = 0; i < incongruentPrototypeTrial5.listA.length; i++) {
 }
 incongruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForTone1,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1549,7 +1552,7 @@ incongruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1563,7 +1566,7 @@ incongruentPrototypeTrials.push({
 for (let i = 0; i < incongruentPrototypeTrial6.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial6.listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial6.listA[i],
@@ -1576,7 +1579,7 @@ for (let i = 0; i < incongruentPrototypeTrial6.listA.length; i++) {
 }
 incongruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForTone1,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1603,7 +1606,7 @@ incongruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1617,7 +1620,7 @@ incongruentPrototypeTrials.push({
 for (let i = 0; i < incongruentPrototypeTrial7.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial7.listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial7.listA[i],
@@ -1630,7 +1633,7 @@ for (let i = 0; i < incongruentPrototypeTrial7.listA.length; i++) {
 }
 incongruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForTone1,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1657,7 +1660,7 @@ incongruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1671,7 +1674,7 @@ incongruentPrototypeTrials.push({
 for (let i = 0; i < incongruentPrototypeTrial8.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial8.listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial8.listA[i],
@@ -1684,7 +1687,7 @@ for (let i = 0; i < incongruentPrototypeTrial8.listA.length; i++) {
 }
 incongruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForTone1,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1711,7 +1714,7 @@ incongruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1725,7 +1728,7 @@ incongruentPrototypeTrials.push({
 for (let i = 0; i < incongruentPrototypeTrial9.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial9.listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial9.listA[i],
@@ -1763,7 +1766,7 @@ incongruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1777,7 +1780,7 @@ incongruentPrototypeTrials.push({
 for (let i = 0; i < incongruentPrototypeTrial10.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial10.listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial10.listA[i],
@@ -1790,7 +1793,7 @@ for (let i = 0; i < incongruentPrototypeTrial10.listA.length; i++) {
 }
 incongruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForTone1,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1817,7 +1820,7 @@ incongruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1831,7 +1834,7 @@ incongruentPrototypeTrials.push({
 for (let i = 0; i < incongruentPrototypeTrial11.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial11.listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial11.listA[i],
@@ -1844,7 +1847,7 @@ for (let i = 0; i < incongruentPrototypeTrial11.listA.length; i++) {
 }
 incongruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForTone1,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1871,7 +1874,7 @@ incongruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1885,7 +1888,7 @@ incongruentPrototypeTrials.push({
 for (let i = 0; i < incongruentPrototypeTrial12.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial12.listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial12.listA[i],
@@ -1898,7 +1901,7 @@ for (let i = 0; i < incongruentPrototypeTrial12.listA.length; i++) {
 }
 incongruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForTone1,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1925,7 +1928,7 @@ incongruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1939,7 +1942,7 @@ incongruentPrototypeTrials.push({
 for (let i = 0; i < incongruentPrototypeTrial13.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial13.listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial13.listA[i],
@@ -1952,7 +1955,7 @@ for (let i = 0; i < incongruentPrototypeTrial13.listA.length; i++) {
 }
 incongruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForTone1,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1979,7 +1982,7 @@ incongruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1993,7 +1996,7 @@ incongruentPrototypeTrials.push({
 for (let i = 0; i < incongruentPrototypeTrial14.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial14.listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial14.listA[i],
@@ -2006,7 +2009,7 @@ for (let i = 0; i < incongruentPrototypeTrial14.listA.length; i++) {
 }
 incongruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForTone1,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2033,7 +2036,7 @@ incongruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2047,7 +2050,7 @@ incongruentPrototypeTrials.push({
 for (let i = 0; i < incongruentPrototypeTrial15.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial15.listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial15.listA[i],
@@ -2060,7 +2063,7 @@ for (let i = 0; i < incongruentPrototypeTrial15.listA.length; i++) {
 }
 incongruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForTone1,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2087,7 +2090,7 @@ incongruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2101,7 +2104,7 @@ incongruentPrototypeTrials.push({
 for (let i = 0; i < incongruentPrototypeTrial16.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial16.listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial16.listA[i],
@@ -2114,7 +2117,7 @@ for (let i = 0; i < incongruentPrototypeTrial16.listA.length; i++) {
 }
 incongruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForTone1,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2141,7 +2144,7 @@ incongruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2155,7 +2158,7 @@ incongruentPrototypeTrials.push({
 for (let i = 0; i < incongruentPrototypeTrial17.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial17.listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial17.listA[i],
@@ -2168,7 +2171,7 @@ for (let i = 0; i < incongruentPrototypeTrial17.listA.length; i++) {
 }
 incongruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForTone1,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2195,7 +2198,7 @@ incongruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2209,7 +2212,7 @@ incongruentPrototypeTrials.push({
 for (let i = 0; i < incongruentPrototypeTrial18.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial18.listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial18.listA[i],
@@ -2222,7 +2225,7 @@ for (let i = 0; i < incongruentPrototypeTrial18.listA.length; i++) {
 }
 incongruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForTone1,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2249,7 +2252,7 @@ incongruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2284,7 +2287,7 @@ let congruentPrototypeTrials = [];
 for (let i = 0; i < congruentPrototypeTrial1.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial1.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial1.listB[i],
@@ -2297,7 +2300,7 @@ for (let i = 0; i < congruentPrototypeTrial1.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2324,7 +2327,7 @@ congruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2337,7 +2340,7 @@ congruentPrototypeTrials.push({
 for (let i = 0; i < congruentPrototypeTrial2.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial2.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial2.listB[i],
@@ -2375,7 +2378,7 @@ congruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2388,7 +2391,7 @@ congruentPrototypeTrials.push({
 for (let i = 0; i < congruentPrototypeTrial3.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial3.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial3.listB[i],
@@ -2401,7 +2404,7 @@ for (let i = 0; i < congruentPrototypeTrial3.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2428,7 +2431,7 @@ congruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2441,7 +2444,7 @@ congruentPrototypeTrials.push({
 for (let i = 0; i < congruentPrototypeTrial4.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial4.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial4.listB[i],
@@ -2454,7 +2457,7 @@ for (let i = 0; i < congruentPrototypeTrial4.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2481,7 +2484,7 @@ congruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2494,7 +2497,7 @@ congruentPrototypeTrials.push({
 for (let i = 0; i < congruentPrototypeTrial5.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial5.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial5.listB[i],
@@ -2507,7 +2510,7 @@ for (let i = 0; i < congruentPrototypeTrial5.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2534,7 +2537,7 @@ congruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2547,7 +2550,7 @@ congruentPrototypeTrials.push({
 for (let i = 0; i < congruentPrototypeTrial6.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial6.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial6.listB[i],
@@ -2560,7 +2563,7 @@ for (let i = 0; i < congruentPrototypeTrial6.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2587,7 +2590,7 @@ congruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2600,7 +2603,7 @@ congruentPrototypeTrials.push({
 for (let i = 0; i < congruentPrototypeTrial7.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial7.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial7.listB[i],
@@ -2613,7 +2616,7 @@ for (let i = 0; i < congruentPrototypeTrial7.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2640,7 +2643,7 @@ congruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2653,7 +2656,7 @@ congruentPrototypeTrials.push({
 for (let i = 0; i < congruentPrototypeTrial8.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial8.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial8.listB[i],
@@ -2666,7 +2669,7 @@ for (let i = 0; i < congruentPrototypeTrial8.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2693,7 +2696,7 @@ congruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2706,7 +2709,7 @@ congruentPrototypeTrials.push({
 for (let i = 0; i < congruentPrototypeTrial9.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial9.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial9.listB[i],
@@ -2719,7 +2722,7 @@ for (let i = 0; i < congruentPrototypeTrial9.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2746,7 +2749,7 @@ congruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2759,7 +2762,7 @@ congruentPrototypeTrials.push({
 for (let i = 0; i < congruentPrototypeTrial10.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial10.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial10.listB[i],
@@ -2772,7 +2775,7 @@ for (let i = 0; i < congruentPrototypeTrial10.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2799,7 +2802,7 @@ congruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2812,7 +2815,7 @@ congruentPrototypeTrials.push({
 for (let i = 0; i < congruentPrototypeTrial11.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial11.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial11.listB[i],
@@ -2825,7 +2828,7 @@ for (let i = 0; i < congruentPrototypeTrial11.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2852,7 +2855,7 @@ congruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2865,7 +2868,7 @@ congruentPrototypeTrials.push({
 for (let i = 0; i < congruentPrototypeTrial12.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial12.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial12.listB[i],
@@ -2878,7 +2881,7 @@ for (let i = 0; i < congruentPrototypeTrial12.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2905,7 +2908,7 @@ congruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2918,7 +2921,7 @@ congruentPrototypeTrials.push({
 for (let i = 0; i < congruentPrototypeTrial13.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial13.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial13.listB[i],
@@ -2931,7 +2934,7 @@ for (let i = 0; i < congruentPrototypeTrial13.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2958,7 +2961,7 @@ congruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2971,7 +2974,7 @@ congruentPrototypeTrials.push({
 for (let i = 0; i < congruentPrototypeTrial14.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial14.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial14.listB[i],
@@ -2984,7 +2987,7 @@ for (let i = 0; i < congruentPrototypeTrial14.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3011,7 +3014,7 @@ congruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3024,7 +3027,7 @@ congruentPrototypeTrials.push({
 for (let i = 0; i < congruentPrototypeTrial15.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial15.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial15.listB[i],
@@ -3037,7 +3040,7 @@ for (let i = 0; i < congruentPrototypeTrial15.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3064,7 +3067,7 @@ congruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3077,7 +3080,7 @@ congruentPrototypeTrials.push({
 for (let i = 0; i < congruentPrototypeTrial16.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial16.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial16.listB[i],
@@ -3090,7 +3093,7 @@ for (let i = 0; i < congruentPrototypeTrial16.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3117,7 +3120,7 @@ congruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3130,7 +3133,7 @@ congruentPrototypeTrials.push({
 for (let i = 0; i < congruentPrototypeTrial17.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial17.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial17.listB[i],
@@ -3143,7 +3146,7 @@ for (let i = 0; i < congruentPrototypeTrial17.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3170,7 +3173,7 @@ congruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3183,7 +3186,7 @@ congruentPrototypeTrials.push({
 for (let i = 0; i < congruentPrototypeTrial18.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial18.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial18.listB[i],
@@ -3196,7 +3199,7 @@ for (let i = 0; i < congruentPrototypeTrial18.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3223,7 +3226,7 @@ congruentPrototypeTrials.push({
 }); // pushes 8th item placeholder for prototype
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3313,7 +3316,7 @@ let incongruentHighestAssociateTrials = [];
 for (let i = 0; i < incongruentHighestAssociateTrial1[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial1[0].listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial1[0].listA[i],
@@ -3326,7 +3329,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial1[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3353,7 +3356,7 @@ incongruentHighestAssociateTrials.push({
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial1's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3367,7 +3370,7 @@ incongruentHighestAssociateTrials.push({
 for (let i = 0; i < incongruentHighestAssociateTrial2[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial2[0].listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial2[0].listA[i],
@@ -3380,7 +3383,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial2[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3407,7 +3410,7 @@ incongruentHighestAssociateTrials.push({
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial2's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3421,7 +3424,7 @@ incongruentHighestAssociateTrials.push({
 for (let i = 0; i < incongruentHighestAssociateTrial3[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial3[0].listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial3[0].listA[i],
@@ -3434,7 +3437,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial3[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3461,7 +3464,7 @@ incongruentHighestAssociateTrials.push({
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3475,7 +3478,7 @@ incongruentHighestAssociateTrials.push({
 for (let i = 0; i < incongruentHighestAssociateTrial4[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial4[0].listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial4[0].listA[i],
@@ -3488,7 +3491,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial4[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3515,7 +3518,7 @@ incongruentHighestAssociateTrials.push({
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3529,7 +3532,7 @@ incongruentHighestAssociateTrials.push({
 for (let i = 0; i < incongruentHighestAssociateTrial5[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial5[0].listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial5[0].listA[i],
@@ -3542,7 +3545,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial5[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3569,7 +3572,7 @@ incongruentHighestAssociateTrials.push({
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3583,7 +3586,7 @@ incongruentHighestAssociateTrials.push({
 for (let i = 0; i < incongruentHighestAssociateTrial6[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial6[0].listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial6[0].listA[i],
@@ -3596,7 +3599,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial6[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3623,7 +3626,7 @@ incongruentHighestAssociateTrials.push({
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3637,7 +3640,7 @@ incongruentHighestAssociateTrials.push({
 for (let i = 0; i < incongruentHighestAssociateTrial7[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial7[0].listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial7[0].listA[i],
@@ -3650,7 +3653,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial7[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3677,7 +3680,7 @@ incongruentHighestAssociateTrials.push({
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3691,7 +3694,7 @@ incongruentHighestAssociateTrials.push({
 for (let i = 0; i < incongruentHighestAssociateTrial8[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial8[0].listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial8[0].listA[i],
@@ -3704,7 +3707,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial8[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3731,7 +3734,7 @@ incongruentHighestAssociateTrials.push({
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3745,7 +3748,7 @@ incongruentHighestAssociateTrials.push({
 for (let i = 0; i < incongruentHighestAssociateTrial9[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial9[0].listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial9[0].listA[i],
@@ -3758,7 +3761,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial9[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3785,7 +3788,7 @@ incongruentHighestAssociateTrials.push({
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3799,7 +3802,7 @@ incongruentHighestAssociateTrials.push({
 for (let i = 0; i < incongruentHighestAssociateTrial10[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial10[0].listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial10[0].listA[i],
@@ -3812,7 +3815,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial10[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3839,7 +3842,7 @@ incongruentHighestAssociateTrials.push({
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3853,7 +3856,7 @@ incongruentHighestAssociateTrials.push({
 for (let i = 0; i < incongruentHighestAssociateTrial11[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial11[0].listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial11[0].listA[i],
@@ -3866,7 +3869,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial11[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3893,7 +3896,7 @@ incongruentHighestAssociateTrials.push({
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3907,7 +3910,7 @@ incongruentHighestAssociateTrials.push({
 for (let i = 0; i < incongruentHighestAssociateTrial12[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial12[0].listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial12[0].listA[i],
@@ -3920,7 +3923,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial12[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3947,7 +3950,7 @@ incongruentHighestAssociateTrials.push({
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3961,7 +3964,7 @@ incongruentHighestAssociateTrials.push({
 for (let i = 0; i < incongruentHighestAssociateTrial13[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial13[0].listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial13[0].listA[i],
@@ -3974,7 +3977,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial13[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4001,7 +4004,7 @@ incongruentHighestAssociateTrials.push({
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4015,7 +4018,7 @@ incongruentHighestAssociateTrials.push({
 for (let i = 0; i < incongruentHighestAssociateTrial14[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial14[0].listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial14[0].listA[i],
@@ -4028,7 +4031,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial14[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4055,7 +4058,7 @@ incongruentHighestAssociateTrials.push({
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4069,7 +4072,7 @@ incongruentHighestAssociateTrials.push({
 for (let i = 0; i < incongruentHighestAssociateTrial15[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial15[0].listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial15[0].listA[i],
@@ -4082,7 +4085,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial15[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4109,7 +4112,7 @@ incongruentHighestAssociateTrials.push({
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4123,7 +4126,7 @@ incongruentHighestAssociateTrials.push({
 for (let i = 0; i < incongruentHighestAssociateTrial16[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial16[0].listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial16[0].listA[i],
@@ -4136,7 +4139,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial16[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4163,7 +4166,7 @@ incongruentHighestAssociateTrials.push({
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4177,7 +4180,7 @@ incongruentHighestAssociateTrials.push({
 for (let i = 0; i < incongruentHighestAssociateTrial17[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial17[0].listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial17[0].listA[i],
@@ -4190,7 +4193,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial17[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4217,7 +4220,7 @@ incongruentHighestAssociateTrials.push({
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4231,7 +4234,7 @@ incongruentHighestAssociateTrials.push({
 for (let i = 0; i < incongruentHighestAssociateTrial18[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial18[0].listA[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial18[0].listA[i],
@@ -4244,7 +4247,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial18[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4271,7 +4274,7 @@ incongruentHighestAssociateTrials.push({
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4321,7 +4324,7 @@ let congruentHighestAssociateTrials = [];
 for (let i = 0; i < 1; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial1.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial1.listB[i],
@@ -4349,7 +4352,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 2; i < congruentHighestAssociateTrial1.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial1.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial1.listB[i],
@@ -4363,7 +4366,7 @@ for (let i = 2; i < congruentHighestAssociateTrial1.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4390,7 +4393,7 @@ congruentHighestAssociateTrials.push({
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4404,7 +4407,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 0; i < 1; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial2.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial2.listB[i],
@@ -4438,7 +4441,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 2; i < congruentHighestAssociateTrial2.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial2.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial2.listB[i],
@@ -4452,7 +4455,7 @@ for (let i = 2; i < congruentHighestAssociateTrial2.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4479,7 +4482,7 @@ congruentHighestAssociateTrials.push({
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4493,7 +4496,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 0; i < 1; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial3.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial3.listB[i],
@@ -4527,7 +4530,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 2; i < congruentHighestAssociateTrial3.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial3.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial3.listB[i],
@@ -4541,7 +4544,7 @@ for (let i = 2; i < congruentHighestAssociateTrial3.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4568,7 +4571,7 @@ congruentHighestAssociateTrials.push({
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4582,7 +4585,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 0; i < 1; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial4.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial4.listB[i],
@@ -4616,7 +4619,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 2; i < congruentHighestAssociateTrial4.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial4.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial4.listB[i],
@@ -4630,7 +4633,7 @@ for (let i = 2; i < congruentHighestAssociateTrial4.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4657,7 +4660,7 @@ congruentHighestAssociateTrials.push({
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4671,7 +4674,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 0; i < 1; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial5.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial5.listB[i],
@@ -4700,7 +4703,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 2; i < congruentHighestAssociateTrial5.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial5.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial5.listB[i],
@@ -4714,7 +4717,7 @@ for (let i = 2; i < congruentHighestAssociateTrial5.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4741,7 +4744,7 @@ congruentHighestAssociateTrials.push({
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4755,7 +4758,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 0; i < 2; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial6.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial6.listB[i],
@@ -4783,7 +4786,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 3; i < congruentHighestAssociateTrial6.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial6.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial6.listB[i],
@@ -4797,7 +4800,7 @@ for (let i = 3; i < congruentHighestAssociateTrial6.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4824,7 +4827,7 @@ congruentHighestAssociateTrials.push({
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4838,7 +4841,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 0; i < 2; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial7.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial7.listB[i],
@@ -4867,7 +4870,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 3; i < congruentHighestAssociateTrial7.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial7.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial7.listB[i],
@@ -4881,7 +4884,7 @@ for (let i = 3; i < congruentHighestAssociateTrial7.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4908,7 +4911,7 @@ congruentHighestAssociateTrials.push({
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4922,7 +4925,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 0; i < 2; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial8.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial8.listB[i],
@@ -4951,7 +4954,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 3; i < congruentHighestAssociateTrial8.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial8.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial8.listB[i],
@@ -4965,7 +4968,7 @@ for (let i = 3; i < congruentHighestAssociateTrial8.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4992,7 +4995,7 @@ congruentHighestAssociateTrials.push({
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5006,7 +5009,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 0; i < 2; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial9.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial9.listB[i],
@@ -5035,7 +5038,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 3; i < congruentHighestAssociateTrial9.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial9.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial9.listB[i],
@@ -5049,7 +5052,7 @@ for (let i = 3; i < congruentHighestAssociateTrial9.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5076,7 +5079,7 @@ congruentHighestAssociateTrials.push({
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5090,7 +5093,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 0; i < 3; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial10.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial10.listB[i],
@@ -5118,7 +5121,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 4; i < congruentHighestAssociateTrial10.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial10.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial10.listB[i],
@@ -5132,7 +5135,7 @@ for (let i = 4; i < congruentHighestAssociateTrial10.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5159,7 +5162,7 @@ congruentHighestAssociateTrials.push({
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5173,7 +5176,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 0; i < 3; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial11.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial11.listB[i],
@@ -5202,7 +5205,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 4; i < congruentHighestAssociateTrial11.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial11.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial11.listB[i],
@@ -5216,7 +5219,7 @@ for (let i = 4; i < congruentHighestAssociateTrial11.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5243,7 +5246,7 @@ congruentHighestAssociateTrials.push({
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5257,7 +5260,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 0; i < 3; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial12.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial12.listB[i],
@@ -5286,7 +5289,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 4; i < congruentHighestAssociateTrial12.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial12.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial12.listB[i],
@@ -5300,7 +5303,7 @@ for (let i = 4; i < congruentHighestAssociateTrial12.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5327,7 +5330,7 @@ congruentHighestAssociateTrials.push({
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5341,7 +5344,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 0; i < 3; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial13.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial13.listB[i],
@@ -5370,7 +5373,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 4; i < congruentHighestAssociateTrial13.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial13.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial13.listB[i],
@@ -5384,7 +5387,7 @@ for (let i = 4; i < congruentHighestAssociateTrial13.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5411,7 +5414,7 @@ congruentHighestAssociateTrials.push({
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5425,7 +5428,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 0; i < 4; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial14.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial14.listB[i],
@@ -5453,7 +5456,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 5; i < congruentHighestAssociateTrial14.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial14.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial14.listB[i],
@@ -5467,7 +5470,7 @@ for (let i = 5; i < congruentHighestAssociateTrial14.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5494,7 +5497,7 @@ congruentHighestAssociateTrials.push({
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5508,7 +5511,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 0; i < 4; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial15.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial15.listB[i],
@@ -5537,7 +5540,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 5; i < congruentHighestAssociateTrial15.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial15.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial15.listB[i],
@@ -5551,7 +5554,7 @@ for (let i = 5; i < congruentHighestAssociateTrial15.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5578,7 +5581,7 @@ congruentHighestAssociateTrials.push({
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5592,7 +5595,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 0; i < 4; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial16.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial16.listB[i],
@@ -5621,7 +5624,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 5; i < congruentHighestAssociateTrial16.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial16.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial16.listB[i],
@@ -5635,7 +5638,7 @@ for (let i = 5; i < congruentHighestAssociateTrial16.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5662,7 +5665,7 @@ congruentHighestAssociateTrials.push({
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5676,7 +5679,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 0; i < 4; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial17.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial17.listB[i],
@@ -5705,7 +5708,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 5; i < congruentHighestAssociateTrial17.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial17.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial17.listB[i],
@@ -5719,7 +5722,7 @@ for (let i = 5; i < congruentHighestAssociateTrial17.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5746,7 +5749,7 @@ congruentHighestAssociateTrials.push({
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5760,7 +5763,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 0; i < 4; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial18.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial18.listB[i],
@@ -5789,7 +5792,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 5; i < congruentHighestAssociateTrial18.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial18.listB[i],
-        duration: durationForListWords,
+        trial_duration: durationForListWords,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial18.listB[i],
@@ -5803,7 +5806,7 @@ for (let i = 5; i < congruentHighestAssociateTrial18.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    duration: durationForListWords,
+    trial_duration: durationForListWords,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5830,7 +5833,7 @@ congruentHighestAssociateTrials.push({
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
-    duration: fixationDuration,
+    trial_duration: fixationDuration,
     response_ends_trial: false,
     data: {
         test_part: "test",
