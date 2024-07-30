@@ -45,10 +45,10 @@ const repetitions = {
 };
 
 const durationForListWords = 1000;
-const durationForTargetWords = 100000; //3000;
+const durationForTargetWords = 5000; //3000;
 const fixationDuration = 2000;
-const numberOfTrials = 486;
-const durationForTone1 = 1000;
+const numberOfTrials = debug ? 6 : interleavedFinalStim.length;
+const durationForTone1 = 2000;
 
 // Redirect Configuration (Daisy Chaining)
 const urlConfig = {
