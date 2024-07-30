@@ -11,7 +11,13 @@ let timeline = [];
 const preload = {
     type: jsPsychPreload,
     // images: [],
-    audio: [...practiceTrial1.listA, ...practiceTrial2.listA],
+    audio: [
+        ...practiceTrial1.listA,
+        ...practiceTrial2.listA,
+        trialStartTone,
+        responsePromptTone,
+        "stim/audio_tones/confidence.mp3",
+    ],
     show_detailed_errors: true,
     on_success: function (file) {
         console.log("File successfully preloaded:", file);
