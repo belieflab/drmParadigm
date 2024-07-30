@@ -65,14 +65,18 @@ let practiceTrial2 = practiceLists[1];
 // Create practice trials
 let practiceTrials = [];
 [practiceTrial1, practiceTrial2].forEach((trial, index) => {
-    practiceTrials.push(createTrial({ stimulus: trialStartTone }, "practice"));
+    practiceTrials.push(
+        createTrial({ stimulus: trialStartTone }, "practice", "list", true)
+    );
     trial.listA.forEach((word) =>
-        practiceTrials.push(createTrial({ stimulus: word }, "practice"))
+        practiceTrials.push(
+            createTrial({ stimulus: word }, "practice", "list", true)
+        )
     );
     practiceTrials.push(
-        createTrial({ stimulus: responsePromptTone }, "practice")
+        createTrial({ stimulus: responsePromptTone }, "practice", "list", true)
     );
-    practiceTrials.push(createTargetTrial(trial.prototype, "practice"));
+    practiceTrials.push(createTargetTrial(trial.prototype, "practice", true));
 });
 
 // define all variables in listNumber1 : Anger

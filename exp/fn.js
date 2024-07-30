@@ -1,10 +1,15 @@
-function createTrial(list, trialType, wordPosition = "list") {
+function createTrial(
+    list,
+    trialType,
+    wordPosition = "list",
+    isPractice = false
+) {
     return {
         stimulus: list.stimulus,
         trial_duration: durationForListWords,
         response_ends_trial: false,
         data: {
-            test_part: "test",
+            test_part: isPractice ? "practice" : "test",
             stim: list.stimulus,
             drmTrial_type: trialType,
             word_position: wordPosition,
@@ -13,13 +18,13 @@ function createTrial(list, trialType, wordPosition = "list") {
     };
 }
 
-function createTargetTrial(stimulus, trialType) {
+function createTargetTrial(stimulus, trialType, isPractice = false) {
     return {
         stimulus: stimulus,
         trial_duration: durationForTargetWords,
         response_ends_trial: false,
         data: {
-            test_part: "test",
+            test_part: isPractice ? "practice" : "test",
             stim: stimulus,
             drmTrial_type: trialType,
             word_position: "target",
