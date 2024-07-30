@@ -5911,3 +5911,20 @@ for (let i = 0; i <= randomizationFinal.length; i++) {
         }
     }
 }
+
+// for preload
+// Extract all audio file paths from the lists
+let audioFiles = [];
+
+allLists.forEach((list) => {
+    audioFiles.push(
+        ...list.listA,
+        ...list.listB,
+        list.prototype,
+        ...list.highestAssociates,
+        list.lowestAssociate
+    );
+});
+
+// Remove duplicates (if any)
+audioFiles = [...new Set(audioFiles)];
