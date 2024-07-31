@@ -34,10 +34,10 @@ const preload = {
 let instructions_0 = {
     type: jsPsychAudioKeyboardResponse,
     prompt:
-        "<p> Hello and thank you for taking part in our experiment!</p>" +
-        "<p>This experiment will be presnted entirely in an auditory format.</p>" +
-        "<p>It should take about 30 minutes.</p>" +
-        "<p> <i> Press spacebar to begin listening to your instructions. </i> </p>",
+        "<p> Welcome to the experiment! </p>" +
+        "<p> This experiment will be presented entirely in an auditory format.</p>" +
+        "<p>  It should take about 30 minutes to complete.</p>" +
+        "<p> <i> When you are ready to hear the instructions, please press the spacebar. </i> </p>",
     stimulus: "stim/audio_instructions/DRM_instructions_0.mp3",
     choices: [" "],
     on_start: function () {
@@ -49,19 +49,19 @@ let instructions_1 = {
     type: jsPsychAudioKeyboardResponse,
     prompt:
         "<p> This experiment assesses your ability to remember whether a particular word was presented in a list of words.</p>" +
-        "<p>First, you will hear a list of six words. At the conclusion of the list, you will be asked if a particular word was on the list. </p>" +
-        "<p> <i> Press the spacebar to hear more instructions. </i> </p>",
-    stimulus: "stim/audio_instructions/old_DRM_instructions_1.mp3",
-    choices: [" "],
+        "<p>First, you will hear a list of six words. At the conclusion of the list, you will be asked if a particular word was on the list. If the word was on the list, press the “J” key. If the word was not on the list, press the “F ” key. </p>" +
+        "<p> <i> Press the ”F” or “J” key to hear more instructions. </i> </p>",
+    stimulus: "stim/audio_instructions/drm_instructions_1.mp3",
+    choices: ["f", "j"],
 };
 
 let instructions_2 = {
     type: jsPsychAudioKeyboardResponse,
     prompt:
-        "<p> After the short tone, you will hear one word. </p>" +
-        "<p> Your job is to indicate whether that word was or was not on the list that you heard before the tone. </p>" +
-        "<p> If the word was on the list, press the “j” key. If the word was not on the list, press the “f” key. </p>" +
-        "<p> <i> Press either the f or j key to hear additional instructions. </i> </p>",
+        "<p> You can indicate your confidence in your response by varying the amount of time you hold down the “F” or “J” key. </p>" +
+        "<p>  If you are very confident in your response, hold the key down for three seconds. If you are unsure about your response, simply tap the key.  </p>" +
+        "<p> As you hold down either of the keys, you will hear a tone. The longer you hold down the key, the higher in pitch the tone will become. </p>" +
+        "<p> <i> Press and hold down the “F” or “J” key to hear what the confidence meter sounds like. </i> </p>",
     stimulus: "stim/audio_instructions/drm_instructions_2.mp3",
     choices: ["f", "j"],
 };
@@ -70,17 +70,17 @@ let instructions_2 = {
 let instructions_3 = {
     type: jsPsychAudioKeyboardResponse,
     prompt:
-        "<p> You can indicate your confidence in your response by varying the amount of time you hold down the “f” or “j” key. </p>" +
-        "<p> If you are very confident in your response, hold the key down for []. If you are unsure about your response,  simply tap the key. </p>" +
-        "<p> A tone will play when you press and/or hold down the f or j keys. The longer you hold down the key, the higher in frequency the tone will go. </p>" +
-        "<p> <i> Hold down either the f or j key to hear what it sounds like when you are very confident in your response. </i> </p>",
+        "<p> Please give your response as quickly as possible. </p>" +
+        "<p> At the end of the response period, you will hear a double tone. </p>" +
+        "<p> This tone indicates that the response period has ended. </p>" +
+        "<p> <i> Press the spacebar to hear the double tone now. </i> </p>",
     stimulus: "stim/audio_instructions/drm_instructions_3.mp3",
-    choices: ["f", "j"],
+    choices: [" "],
 };
 
 let instructions_4 = {
     type: jsPsychAudioKeyboardResponse,
-    prompt: "<p> white nosie.  </p>",
+    prompt: "<p> double nosie. </p>",
     stimulus: trialStartTone,
     choices: "NO_KEYS",
     response_ends_trial: false,
@@ -90,20 +90,21 @@ let instructions_4 = {
 let instructions_5 = {
     type: jsPsychAudioKeyboardResponse,
     prompt:
-        "<p> After you hear the long low tone,  the next trial will begin. </p>" +
-        "<p> To continue to a couiple of practice trials, please press either the f or j key. </p>" +
+        "<p> After you hear the double tone, the next trial will begin. </p>" +
+        "<p> To continue to a couple of practice trials, please press either the “F” or “J” key. </p>" +
         "<p> <i> Alternatively, if you would like to hear the instructions again, press the spacebar. </i> </p>",
-    stimulus: "stim/audio_instructions/drm_instructions_4.mp3",
+    stimulus: "stim/audio_instructions/drm_instructions_5.mp3",
     choices: [" ", "f", "j"],
 };
 
 let instructions_6 = {
     type: jsPsychAudioKeyboardResponse,
     prompt:
-        "<p> After you hear the long low tone,  the next trial will begin. </p>" +
-        "<p> To continue to a couiple of practice trials, please press either the f or j key. </p>" +
-        "<p> <i> Alternatively, if you would like to hear the instructions again, press the spacebar. </i> </p>",
-    stimulus: "stim/audio_instructions/drm_instructions_4.mp3",
+        "<p> Fantastic! You completed the practice trials. </p>" +
+        "<p> Remember, if the word was on the list, press the “J” key. </p>" +
+        "<p>  If the word was not on the list, press the “F” key. </p>" +
+        "<p> <i> To hear the instructions and practice trials again, press the spacebar. To begin the experiment, press the “F” or “J” key. </i> </p>",
+    stimulus: "stim/audio_instructions/drm_instructions_6.mp3",
     choices: [" ", "f", "j"],
     response_ends_trial: true,
     trial_duration: 10000,
