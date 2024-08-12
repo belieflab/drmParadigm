@@ -58,12 +58,21 @@ let instructions_1 = {
 let instructions_2 = {
     type: jsPsychAudioKeyboardResponse,
     prompt:
-        "<p> You can indicate your confidence in your response by varying the amount of time you hold down the “F” or “J” key. </p>" +
-        "<p>  If you are very confident in your response, hold the key down for three seconds. If you are unsure about your response, simply tap the key.  </p>" +
-        "<p> As you hold down either of the keys, you will hear a tone. The longer you hold down the key, the higher in pitch the tone will become. </p>" +
-        "<p> <i> Press and hold down the “F” or “J” key to hear what the confidence meter sounds like. </i> </p>",
+        progressBar +
+        fillUp +
+        feedbackGenerator +
+        timeRemaining +
+        '<audio id="beep" src="stim/audio_tones/confidence.mp3"></audio>' +
+  '<form autocomplete="off" action=""> <input autocomplete="false" name="hidden" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none;" onkeypress="">',
+   // trial_duration: jsPsych.timelineVariable("trial_duration"),
+   // response_ends_trial: jsPsych.timelineVariable("response_ends_trial"),
+    choices: ["NO KEYS"], // handled instead by buttonPress()
+    on_load: () => {
+        buttonPressWithArguments(70, 74, true);
+    },
     stimulus: "stim/audio_instructions/drm_instructions_2.mp3",
-    choices: ["f", "j"],
+   // choices: ["f", "j"],
+
 };
 
 //need to add in confidence bar here
