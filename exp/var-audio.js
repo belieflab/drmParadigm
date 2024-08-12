@@ -28,7 +28,7 @@ let timeRemaining =
 
 //define tones that are used between list and target presentation and at ITI
 const trialStartTone = "stim/audio_tones/tone_1.mp3";
-const responsePromptTone = "stim/audio_tones/tone_2.mp3";
+const responsePromptTone = "stim/audio_instructions/did_you_hear_the_word.mp3";
 
 //First, create words to be used in practice trials
 
