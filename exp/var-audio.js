@@ -4363,6 +4363,7 @@ for (let i = 0; i < 1; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial1.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial1.listB[i],
@@ -4377,6 +4378,8 @@ for (let i = 0; i < 1; i++) {
 // push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial1.highestAssociates[0],
+    trial_duration: durationForListWords,
+    response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial1.highestAssociates[0],
@@ -4391,6 +4394,7 @@ for (let i = 2; i < congruentHighestAssociateTrial1.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial1.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial1.listB[i],
@@ -4415,6 +4419,8 @@ congruentHighestAssociateTrials.push({
 }); // pushes 7th item
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial1.highestAssociates[0],
+    trial_duration: durationForTargetWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial1.highestAssociates[0],
@@ -4446,6 +4452,7 @@ for (let i = 0; i < 1; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial2.listB[i],
         trial_duration: durationForListWords,
+      response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial2.listB[i],
@@ -4460,6 +4467,8 @@ for (let i = 0; i < 1; i++) {
 // push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial2.highestAssociates[0],
+    trial_duration: durationForListWords,
+    response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial2.highestAssociates[0],
@@ -4480,6 +4489,7 @@ for (let i = 2; i < congruentHighestAssociateTrial2.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial2.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial2.listB[i],
@@ -4504,6 +4514,8 @@ congruentHighestAssociateTrials.push({
 }); // pushes 7th item
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial2.highestAssociates[0],
+    trial_duration: durationForTargetWords,
+    response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial2.highestAssociates[0],
@@ -4535,6 +4547,7 @@ for (let i = 0; i < 1; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial3.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial3.listB[i],
@@ -4549,6 +4562,8 @@ for (let i = 0; i < 1; i++) {
 // push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial3.highestAssociates[0],
+    trial_duration: durationForListWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial3.highestAssociates[0],
@@ -4569,6 +4584,7 @@ for (let i = 2; i < congruentHighestAssociateTrial3.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial3.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial3.listB[i],
@@ -4593,6 +4609,8 @@ congruentHighestAssociateTrials.push({
 }); // pushes 7th item
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial3.highestAssociates[0],
+    trial_duration: durationForTargetWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial3.highestAssociates[0],
@@ -4624,6 +4642,7 @@ for (let i = 0; i < 1; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial4.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial4.listB[i],
@@ -4638,6 +4657,8 @@ for (let i = 0; i < 1; i++) {
 // push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial4.highestAssociates[0],
+    trial_duration: durationForListWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial4.highestAssociates[0],
@@ -4658,6 +4679,7 @@ for (let i = 2; i < congruentHighestAssociateTrial4.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial4.listB[i],
         trial_duration: durationForListWords,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial4.listB[i],
@@ -4682,6 +4704,8 @@ congruentHighestAssociateTrials.push({
 }); // pushes 7th item
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial4.highestAssociates[0],
+    trial_duration: durationForTargetWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial4.highestAssociates[0],
@@ -4713,6 +4737,7 @@ for (let i = 0; i < 1; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial5.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial5.listB[i],
@@ -4727,6 +4752,8 @@ for (let i = 0; i < 1; i++) {
 // push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial5.highestAssociates[0],
+    trial_duration: durationForListWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial5.highestAssociates[0],
@@ -4742,6 +4769,7 @@ for (let i = 2; i < congruentHighestAssociateTrial5.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial5.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial5.listB[i],
@@ -4766,6 +4794,8 @@ congruentHighestAssociateTrials.push({
 }); // pushes 7th item
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial5.highestAssociates[0],
+    trial_duration: durationForTargetWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial5.highestAssociates[0],
@@ -4797,6 +4827,7 @@ for (let i = 0; i < 2; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial6.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial6.listB[i],
@@ -4811,6 +4842,8 @@ for (let i = 0; i < 2; i++) {
 // push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial6.highestAssociates[0],
+    trial_duration: durationForListWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial6.highestAssociates[0],
@@ -4825,6 +4858,7 @@ for (let i = 3; i < congruentHighestAssociateTrial6.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial6.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial6.listB[i],
@@ -4849,6 +4883,8 @@ congruentHighestAssociateTrials.push({
 }); // pushes 7th item
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial6.highestAssociates[0],
+    trial_duration: durationForTargetWords,
+    response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial6.highestAssociates[0],
@@ -4880,6 +4916,7 @@ for (let i = 0; i < 2; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial7.listB[i],
         trial_duration: durationForListWords,
+      response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial7.listB[i],
@@ -4894,6 +4931,8 @@ for (let i = 0; i < 2; i++) {
 // push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial7.highestAssociates[0],
+    trial_duration: durationForListWords,
+    response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial7.highestAssociates[0],
@@ -4909,6 +4948,7 @@ for (let i = 3; i < congruentHighestAssociateTrial7.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial7.listB[i],
         trial_duration: durationForListWords,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial7.listB[i],
@@ -4933,6 +4973,8 @@ congruentHighestAssociateTrials.push({
 }); // pushes 7th item
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial7.highestAssociates[0],
+    trial_duration: durationForTargetWords,
+    response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial7.highestAssociates[0],
@@ -4964,6 +5006,7 @@ for (let i = 0; i < 2; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial8.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial8.listB[i],
@@ -4978,6 +5021,8 @@ for (let i = 0; i < 2; i++) {
 // push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial8.highestAssociates[0],
+    trial_duration: durationForListWords,
+    response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial8.highestAssociates[0],
@@ -4993,6 +5038,7 @@ for (let i = 3; i < congruentHighestAssociateTrial8.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial8.listB[i],
         trial_duration: durationForListWords,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial8.listB[i],
@@ -5017,6 +5063,8 @@ congruentHighestAssociateTrials.push({
 }); // pushes 7th item
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial8.highestAssociates[0],
+    trial_duration: durationForTargetWords,
+    response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial8.highestAssociates[0],
@@ -5048,6 +5096,7 @@ for (let i = 0; i < 2; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial9.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial9.listB[i],
@@ -5062,6 +5111,8 @@ for (let i = 0; i < 2; i++) {
 // push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial9.highestAssociates[0],
+    trial_duration: durationForListWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial9.highestAssociates[0],
@@ -5077,6 +5128,7 @@ for (let i = 3; i < congruentHighestAssociateTrial9.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial9.listB[i],
         trial_duration: durationForListWords,
+      response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial9.listB[i],
@@ -5101,6 +5153,8 @@ congruentHighestAssociateTrials.push({
 }); // pushes 7th item
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial9.highestAssociates[0],
+    trial_duration: durationForTargetWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial9.highestAssociates[0],
@@ -5132,6 +5186,7 @@ for (let i = 0; i < 3; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial10.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial10.listB[i],
@@ -5146,6 +5201,8 @@ for (let i = 0; i < 3; i++) {
 // push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial10.highestAssociates[0],
+    trial_duration: durationForListWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial10.highestAssociates[0],
@@ -5160,6 +5217,7 @@ for (let i = 4; i < congruentHighestAssociateTrial10.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial10.listB[i],
         trial_duration: durationForListWords,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial10.listB[i],
@@ -5184,6 +5242,8 @@ congruentHighestAssociateTrials.push({
 }); // pushes 7th item
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial10.highestAssociates[0],
+    trial_duration: durationForTargetWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial10.highestAssociates[0],
@@ -5215,6 +5275,7 @@ for (let i = 0; i < 3; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial11.listB[i],
         trial_duration: durationForListWords,
+      response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial11.listB[i],
@@ -5229,6 +5290,8 @@ for (let i = 0; i < 3; i++) {
 // push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial11.highestAssociates[0],
+    trial_duration: durationForListWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial11.highestAssociates[0],
@@ -5244,6 +5307,7 @@ for (let i = 4; i < congruentHighestAssociateTrial11.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial11.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial11.listB[i],
@@ -5268,6 +5332,8 @@ congruentHighestAssociateTrials.push({
 }); // pushes 7th item
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial11.highestAssociates[0],
+    trial_duration: durationForTargetWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial11.highestAssociates[0],
@@ -5299,6 +5365,7 @@ for (let i = 0; i < 3; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial12.listB[i],
         trial_duration: durationForListWords,
+     response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial12.listB[i],
@@ -5313,6 +5380,8 @@ for (let i = 0; i < 3; i++) {
 // push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial12.highestAssociates[0],
+    trial_duration: durationForListWords,
+    response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial12.highestAssociates[0],
@@ -5328,6 +5397,7 @@ for (let i = 4; i < congruentHighestAssociateTrial12.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial12.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial12.listB[i],
@@ -5352,6 +5422,8 @@ congruentHighestAssociateTrials.push({
 }); // pushes 7th item
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial12.highestAssociates[0],
+    trial_duration: durationForTargetWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial12.highestAssociates[0],
@@ -5383,6 +5455,7 @@ for (let i = 0; i < 3; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial13.listB[i],
         trial_duration: durationForListWords,
+      response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial13.listB[i],
@@ -5397,6 +5470,8 @@ for (let i = 0; i < 3; i++) {
 // push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial13.highestAssociates[0],
+    trial_duration: durationForListWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial13.highestAssociates[0],
@@ -5412,6 +5487,7 @@ for (let i = 4; i < congruentHighestAssociateTrial13.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial13.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial13.listB[i],
@@ -5436,6 +5512,8 @@ congruentHighestAssociateTrials.push({
 }); // pushes 7th item
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial13.highestAssociates[0],
+    trial_duration: durationForTargetWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial13.highestAssociates[0],
@@ -5467,6 +5545,7 @@ for (let i = 0; i < 4; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial14.listB[i],
         trial_duration: durationForListWords,
+      response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial14.listB[i],
@@ -5481,6 +5560,8 @@ for (let i = 0; i < 4; i++) {
 // push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial14.highestAssociates[0],
+    trial_duration: durationForListWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial14.highestAssociates[0],
@@ -5495,6 +5576,7 @@ for (let i = 5; i < congruentHighestAssociateTrial14.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial14.listB[i],
         trial_duration: durationForListWords,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial14.listB[i],
@@ -5519,6 +5601,8 @@ congruentHighestAssociateTrials.push({
 }); // pushes 7th item
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial14.highestAssociates[0],
+    trial_duration: durationForTargetWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial14.highestAssociates[0],
@@ -5550,6 +5634,7 @@ for (let i = 0; i < 4; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial15.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial15.listB[i],
@@ -5564,6 +5649,8 @@ for (let i = 0; i < 4; i++) {
 // push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial15.highestAssociates[0],
+    trial_duration: durationForListWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial15.highestAssociates[0],
@@ -5579,6 +5666,7 @@ for (let i = 5; i < congruentHighestAssociateTrial15.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial15.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial15.listB[i],
@@ -5603,6 +5691,8 @@ congruentHighestAssociateTrials.push({
 }); // pushes 7th item
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial15.highestAssociates[0],
+    trial_duration: durationForTargetWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial15.highestAssociates[0],
@@ -5634,6 +5724,7 @@ for (let i = 0; i < 4; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial16.listB[i],
         trial_duration: durationForListWords,
+      response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial16.listB[i],
@@ -5648,6 +5739,8 @@ for (let i = 0; i < 4; i++) {
 // push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial16.highestAssociates[0],
+    trial_duration: durationForListWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial15.highestAssociates[0],
@@ -5663,6 +5756,7 @@ for (let i = 5; i < congruentHighestAssociateTrial16.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial16.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial16.listB[i],
@@ -5687,6 +5781,8 @@ congruentHighestAssociateTrials.push({
 }); // pushes 7th item
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial16.highestAssociates[0],
+    trial_duration: durationForTargetWords,
+    response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial16.highestAssociates[0],
@@ -5718,6 +5814,7 @@ for (let i = 0; i < 4; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial17.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial17.listB[i],
@@ -5732,6 +5829,8 @@ for (let i = 0; i < 4; i++) {
 // push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial17.highestAssociates[0],
+    trial_duration: durationForListWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial17.highestAssociates[0],
@@ -5747,6 +5846,7 @@ for (let i = 5; i < congruentHighestAssociateTrial17.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial17.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial17.listB[i],
@@ -5771,6 +5871,8 @@ congruentHighestAssociateTrials.push({
 }); // pushes 7th item
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial17.highestAssociates[0],
+    trial_duration: durationForTargetWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial17.highestAssociates[0],
@@ -5802,6 +5904,7 @@ for (let i = 0; i < 4; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial18.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial18.listB[i],
@@ -5816,6 +5919,8 @@ for (let i = 0; i < 4; i++) {
 // push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial18.highestAssociates[0],
+    trial_duration: durationForListWords,
+    response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial18.highestAssociates[0],
@@ -5831,6 +5936,7 @@ for (let i = 5; i < congruentHighestAssociateTrial18.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial18.listB[i],
         trial_duration: durationForListWords,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial18.listB[i],
@@ -5855,6 +5961,8 @@ congruentHighestAssociateTrials.push({
 }); // pushes 7th item
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial18.highestAssociates[0],
+    trial_duration: durationForTargetWords,
+    response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial18.highestAssociates[0],
