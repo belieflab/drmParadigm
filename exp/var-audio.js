@@ -2208,6 +2208,7 @@ for (let i = 0; i < congruentPrototypeTrial1.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial1.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial1.listB[i],
@@ -2231,6 +2232,8 @@ congruentPrototypeTrials.push({
 }); // pushes 7th item
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial1.prototype,
+    trial_duration: durationForTargetWords,
+    response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial1.prototype,
@@ -2261,6 +2264,7 @@ for (let i = 0; i < congruentPrototypeTrial2.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial2.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial2.listB[i],
@@ -2273,15 +2277,21 @@ for (let i = 0; i < congruentPrototypeTrial2.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
+    trial_duration: fixationDuration,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: trialStartTone,
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); // pushes 7th item
+}); 
+
+// pushes 7th item
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial2.prototype,
+    trial_duration: durationForTargetWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial2.prototype,
@@ -2312,6 +2322,7 @@ for (let i = 0; i < congruentPrototypeTrial3.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial3.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial3.listB[i],
@@ -2335,6 +2346,8 @@ congruentPrototypeTrials.push({
 }); // pushes 7th item
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial3.prototype,
+    trial_duration: durationForTargetWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial3.prototype,
@@ -2365,6 +2378,7 @@ for (let i = 0; i < congruentPrototypeTrial4.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial4.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial4.listB[i],
@@ -2388,6 +2402,8 @@ congruentPrototypeTrials.push({
 }); // pushes 7th item
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial4.prototype,
+    trial_duration: durationForTargetWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial4.prototype,
@@ -2418,6 +2434,7 @@ for (let i = 0; i < congruentPrototypeTrial5.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial5.listB[i],
         trial_duration: durationForListWords,
+      response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial5.listB[i],
@@ -2441,6 +2458,8 @@ congruentPrototypeTrials.push({
 }); // pushes 7th item
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial5.prototype,
+    trial_duration: durationForTargetWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial5.prototype,
@@ -2471,6 +2490,7 @@ for (let i = 0; i < congruentPrototypeTrial6.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial6.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial6.listB[i],
@@ -2494,6 +2514,8 @@ congruentPrototypeTrials.push({
 }); // pushes 7th item
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial6.prototype,
+    trial_duration: durationForTargetWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial6.prototype,
@@ -2524,6 +2546,7 @@ for (let i = 0; i < congruentPrototypeTrial7.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial7.listB[i],
         trial_duration: durationForListWords,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial7.listB[i],
@@ -2547,6 +2570,8 @@ congruentPrototypeTrials.push({
 }); // pushes 7th item
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial7.prototype,
+    trial_duration: durationForTargetWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial7.prototype,
@@ -2577,6 +2602,7 @@ for (let i = 0; i < congruentPrototypeTrial8.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial8.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial8.listB[i],
@@ -2597,9 +2623,13 @@ congruentPrototypeTrials.push({
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); // pushes 7th item
+});
+
+// pushes 7th item
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial8.prototype,
+    trial_duration: durationForTargetWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial8.prototype,
@@ -2630,6 +2660,7 @@ for (let i = 0; i < congruentPrototypeTrial9.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial9.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial9.listB[i],
@@ -2653,6 +2684,8 @@ congruentPrototypeTrials.push({
 }); // pushes 7th item
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial9.prototype,
+    trial_duration: durationForTargetWords,
+    response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial9.prototype,
@@ -2683,6 +2716,7 @@ for (let i = 0; i < congruentPrototypeTrial10.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial10.listB[i],
         trial_duration: durationForListWords,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial10.listB[i],
@@ -2706,6 +2740,8 @@ congruentPrototypeTrials.push({
 }); // pushes 7th item
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial10.prototype,
+    trial_duration: durationForTargetWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial10.prototype,
@@ -2736,6 +2772,7 @@ for (let i = 0; i < congruentPrototypeTrial11.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial11.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial11.listB[i],
@@ -2759,6 +2796,8 @@ congruentPrototypeTrials.push({
 }); // pushes 7th item
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial11.prototype,
+    trial_duration: durationForTargetWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial11.prototype,
@@ -2789,6 +2828,7 @@ for (let i = 0; i < congruentPrototypeTrial12.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial12.listB[i],
         trial_duration: durationForListWords,
+      response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial12.listB[i],
@@ -2812,6 +2852,8 @@ congruentPrototypeTrials.push({
 }); // pushes 7th item
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial12.prototype,
+    trial_duration: durationForTargetWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial12.prototype,
@@ -2842,6 +2884,7 @@ for (let i = 0; i < congruentPrototypeTrial13.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial13.listB[i],
         trial_duration: durationForListWords,
+     response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial13.listB[i],
@@ -2865,6 +2908,8 @@ congruentPrototypeTrials.push({
 }); // pushes 7th item
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial13.prototype,
+    trial_duration: durationForTargetWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial13.prototype,
@@ -2895,6 +2940,7 @@ for (let i = 0; i < congruentPrototypeTrial14.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial14.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial14.listB[i],
@@ -2918,6 +2964,8 @@ congruentPrototypeTrials.push({
 }); // pushes 7th item
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial14.prototype,
+    trial_duration: durationForTargetWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial14.prototype,
@@ -2948,6 +2996,7 @@ for (let i = 0; i < congruentPrototypeTrial15.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial15.listB[i],
         trial_duration: durationForListWords,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial15.listB[i],
@@ -2971,6 +3020,8 @@ congruentPrototypeTrials.push({
 }); // pushes 7th item
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial15.prototype,
+    trial_duration: durationForTargetWords,
+    response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial15.prototype,
@@ -3001,6 +3052,7 @@ for (let i = 0; i < congruentPrototypeTrial16.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial16.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial16.listB[i],
@@ -3021,9 +3073,13 @@ congruentPrototypeTrials.push({
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); // pushes 7th item
+});
+
+// pushes 7th item
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial16.prototype,
+    trial_duration: durationForTargetWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial15.prototype,
@@ -3054,6 +3110,7 @@ for (let i = 0; i < congruentPrototypeTrial17.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial17.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial17.listB[i],
@@ -3077,6 +3134,8 @@ congruentPrototypeTrials.push({
 }); // pushes 7th item
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial17.prototype,
+    trial_duration: durationForTargetWords,
+   response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial17.prototype,
@@ -3107,6 +3166,7 @@ for (let i = 0; i < congruentPrototypeTrial18.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial18.listB[i],
         trial_duration: durationForListWords,
+       response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial18.listB[i],
@@ -3130,6 +3190,8 @@ congruentPrototypeTrials.push({
 }); // pushes 7th item
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial18.prototype,
+    trial_duration: durationForTargetWords,
+    response_ends_trial: false, 
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial18.prototype,
