@@ -39,6 +39,7 @@ let instructions_0 = {
         "<p>  It should take about 30 minutes to complete.</p>" +
         "<p> <i> When you are ready to hear the instructions, please press the spacebar. </i> </p>",
     stimulus: "stim/audio_instructions/DRM_instructions_0.mp3",
+   response_ends_trial: true,
     choices: [" "],
     on_start: function () {
         jsPsych.setProgressBar(0);
@@ -52,18 +53,29 @@ let instructions_1 = {
         "<p>First, you will hear a list of six words. At the conclusion of the list, you will be asked if a particular word was on the list. If the word was on the list, press the “J” key. If the word was not on the list, press the “F ” key. </p>" +
         "<p> <i> Press the ”F” or “J” key to hear more instructions. </i> </p>",
     stimulus: "stim/audio_instructions/drm_instructions_1.mp3",
+   response_ends_trial: true,
     choices: ["f", "j"],
 };
 
 let instructions_2 = {
     type: jsPsychAudioKeyboardResponse,
     prompt:
-        "<p> You can indicate your confidence in your response by varying the amount of time you hold down the “F” or “J” key. </p>" +
-        "<p>  If you are very confident in your response, hold the key down for three seconds. If you are unsure about your response, simply tap the key.  </p>" +
-        "<p> As you hold down either of the keys, you will hear a tone. The longer you hold down the key, the higher in pitch the tone will become. </p>" +
-        "<p> <i> Press and hold down the “F” or “J” key to hear what the confidence meter sounds like. </i> </p>",
+        progressBar +
+        fillUp +
+        feedbackGenerator +
+        timeRemaining +
+        '<audio id="beep" src="stim/audio_tones/confidence.mp3"></audio>' +
+  '<form autocomplete="off" action=""> <input autocomplete="false" name="hidden" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none;" onkeypress="">',
+   // trial_duration: jsPsych.timelineVariable("trial_duration"),
+   //response_ends_trial: jsPsych.timelineVariable("response_ends_trial"),
+    choices: ["NO KEYS"], // handled instead by buttonPress()
+    on_load: () => {
+        buttonPressWithArguments(70, 74, true);
+    },
+    response_ends_trial: true,
     stimulus: "stim/audio_instructions/drm_instructions_2.mp3",
-    choices: ["f", "j"],
+   // choices: ["f", "j"],
+
 };
 
 //need to add in confidence bar here
@@ -75,6 +87,7 @@ let instructions_3 = {
         "<p> This tone indicates that the response period has ended. </p>" +
         "<p> <i> Press the spacebar to hear the double tone now. </i> </p>",
     stimulus: "stim/audio_instructions/drm_instructions_3.mp3",
+    response_ends_trial: true,
     choices: [" "],
 };
 
@@ -94,6 +107,7 @@ let instructions_5 = {
         "<p> To continue to a couple of practice trials, please press either the “F” or “J” key. </p>" +
         "<p> <i> Alternatively, if you would like to hear the instructions again, press the spacebar. </i> </p>",
     stimulus: "stim/audio_instructions/drm_instructions_5.mp3",
+    response_ends_trial: true,
     choices: [" ", "f", "j"],
 };
 
@@ -107,7 +121,7 @@ let instructions_6 = {
     stimulus: "stim/audio_instructions/drm_instructions_6.mp3",
     choices: [" ", "f", "j"],
     response_ends_trial: true,
-    trial_duration: 10000,
+    trial_duration: 5000,
 };
 
 let instructions_visual_5 = {
