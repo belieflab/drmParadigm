@@ -4476,12 +4476,7 @@ congruentHighestAssociateTrials.push({
         word_position: "target",
         correct_response: "74",
     },
-    confidence:
-        progressBar +
-        fillUp +
-        feedbackGenerator +
-        timeRemaining +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+    confidence: "x",
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 
 //add in remaining list b items
@@ -4571,12 +4566,7 @@ congruentHighestAssociateTrials.push({
         word_position: "target",
         correct_response: "74",
     },
-    confidence:
-        progressBar +
-        fillUp +
-        feedbackGenerator +
-        timeRemaining +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+    confidence: "x",
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 
 //add in remaining list b items
@@ -4666,12 +4656,7 @@ congruentHighestAssociateTrials.push({
         word_position: "target",
         correct_response: "74",
     },
-    confidence:
-        progressBar +
-        fillUp +
-        feedbackGenerator +
-        timeRemaining +
-        '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+    confidence: "x",
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 
 //add in remaining list b items
