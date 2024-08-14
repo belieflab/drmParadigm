@@ -1626,12 +1626,12 @@ for (let i = 0; i < incongruentPrototypeTrial9.listA.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 incongruentPrototypeTrials.push({
-    stimulus: trialStartTone,
+    stimulus: responsePromptTone,
     trial_duration: fixationDuration,
     response_ends_trial: false, 
     data: {
         test_part: "test",
-        stim: trialStartTone,
+        stim: responsePromptTone,
         drmTrial_type: "incongruentPrototype",
     },
     confidence: "x",
@@ -2273,12 +2273,12 @@ for (let i = 0; i < congruentPrototypeTrial2.listB.length; i++) {
     //use underscores for data fields and headers and camel case for script
 }
 congruentPrototypeTrials.push({
-    stimulus: trialStartTone,
+    stimulus: responsePromptTone,
     trial_duration: fixationDuration,
    response_ends_trial: false, 
     data: {
         test_part: "test",
-        stim: trialStartTone,
+        stim: responsePromptTone,
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
