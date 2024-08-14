@@ -105,10 +105,10 @@ let instructions_5 = {
     prompt:
         "<p> After you hear the double tone, the next trial will begin. </p>" +
         "<p> To continue to a couple of practice trials, please press either the “F” or “J” key. </p>" +
-        "<p> <i> Alternatively, if you would like to hear the instructions again, press the spacebar. </i> </p>",
+        // "<p> <i> Alternatively, if you would like to hear the instructions again, press the spacebar. </i> </p>",
     stimulus: "stim/audio_instructions/drm_instructions_5.mp3",
     response_ends_trial: true,
-    choices: [" ", "f", "j"],
+    choices: ["f", "j"],
 };
 
 let instructions_6 = {
