@@ -161,9 +161,9 @@ let trials = {
         jsPsych.setProgressBar(currentProgressBarValue + 1 / numberOfTrials);
     },
     on_finish: (data) => {
-        if (data.stim == "tone1") {
+        if (data.stim == "stim/audio_tones/tone_1.mp3") {
             data.accuracy_test = "";
-        } else if (data.stim == "tone2") {
+        } else if (data.stim == "stim/audio_tones/tone_2.mp3") {
             data.accuracy_test = "";
         } else if (data.word_position == "list") {
             data.accuracy_test = "";
