@@ -121,20 +121,10 @@ let instructions_6 = {
     stimulus: "stim/audio_instructions/drm_instructions_6.mp3",
     choices: [" ", "f", "j"],
     response_ends_trial: true,
-    trial_duration: 5000,
+    //trial_duration: 100000,
 };
 
-let instructions_visual_5 = {
-    type: jsPsychHtmlKeyboardResponse,
-    stimulus:
-        "<p> You have successfully completed the practice trials!. </p>" +
-        "<p> You are now ready to begin the experiment. </p>" +
-        "<p> Remember, pressing the f key means that you think the word was not on the list and pressing the j key means that you think the word was on the list.  </p>" +
-        "<p> <i> Press either the f or j key to begin the experiment now. </i> </p>",
-    response_ends_trial: true,
-    trial_duration: 10000,
-    choices: ["f", "j"],
-};
+
 
 let trials = {
     type: jsPsychAudioKeyboardResponse,
