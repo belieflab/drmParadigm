@@ -639,7 +639,7 @@ let Needle = {
 const pen = "stim/audio_stimuli/pen.mp3";
 const fountain = "stim/audio_stimuli/fountain.mp3";
 const quill = "stim/audio_stimuli/quill.mp3";
-// const bic = "stim/audio_stimuli/bic.mp3";
+const bic = "stim/audio_stimuli/bic.mp3";
 const crayon = "stim/audio_stimuli/crayon.mp3";
 const tip = "stim/audio_stimuli/tip.mp3";
 const red = "stim/audio_stimuli/red.mp3";
@@ -655,8 +655,7 @@ const letter = "stim/audio_stimuli/letter.mp3";
 
 let Pen = {
     listNumber: 22,
-    listA: [fountain, quill, crayon, tip, red],
-    // listA: [fountain, quill, bic, crayon, tip, red],
+    listA: [fountain, quill, bic, crayon, tip, red],
     listB: [leak, felt, scribble, cross, marker, cap],
     prototype: pen,
     highestAssociates: [pencil, write],
@@ -727,7 +726,7 @@ const latex = "stim/audio_stimuli/latex.mp3";
 const flexible = "stim/audio_stimuli/flexible.mp3";
 const tire = "stim/audio_stimuli/tire.mp3";
 const eraser = "stim/audio_stimuli/eraser.mp3";
-// const foam = "stim/audio_stimuli/foam.mp3";
+const foam = "stim/audio_stimuli/foam.mp3";
 const soles = "stim/audio_stimuli/soles.mp3";
 const glue = "stim/audio_stimuli/glue.mp3";
 const resilient = "stim/audio_stimuli/resilient.mp3";
@@ -738,8 +737,7 @@ const stretch = "stim/audio_stimuli/stretch.mp3";
 let Rubber = {
     listNumber: 25,
     listA: [gloves, ball, springy, galoshes, latex, flexible],
-    listB: [tire, eraser, soles, glue, resilient],
-    // listB: [tire, eraser, foam, soles, glue, resilient],
+    listB: [tire, eraser, foam, soles, glue, resilient],
     prototype: rubber,
     highestAssociates: [elastic, bounce],
     lowestAssociate: stretch,
@@ -808,7 +806,7 @@ const turtle = "stim/audio_stimuli/turtle.mp3";
 const speed = "stim/audio_stimuli/speed.mp3";
 const sluggish = "stim/audio_stimuli/sluggish.mp3";
 const listless = "stim/audio_stimuli/listless.mp3";
-// const cautious = "stim/audio_stimuli/cautious.mp3";
+const cautious = "stim/audio_stimuli/cautious.mp3";
 const traffic = "stim/audio_stimuli/traffic.mp3";
 const hesitant = "stim/audio_stimuli/hesitant.mp3";
 const quick = "stim/audio_stimuli/quick.mp3";
@@ -820,8 +818,7 @@ const molasses = "stim/audio_stimuli/molasses.mp3";
 let Slow = {
     listNumber: 28,
     listA: [stops, snail, delay, turtle, speed, sluggish],
-    listB: [listless, traffic, hesitant, quick, wait],
-    // listB: [listless, cautious, traffic, hesitant, quick, wait],
+    listB: [listless, cautious, traffic, hesitant, quick, wait],
     prototype: slow,
     highestAssociates: [fast, lethargic],
     lowestAssociate: molasses,
