@@ -17,6 +17,7 @@ const preload = {
         trialStartTone,
         responsePromptTone,
         "stim/audio_tones/confidence.mp3",
+        "stim/audio_instructions/DRM_instructions_0.mp3",
         audioFiles,
     ],
     show_detailed_errors: true,
@@ -30,6 +31,23 @@ const preload = {
         console.log("Preloading completed");
     },
 };
+
+
+let before_instructions = {
+    type: jsPsychHtmlKeyboardResponse,
+    stimulus:
+        "<p> This experiment is presented in an auditory format</p>" +
+        "<p>Please make sure that you increase the volume on your computer.</p>" +
+        "<p>If you are blind and use a screenreader (e.g., JAWS, NVDA, VoiceOver), we highly recommend that you turn it off before starting the experiment.</p>" +
+        "<p> <i> Press the spacebar to start hearing the instructions. </i> </p>",
+    choices: [" "], //ascii spacebar
+    on_start: function () {
+        jsPsych.setProgressBar(0);
+    },
+};
+
+
+
 
 let instructions_0 = {
     type: jsPsychAudioKeyboardResponse,
@@ -163,7 +181,7 @@ let trials = {
             data.accuracy = '';
             data.confidence = '';
         }
-        totalConfidence = 0; // need to reset totalConfidence to 0 after each trial
+        totalConfidence = 0; // need to reset totalConfidence to 0 after each trial !!IMPORTANT
     },
 };
 
