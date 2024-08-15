@@ -104,7 +104,7 @@ let instructions_5 = {
     type: jsPsychAudioKeyboardResponse,
     prompt:
         "<p> After you hear the double tone, the next trial will begin. </p>" +
-        "<p> To continue to a couple of practice trials, please press either the “F” or “J” key. </p>" +
+        "<p> To continue to a couple of practice trials, please press either the “F” or “J” key. </p>",
         // "<p> <i> Alternatively, if you would like to hear the instructions again, press the spacebar. </i> </p>",
     stimulus: "stim/audio_instructions/drm_instructions_5.mp3",
     response_ends_trial: true,
@@ -151,21 +151,19 @@ let trials = {
         jsPsych.setProgressBar(currentProgressBarValue + 1 / numberOfTrials);
     },
     on_finish: (data) => {
-        if (data.stim == "stim/audio_tones/tone_1.mp3") {
-            data.accuracy_test = "";
-        } else if (data.stim == "stim/audio_tones/tone_2.mp3") {
-            data.accuracy_test = "";
-        } else if (data.word_position == "list") {
-            data.accuracy_test = "";
-            //   (data.key_press==null){
-            //    data.accuracy_test = null;
-        } else if (data.key_press == data.correct_response) {
-            console.log("correct");
-            data.accuracy_test = true;
-        } else if (data.key_press != data.correct_response) {
-            console.log("incorrect");
-            data.accuracy_test = false;
+        if (data.key_press === data.correct_response) {
+            // console.log("correct");
+            data.accuracy = true;
+            data.confidence = totalConfidence;
+        } else if (data.key_press !== data.correct_response) {
+            // console.log("incorrect");
+            data.accuracy = false;
+            data.confidence = totalConfidence;
+        } else {
+            data.accuracy = '';
+            data.confidence = '';
         }
+        totalConfidence = 0; // need to reset totalConfidence to 0 after each trial
     },
 };
 

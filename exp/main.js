@@ -12,15 +12,15 @@ let testSection = {
 
 timeline.push(preload);
 
-timeline.push(instructions_0);
-timeline.push(instructions_1);
-timeline.push(instructions_2);
-timeline.push(instructions_3);
-timeline.push(instructions_4);
-timeline.push(instructions_5);
+// timeline.push(instructions_0);
+// timeline.push(instructions_1);
+// timeline.push(instructions_2);
+// timeline.push(instructions_3);
+// timeline.push(instructions_4);
+// timeline.push(instructions_5);
 timeline.push(practiceSection);
-timeline.push(instructions_6);
-timeline.push(testSection);
+// timeline.push(instructions_6);
+// timeline.push(testSection);
 
 timeline.push(dataSave);
 
