@@ -134,10 +134,10 @@ let instructions_6 = {
     prompt:
         "<p> Fantastic! You completed the practice trials. </p>" +
         "<p> Remember, if the word was on the list, press the “J” key. </p>" +
-        "<p>  If the word was not on the list, press the “F” key. </p>" +
-        "<p> <i> To hear the instructions and practice trials again, press the spacebar. To begin the experiment, press the “F” or “J” key. </i> </p>",
+        "<p>  If the word was not on the list, press the “F” key. </p>",
+        // "<p> <i> To hear the instructions and practice trials again, press the spacebar. To begin the experiment, press the “F” or “J” key. </i> </p>",
     stimulus: "stim/audio_instructions/drm_instructions_6.mp3",
-    choices: [" ", "f", "j"],
+    choices: ["f", "j"],
     response_ends_trial: true,
     //trial_duration: 100000,
 };
