@@ -11,7 +11,8 @@ function [] = changePlayRate(rateIncreaseFactor, nSemiTones, directoryPath)
     filePattern = fullfile(directoryPath, '*'); % Adjust the pattern to match the files you want, e.g., '*.wav' for audio files
     fileList = dir(filePattern);
 
-    % loop cycle for all stimuli
+    % loop cycle for all stimuli (elements 434 and 569: short-white-noise.mp3 and 
+    % white-noise.mp3) does not work.
     for i = 3:length(fileList)
         
         % file name
