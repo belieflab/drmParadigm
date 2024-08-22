@@ -13,7 +13,7 @@ function [] = changePlayRate(rateIncreaseFactor, nSemiTones, directoryPath)
 
     % loop cycle for all stimuli (elements 434 and 569: short-white-noise.mp3 and 
     % white-noise.mp3) does not work.
-    for i = 3:length(fileList)
+    for i = 570:length(fileList)
         
         % file name
         fullFileName = fullfile(fileList(i).folder, fileList(i).name);
@@ -32,7 +32,8 @@ function [] = changePlayRate(rateIncreaseFactor, nSemiTones, directoryPath)
         y = shiftPitch(y,nSemiTones);
              
         % If you want to save the modified audio:
-        audiowrite(strcat(fileName,'_x',num2str(rateIncreaseFactor),'_t',num2str(nSemiTones),'.wav'), y, newFs); % Save the modified audio file
+        % audiowrite(strcat(fileName,'_x',num2str(rateIncreaseFactor),'_t',num2str(nSemiTones),'.wav'), y, newFs); % Save the modified audio file
+        audiowrite(strcat(fileName,'.wav'), y, newFs);
 
         % Step 3: Play the modified audio
         sound(y, newFs); % Play the audio at the new sample rate
