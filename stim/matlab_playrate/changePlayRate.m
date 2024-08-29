@@ -1,7 +1,7 @@
 % changePlayRate(rateIncreaseFactor, nSemiTones, directoryPath), 
 % Receives 3 arguments: 
-%   1. rateIncreaseFactor: audio speed rate increase (e.g., 1.5), 
-%   2. nSemiTones: how many semitones will the audio be shifted (e.g., -3)
+%   1. rateIncreaseFactor: audio speed rate increase (e.g., 2), 
+%   2. nSemiTones: how many semitones will the audio be shifted (e.g., -14)
 %   3. directoryPath: where are the audios you want to transform located
 %   (e.g., "../audio_stimuli/")
 function [] = changePlayRate(rateIncreaseFactor, nSemiTones, directoryPath)
@@ -13,7 +13,8 @@ function [] = changePlayRate(rateIncreaseFactor, nSemiTones, directoryPath)
 
     % loop cycle for all stimuli (elements 434 and 569: short-white-noise.mp3 and 
     % white-noise.mp3) does not work.
-    for i = 570:length(fileList)
+    % always start with 3 (the first two elements are non valid)
+    for i = 3:length(fileList)
         
         % file name
         fullFileName = fullfile(fileList(i).folder, fileList(i).name);
