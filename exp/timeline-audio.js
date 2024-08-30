@@ -72,8 +72,18 @@ let instructions_1 = {
         "<p> <i> Press the ”F” or “J” key to hear more instructions. </i> </p>",
     stimulus: "stim/audio_instructions/drm_instructions_1.mp3",
    response_ends_trial: true,
-    choices: ["f", "j"],
+    choices: [" "],
 };
+
+let instructions_responsePromptTone = {
+    type: jsPsychAudioKeyboardResponse,
+    prompt: "<p> double nosie. </p>",
+    stimulus: responsePromptTone,
+    choices: "NO_KEYS",
+    response_ends_trial: false,
+    trial_ends_after_audio: true,
+};
+
 
 let instructions_2 = {
     type: jsPsychAudioKeyboardResponse,
