@@ -84,6 +84,17 @@ let instructions_responsePromptTone = {
     trial_ends_after_audio: true,
 };
 
+let instructions_after_example_reponsePromptTone = {
+    type: jsPsychAudioKeyboardResponse,
+    prompt:
+        "<p> short tone </p>" ,
+       // "<p> To continue to a couple of practice trials, please press either the “F” or “J” key. </p>",
+        // "<p> <i> Alternatively, if you would like to hear the instructions again, press the spacebar. </i> </p>",
+    stimulus: "stim/audio_instructions/drm_instructions_after_short_tone.mp3",
+    response_ends_trial: true,
+    choices: ["f", "j"],
+};
+
 
 let instructions_2 = {
     type: jsPsychAudioKeyboardResponse,
@@ -259,6 +270,19 @@ let trials = {
 
 // $.getScript("exp/main.js");
 
+
+let instructions_7 = {
+    type: jsPsychAudioKeyboardResponse,
+    prompt:
+        "<p> x </p>",
+       // "<p> Remember, if the word was on the list, press the “J” key. </p>" +
+       // "<p>  If the word was not on the list, press the “F” key. </p>",
+        // "<p> <i> To hear the instructions and practice trials again, press the spacebar. To begin the experiment, press the “F” or “J” key. </i> </p>",
+    stimulus: "stim/audio_instructions/drm_instructions_7.mp3",
+    choices: [" "],
+    response_ends_trial: true,
+    //trial_duration: 100000,
+};
 
 
 const dataSave = {
