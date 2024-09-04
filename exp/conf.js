@@ -25,7 +25,7 @@ const version = "audio"; //"visual";
 
 const counterbalance = false; // Ensures that the experiment's order can be randomized to control for potential biases.
 
-let phase = null; // Tracks the stage of the experiment to apply different logic or content depending on the current phase.
+let phase = undefined; // Tracks the stage of the experiment to apply different logic or content depending on the current phase.
 
 // Note: Uncomment the desired options. Ensure only one option per setting is active at a time.
 const adminEmail = undefined;
