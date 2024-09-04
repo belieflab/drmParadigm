@@ -50,9 +50,7 @@ const fixationDuration = 2000;
 const numberOfTrials = debug ? 6 : interleavedFinalStim.length;
 const durationForTone1 = 2000;
 
-// Redirect Configuration (Daisy Chaining)
+// Redirect Configuration
 const urlConfig = {
-    default: "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_bErtyAFIwnwDhWu",
-    loss: "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_8qsU4yfds5mH6Pc",
-    gain: "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_8qsU4yfds5mH6Pc",
+    default: "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_2hk9hrLndCovfM2"
 };
