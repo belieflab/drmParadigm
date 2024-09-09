@@ -4,7 +4,7 @@
 let trialIterator = 1;
 
 var responseOptions =
-    "f&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspj <br><br> Hold response key to indicate confidence level.";
+    "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br><br>";
 
 // feedback contrainer
 let feedbackGenerator = '<p id="feedbackGenerator" style="color:black;"></p>';

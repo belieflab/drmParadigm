@@ -51,11 +51,11 @@ let before_instructions = {
 
 let instructions_0 = {
     type: jsPsychAudioKeyboardResponse,
-    prompt:
-        "<p> Welcome to the experiment! </p>" +
-        "<p> This experiment will be presented entirely in an auditory format.</p>" +
-        "<p>  It should take about 30 minutes to complete.</p>" +
-        "<p> <i> When you are ready to hear the instructions, please press the spacebar. </i> </p>",
+    // prompt:
+        // "<p> Welcome to the experiment! </p>" +
+        // "<p> This experiment will be presented entirely in an auditory format.</p>" +
+        // "<p>  It should take about 30 minutes to complete.</p>" +
+        // "<p> <i> When you are ready to hear the instructions, please press the spacebar. </i> </p>",
     stimulus: "stim/audio_instructions/DRM_instructions_0.mp3",
    response_ends_trial: true,
     choices: [" "],
@@ -66,10 +66,10 @@ let instructions_0 = {
 
 let instructions_1 = {
     type: jsPsychAudioKeyboardResponse,
-    prompt:
-        "<p> This experiment assesses your ability to remember whether a particular word was presented in a list of words.</p>" +
-        "<p>First, you will hear a list of six words. At the conclusion of the list, you will be asked if a particular word was on the list. If the word was on the list, press the “J” key. If the word was not on the list, press the “F ” key. </p>" +
-        "<p> <i> Press the ”F” or “J” key to hear more instructions. </i> </p>",
+    // prompt:
+        // "<p> This experiment assesses your ability to remember whether a particular word was presented in a list of words.</p>" +
+        // "<p>First, you will hear a list of six words. At the conclusion of the list, you will be asked if a particular word was on the list. If the word was on the list, press the “J” key. If the word was not on the list, press the “F ” key. </p>" +
+        // "<p> <i> Press the ”F” or “J” key to hear more instructions. </i> </p>",
     stimulus: "stim/audio_instructions/drm_instructions_1.mp3",
    response_ends_trial: true,
     choices: [" "],
@@ -77,7 +77,7 @@ let instructions_1 = {
 
 let instructions_responsePromptTone = {
     type: jsPsychAudioKeyboardResponse,
-    prompt: "<p> double nosie. </p>",
+    // prompt: "<p> double nosie. </p>",
     stimulus: responsePromptTone,
     choices: "NO_KEYS",
     response_ends_trial: false,
@@ -86,8 +86,8 @@ let instructions_responsePromptTone = {
 
 let instructions_after_example_reponsePromptTone = {
     type: jsPsychAudioKeyboardResponse,
-    prompt:
-        "<p> short tone </p>" ,
+    // prompt:
+        // "<p> short tone </p>" ,
        // "<p> To continue to a couple of practice trials, please press either the “F” or “J” key. </p>",
         // "<p> <i> Alternatively, if you would like to hear the instructions again, press the spacebar. </i> </p>",
     stimulus: "stim/audio_instructions/drm_instructions_after_short_tone.mp3",
@@ -98,13 +98,13 @@ let instructions_after_example_reponsePromptTone = {
 
 let instructions_2 = {
     type: jsPsychAudioKeyboardResponse,
-    prompt:
+    prompt: 
         progressBar +
         fillUp +
         feedbackGenerator +
         timeRemaining +
         '<audio id="beep" src="stim/audio_tones/confidence.mp3"></audio>' +
-  '<form autocomplete="off" action=""> <input autocomplete="false" name="hidden" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none;" onkeypress="">',
+        '<form autocomplete="off" action=""> <input autocomplete="false" name="hidden" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none;" onkeypress="">',
    // trial_duration: jsPsych.timelineVariable("trial_duration"),
    //response_ends_trial: jsPsych.timelineVariable("response_ends_trial"),
     choices: ["NO KEYS"], // handled instead by buttonPress()
@@ -113,18 +113,18 @@ let instructions_2 = {
     },
     response_ends_trial: true,
     stimulus: "stim/audio_instructions/drm_instructions_2.mp3",
-   // choices: ["f", "j"],
+//    choices: ["f", "j"],
 
 };
 
 //need to add in confidence bar here
 let instructions_3 = {
     type: jsPsychAudioKeyboardResponse,
-    prompt:
-        "<p> Please give your response as quickly as possible. </p>" +
-        "<p> At the end of the response period, you will hear a double tone. </p>" +
-        "<p> This tone indicates that the response period has ended. </p>" +
-        "<p> <i> Press the spacebar to hear the double tone now. </i> </p>",
+    // prompt:
+        // "<p> Please give your response as quickly as possible. </p>" +
+        // "<p> At the end of the response period, you will hear a double tone. </p>" +
+        // "<p> This tone indicates that the response period has ended. </p>" +
+        // "<p> <i> Press the spacebar to hear the double tone now. </i> </p>",
     stimulus: "stim/audio_instructions/drm_instructions_3.mp3",
     response_ends_trial: true,
     choices: [" "],
@@ -132,7 +132,7 @@ let instructions_3 = {
 
 let instructions_4 = {
     type: jsPsychAudioKeyboardResponse,
-    prompt: "<p> double nosie. </p>",
+    // prompt: "<p> double nosie. </p>",
     stimulus: trialStartTone,
     choices: "NO_KEYS",
     response_ends_trial: false,
@@ -141,9 +141,9 @@ let instructions_4 = {
 
 let instructions_5 = {
     type: jsPsychAudioKeyboardResponse,
-    prompt:
-        "<p> After you hear the double tone, the next trial will begin. </p>" +
-        "<p> To continue to a couple of practice trials, please press either the “F” or “J” key. </p>",
+    // prompt:
+        // "<p> After you hear the double tone, the next trial will begin. </p>" +
+        // "<p> To continue to a couple of practice trials, please press either the “F” or “J” key. </p>",
         // "<p> <i> Alternatively, if you would like to hear the instructions again, press the spacebar. </i> </p>",
     stimulus: "stim/audio_instructions/drm_instructions_5.mp3",
     response_ends_trial: true,
@@ -152,10 +152,10 @@ let instructions_5 = {
 
 let instructions_6 = {
     type: jsPsychAudioKeyboardResponse,
-    prompt:
-        "<p> Fantastic! You completed the practice trials. </p>" +
-        "<p> Remember, if the word was on the list, press the “J” key. </p>" +
-        "<p>  If the word was not on the list, press the “F” key. </p>",
+    // prompt:
+        // "<p> Fantastic! You completed the practice trials. </p>" +
+        // "<p> Remember, if the word was on the list, press the “J” key. </p>" +
+        // "<p>  If the word was not on the list, press the “F” key. </p>",
         // "<p> <i> To hear the instructions and practice trials again, press the spacebar. To begin the experiment, press the “F” or “J” key. </i> </p>",
     stimulus: "stim/audio_instructions/drm_instructions_6.mp3",
     choices: ["f", "j"],
@@ -163,14 +163,12 @@ let instructions_6 = {
     //trial_duration: 100000,
 };
 
-
-
 let trials = {
     type: jsPsychAudioKeyboardResponse,
     data: jsPsych.timelineVariable("data"),
     stimulus: jsPsych.timelineVariable("stimulus"),
     prompt: () => {
-        var html =
+        var html = 
             "<p>" +
             jsPsych.timelineVariable("confidence", true) +
             "</p>" +
@@ -270,11 +268,10 @@ let trials = {
 
 // $.getScript("exp/main.js");
 
-
 let instructions_7 = {
     type: jsPsychAudioKeyboardResponse,
-    prompt:
-        "<p> x </p>",
+    // prompt:
+        // "<p> x </p>",
        // "<p> Remember, if the word was on the list, press the “J” key. </p>" +
        // "<p>  If the word was not on the list, press the “F” key. </p>",
         // "<p> <i> To hear the instructions and practice trials again, press the spacebar. To begin the experiment, press the “F” or “J” key. </i> </p>",
@@ -283,7 +280,6 @@ let instructions_7 = {
     response_ends_trial: true,
     //trial_duration: 100000,
 };
-
 
 const dataSave = {
     type: jsPsychHtmlKeyboardResponse,
