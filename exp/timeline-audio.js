@@ -95,26 +95,29 @@ let instructions_after_example_reponsePromptTone = {
     choices: ["f", "j"],
 };
 
-
 let instructions_2 = {
     type: jsPsychAudioKeyboardResponse,
+    stimulus: "stim/audio_instructions/drm_instructions_2.mp3",
+    choices: "NO KEYS", // handled instead by buttonPress()
+    response_ends_trial: false, // Trial ends automatically after audio completion
+    trial_ends_after_audio: true,
+};
+
+let instructions_2_continued= {
+    type: jsPsychAudioKeyboardResponse,
+    stimulus: 'https://ia804500.us.archive.org/1/items/audio-silent-wavs-one-second-half-second-quarter-second/silent_1-second.mp3',
     prompt: 
         progressBar +
         fillUp +
         feedbackGenerator +
         timeRemaining +
-        '<audio id="beep" src="stim/audio_tones/confidence.mp3"></audio>' +
+        '<audio id="beep" src="/stim/audio_tones/confidence.mp3"></audio>' +
         '<form autocomplete="off" action=""> <input autocomplete="false" name="hidden" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none;" onkeypress="">',
-   // trial_duration: jsPsych.timelineVariable("trial_duration"),
-   //response_ends_trial: jsPsych.timelineVariable("response_ends_trial"),
-    choices: ["NO KEYS"], // handled instead by buttonPress()
-    on_load: () => {
+   choices: "NO_KEYS", // For passive trials where no keys are needed
+   on_load: () => {
         buttonPressWithArguments(70, 74, true);
     },
-    response_ends_trial: true,
-    stimulus: "stim/audio_instructions/drm_instructions_2.mp3",
-//    choices: ["f", "j"],
-
+    response_ends_trial: false,
 };
 
 //need to add in confidence bar here

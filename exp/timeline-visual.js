@@ -35,7 +35,7 @@ let instructions_1 = {
     choices: [" "], //ascii spacebar
 };
 
-let instructions_2 = {
+let instructions_2_continued = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus:
         "<p> After viewing the list of six words, you will be asked whether a particular word was on the list. </p>" +
