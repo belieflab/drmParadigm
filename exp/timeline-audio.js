@@ -105,7 +105,7 @@ let instructions_2 = {
 
 let instructions_2_continued= {
     type: jsPsychAudioKeyboardResponse,
-    stimulus: 'https://ia804500.us.archive.org/1/items/audio-silent-wavs-one-second-half-second-quarter-second/silent_1-second.mp3',
+    stimulus: 'stim/audio_instructions/silence.mp3',
     prompt: 
         progressBar +
         fillUp +
