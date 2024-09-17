@@ -118,6 +118,15 @@ let instructions_2_continued= {
         buttonPressWithArguments(70, 74, true);
     },
     response_ends_trial: false,
+    on_finish: () => {
+        // remove confidence bar
+        document.getElementById('keyBar').remove();
+        document.getElementById('fillUp').remove();
+        document.getElementById('feedbackGenerator').remove();
+        document.getElementById('timeRemaining').remove();
+        document.getElementById('beep').remove();
+        document.getElementById('tapTap').remove();
+    }
 };
 
 //need to add in confidence bar here
