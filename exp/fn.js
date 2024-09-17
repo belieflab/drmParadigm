@@ -6,7 +6,8 @@ function createTrial(
     list,
     trialType,
     wordPosition = "list",
-    isPractice = false
+    isPractice = false,
+    isTonePlaying = false
 ) {
     return {
         stimulus: list.stimulus,
@@ -19,6 +20,13 @@ function createTrial(
             word_position: wordPosition,
         },
         confidence: "x",
+        on_start: function() {
+            if (list.stimulus === trialStartTone) {
+              isTonePlaying = true;
+              setTimeout(() => {
+                isTonePlaying = false;
+              }, fixationDuration); 
+        }
     };
 }
 
