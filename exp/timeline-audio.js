@@ -111,7 +111,7 @@ let instructions_2_continued= {
         fillUp +
         feedbackGenerator +
         timeRemaining +
-        '<audio id="beep" src="/stim/audio_tones/confidence.mp3"></audio>' +
+        '<audio id="beep" src="stim/audio_tones/confidence.mp3"></audio>' +
         '<form autocomplete="off" action=""> <input autocomplete="false" name="hidden" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none;" onkeypress="">',
    choices: "NO_KEYS", // For passive trials where no keys are needed
    on_load: () => {
