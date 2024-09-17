@@ -164,7 +164,6 @@ let instructions_5 = {
         // "<p> <i> Alternatively, if you would like to hear the instructions again, press the spacebar. </i> </p>",
     stimulus: "stim/audio_instructions/drm_instructions_5.mp3",
     response_ends_trial: false,
-    choices: ["f", "j"],
     trial_ends_after_audio: true,
     on_finish: function(data) {
         if (data.response !== null) {
@@ -183,15 +182,15 @@ let instructions_6 = {
         // "<p>  If the word was not on the list, press the “F” key. </p>",
         // "<p> <i> To hear the instructions and practice trials again, press the spacebar. To begin the experiment, press the “F” or “J” key. </i> </p>",
     stimulus: "stim/audio_instructions/drm_instructions_6.mp3",
-    choices: ["NO_KEYS"],
-    trial_ends_after_audio: true,
+    choices: "NO_KEYS",
     response_ends_trial: false,
+    trial_ends_after_audio: true,
     on_finish: function() {
         jsPsych.addNodeToEndOfTimeline({
             timeline: [continue_trial]
         });
     }
-};
+}
 
 let trials = {
     type: jsPsychAudioKeyboardResponse,
