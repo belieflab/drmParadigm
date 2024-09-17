@@ -1,13 +1,13 @@
 "use strict";
 
 // Helper functions (keep the shuffleArray function as is)
+let isTonePlaying = false;
 
 function createTrial(
     list,
     trialType,
     wordPosition = "list",
     isPractice = false,
-    isTonePlaying = false
 ) {
     return {
         stimulus: list.stimulus,
@@ -25,7 +25,8 @@ function createTrial(
               isTonePlaying = true;
               setTimeout(() => {
                 isTonePlaying = false;
-              }, fixationDuration); 
+              }, durationForListWords); 
+            }
         }
     };
 }
