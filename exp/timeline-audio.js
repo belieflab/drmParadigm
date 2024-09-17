@@ -47,7 +47,12 @@ let before_instructions = {
 };
 
 
-
+let continue_trial = {
+    type: jsPsychHtmlKeyboardResponse,
+    stimulus: "<p>Press the spacebar to continue to the next part of the experiment.</p>",
+    choices: [" "],
+    response_ends_trial: true
+};
 
 let instructions_0 = {
     type: jsPsychAudioKeyboardResponse,
