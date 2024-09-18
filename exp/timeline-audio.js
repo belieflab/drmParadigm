@@ -49,7 +49,7 @@ let before_instructions = {
 
 let continue_trial = {
     type: jsPsychHtmlKeyboardResponse,
-    prompt: "<p>press spacebar to continue</p>",
+    // prompt: "<p>press spacebar to continue</p>",
     choices: [" "],
     response_ends_trial: true,
 };
@@ -164,7 +164,7 @@ let instructions_5 = {
         // "<p> <i> Alternatively, if you would like to hear the instructions again, press the spacebar. </i> </p>",
     stimulus: "stim/audio_instructions/drm_instructions_5.mp3",
     response_ends_trial: false,
-    trial_ends_after_audio: true,
+    trial_ends_after_audio: true, 
     on_finish: function(data) {
         if (data.response !== null) {
             jsPsych.addNodeToEndOfTimeline({
