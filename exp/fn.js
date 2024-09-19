@@ -85,7 +85,8 @@ function createTrialSet(list, trialType, isPractice = false) {
     );
     trials.push(createTargetTrial(list.prototype, trialType, isPractice));
 
-    trials[0].trial_duration = fixationDuration; // Set this to the duration of the start tone
-
+    if (trials[0]) {
+        trials[0].trial_duration = fixationDuration; 
+    }
     return trials;
 }
