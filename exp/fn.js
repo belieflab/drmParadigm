@@ -20,14 +20,26 @@ function createTrial(
             word_position: wordPosition,
         },
         confidence: "x",
-        on_start: function() {
+        on_start: function () {
             if (list.stimulus === trialStartTone) {
-              isTonePlaying = true;
-              setTimeout(() => {
-                isTonePlaying = false;
-              }, durationForListWords); 
+                // Set the flag to indicate that the start tone is playing
+                isTonePlaying = true;
             }
-        }
+        },
+        on_finish: function () {
+            if (list.stimulus === trialStartTone) {
+                // Reset the flag after the tone has finished playing
+                isTonePlaying = false;
+            }
+        },
+        // on_start: function() {
+        //     if (list.stimulus === trialStartTone) {
+        //       isTonePlaying = true;
+        //       setTimeout(() => {
+        //         isTonePlaying = false;
+        //       }, durationForListWords); 
+        //     }
+        // }
     };
 }
 
@@ -54,6 +66,7 @@ function createTargetTrial(stimulus, trialType, isPractice = false) {
 
 function createTrialSet(list, trialType, isPractice = false) {
     let trials = [];
+
     trials.push(
         createTrial({ stimulus: trialStartTone }, trialType, "list", isPractice)
     );
@@ -71,5 +84,8 @@ function createTrialSet(list, trialType, isPractice = false) {
         )
     );
     trials.push(createTargetTrial(list.prototype, trialType, isPractice));
+
+    trials[0].trial_duration = fixationDuration; // Set this to the duration of the start tone
+
     return trials;
 }

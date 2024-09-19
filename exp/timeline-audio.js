@@ -49,8 +49,9 @@ let before_instructions = {
 
 let continue_trial = {
     type: jsPsychHtmlKeyboardResponse,
-    // prompt: "<p>press spacebar to continue</p>",
+    prompt: "<p>press spacebar to continue</p>",
     choices: [" "],
+    stimulus: "stim/audio_instructions/silence.mp3",
     response_ends_trial: true,
 };
 
