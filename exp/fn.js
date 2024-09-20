@@ -8,7 +8,7 @@ function createTrial(
     trialType,
     wordPosition = "list",
     isPractice = false,
-    delayBeforeNextTrial = 2000,
+    delayBeforeNextTrial = 3000,
 ) {
     return {
         stimulus: list.stimulus,
@@ -37,9 +37,7 @@ function createTrial(
             if (list.stimulus === trialStartTone) {
               isTonePlaying = false;
               setTimeout(() => {
-                jsPsych.addNodeToEndOfTimeline({
-                    timeline: [instructions_6]
-                });
+                jsPsych.finishTrial(); 
               }, delayBeforeNextTrial); 
             }
         }
