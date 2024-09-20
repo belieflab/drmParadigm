@@ -70,11 +70,21 @@ function createTrialSet(list, trialType, isPractice = false) {
     trials.push(
         createTrial({ stimulus: trialStartTone }, trialType, "list", isPractice)
     );
-    list.listA.forEach((word) =>
-        trials.push(
-            createTrial({ stimulus: word }, trialType, "list", isPractice)
-        )
-    );
+    
+    if (trials.length > 0) {
+        if (trials[0]) {
+            trials[0].trial_duration = fixationDuration;
+        }        
+        if (trials.length > 1) {
+            trials[trials.length - 1].trial_duration = fixationDuration;
+        }
+        list.listA.forEach((word) =>
+            trials.push(
+                createTrial({ stimulus: word }, trialType, "list", isPractice)
+            )
+        );
+    }
+    
     trials.push(
         createTrial(
             { stimulus: responsePromptTone },
@@ -83,10 +93,7 @@ function createTrialSet(list, trialType, isPractice = false) {
             isPractice
         )
     );
-    trials.push(createTargetTrial(list.prototype, trialType, isPractice));
-
-    if (trials[0]) {
-        trials[0].trial_duration = fixationDuration; 
-    }
+        trials.push(createTargetTrial(list.prototype, trialType, isPractice));
+    
     return trials;
 }
