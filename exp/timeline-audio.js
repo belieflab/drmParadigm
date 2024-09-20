@@ -187,11 +187,11 @@ let instructions_6 = {
     choices: "NO_KEYS",
     response_ends_trial: false,
     trial_ends_after_audio: true,
-    on_finish: function() {
-        jsPsych.addNodeToEndOfTimeline({
-            timeline: [continue_trial]
-        });
-    }
+    // on_finish: function() {
+    //     jsPsych.addNodeToEndOfTimeline({
+    //         timeline: [continue_trial]
+    //     });
+    // }
 }
 
 let trials = {

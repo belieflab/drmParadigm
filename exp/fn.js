@@ -8,6 +8,7 @@ function createTrial(
     trialType,
     wordPosition = "list",
     isPractice = false,
+    delayBeforeNextTrial = 2000,
 ) {
     return {
         stimulus: list.stimulus,
@@ -26,20 +27,22 @@ function createTrial(
                 isTonePlaying = true;
             }
         },
-        on_finish: function () {
-            if (list.stimulus === trialStartTone) {
-                // Reset the flag after the tone has finished playing
-                isTonePlaying = false;
-            }
-        },
-        // on_start: function() {
+        // on_finish: function () {
         //     if (list.stimulus === trialStartTone) {
-        //       isTonePlaying = true;
-        //       setTimeout(() => {
+        //         // Reset the flag after the tone has finished playing
         //         isTonePlaying = false;
-        //       }, durationForListWords); 
         //     }
-        // }
+        // },
+        on_finish: function() {
+            if (list.stimulus === trialStartTone) {
+              isTonePlaying = false;
+              setTimeout(() => {
+                jsPsych.addNodeToEndOfTimeline({
+                    timeline: [instructions_6]
+                });
+              }, delayBeforeNextTrial); 
+            }
+        }
     };
 }
 
