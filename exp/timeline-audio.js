@@ -178,7 +178,7 @@ let instructions_5 = {
 
 let instructions_6 = {
     type: jsPsychAudioKeyboardResponse,
-    // prompt:
+    // prompt:  
         // "<p> Fantastic! You completed the practice trials. </p>" +
         // "<p> Remember, if the word was on the list, press the “J” key. </p>" +
         // "<p>  If the word was not on the list, press the “F” key. </p>",
@@ -187,11 +187,11 @@ let instructions_6 = {
     choices: "NO_KEYS",
     response_ends_trial: false,
     trial_ends_after_audio: true,
-    // on_finish: function() {
-    //     jsPsych.addNodeToEndOfTimeline({
-    //         timeline: [continue_trial]
-    //     });
-    // }
+    on_finish: function() {
+        jsPsych.addNodeToEndOfTimeline({
+            timeline: [continue_trial]
+        });
+    }
 }
 
 let trials = {

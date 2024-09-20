@@ -3,6 +3,7 @@
 let practiceSection = {
     timeline: [trials],
     timeline_variables: practiceTrials,
+    
 };
 
 let testSection = {

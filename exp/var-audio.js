@@ -6003,41 +6003,176 @@ while (interleavedFinalStim.length > 0) {
     interleavedFinalStim.pop();
 }
 
+// for (let i = 0; i <= randomizationFinal.length; i++) {
+//     if (randomizationFinal[i] === 0) {
+//             // first add 9 incongruent prototype items
+//             for (let i = 0; i <= 8; i++) {
+//                 interleavedFinalStim.push(incongruentPrototypeTrials[i]);
+//         }
+//          // then remove 9 incongruent prototype items
+//          for (let i = 0; i <= 8; i++) {
+//             incongruentPrototypeTrials.shift();
+//         }
+//     } else if (randomizationFinal[i] === 1) {
+//          // then! ADD 9 congruent prototype items
+//          for (let i = 0; i <= 8; i++) {
+//             interleavedFinalStim.push(congruentPrototypeTrials[i]);
+//         }
+//           // then! Remove 9 congruent prototype items
+//           for (let i = 0; i <= 8; i++) {
+//             congruentPrototypeTrials.shift();
+//         }
+//     } else if (randomizationFinal[i] === 2) {
+//          // then! ADD 9 items from incongruent highest associates trials
+//          for (let i = 0; i <= 8; i++) {
+//             interleavedFinalStim.push(incongruentHighestAssociateTrials[i]);
+//         }
+//         // then! Remove 9 incongruent highest associates items
+//         for (let i = 0; i <= 8; i++) {
+//             incongruentHighestAssociateTrials.shift();
+//         }
+//     } else if (randomizationFinal[i] === 3) {
+//         // then! ADD 9 congruent highest associate items
+//         for (let i = 0; i <= 8; i++) {
+//             interleavedFinalStim.push(congruentHighestAssociateTrials[i]);
+//         }
+//         // then! Remove 9 congruent highest associate items
+//         for (let i = 0; i <= 8; i++) {
+//             congruentHighestAssociateTrials.shift();
+//         }
+//     }
+// }
 for (let i = 0; i <= randomizationFinal.length; i++) {
     if (randomizationFinal[i] === 0) {
-            // first add 9 incongruent prototype items
-            for (let i = 0; i <= 8; i++) {
-                interleavedFinalStim.push(incongruentPrototypeTrials[i]);
+        // first add 9 incongruent prototype items
+        for (let j = 0; j <= 8; j++) {
+            let trial = incongruentPrototypeTrials[j];
+            if (j === 0) {
+                // This is likely the trialStartTone
+                trial.on_finish = function(data) {
+                    jsPsych.pauseExperiment();
+                    setTimeout(() => {
+                        jsPsych.resumeExperiment();
+                    }, 500); // 500ms delay after tone
+                };
+            } else if (j === 1) {
+                // This is likely the first word of the list
+                trial.on_start = function(trial) {
+                    let audio = new Audio(trial.stimulus);
+                    audio.addEventListener('canplaythrough', function() {
+                        trial.stimulus = audio;
+                    });
+                };
+                trial.on_finish = function(data) {
+                    jsPsych.pauseExperiment();
+                    setTimeout(() => {
+                        jsPsych.resumeExperiment();
+                    }, 250); // 250ms delay after first word
+                };
+            }
+            interleavedFinalStim.push(trial);
         }
-         // then remove 9 incongruent prototype items
-         for (let i = 0; i <= 8; i++) {
+        // then remove 9 incongruent prototype items
+        for (let j = 0; j <= 8; j++) {
             incongruentPrototypeTrials.shift();
         }
     } else if (randomizationFinal[i] === 1) {
-         // then! ADD 9 congruent prototype items
-         for (let i = 0; i <= 8; i++) {
-            interleavedFinalStim.push(congruentPrototypeTrials[i]);
+        // then! ADD 9 congruent prototype items
+        for (let j = 0; j <= 8; j++) {
+            let trial = congruentPrototypeTrials[j];
+            if (j === 0) {
+                // This is likely the trialStartTone
+                trial.on_finish = function(data) {
+                    jsPsych.pauseExperiment();
+                    setTimeout(() => {
+                        jsPsych.resumeExperiment();
+                    }, 500); // 500ms delay after tone
+                };
+            } else if (j === 1) {
+                // This is likely the first word of the list
+                trial.on_start = function(trial) {
+                    let audio = new Audio(trial.stimulus);
+                    audio.addEventListener('canplaythrough', function() {
+                        trial.stimulus = audio;
+                    });
+                };
+                trial.on_finish = function(data) {
+                    jsPsych.pauseExperiment();
+                    setTimeout(() => {
+                        jsPsych.resumeExperiment();
+                    }, 250); // 250ms delay after first word
+                };
+            }
+            interleavedFinalStim.push(trial);
         }
-          // then! Remove 9 congruent prototype items
-          for (let i = 0; i <= 8; i++) {
+        // then! Remove 9 congruent prototype items
+        for (let j = 0; j <= 8; j++) {
             congruentPrototypeTrials.shift();
         }
     } else if (randomizationFinal[i] === 2) {
-         // then! ADD 9 items from incongruent highest associates trials
-         for (let i = 0; i <= 8; i++) {
-            interleavedFinalStim.push(incongruentHighestAssociateTrials[i]);
+        // then! ADD 9 items from incongruent highest associates trials
+        for (let j = 0; j <= 8; j++) {
+            let trial = incongruentHighestAssociateTrials[j];
+            if (j === 0) {
+                // This is likely the trialStartTone
+                trial.on_finish = function(data) {
+                    jsPsych.pauseExperiment();
+                    setTimeout(() => {
+                        jsPsych.resumeExperiment();
+                    }, 500); // 500ms delay after tone
+                };
+            } else if (j === 1) {
+                // This is likely the first word of the list
+                trial.on_start = function(trial) {
+                    let audio = new Audio(trial.stimulus);
+                    audio.addEventListener('canplaythrough', function() {
+                        trial.stimulus = audio;
+                    });
+                };
+                trial.on_finish = function(data) {
+                    jsPsych.pauseExperiment();
+                    setTimeout(() => {
+                        jsPsych.resumeExperiment();
+                    }, 250); // 250ms delay after first word
+                };
+            }
+            interleavedFinalStim.push(trial);
         }
         // then! Remove 9 incongruent highest associates items
-        for (let i = 0; i <= 8; i++) {
+        for (let j = 0; j <= 8; j++) {
             incongruentHighestAssociateTrials.shift();
         }
     } else if (randomizationFinal[i] === 3) {
         // then! ADD 9 congruent highest associate items
-        for (let i = 0; i <= 8; i++) {
-            interleavedFinalStim.push(congruentHighestAssociateTrials[i]);
+        for (let j = 0; j <= 8; j++) {
+            let trial = congruentHighestAssociateTrials[j];
+            if (j === 0) {
+                // This is likely the trialStartTone
+                trial.on_finish = function(data) {
+                    jsPsych.pauseExperiment();
+                    setTimeout(() => {
+                        jsPsych.resumeExperiment();
+                    }, 500); // 500ms delay after tone
+                };
+            } else if (j === 1) {
+                // This is likely the first word of the list
+                trial.on_start = function(trial) {
+                    let audio = new Audio(trial.stimulus);
+                    audio.addEventListener('canplaythrough', function() {
+                        trial.stimulus = audio;
+                    });
+                };
+                trial.on_finish = function(data) {
+                    jsPsych.pauseExperiment();
+                    setTimeout(() => {
+                        jsPsych.resumeExperiment();
+                    }, 250); // 250ms delay after first word
+                };
+            }
+            interleavedFinalStim.push(trial);
         }
         // then! Remove 9 congruent highest associate items
-        for (let i = 0; i <= 8; i++) {
+        for (let j = 0; j <= 8; j++) {
             congruentHighestAssociateTrials.shift();
         }
     }

@@ -26,19 +26,26 @@ function createTrial(
                 // Set the flag to indicate that the start tone is playing
                 isTonePlaying = true;
             }
+             // Ensure audio is fully loaded before playing
+             let audio = new Audio(trial.stimulus);
+             audio.addEventListener('canplaythrough', function() {
+                 // Audio is loaded and can be played without buffering
+                 trial.stimulus = audio;
+             });
         },
-        // on_finish: function () {
-        //     if (list.stimulus === trialStartTone) {
-        //         // Reset the flag after the tone has finished playing
-        //         isTonePlaying = false;
-        //     }
-        // },
-        on_finish: function() {
+        on_finish: function(data) {
             if (list.stimulus === trialStartTone) {
-              isTonePlaying = false;
-              setTimeout(() => {
-                jsPsych.finishTrial(); 
-              }, delayBeforeNextTrial); 
+                isTonePlaying = false;
+                jsPsych.pauseExperiment();
+                setTimeout(() => {
+                    jsPsych.resumeExperiment();
+                }, 500); // 500ms delay after tone
+            } else if (wordPosition === "list" && data.trial_index === 0) {
+                // This is the first word of a list
+                jsPsych.pauseExperiment();
+                setTimeout(() => {
+                    jsPsych.resumeExperiment();
+                }, 250); // 250ms delay after first word
             }
         }
     };
@@ -62,6 +69,14 @@ function createTargetTrial(stimulus, trialType, isPractice = false) {
             feedbackGenerator +
             timeRemaining +
             '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+            on_start: function (trial) {
+                // Ensure audio is fully loaded before playing
+                let audio = new Audio(trial.stimulus);
+                audio.addEventListener('canplaythrough', function() {
+                    // Audio is loaded and can be played without buffering
+                    trial.stimulus = audio;
+                });
+            },
     };
 }
 
@@ -94,7 +109,7 @@ function createTrialSet(list, trialType, isPractice = false) {
             isPractice
         )
     );
-        trials.push(createTargetTrial(list.prototype, trialType, isPractice));
+    trials.push(createTargetTrial(list.prototype, trialType, isPractice));
     
     return trials;
 }
