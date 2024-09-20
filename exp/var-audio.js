@@ -6003,41 +6003,43 @@ while (interleavedFinalStim.length > 0) {
     interleavedFinalStim.pop();
 }
 
+const fixedDuration = 1000; 
+
 for (let i = 0; i <= randomizationFinal.length; i++) {
     if (randomizationFinal[i] === 0) {
-        // first add 9 incongruent prototype items
-        for (let i = 0; i <= 8; i++) {
-            interleavedFinalStim.push(incongruentPrototypeTrials[i]);
+        for (let j = 0; j <= 8; j++) {
+            let trial = incongruentPrototypeTrials[j];
+            trial.trial_duration = fixedDuration; 
+            interleavedFinalStim.push(trial);
         }
-        // then remove 9 incongruent prototype items
-        for (let i = 0; i <= 8; i++) {
+        for (let j = 0; j <= 8; j++) {
             incongruentPrototypeTrials.shift();
         }
     } else if (randomizationFinal[i] === 1) {
-        // then! ADD 9 congruent prototype items
-        for (let i = 0; i <= 8; i++) {
-            interleavedFinalStim.push(congruentPrototypeTrials[i]);
+        for (let j = 0; j <= 8; j++) {
+            let trial = congruentPrototypeTrials[j];
+            trial.trial_duration = fixedDuration; 
+            interleavedFinalStim.push(trial);
         }
-        // then! Remove 9 congruent prototype items
-        for (let i = 0; i <= 8; i++) {
+        for (let j = 0; j <= 8; j++) {
             congruentPrototypeTrials.shift();
         }
     } else if (randomizationFinal[i] === 2) {
-        // then! ADD 9 items from incongruent highest associates trials
-        for (let i = 0; i <= 8; i++) {
-            interleavedFinalStim.push(incongruentHighestAssociateTrials[i]);
+        for (let j = 0; j <= 8; j++) {
+            let trial = incongruentHighestAssociateTrials[j];
+            trial.trial_duration = fixedDuration; 
+            interleavedFinalStim.push(trial);
         }
-        // then! Remove 9 incongruent highest associates items
-        for (let i = 0; i <= 8; i++) {
+        for (let j = 0; j <= 8; j++) {
             incongruentHighestAssociateTrials.shift();
         }
     } else if (randomizationFinal[i] === 3) {
-        // then! ADD 9 congruent highest associate items
-        for (let i = 0; i <= 8; i++) {
-            interleavedFinalStim.push(congruentHighestAssociateTrials[i]);
+        for (let j = 0; j <= 8; j++) {
+            let trial = congruentHighestAssociateTrials[j];
+            trial.trial_duration = fixedDuration; 
+            interleavedFinalStim.push(trial);
         }
-        // then! Remove 9 congruent highest associate items
-        for (let i = 0; i <= 8; i++) {
+        for (let j = 0; j <= 8; j++) {
             congruentHighestAssociateTrials.shift();
         }
     }
