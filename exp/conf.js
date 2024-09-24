@@ -46,7 +46,7 @@ const repetitions = {
 
 const durationForListWords = 1000;
 const durationForTargetWords = 5000; //3000;
-const fixationDuration = 8000; //2000;
+const fixationDuration = 4000;
 const numberOfTrials = debug ? 6 : interleavedFinalStim.length;
 const durationForTone1 = 2000;
 
