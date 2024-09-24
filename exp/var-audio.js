@@ -1667,7 +1667,7 @@ for (let i = 0; i < incongruentPrototypeTrial9.listA.length; i++) {
 }
 incongruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: fixationDuration,
+    trial_duration: durationForTone1,
     response_ends_trial: false, 
     data: {
         test_part: "test",
@@ -2258,7 +2258,7 @@ for (let i = 0; i < congruentPrototypeTrial1.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2314,7 +2314,7 @@ for (let i = 0; i < congruentPrototypeTrial2.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: fixationDuration,
+    trial_duration: durationForTone1,
    response_ends_trial: false, 
     data: {
         test_part: "test",
@@ -2372,7 +2372,7 @@ for (let i = 0; i < congruentPrototypeTrial3.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2428,7 +2428,7 @@ for (let i = 0; i < congruentPrototypeTrial4.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2484,7 +2484,7 @@ for (let i = 0; i < congruentPrototypeTrial5.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2540,7 +2540,7 @@ for (let i = 0; i < congruentPrototypeTrial6.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2596,7 +2596,7 @@ for (let i = 0; i < congruentPrototypeTrial7.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2652,7 +2652,7 @@ for (let i = 0; i < congruentPrototypeTrial8.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2710,7 +2710,7 @@ for (let i = 0; i < congruentPrototypeTrial9.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2766,7 +2766,7 @@ for (let i = 0; i < congruentPrototypeTrial10.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2822,7 +2822,7 @@ for (let i = 0; i < congruentPrototypeTrial11.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2878,7 +2878,7 @@ for (let i = 0; i < congruentPrototypeTrial12.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2934,7 +2934,7 @@ for (let i = 0; i < congruentPrototypeTrial13.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2990,7 +2990,7 @@ for (let i = 0; i < congruentPrototypeTrial14.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3046,7 +3046,7 @@ for (let i = 0; i < congruentPrototypeTrial15.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3102,7 +3102,7 @@ for (let i = 0; i < congruentPrototypeTrial16.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3160,7 +3160,7 @@ for (let i = 0; i < congruentPrototypeTrial17.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3216,7 +3216,7 @@ for (let i = 0; i < congruentPrototypeTrial18.listB.length; i++) {
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
