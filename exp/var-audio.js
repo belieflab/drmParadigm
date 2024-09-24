@@ -3349,7 +3349,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial1[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3406,7 +3406,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial2[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3463,7 +3463,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial3[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3522,7 +3522,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial4[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3579,7 +3579,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial5[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3636,7 +3636,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial6[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3693,7 +3693,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial7[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3750,7 +3750,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial8[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3807,7 +3807,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial9[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3864,7 +3864,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial10[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3921,7 +3921,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial11[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3978,7 +3978,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial12[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4035,7 +4035,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial13[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4092,7 +4092,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial14[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4149,7 +4149,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial15[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4206,7 +4206,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial16[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4263,7 +4263,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial17[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4320,7 +4320,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial18[0].listA.length; i++) {
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4445,7 +4445,7 @@ for (let i = 2; i < congruentHighestAssociateTrial1.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4535,7 +4535,7 @@ for (let i = 2; i < congruentHighestAssociateTrial2.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4625,7 +4625,7 @@ for (let i = 2; i < congruentHighestAssociateTrial3.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4715,7 +4715,7 @@ for (let i = 2; i < congruentHighestAssociateTrial4.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4805,7 +4805,7 @@ for (let i = 2; i < congruentHighestAssociateTrial5.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4894,7 +4894,7 @@ for (let i = 3; i < congruentHighestAssociateTrial6.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4984,7 +4984,7 @@ for (let i = 3; i < congruentHighestAssociateTrial7.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5074,7 +5074,7 @@ for (let i = 3; i < congruentHighestAssociateTrial8.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5164,7 +5164,7 @@ for (let i = 3; i < congruentHighestAssociateTrial9.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5253,7 +5253,7 @@ for (let i = 4; i < congruentHighestAssociateTrial10.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5343,7 +5343,7 @@ for (let i = 4; i < congruentHighestAssociateTrial11.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5433,7 +5433,7 @@ for (let i = 4; i < congruentHighestAssociateTrial12.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5523,7 +5523,7 @@ for (let i = 4; i < congruentHighestAssociateTrial13.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5612,7 +5612,7 @@ for (let i = 5; i < congruentHighestAssociateTrial14.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5702,7 +5702,7 @@ for (let i = 5; i < congruentHighestAssociateTrial15.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5792,7 +5792,7 @@ for (let i = 5; i < congruentHighestAssociateTrial16.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5882,7 +5882,7 @@ for (let i = 5; i < congruentHighestAssociateTrial17.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5972,7 +5972,7 @@ for (let i = 5; i < congruentHighestAssociateTrial18.listB.length; i++) {
 
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
-    trial_duration: durationForListWords,
+    trial_duration: durationForTone1,
     response_ends_trial: false,
     data: {
         test_part: "test",
