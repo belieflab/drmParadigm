@@ -1,6 +1,5 @@
 "use strict";
 
-// Helper functions (keep the shuffleArray function as is)
 let isTonePlaying = false;
 
 function createTrial(
@@ -8,11 +7,11 @@ function createTrial(
     trialType,
     wordPosition = "list",
     isPractice = false,
-    delayBeforeNextTrial = 3000,
 ) {
     return {
         stimulus: list.stimulus,
-        trial_duration: durationForListWords,
+        // trial_duration: durationForListWords,
+        trial_duration: wordPosition === "startTone" ? fixationDuration : durationForListWords,
         response_ends_trial: false,
         data: {
             test_part: isPractice ? "practice" : "test",
@@ -21,27 +20,15 @@ function createTrial(
             word_position: wordPosition,
         },
         confidence: "x",
-        on_start: function () {
-            if (list.stimulus === trialStartTone) {
-                // Set the flag to indicate that the start tone is playing
-                isTonePlaying = true;
-            }
-             // Ensure audio is fully loaded before playing
-             let audio = new Audio(trial.stimulus);
-             audio.addEventListener('canplaythrough', function() {
-                 // Audio is loaded and can be played without buffering
-                 trial.stimulus = audio;
-             });
+        on_start: function (trial) {
+            let audio = new Audio(trial.stimulus);
+            audio.addEventListener('canplaythrough', function() {
+                trial.stimulus = audio;
+            });
         },
         on_finish: function(data) {
-            if (list.stimulus === trialStartTone) {
-                isTonePlaying = false;
-                jsPsych.pauseExperiment();
-                setTimeout(() => {
-                    jsPsych.resumeExperiment();
-                }, 500); // 500ms delay after tone
+            if (wordPosition === "startTone") {
             } else if (wordPosition === "list" && data.trial_index === 0) {
-                // This is the first word of a list
                 jsPsych.pauseExperiment();
                 setTimeout(() => {
                     jsPsych.resumeExperiment();
@@ -70,10 +57,8 @@ function createTargetTrial(stimulus, trialType, isPractice = false) {
             timeRemaining +
             '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
             on_start: function (trial) {
-                // Ensure audio is fully loaded before playing
                 let audio = new Audio(trial.stimulus);
                 audio.addEventListener('canplaythrough', function() {
-                    // Audio is loaded and can be played without buffering
                     trial.stimulus = audio;
                 });
             },
@@ -83,9 +68,12 @@ function createTargetTrial(stimulus, trialType, isPractice = false) {
 function createTrialSet(list, trialType, isPractice = false) {
     let trials = [];
 
-    trials.push(
-        createTrial({ stimulus: trialStartTone }, trialType, "list", isPractice)
-    );
+    trials.push(createTrial(
+        { stimulus: trialStartTone }, 
+        trialType + "_startTone", 
+        "startTone", 
+        isPractice
+    ));
     
     if (trials.length > 0) {
         if (trials[0]) {
@@ -105,7 +93,7 @@ function createTrialSet(list, trialType, isPractice = false) {
         createTrial(
             { stimulus: responsePromptTone },
             trialType,
-            "list",
+            "responsePrompt",
             isPractice
         )
     );

@@ -64,50 +64,10 @@ let practiceTrial2 = practiceLists[1];
 
 // Create practice trials
 let practiceTrials = [];
-// [practiceTrial1, practiceTrial2].forEach((trial) => {
-//     practiceTrials = practiceTrials.concat(
-//         createTrialSet(trial, "practice", true)
-//     );
-// });
-
-[practiceTrial1, practiceTrial2].forEach((trial, trialIndex) => {
-    let trialSet = createTrialSet(trial, "practice", true);
-    
-    // Modify the trials to add delays
-    trialSet.forEach((trial, index) => {
-        if (index === 0) {
-            trial.on_finish = function(data) {
-                jsPsych.pauseExperiment();
-                setTimeout(() => {
-                    jsPsych.resumeExperiment();
-                }, 1000); 
-            };
-        } else if (index === 1) {
-            // This is likely the first word of the list
-            trial.on_start = function(trial) {
-                let audio = new Audio(trial.stimulus);
-                audio.addEventListener('canplaythrough', function() {
-                    trial.stimulus = audio;
-                });
-            };
-            trial.on_finish = function(data) {
-                jsPsych.pauseExperiment();
-                setTimeout(() => {
-                    jsPsych.resumeExperiment();
-                }, 550); 
-            };
-        }
-        practiceTrials.push(trial);
-    });
-
-    // Add a pause after each practice trial set (except the last one)
-    // if (trialIndex < practiceLists.length - 1) {
-    //     practiceTrials.push({
-    //         type: jsPsychHtmlKeyboardResponse,
-    //         stimulus: "<p>Press any key to start the next practice set.</p>",
-    //         choices: "ALL_KEYS"
-    //     });
-    // }
+[practiceTrial1, practiceTrial2].forEach((trial) => {
+    practiceTrials = practiceTrials.concat(
+        createTrialSet(trial, "practice", true)
+    );
 });
 
 // define all variables in listNumber1 : Anger
