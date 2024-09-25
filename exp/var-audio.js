@@ -1193,9 +1193,21 @@ let incongruentPrototypeTrial18 = incongruentPrototype[17];
 randomizedLists = shuffleArray(randomizedLists);
 
 let incongruentPrototypeTrials = [];
+incongruentPrototypeTrials.push({
+    stimulus: trialStartTone,
+    trial_duration: fixationDuration,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: trialStartTone,
+        drmTrial_type: "incongruentPrototype",
+    },
+    confidence: "x",
+}); // pushes 9th item placeholder forresponsePromptTone
+
 // pushes 6 items from listA
-   for (let i = 0; i < incongruentPrototypeTrial1.listA.length; i++) {
- incongruentPrototypeTrials.push({
+for (let i = 0; i < incongruentPrototypeTrial1.listA.length; i++) {
+incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial1.listA[i],
         trial_duration: durationForListWords,
        response_ends_trial: false,
@@ -1238,6 +1250,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
+
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -1295,6 +1308,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
+
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -1352,6 +1366,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
+
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -1409,6 +1424,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
+
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -1466,6 +1482,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
+
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -1523,6 +1540,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
+
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -1580,6 +1598,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
+
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -1637,6 +1656,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
+
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -1694,6 +1714,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
+
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -1751,6 +1772,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
+
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -1808,6 +1830,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
+
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -1865,6 +1888,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
+
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -1922,6 +1946,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
+
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -1934,7 +1959,6 @@ incongruentPrototypeTrials.push({
     confidence: "x",
 }); // pushes 9th item placeholder forresponsePromptTone
 
-// pushes 6 items from listA
 for (let i = 0; i < incongruentPrototypeTrial14.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial14.listA[i],
@@ -1979,6 +2003,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
+
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -2036,6 +2061,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
+
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -2093,6 +2119,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
+
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -2150,6 +2177,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
+
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -2207,17 +2235,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
-incongruentPrototypeTrials.push({
-    stimulus: trialStartTone,
-    trial_duration: fixationDuration,
-    response_ends_trial: false,
-    data: {
-        test_part: "test",
-        stim: trialStartTone,
-        drmTrial_type: "incongruentPrototype",
-    },
-    confidence: "x",
-}); // pushes 9th item placeholder forresponsePromptTone
+
 
 ////// Here starts replicating structure of incongruent protype tirals to create trials for congruent prototype
 let congruentPrototypeTrial1 = congruentPrototype[0];
@@ -2241,6 +2259,19 @@ let congruentPrototypeTrial18 = congruentPrototype[17];
 
 let congruentPrototypeTrials = [];
 // pushes 6 items from listB
+congruentPrototypeTrials.push({
+    stimulus: trialStartTone,
+    trial_duration: fixationDuration,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: trialStartTone,
+        drmTrial_type: "congruentPrototype",
+    },
+    confidence: "x",
+}); // pushes 9th item placeholder forresponsePromptTone
+
+
 for (let i = 0; i < congruentPrototypeTrial1.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial1.listB[i],
@@ -2285,6 +2316,7 @@ congruentPrototypeTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
+
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -2324,7 +2356,6 @@ congruentPrototypeTrials.push({
     confidence: "x",
 }); 
 
-// pushes 7th item
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial2.prototype,
     trial_duration: durationForTargetWords,
@@ -2342,7 +2373,8 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+}); 
+
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -2353,7 +2385,7 @@ congruentPrototypeTrials.push({
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); // pushes 9th item placeholder forresponsePromptTone
+}); 
 
 for (let i = 0; i < congruentPrototypeTrial3.listB.length; i++) {
     congruentPrototypeTrials.push({
@@ -2367,9 +2399,9 @@ for (let i = 0; i < congruentPrototypeTrial3.listB.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    }); 
 }
+
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
     trial_duration: durationForTone1,
@@ -2398,7 +2430,8 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
+
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -2409,7 +2442,7 @@ congruentPrototypeTrials.push({
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); // pushes 9th item placeholder forresponsePromptTone
+}); 
 
 for (let i = 0; i < congruentPrototypeTrial4.listB.length; i++) {
     congruentPrototypeTrials.push({
@@ -2423,8 +2456,7 @@ for (let i = 0; i < congruentPrototypeTrial4.listB.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    }); 
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
@@ -2454,7 +2486,8 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+}); 
+
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -2465,7 +2498,7 @@ congruentPrototypeTrials.push({
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); // pushes 9th item placeholder forresponsePromptTone
+}); 
 
 for (let i = 0; i < congruentPrototypeTrial5.listB.length; i++) {
     congruentPrototypeTrials.push({
@@ -2479,8 +2512,7 @@ for (let i = 0; i < congruentPrototypeTrial5.listB.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    }); 
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
@@ -2510,7 +2542,8 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
+
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -2521,7 +2554,7 @@ congruentPrototypeTrials.push({
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); // pushes 9th item placeholder forresponsePromptTone
+}); 
 
 for (let i = 0; i < congruentPrototypeTrial6.listB.length; i++) {
     congruentPrototypeTrials.push({
@@ -2535,8 +2568,7 @@ for (let i = 0; i < congruentPrototypeTrial6.listB.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    }); 
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
@@ -2566,7 +2598,8 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+}); 
+
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -2577,7 +2610,7 @@ congruentPrototypeTrials.push({
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); // pushes 9th item placeholder forresponsePromptTone
+}); 
 
 for (let i = 0; i < congruentPrototypeTrial7.listB.length; i++) {
     congruentPrototypeTrials.push({
@@ -2591,8 +2624,7 @@ for (let i = 0; i < congruentPrototypeTrial7.listB.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
@@ -2622,7 +2654,8 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
+
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -2633,7 +2666,7 @@ congruentPrototypeTrials.push({
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); // pushes 9th item placeholder forresponsePromptTone
+}); 
 
 for (let i = 0; i < congruentPrototypeTrial8.listB.length; i++) {
     congruentPrototypeTrials.push({
@@ -2647,8 +2680,7 @@ for (let i = 0; i < congruentPrototypeTrial8.listB.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    }); 
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
@@ -2680,7 +2712,8 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+}); 
+
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -2691,7 +2724,7 @@ congruentPrototypeTrials.push({
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); // pushes 9th item placeholder forresponsePromptTone
+}); 
 
 for (let i = 0; i < congruentPrototypeTrial9.listB.length; i++) {
     congruentPrototypeTrials.push({
@@ -2705,8 +2738,7 @@ for (let i = 0; i < congruentPrototypeTrial9.listB.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    }); 
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
@@ -2718,7 +2750,7 @@ congruentPrototypeTrials.push({
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); // pushes 7th item
+}); 
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial9.prototype,
     trial_duration: durationForTargetWords,
@@ -2736,7 +2768,8 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+}); 
+
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -2747,7 +2780,7 @@ congruentPrototypeTrials.push({
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); // pushes 9th item placeholder forresponsePromptTone
+});
 
 for (let i = 0; i < congruentPrototypeTrial10.listB.length; i++) {
     congruentPrototypeTrials.push({
@@ -2761,8 +2794,7 @@ for (let i = 0; i < congruentPrototypeTrial10.listB.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    }); 
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
@@ -2774,7 +2806,7 @@ congruentPrototypeTrials.push({
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); // pushes 7th item
+}); 
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial10.prototype,
     trial_duration: durationForTargetWords,
@@ -2792,7 +2824,8 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+}); 
+
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -2818,7 +2851,6 @@ for (let i = 0; i < congruentPrototypeTrial11.listB.length; i++) {
         },
         confidence: "x",
     }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
@@ -2849,6 +2881,7 @@ congruentPrototypeTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
+
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -2905,6 +2938,7 @@ congruentPrototypeTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
+
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -2961,6 +2995,7 @@ congruentPrototypeTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
+
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -3017,6 +3052,7 @@ congruentPrototypeTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
+
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -3073,6 +3109,7 @@ congruentPrototypeTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
+
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -3131,6 +3168,7 @@ congruentPrototypeTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
+
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -3187,6 +3225,7 @@ congruentPrototypeTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
+
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -3243,17 +3282,6 @@ congruentPrototypeTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // pushes 8th item placeholder for prototype
-congruentPrototypeTrials.push({
-    stimulus: trialStartTone,
-    trial_duration: fixationDuration,
-    response_ends_trial: false,
-    data: {
-        test_part: "test",
-        stim: trialStartTone,
-        drmTrial_type: "congruentPrototype",
-    },
-    confidence: "x",
-}); // pushes 9th item placeholder forresponsePromptTone
 
 /// trying to replicate structure from incongruent and congruent prototype trials to create incongruent highest associates
 
@@ -3331,6 +3359,19 @@ let incongruentHighestAssociateTrial18 = [
 ];
 
 let incongruentHighestAssociateTrials = [];
+
+incongruentHighestAssociateTrials.push({
+    stimulus: trialStartTone,
+    trial_duration: fixationDuration,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: trialStartTone,
+        drmTrial_type: "incongruentHighestAssociate",
+    },
+    confidence: "x",
+}); // pushes 9th item placeholder forresponsePromptTone
+
 // pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial1 array)
 for (let i = 0; i < incongruentHighestAssociateTrial1[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
@@ -3376,6 +3417,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial1's 2nd list)
+
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -3433,6 +3475,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial2's 2nd list)
+
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -3492,6 +3535,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -3549,6 +3593,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -3606,6 +3651,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -3663,6 +3709,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -3720,6 +3767,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -3777,6 +3825,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -3834,6 +3883,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -3891,6 +3941,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -3948,6 +3999,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -4005,6 +4057,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -4062,6 +4115,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -4119,6 +4173,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -4176,6 +4231,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -4233,6 +4289,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -4290,6 +4347,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+
 incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
@@ -4347,17 +4405,6 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
-incongruentHighestAssociateTrials.push({
-    stimulus: trialStartTone,
-    trial_duration: fixationDuration,
-    response_ends_trial: false,
-    data: {
-        test_part: "test",
-        stim: trialStartTone,
-        drmTrial_type: "incongruentHighestAssociate",
-    },
-    confidence: "x",
-}); // pushes 9th item placeholder forresponsePromptTone
 
 // trying to create structure for congruent highest associate trials
 //use for 2nd position trials
@@ -4426,6 +4473,18 @@ congruentHighestAssociateTrials.push({
     confidence: "x",
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
 
+congruentHighestAssociateTrials.push({
+    stimulus: trialStartTone,
+    trial_duration: fixationDuration,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: trialStartTone,
+        drmTrial_type: "congruentHighestAssociate_2",
+    },
+    confidence: "x",
+}); // pushes 9th item placeholder forresponsePromptTone
+
 //add in remaining list b items
 for (let i = 2; i < congruentHighestAssociateTrial1.listB.length; i++) {
     congruentHighestAssociateTrials.push({
@@ -4472,17 +4531,6 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
-congruentHighestAssociateTrials.push({
-    stimulus: trialStartTone,
-    trial_duration: fixationDuration,
-    response_ends_trial: false,
-    data: {
-        test_part: "test",
-        stim: trialStartTone,
-        drmTrial_type: "congruentHighestAssociate_2",
-    },
-    confidence: "x",
-}); // pushes 9th item placeholder forresponsePromptTone
 
 //this section shows how to make  trial where the highest assocaite is in the 2nd word position
 for (let i = 0; i < 1; i++) {
@@ -4515,6 +4563,18 @@ congruentHighestAssociateTrials.push({
     },
     confidence: "x",
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+
+congruentHighestAssociateTrials.push({
+    stimulus: trialStartTone,
+    trial_duration: fixationDuration,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: trialStartTone,
+        drmTrial_type: "congruentHighestAssociate_2",
+    },
+    confidence: "x",
+}); // pushes 9th item placeholder forresponsePromptTone
 
 //add in remaining list b items
 for (let i = 2; i < congruentHighestAssociateTrial2.listB.length; i++) {
@@ -4562,17 +4622,6 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
-congruentHighestAssociateTrials.push({
-    stimulus: trialStartTone,
-    trial_duration: fixationDuration,
-    response_ends_trial: false,
-    data: {
-        test_part: "test",
-        stim: trialStartTone,
-        drmTrial_type: "congruentHighestAssociate_2",
-    },
-    confidence: "x",
-}); // pushes 9th item placeholder forresponsePromptTone
 
 //this section shows how to make  trial where the highest assocaite is in the 2nd word position
 for (let i = 0; i < 1; i++) {
@@ -4605,6 +4654,18 @@ congruentHighestAssociateTrials.push({
     },
     confidence: "x",
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+
+congruentHighestAssociateTrials.push({
+    stimulus: trialStartTone,
+    trial_duration: fixationDuration,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: trialStartTone,
+        drmTrial_type: "congruentHighestAssociate_2",
+    },
+    confidence: "x",
+}); // pushes 9th item placeholder forresponsePromptTone
 
 //add in remaining list b items
 for (let i = 2; i < congruentHighestAssociateTrial3.listB.length; i++) {
@@ -4652,17 +4713,6 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
-congruentHighestAssociateTrials.push({
-    stimulus: trialStartTone,
-    trial_duration: fixationDuration,
-    response_ends_trial: false,
-    data: {
-        test_part: "test",
-        stim: trialStartTone,
-        drmTrial_type: "congruentHighestAssociate_2",
-    },
-    confidence: "x",
-}); // pushes 9th item placeholder forresponsePromptTone
 
 //this section shows how to make  trial where the highest assocaite is in the 2nd word position
 for (let i = 0; i < 1; i++) {
@@ -4695,6 +4745,18 @@ congruentHighestAssociateTrials.push({
     },
     confidence: "x",
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+
+congruentHighestAssociateTrials.push({
+    stimulus: trialStartTone,
+    trial_duration: fixationDuration,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: trialStartTone,
+        drmTrial_type: "congruentHighestAssociate_2",
+    },
+    confidence: "x",
+}); // pushes 9th item placeholder forresponsePromptTone
 
 //add in remaining list b items
 for (let i = 2; i < congruentHighestAssociateTrial4.listB.length; i++) {
@@ -4742,17 +4804,6 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
-congruentHighestAssociateTrials.push({
-    stimulus: trialStartTone,
-    trial_duration: fixationDuration,
-    response_ends_trial: false,
-    data: {
-        test_part: "test",
-        stim: trialStartTone,
-        drmTrial_type: "congruentHighestAssociate_2",
-    },
-    confidence: "x",
-}); // pushes 9th item placeholder forresponsePromptTone
 
 //this section shows how to make  trial where the highest assocaite is in the 2nd word position
 for (let i = 0; i < 1; i++) {
@@ -4785,6 +4836,18 @@ congruentHighestAssociateTrials.push({
     },
     confidence: "x",
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+
+congruentHighestAssociateTrials.push({
+    stimulus: trialStartTone,
+    trial_duration: fixationDuration,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: trialStartTone,
+        drmTrial_type: "congruentHighestAssociate_2",
+    },
+    confidence: "x",
+}); // pushes 9th item placeholder forresponsePromptTone
 
 //add in remaining list b items
 for (let i = 2; i < congruentHighestAssociateTrial5.listB.length; i++) {
@@ -4832,17 +4895,6 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
-congruentHighestAssociateTrials.push({
-    stimulus: trialStartTone,
-    trial_duration: fixationDuration,
-    response_ends_trial: false,
-    data: {
-        test_part: "test",
-        stim: trialStartTone,
-        drmTrial_type: "congruentHighestAssociate_2",
-    },
-    confidence: "x",
-}); // pushes 9th item placeholder forresponsePromptTone
 
 // how to create trial for highest associate in 3rd position
 for (let i = 0; i < 2; i++) {
@@ -4874,6 +4926,18 @@ congruentHighestAssociateTrials.push({
     },
     confidence: "x",
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+
+congruentHighestAssociateTrials.push({
+    stimulus: trialStartTone,
+    trial_duration: fixationDuration,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: trialStartTone,
+        drmTrial_type: "congruentHighestAssociate_3",
+    },
+    confidence: "x",
+}); // pushes 9th item placeholder forresponsePromptTone
 
 //add in remaining list b items
 for (let i = 3; i < congruentHighestAssociateTrial6.listB.length; i++) {
@@ -4921,17 +4985,6 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
-congruentHighestAssociateTrials.push({
-    stimulus: trialStartTone,
-    trial_duration: fixationDuration,
-    response_ends_trial: false,
-    data: {
-        test_part: "test",
-        stim: trialStartTone,
-        drmTrial_type: "congruentHighestAssociate_3",
-    },
-    confidence: "x",
-}); // pushes 9th item placeholder forresponsePromptTone
 
 // how to create trial for highest associate in 3rd position
 for (let i = 0; i < 2; i++) {
@@ -4964,6 +5017,18 @@ congruentHighestAssociateTrials.push({
     },
     confidence: "x",
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+
+congruentHighestAssociateTrials.push({
+    stimulus: trialStartTone,
+    trial_duration: fixationDuration,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: trialStartTone,
+        drmTrial_type: "congruentHighestAssociate_3",
+    },
+    confidence: "x",
+}); // pushes 9th item placeholder forresponsePromptTone
 
 //add in remaining list b items
 for (let i = 3; i < congruentHighestAssociateTrial7.listB.length; i++) {
@@ -5011,17 +5076,6 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
-congruentHighestAssociateTrials.push({
-    stimulus: trialStartTone,
-    trial_duration: fixationDuration,
-    response_ends_trial: false,
-    data: {
-        test_part: "test",
-        stim: trialStartTone,
-        drmTrial_type: "congruentHighestAssociate_3",
-    },
-    confidence: "x",
-}); // pushes 9th item placeholder forresponsePromptTone
 
 // how to create trial for highest associate in 3rd position
 for (let i = 0; i < 2; i++) {
@@ -5054,6 +5108,18 @@ congruentHighestAssociateTrials.push({
     },
     confidence: "x",
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+
+congruentHighestAssociateTrials.push({
+    stimulus: trialStartTone,
+    trial_duration: fixationDuration,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: trialStartTone,
+        drmTrial_type: "congruentHighestAssociate_3",
+    },
+    confidence: "x",
+}); // pushes 9th item placeholder forresponsePromptTone
 
 //add in remaining list b items
 for (let i = 3; i < congruentHighestAssociateTrial8.listB.length; i++) {
@@ -5101,17 +5167,6 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
-congruentHighestAssociateTrials.push({
-    stimulus: trialStartTone,
-    trial_duration: fixationDuration,
-    response_ends_trial: false,
-    data: {
-        test_part: "test",
-        stim: trialStartTone,
-        drmTrial_type: "congruentHighestAssociate_3",
-    },
-    confidence: "x",
-}); // pushes 9th item placeholder forresponsePromptTone
 
 // how to create trial for highest associate in 3rd position
 for (let i = 0; i < 2; i++) {
@@ -5144,6 +5199,18 @@ congruentHighestAssociateTrials.push({
     },
     confidence: "x",
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+
+congruentHighestAssociateTrials.push({
+    stimulus: trialStartTone,
+    trial_duration: fixationDuration,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: trialStartTone,
+        drmTrial_type: "congruentHighestAssociate_3",
+    },
+    confidence: "x",
+}); // pushes 9th item placeholder forresponsePromptTone
 
 //add in remaining list b items
 for (let i = 3; i < congruentHighestAssociateTrial9.listB.length; i++) {
@@ -5191,17 +5258,6 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
-congruentHighestAssociateTrials.push({
-    stimulus: trialStartTone,
-    trial_duration: fixationDuration,
-    response_ends_trial: false,
-    data: {
-        test_part: "test",
-        stim: trialStartTone,
-        drmTrial_type: "congruentHighestAssociate_3",
-    },
-    confidence: "x",
-}); // pushes 9th item placeholder forresponsePromptTone
 
 // how to create trial for highest associate in 4th position
 for (let i = 0; i < 3; i++) {
@@ -5233,6 +5289,18 @@ congruentHighestAssociateTrials.push({
     },
     confidence: "x",
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+
+congruentHighestAssociateTrials.push({
+    stimulus: trialStartTone,
+    trial_duration: fixationDuration,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: trialStartTone,
+        drmTrial_type: "congruentHighestAssociate_4",
+    },
+    confidence: "x",
+}); // pushes 9th item placeholder forresponsePromptTone
 
 //add in remaining list b items
 for (let i = 4; i < congruentHighestAssociateTrial10.listB.length; i++) {
@@ -5280,17 +5348,6 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
-congruentHighestAssociateTrials.push({
-    stimulus: trialStartTone,
-    trial_duration: fixationDuration,
-    response_ends_trial: false,
-    data: {
-        test_part: "test",
-        stim: trialStartTone,
-        drmTrial_type: "congruentHighestAssociate_4",
-    },
-    confidence: "x",
-}); // pushes 9th item placeholder forresponsePromptTone
 
 // how to create trial for highest associate in 4th position
 for (let i = 0; i < 3; i++) {
@@ -5323,6 +5380,18 @@ congruentHighestAssociateTrials.push({
     },
     confidence: "x",
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+
+congruentHighestAssociateTrials.push({
+    stimulus: trialStartTone,
+    trial_duration: fixationDuration,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: trialStartTone,
+        drmTrial_type: "congruentHighestAssociate_4",
+    },
+    confidence: "x",
+}); // pushes 9th item placeholder forresponsePromptTone
 
 //add in remaining list b items
 for (let i = 4; i < congruentHighestAssociateTrial11.listB.length; i++) {
@@ -5370,17 +5439,6 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
-congruentHighestAssociateTrials.push({
-    stimulus: trialStartTone,
-    trial_duration: fixationDuration,
-    response_ends_trial: false,
-    data: {
-        test_part: "test",
-        stim: trialStartTone,
-        drmTrial_type: "congruentHighestAssociate_4",
-    },
-    confidence: "x",
-}); // pushes 9th item placeholder forresponsePromptTone
 
 // how to create trial for highest associate in 4th position
 for (let i = 0; i < 3; i++) {
@@ -5413,6 +5471,18 @@ congruentHighestAssociateTrials.push({
     },
     confidence: "x",
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+
+congruentHighestAssociateTrials.push({
+    stimulus: trialStartTone,
+    trial_duration: fixationDuration,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: trialStartTone,
+        drmTrial_type: "congruentHighestAssociate_4",
+    },
+    confidence: "x",
+}); // pushes 9th item placeholder forresponsePromptTone
 
 //add in remaining list b items
 for (let i = 4; i < congruentHighestAssociateTrial12.listB.length; i++) {
@@ -5460,17 +5530,6 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
-congruentHighestAssociateTrials.push({
-    stimulus: trialStartTone,
-    trial_duration: fixationDuration,
-    response_ends_trial: false,
-    data: {
-        test_part: "test",
-        stim: trialStartTone,
-        drmTrial_type: "congruentHighestAssociate_4",
-    },
-    confidence: "x",
-}); // pushes 9th item placeholder forresponsePromptTone
 
 // how to create trial for highest associate in 4th position
 for (let i = 0; i < 3; i++) {
@@ -5503,6 +5562,18 @@ congruentHighestAssociateTrials.push({
     },
     confidence: "x",
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+
+congruentHighestAssociateTrials.push({
+    stimulus: trialStartTone,
+    trial_duration: fixationDuration,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: trialStartTone,
+        drmTrial_type: "congruentHighestAssociate_4",
+    },
+    confidence: "x",
+}); // pushes 9th item placeholder forresponsePromptTone
 
 //add in remaining list b items
 for (let i = 4; i < congruentHighestAssociateTrial13.listB.length; i++) {
@@ -5550,17 +5621,6 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
-congruentHighestAssociateTrials.push({
-    stimulus: trialStartTone,
-    trial_duration: fixationDuration,
-    response_ends_trial: false,
-    data: {
-        test_part: "test",
-        stim: trialStartTone,
-        drmTrial_type: "congruentHighestAssociate_4",
-    },
-    confidence: "x",
-}); // pushes 9th item placeholder forresponsePromptTone
 
 // how to create congruent highest associate trials with highests associate in 5th position
 for (let i = 0; i < 4; i++) {
@@ -5592,6 +5652,18 @@ congruentHighestAssociateTrials.push({
     },
     confidence: "x",
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+
+congruentHighestAssociateTrials.push({
+    stimulus: trialStartTone,
+    trial_duration: fixationDuration,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: trialStartTone,
+        drmTrial_type: "congruentHighestAssociate_5",
+    },
+    confidence: "x",
+}); // pushes 9th item placeholder forresponsePromptTone
 
 //add in remaining list b items
 for (let i = 5; i < congruentHighestAssociateTrial14.listB.length; i++) {
@@ -5639,17 +5711,6 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
-congruentHighestAssociateTrials.push({
-    stimulus: trialStartTone,
-    trial_duration: fixationDuration,
-    response_ends_trial: false,
-    data: {
-        test_part: "test",
-        stim: trialStartTone,
-        drmTrial_type: "congruentHighestAssociate_5",
-    },
-    confidence: "x",
-}); // pushes 9th item placeholder forresponsePromptTone
 
 // how to create congruent highest associate trials with highests associate in 5th position
 for (let i = 0; i < 4; i++) {
@@ -5682,6 +5743,18 @@ congruentHighestAssociateTrials.push({
     },
     confidence: "x",
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+
+congruentHighestAssociateTrials.push({
+    stimulus: trialStartTone,
+    trial_duration: fixationDuration,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: trialStartTone,
+        drmTrial_type: "congruentHighestAssociate_5",
+    },
+    confidence: "x",
+}); // pushes 9th item placeholder forresponsePromptTone
 
 //add in remaining list b items
 for (let i = 5; i < congruentHighestAssociateTrial15.listB.length; i++) {
@@ -5729,17 +5802,6 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
-congruentHighestAssociateTrials.push({
-    stimulus: trialStartTone,
-    trial_duration: fixationDuration,
-    response_ends_trial: false,
-    data: {
-        test_part: "test",
-        stim: trialStartTone,
-        drmTrial_type: "congruentHighestAssociate_5",
-    },
-    confidence: "x",
-}); // pushes 9th item placeholder forresponsePromptTone
 
 // how to create congruent highest associate trials with highests associate in 5th position
 for (let i = 0; i < 4; i++) {
@@ -5772,6 +5834,18 @@ congruentHighestAssociateTrials.push({
     },
     confidence: "x",
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+
+congruentHighestAssociateTrials.push({
+    stimulus: trialStartTone,
+    trial_duration: fixationDuration,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: trialStartTone,
+        drmTrial_type: "congruentHighestAssociate_5",
+    },
+    confidence: "x",
+}); // pushes 9th item placeholder forresponsePromptTone
 
 //add in remaining list b items
 for (let i = 5; i < congruentHighestAssociateTrial16.listB.length; i++) {
@@ -5819,17 +5893,6 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
-congruentHighestAssociateTrials.push({
-    stimulus: trialStartTone,
-    trial_duration: fixationDuration,
-    response_ends_trial: false,
-    data: {
-        test_part: "test",
-        stim: trialStartTone,
-        drmTrial_type: "congruentHighestAssociate_5",
-    },
-    confidence: "x",
-}); // pushes 9th item placeholder forresponsePromptTone
 
 // how to create congruent highest associate trials with highests associate in 5th position
 for (let i = 0; i < 4; i++) {
@@ -5862,6 +5925,18 @@ congruentHighestAssociateTrials.push({
     },
     confidence: "x",
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+
+congruentHighestAssociateTrials.push({
+    stimulus: trialStartTone,
+    trial_duration: fixationDuration,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: trialStartTone,
+        drmTrial_type: "congruentHighestAssociate_5",
+    },
+    confidence: "x",
+}); // pushes 9th item placeholder forresponsePromptTone
 
 //add in remaining list b items
 for (let i = 5; i < congruentHighestAssociateTrial17.listB.length; i++) {
@@ -5909,17 +5984,6 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
-congruentHighestAssociateTrials.push({
-    stimulus: trialStartTone,
-    trial_duration: fixationDuration,
-    response_ends_trial: false,
-    data: {
-        test_part: "test",
-        stim: trialStartTone,
-        drmTrial_type: "congruentHighestAssociate_5",
-    },
-    confidence: "x",
-}); // pushes 9th item placeholder forresponsePromptTone
 
 // how to create congruent highest associate trials with highests associate in 5th position
 for (let i = 0; i < 4; i++) {
@@ -5952,6 +6016,18 @@ congruentHighestAssociateTrials.push({
     },
     confidence: "x",
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+
+congruentHighestAssociateTrials.push({
+    stimulus: trialStartTone,
+    trial_duration: fixationDuration,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: trialStartTone,
+        drmTrial_type: "congruentHighestAssociate_5",
+    },
+    confidence: "x",
+}); // pushes 9th item placeholder forresponsePromptTone
 
 //add in remaining list b items
 for (let i = 5; i < congruentHighestAssociateTrial18.listB.length; i++) {
@@ -5999,17 +6075,6 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
-congruentHighestAssociateTrials.push({
-    stimulus: trialStartTone,
-    trial_duration: fixationDuration,
-    response_ends_trial: false,
-    data: {
-        test_part: "test",
-        stim: trialStartTone,
-        drmTrial_type: "congruentHighestAssociate_5",
-    },
-    confidence: "x",
-}); // pushes 9th item placeholder forresponsePromptTone
 
 let interleavedFinalStim = [];
 
