@@ -174,19 +174,15 @@ let instructions_6 = {
     type: jsPsychAudioKeyboardResponse,
     stimulus: audioInstructions.instruction6,
     choices: "NO_KEYS",  
-    response_ends_trial: false,
     trial_ends_after_audio: true,
+    response_ends_trial: false,
 };
 
 let continue_to_testSection = {
-    type: jsPsychHtmlKeyboardResponse,
+    type: jsPsychAudioKeyboardResponse,
     stimulus: audioInstructions.silence,
-    choices: [" "],  
-    response_ends_trial: true,  
-    trial_ends_after_audio: false,
-    on_start: function () {
-        jsPsych.setProgressBar(0);
-    },
+    response_ends_trial: true,
+    choices: [" "],
 }
 
 let trials = {
@@ -204,7 +200,6 @@ let trials = {
     trial_duration: jsPsych.timelineVariable("trial_duration"),
     response_ends_trial: jsPsych.timelineVariable("response_ends_trial"),
     choices: ["NO KEYS"],
-
     on_load: () => {
         buttonPressWithArguments(70, 74, true);
     },

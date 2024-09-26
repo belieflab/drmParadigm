@@ -1173,7 +1173,7 @@ incongruentPrototypeTrials.push({
 
 incongruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1241,7 +1241,7 @@ incongruentPrototypeTrials.push({
 
 incongruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1309,7 +1309,7 @@ incongruentPrototypeTrials.push({
 
 incongruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1377,7 +1377,7 @@ incongruentPrototypeTrials.push({
 
 incongruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1445,7 +1445,7 @@ incongruentPrototypeTrials.push({
 
 incongruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1513,7 +1513,7 @@ incongruentPrototypeTrials.push({
 
 incongruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1581,7 +1581,7 @@ incongruentPrototypeTrials.push({
 
 incongruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1649,7 +1649,7 @@ incongruentPrototypeTrials.push({
 
 incongruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1717,7 +1717,7 @@ incongruentPrototypeTrials.push({
 
 incongruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1785,7 +1785,7 @@ incongruentPrototypeTrials.push({
 
 incongruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1853,7 +1853,7 @@ incongruentPrototypeTrials.push({
 
 incongruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1921,7 +1921,7 @@ incongruentPrototypeTrials.push({
 
 incongruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -1989,7 +1989,7 @@ incongruentPrototypeTrials.push({
 
 incongruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2057,7 +2057,7 @@ incongruentPrototypeTrials.push({
 
 incongruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2125,7 +2125,7 @@ incongruentPrototypeTrials.push({
 
 incongruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2193,7 +2193,7 @@ incongruentPrototypeTrials.push({
 
 incongruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2261,7 +2261,7 @@ incongruentPrototypeTrials.push({
 
 incongruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2329,7 +2329,7 @@ incongruentPrototypeTrials.push({
 
 incongruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2406,6 +2406,18 @@ congruentPrototypeTrials.push({
 }); 
 
 congruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentPrototype",
+    },
+    confidence: "x",
+});
+
+congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -2419,7 +2431,7 @@ congruentPrototypeTrials.push({
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2474,6 +2486,18 @@ congruentPrototypeTrials.push({
 }); 
 
 congruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentPrototype",
+    },
+    confidence: "x",
+});
+
+congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -2487,7 +2511,7 @@ congruentPrototypeTrials.push({
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2542,6 +2566,18 @@ congruentPrototypeTrials.push({
 });
 
 congruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentPrototype",
+    },
+    confidence: "x",
+});
+
+congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -2555,7 +2591,7 @@ congruentPrototypeTrials.push({
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2610,6 +2646,18 @@ congruentPrototypeTrials.push({
 }); 
 
 congruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentPrototype",
+    },
+    confidence: "x",
+});
+
+congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -2623,7 +2671,7 @@ congruentPrototypeTrials.push({
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2678,6 +2726,18 @@ congruentPrototypeTrials.push({
 });
 
 congruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentPrototype",
+    },
+    confidence: "x",
+});
+
+congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -2691,7 +2751,7 @@ congruentPrototypeTrials.push({
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2743,7 +2803,19 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
+
+congruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentPrototype",
+    },
+    confidence: "x",
+});
 
 congruentPrototypeTrials.push({
     stimulus: trialStartTone,
@@ -2759,7 +2831,7 @@ congruentPrototypeTrials.push({
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2814,6 +2886,18 @@ congruentPrototypeTrials.push({
 });
 
 congruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentPrototype",
+    },
+    confidence: "x",
+});
+
+congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -2827,7 +2911,7 @@ congruentPrototypeTrials.push({
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2882,6 +2966,18 @@ congruentPrototypeTrials.push({
 }); 
 
 congruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentPrototype",
+    },
+    confidence: "x",
+});
+
+congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -2895,7 +2991,7 @@ congruentPrototypeTrials.push({
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -2950,6 +3046,18 @@ congruentPrototypeTrials.push({
 }); 
 
 congruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentPrototype",
+    },
+    confidence: "x",
+});
+
+congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -2963,7 +3071,7 @@ congruentPrototypeTrials.push({
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3018,6 +3126,18 @@ congruentPrototypeTrials.push({
 }); 
 
 congruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentPrototype",
+    },
+    confidence: "x",
+});
+
+congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -3031,7 +3151,7 @@ congruentPrototypeTrials.push({
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3086,6 +3206,18 @@ congruentPrototypeTrials.push({
 });
 
 congruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentPrototype",
+    },
+    confidence: "x",
+});
+
+congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -3099,7 +3231,7 @@ congruentPrototypeTrials.push({
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3154,6 +3286,18 @@ congruentPrototypeTrials.push({
 }); 
 
 congruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentPrototype",
+    },
+    confidence: "x",
+});
+
+congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -3167,7 +3311,7 @@ congruentPrototypeTrials.push({
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3222,6 +3366,18 @@ congruentPrototypeTrials.push({
 }); 
 
 congruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentPrototype",
+    },
+    confidence: "x",
+});
+
+congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -3235,7 +3391,7 @@ congruentPrototypeTrials.push({
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3290,6 +3446,18 @@ congruentPrototypeTrials.push({
 }); 
 
 congruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentPrototype",
+    },
+    confidence: "x",
+});
+
+congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -3303,7 +3471,7 @@ congruentPrototypeTrials.push({
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3358,6 +3526,18 @@ congruentPrototypeTrials.push({
 }); 
 
 congruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentPrototype",
+    },
+    confidence: "x",
+});
+
+congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -3371,7 +3551,7 @@ congruentPrototypeTrials.push({
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3426,6 +3606,18 @@ congruentPrototypeTrials.push({
 }); 
 
 congruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentPrototype",
+    },
+    confidence: "x",
+});
+
+congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -3439,7 +3631,7 @@ congruentPrototypeTrials.push({
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3494,6 +3686,18 @@ congruentPrototypeTrials.push({
 });
 
 congruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentPrototype",
+    },
+    confidence: "x",
+});
+
+congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -3507,7 +3711,7 @@ congruentPrototypeTrials.push({
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3562,6 +3766,18 @@ congruentPrototypeTrials.push({
 });
 
 congruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentPrototype",
+    },
+    confidence: "x",
+});
+
+congruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -3575,7 +3791,7 @@ congruentPrototypeTrials.push({
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3705,6 +3921,18 @@ incongruentHighestAssociateTrials.push({
 }); 
 
 incongruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentHighestAssociate",
+    },
+    confidence: "x",
+});
+
+incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -3718,7 +3946,7 @@ incongruentHighestAssociateTrials.push({
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3773,6 +4001,18 @@ incongruentHighestAssociateTrials.push({
 });
 
 incongruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentHighestAssociate",
+    },
+    confidence: "x",
+});
+
+incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -3786,7 +4026,7 @@ incongruentHighestAssociateTrials.push({
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3841,6 +4081,18 @@ incongruentHighestAssociateTrials.push({
 }); 
 
 incongruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentHighestAssociate",
+    },
+    confidence: "x",
+});
+
+incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -3854,7 +4106,7 @@ incongruentHighestAssociateTrials.push({
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3909,6 +4161,18 @@ incongruentHighestAssociateTrials.push({
 }); 
 
 incongruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentHighestAssociate",
+    },
+    confidence: "x",
+});
+
+incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -3922,7 +4186,7 @@ incongruentHighestAssociateTrials.push({
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -3977,6 +4241,18 @@ incongruentHighestAssociateTrials.push({
 });
 
 incongruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentHighestAssociate",
+    },
+    confidence: "x",
+});
+
+incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -3990,7 +4266,7 @@ incongruentHighestAssociateTrials.push({
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4045,6 +4321,18 @@ incongruentHighestAssociateTrials.push({
 }); 
 
 incongruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentHighestAssociate",
+    },
+    confidence: "x",
+});
+
+incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -4058,7 +4346,7 @@ incongruentHighestAssociateTrials.push({
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4113,6 +4401,18 @@ incongruentHighestAssociateTrials.push({
 });
 
 incongruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentHighestAssociate",
+    },
+    confidence: "x",
+});
+
+incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -4126,7 +4426,7 @@ incongruentHighestAssociateTrials.push({
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4181,6 +4481,18 @@ incongruentHighestAssociateTrials.push({
 }); 
 
 incongruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentHighestAssociate",
+    },
+    confidence: "x",
+});
+
+incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -4194,7 +4506,7 @@ incongruentHighestAssociateTrials.push({
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4249,6 +4561,18 @@ incongruentHighestAssociateTrials.push({
 }); 
 
 incongruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentHighestAssociate",
+    },
+    confidence: "x",
+});
+
+incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -4262,7 +4586,7 @@ incongruentHighestAssociateTrials.push({
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4317,6 +4641,18 @@ incongruentHighestAssociateTrials.push({
 }); 
 
 incongruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentHighestAssociate",
+    },
+    confidence: "x",
+});
+
+incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -4330,7 +4666,7 @@ incongruentHighestAssociateTrials.push({
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4385,6 +4721,18 @@ incongruentHighestAssociateTrials.push({
 }); 
 
 incongruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentHighestAssociate",
+    },
+    confidence: "x",
+});
+
+incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -4398,7 +4746,7 @@ incongruentHighestAssociateTrials.push({
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4453,6 +4801,18 @@ incongruentHighestAssociateTrials.push({
 });
 
 incongruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentHighestAssociate",
+    },
+    confidence: "x",
+});
+
+incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -4466,7 +4826,7 @@ incongruentHighestAssociateTrials.push({
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4521,6 +4881,18 @@ incongruentHighestAssociateTrials.push({
 });
 
 incongruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentHighestAssociate",
+    },
+    confidence: "x",
+});
+
+incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -4534,7 +4906,7 @@ incongruentHighestAssociateTrials.push({
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4589,6 +4961,18 @@ incongruentHighestAssociateTrials.push({
 }); 
 
 incongruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentHighestAssociate",
+    },
+    confidence: "x",
+});
+
+incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -4602,7 +4986,7 @@ incongruentHighestAssociateTrials.push({
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4657,6 +5041,18 @@ incongruentHighestAssociateTrials.push({
 }); 
 
 incongruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentHighestAssociate",
+    },
+    confidence: "x",
+});
+
+incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -4670,7 +5066,7 @@ incongruentHighestAssociateTrials.push({
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4725,6 +5121,18 @@ incongruentHighestAssociateTrials.push({
 }); 
 
 incongruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentHighestAssociate",
+    },
+    confidence: "x",
+});
+
+incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -4738,7 +5146,7 @@ incongruentHighestAssociateTrials.push({
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4793,6 +5201,18 @@ incongruentHighestAssociateTrials.push({
 });
 
 incongruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentHighestAssociate",
+    },
+    confidence: "x",
+});
+
+incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -4806,7 +5226,7 @@ incongruentHighestAssociateTrials.push({
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4861,6 +5281,18 @@ incongruentHighestAssociateTrials.push({
 }); 
 
 incongruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentHighestAssociate",
+    },
+    confidence: "x",
+});
+
+incongruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -4874,7 +5306,7 @@ incongruentHighestAssociateTrials.push({
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -4992,6 +5424,18 @@ congruentHighestAssociateTrials.push({
 }); 
 
 congruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentHighestAssociate_2",
+    },
+    confidence: "x",
+});
+
+congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -5005,7 +5449,7 @@ congruentHighestAssociateTrials.push({
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5018,7 +5462,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 0; i < 1; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial2.listB[i],
-        trial_duration: 2000,
+        trial_duration: durationForListWords,
         response_ends_trial: false,
             data: {
                 test_part: "test",
@@ -5087,6 +5531,18 @@ congruentHighestAssociateTrials.push({
 });
 
 congruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentHighestAssociate_2",
+    },
+    confidence: "x",
+});
+
+congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -5100,7 +5556,7 @@ congruentHighestAssociateTrials.push({
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5113,7 +5569,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 0; i < 1; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial3.listB[i],
-        trial_duration: 2000,
+        trial_duration: durationForListWords,
        response_ends_trial: false,
         data: {
             test_part: "test",
@@ -5182,6 +5638,18 @@ congruentHighestAssociateTrials.push({
 }); 
 
 congruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentHighestAssociate_2",
+    },
+    confidence: "x",
+});
+
+congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -5195,7 +5663,7 @@ congruentHighestAssociateTrials.push({
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5208,7 +5676,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 0; i < 1; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial4.listB[i],
-        trial_duration: 2000,
+        trial_duration: durationForListWords,
        response_ends_trial: false,
         data: {
             test_part: "test",
@@ -5277,6 +5745,18 @@ congruentHighestAssociateTrials.push({
 }); 
 
 congruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentHighestAssociate_2",
+    },
+    confidence: "x",
+});
+
+congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -5290,7 +5770,7 @@ congruentHighestAssociateTrials.push({
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5303,7 +5783,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 0; i < 1; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial5.listB[i],
-        trial_duration: 2000,
+        trial_duration: durationForListWords,
        response_ends_trial: false,
         data: {
             test_part: "test",
@@ -5372,6 +5852,18 @@ congruentHighestAssociateTrials.push({
 }); 
 
 congruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentHighestAssociate_2",
+    },
+    confidence: "x",
+});
+
+congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -5385,7 +5877,7 @@ congruentHighestAssociateTrials.push({
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5466,6 +5958,18 @@ congruentHighestAssociateTrials.push({
 }); 
 
 congruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentHighestAssociate_3",
+    },
+    confidence: "x",
+});
+
+congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -5479,7 +5983,7 @@ congruentHighestAssociateTrials.push({
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5561,6 +6065,18 @@ congruentHighestAssociateTrials.push({
 }); 
 
 congruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentHighestAssociate_3",
+    },
+    confidence: "x",
+});
+
+congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -5574,7 +6090,7 @@ congruentHighestAssociateTrials.push({
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5656,6 +6172,18 @@ congruentHighestAssociateTrials.push({
 });
 
 congruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentHighestAssociate_3",
+    },
+    confidence: "x",
+});
+
+congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -5669,7 +6197,7 @@ congruentHighestAssociateTrials.push({
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5751,6 +6279,18 @@ congruentHighestAssociateTrials.push({
 });
 
 congruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentHighestAssociate_3",
+    },
+    confidence: "x",
+});
+
+congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -5764,7 +6304,7 @@ congruentHighestAssociateTrials.push({
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5777,7 +6317,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 0; i < 3; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial10.listB[i],
-        trial_duration: 2000,
+        trial_duration: durationForListWords,
        response_ends_trial: false,
         data: {
             test_part: "test",
@@ -5845,6 +6385,18 @@ congruentHighestAssociateTrials.push({
 }); 
 
 congruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentHighestAssociate_4",
+    },
+    confidence: "x",
+});
+
+congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -5858,7 +6410,7 @@ congruentHighestAssociateTrials.push({
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5871,7 +6423,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 0; i < 3; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial11.listB[i],
-        trial_duration: 2000,
+        trial_duration: durationForListWords,
       response_ends_trial: false,
         data: {
             test_part: "test",
@@ -5940,6 +6492,18 @@ congruentHighestAssociateTrials.push({
 }); 
 
 congruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentHighestAssociate_4",
+    },
+    confidence: "x",
+});
+
+congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -5953,7 +6517,7 @@ congruentHighestAssociateTrials.push({
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -5966,7 +6530,7 @@ congruentHighestAssociateTrials.push({
 for (let i = 0; i < 3; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial12.listB[i],
-        trial_duration: 2000,
+        trial_duration: durationForListWords,
         response_ends_trial: false,
             data: {
                 test_part: "test",
@@ -6035,6 +6599,18 @@ congruentHighestAssociateTrials.push({
 });
 
 congruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentHighestAssociate_4",
+    },
+    confidence: "x",
+});
+
+congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -6048,7 +6624,7 @@ congruentHighestAssociateTrials.push({
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -6130,6 +6706,18 @@ congruentHighestAssociateTrials.push({
 }); 
 
 congruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentHighestAssociate_4",
+    },
+    confidence: "x",
+});
+
+congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -6143,7 +6731,7 @@ congruentHighestAssociateTrials.push({
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -6224,6 +6812,18 @@ congruentHighestAssociateTrials.push({
 }); 
 
 congruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentHighestAssociate_5",
+    },
+    confidence: "x",
+});
+
+congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -6237,7 +6837,7 @@ congruentHighestAssociateTrials.push({
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -6319,6 +6919,18 @@ congruentHighestAssociateTrials.push({
 });
 
 congruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentHighestAssociate_5",
+    },
+    confidence: "x",
+});
+
+congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -6332,7 +6944,7 @@ congruentHighestAssociateTrials.push({
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -6414,6 +7026,18 @@ congruentHighestAssociateTrials.push({
 }); 
 
 congruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentHighestAssociate_5",
+    },
+    confidence: "x",
+});
+
+congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -6427,7 +7051,7 @@ congruentHighestAssociateTrials.push({
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -6509,6 +7133,18 @@ congruentHighestAssociateTrials.push({
 }); 
 
 congruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentHighestAssociate_5",
+    },
+    confidence: "x",
+});
+
+congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -6522,7 +7158,7 @@ congruentHighestAssociateTrials.push({
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -6604,6 +7240,18 @@ congruentHighestAssociateTrials.push({
 }); 
 
 congruentHighestAssociateTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "congruentHighestAssociate_5",
+    },
+    confidence: "x",
+});
+
+congruentHighestAssociateTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -6617,7 +7265,7 @@ congruentHighestAssociateTrials.push({
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
-    trial_duration: 2000,
+    trial_duration: 1000,
     response_ends_trial: false,
     data: {
         test_part: "test",
@@ -6630,7 +7278,7 @@ congruentHighestAssociateTrials.push({
 
 let interleavedFinalStim = [];
 
-for (let i = 0; i <= 485; i++) {
+for (let i = 0; i <= 629; i++) {
     interleavedFinalStim.push(i);
 }
 
@@ -6664,38 +7312,38 @@ while (interleavedFinalStim.length > 0) {
 for (let i = 0; i <= randomizationFinal.length; i++) {
     if (randomizationFinal[i] === 0) {
             // first add 9 incongruent prototype items
-            for (let i = 0; i <= 8; i++) {
+            for (let i = 0; i <= 10; i++) {
                 interleavedFinalStim.push(incongruentPrototypeTrials[i]);
         }
             // then remove 9 incongruent prototype items
-            for (let i = 0; i <= 8; i++) {
+            for (let i = 0; i <= 10; i++) {
                 incongruentPrototypeTrials.shift();
             }
     } else if (randomizationFinal[i] === 1) {
             // ADD 9 congruent prototype items
-            for (let i = 0; i <= 8; i++) {
+            for (let i = 0; i <= 10; i++) {
                 interleavedFinalStim.push(congruentPrototypeTrials[i]);
             }
             // Remove 9 congruent prototype items
-            for (let i = 0; i <= 8; i++) {
+            for (let i = 0; i <= 10; i++) {
                 congruentPrototypeTrials.shift();
             }
     } else if (randomizationFinal[i] === 2) {
             // ADD 9 items from incongruent highest associates trials
-            for (let i = 0; i <= 8; i++) {
+            for (let i = 0; i <= 10; i++) {
                 interleavedFinalStim.push(incongruentHighestAssociateTrials[i]);
             }
             // Remove 9 incongruent highest associates items
-            for (let i = 0; i <= 8; i++) {
+            for (let i = 0; i <= 10; i++) {
                 incongruentHighestAssociateTrials.shift();
             }
     } else if (randomizationFinal[i] === 3) {
             // ADD 9 congruent highest associate items
-            for (let i = 0; i <= 8; i++) {
+            for (let i = 0; i <= 10; i++) {
                 interleavedFinalStim.push(congruentHighestAssociateTrials[i]);
             }
             // Remove 9 congruent highest associate items
-            for (let i = 0; i <= 8; i++) {
+            for (let i = 0; i <= 10; i++) {
                 congruentHighestAssociateTrials.shift();
             }
     }
