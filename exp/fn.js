@@ -10,7 +10,6 @@ function createTrial(
 ) {
     return {
         stimulus: list.stimulus,
-        // trial_duration: durationForListWords,
         trial_duration: wordPosition === "startTone" ? fixationDuration : durationForListWords,
         response_ends_trial: false,
         data: {

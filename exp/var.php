@@ -60,5 +60,4 @@ switch (version) {
         $.getScript("exp/var-visual.js");
         break;
 }
-
 </script>

@@ -10,7 +10,6 @@ let timeline = [];
 
 const preload = {
     type: jsPsychPreload,
-    // images: [],
     audio: [
         ...practiceTrial1.listA,
         ...practiceTrial2.listA,
@@ -32,7 +31,6 @@ const preload = {
     },
 };
 
-
 let before_instructions = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus:
@@ -46,10 +44,8 @@ let before_instructions = {
     },
 };
 
-
 let continue_trial = {
     type: jsPsychHtmlKeyboardResponse,
-    // prompt: "<p>press spacebar to continue!</p>",
     choices: [" "],
     stimulus: "stim/audio_instructions/silence.mp3",
     response_ends_trial: true,
@@ -57,11 +53,6 @@ let continue_trial = {
 
 let instructions_0 = {
     type: jsPsychAudioKeyboardResponse,
-    // prompt:
-        // "<p> Welcome to the experiment! </p>" +
-        // "<p> This experiment will be presented entirely in an auditory format.</p>" +
-        // "<p>  It should take about 30 minutes to complete.</p>" +
-        // "<p> <i> When you are ready to hear the instructions, please press the spacebar. </i> </p>",
     stimulus: "stim/audio_instructions/DRM_instructions_0.mp3",
    response_ends_trial: true,
     choices: [" "],
@@ -72,10 +63,6 @@ let instructions_0 = {
 
 let instructions_1 = {
     type: jsPsychAudioKeyboardResponse,
-    // prompt:
-        // "<p> This experiment assesses your ability to remember whether a particular word was presented in a list of words.</p>" +
-        // "<p>First, you will hear a list of six words. At the conclusion of the list, you will be asked if a particular word was on the list. If the word was on the list, press the “J” key. If the word was not on the list, press the “F ” key. </p>" +
-        // "<p> <i> Press the ”F” or “J” key to hear more instructions. </i> </p>",
     stimulus: "stim/audio_instructions/drm_instructions_1.mp3",
    response_ends_trial: true,
     choices: [" "],
@@ -83,7 +70,6 @@ let instructions_1 = {
 
 let instructions_responsePromptTone = {
     type: jsPsychAudioKeyboardResponse,
-    // prompt: "<p> double nosie. </p>",
     stimulus: responsePromptTone,
     choices: "NO_KEYS",
     response_ends_trial: false,
@@ -92,10 +78,6 @@ let instructions_responsePromptTone = {
 
 let instructions_after_example_reponsePromptTone = {
     type: jsPsychAudioKeyboardResponse,
-    // prompt:
-        // "<p> short tone </p>" ,
-       // "<p> To continue to a couple of practice trials, please press either the “F” or “J” key. </p>",
-        // "<p> <i> Alternatively, if you would like to hear the instructions again, press the spacebar. </i> </p>",
     stimulus: "stim/audio_instructions/drm_instructions_after_short_tone.mp3",
     response_ends_trial: true,
     choices: ["f", "j"],
@@ -104,7 +86,7 @@ let instructions_after_example_reponsePromptTone = {
 let instructions_2 = {
     type: jsPsychAudioKeyboardResponse,
     stimulus: "stim/audio_instructions/drm_instructions_2.mp3",
-    choices: "NO KEYS", // handled instead by buttonPress()
+    choices: "NO KEYS",
     response_ends_trial: false, // Trial ends automatically after audio completion
     trial_ends_after_audio: true,
 };
@@ -119,13 +101,12 @@ let instructions_2_continued= {
         timeRemaining +
         '<audio id="beep" src="stim/audio_tones/confidence.mp3"></audio>' +
         '<form autocomplete="off" action=""> <input autocomplete="false" name="hidden" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none;" onkeypress="">',
-   choices: "NO_KEYS", // For passive trials where no keys are needed
+   choices: "NO_KEYS", 
    on_load: () => {
         buttonPressWithArguments(70, 74, true);
     },
     response_ends_trial: false,
     on_finish: () => {
-        // remove confidence bar
         document.getElementById('keyBar').remove();
         document.getElementById('fillUp').remove();
         document.getElementById('feedbackGenerator').remove();
@@ -135,14 +116,8 @@ let instructions_2_continued= {
     }
 };
 
-//need to add in confidence bar here
 let instructions_3 = {
     type: jsPsychAudioKeyboardResponse,
-    // prompt:
-        // "<p> Please give your response as quickly as possible. </p>" +
-        // "<p> At the end of the response period, you will hear a double tone. </p>" +
-        // "<p> This tone indicates that the response period has ended. </p>" +
-        // "<p> <i> Press the spacebar to hear the double tone now. </i> </p>",
     stimulus: "stim/audio_instructions/drm_instructions_3.mp3",
     response_ends_trial: true,
     choices: [" "],
@@ -150,7 +125,6 @@ let instructions_3 = {
 
 let instructions_4 = {
     type: jsPsychAudioKeyboardResponse,
-    // prompt: "<p> double nosie. </p>",
     stimulus: trialStartTone,
     choices: "NO_KEYS",
     response_ends_trial: false,
@@ -159,30 +133,21 @@ let instructions_4 = {
 
 let instructions_5 = {
     type: jsPsychAudioKeyboardResponse,
-    // prompt:
-        // "<p> After you hear the double tone, the next trial will begin. </p>" +
-        // "<p> To continue to a couple of practice trials, please press either the “F” or “J” key. </p>",
-        // "<p> <i> Alternatively, if you would like to hear the instructions again, press the spacebar. </i> </p>",
     stimulus: "stim/audio_instructions/drm_instructions_5.mp3",
     response_ends_trial: false,
     trial_ends_after_audio: true, 
     choices: "NO KEYS",
-    // on_finish: function(data) {
-    //     if (data.response !== null) {
-    //         jsPsych.addNodeToEndOfTimeline({
-    //             timeline: [continue_trial]
-    //         });
-    //     }
-    // }
+    on_finish: function(data) {
+        if (data.response !== null) {
+            jsPsych.addNodeToEndOfTimeline({
+                timeline: [continue_trial]
+            });
+        }
+    }
 };
 
 let instructions_6 = {
     type: jsPsychAudioKeyboardResponse,
-    // prompt:  
-        // "<p> Fantastic! You completed the practice trials. </p>" +
-        // "<p> Remember, if the word was on the list, press the “J” key. </p>" +
-        // "<p>  If the word was not on the list, press the “F” key. </p>",
-        // "<p> <i> To hear the instructions and practice trials again, press the spacebar. To begin the experiment, press the “F” or “J” key. </i> </p>",
     stimulus: "stim/audio_instructions/drm_instructions_6.mp3",
     choices: "NO_KEYS",
     response_ends_trial: false,
@@ -214,17 +179,14 @@ let trials = {
         buttonPressWithArguments(70, 74, true);
     },
     on_start: () => {
-        //update progress bar with each iteration
         var currentProgressBarValue = jsPsych.getProgressBarCompleted();
         jsPsych.setProgressBar(currentProgressBarValue + 1 / numberOfTrials);
     },
     on_finish: (data) => {
         if (data.key_press === data.correct_response) {
-            // console.log("correct");
             data.accuracy = true;
             data.confidence = totalConfidence;
         } else if (data.key_press !== data.correct_response) {
-            // console.log("incorrect");
             data.accuracy = false;
             data.confidence = totalConfidence;
         } else {
@@ -235,81 +197,11 @@ let trials = {
     },
 };
 
-// const dataSave = {
-//     type: jsPsychHtmlKeyboardResponse,
-//     stimulus: dataSaveAnimation(),
-//     choices: "NO_KEYS",
-//     trial_duration: 5000,
-//     on_finish: () => {
-//         var curr_progress_bar_value = jsPsych.getProgressBarCompleted();
-//         jsPsych.setProgressBar(curr_progress_bar_value + 1 / 720);
-//         // const updatedScore =
-//         //     typeof score !== "undefined"
-//         //         ? score
-//         //         : jsPsych.data.get().select("score").values.slice(-1)[0]; // Replace 'score' with actual data key if necessary
-//         // Now, generate the thank you message with the updated score
-//         const thankYou = instructions[10];
-
-//         saveDataPromise(
-//             `${experimentAlias}_${subjectId}`,
-//             jsPsych.data.get().csv()
-//         )
-//             .then((response) => {
-//                 console.log("Data saved successfully.", response);
-//                 // Update the stimulus content directly via DOM manipulation
-//                 document.querySelector("#jspsych-content").innerHTML = thankYou;
-//             })
-//             .catch((error) => {
-//                 console.log("Failed to save data.", error);
-//                 // Check if the error object has 'error' property and use it, otherwise convert object to string
-//                 let errorMessage = error.error || JSON.stringify(error);
-//                 switch (errorMessage) {
-//                     case '{"success":false}':
-//                         errorMessage =
-//                             "The ./data directory does not exit on this server.";
-//                         break;
-//                     case "Not Found":
-//                         errorMessage =
-//                             "There was an error saving the file to disk.";
-//                         break;
-//                     default:
-//                         errorMessage = "Unknown error.";
-//                 }
-//                 // Update the stimulus content directly via DOM manipulation
-//                 const dataFailure = `
-//               <div class="error-page">
-//                   <p>Oh no!</p>
-//                   <p>An error has occured and your data has not been saved:</p>
-//                   <p>${errorMessage}</p>
-//                   <p>Please wait for the experimenter to continue.</p>
-//               </div>`;
-//                 document.querySelector("#jspsych-content").innerHTML =
-//                     dataFailure;
-//             })
-//             .finally(() => {
-//                 document.getElementById("unload").onbeforeunload = ""; // Removes popup
-//                 $("body").addClass("showCursor"); // Returns cursor functionality
-//                 closeFullscreen(); // Kill fullscreen
-//                 if (!src_subject_id) {
-//                     window.location.replace(redirectLink);
-//                 }
-//             });
-//     },
-// };
-
-// $.getScript("exp/main.js");
-
 let instructions_7 = {
     type: jsPsychAudioKeyboardResponse,
-    // prompt:
-        // "<p> x </p>",
-       // "<p> Remember, if the word was on the list, press the “J” key. </p>" +
-       // "<p>  If the word was not on the list, press the “F” key. </p>",
-        // "<p> <i> To hear the instructions and practice trials again, press the spacebar. To begin the experiment, press the “F” or “J” key. </i> </p>",
     stimulus: "stim/audio_instructions/drm_instructions_7.mp3",
     choices: [" "],
     response_ends_trial: true,
-    //trial_duration: 100000,
 };
 
 const dataSave = {
@@ -320,25 +212,18 @@ const dataSave = {
     on_finish: () => {
         var curr_progress_bar_value = jsPsych.getProgressBarCompleted();
         jsPsych.setProgressBar(curr_progress_bar_value + 1 / 720);
-        // const updatedScore =
-        //     typeof score !== "undefined"
-        //         ? score
-        //         : jsPsych.data.get().select("score").values.slice(-1)[0]; // Replace 'score' with actual data key if necessary
-        // Now, generate the thank you message with the updated score
-        const thankYou = instructions[10];
 
+        const thankYou = instructions[10];
         saveDataPromise(
             `${experimentAlias}_${subjectId}`,
             jsPsych.data.get().csv()
         )
             .then((response) => {
                 console.log("Data saved successfully.", response);
-                // Update the stimulus content directly via DOM manipulation
                 document.querySelector("#jspsych-content").innerHTML = thankYou;
             })
             .catch((error) => {
                 console.log("Failed to save data.", error);
-                // Check if the error object has 'error' property and use it, otherwise convert object to string
                 let errorMessage = error.error || JSON.stringify(error);
                 switch (errorMessage) {
                     case '{"success":false}':
@@ -352,21 +237,20 @@ const dataSave = {
                     default:
                         errorMessage = "Unknown error.";
                 }
-                // Update the stimulus content directly via DOM manipulation
                 const dataFailure = `
-              <div class="error-page">
-                  <p>Oh no!</p>
-                  <p>An error has occured and your data has not been saved:</p>
-                  <p>${errorMessage}</p>
-                  <p>Please wait for the experimenter to continue.</p>
-              </div>`;
+                <div class="error-page">
+                    <p>Oh no!</p>
+                    <p>An error has occured and your data has not been saved:</p>
+                    <p>${errorMessage}</p>
+                    <p>Please wait for the experimenter to continue.</p>
+                </div>`;
                 document.querySelector("#jspsych-content").innerHTML =
                     dataFailure;
             })
             .finally(() => {
-                document.getElementById("unload").onbeforeunload = ""; // Removes popup
-                $("body").addClass("showCursor"); // Returns cursor functionality
-                closeFullscreen(); // Kill fullscreen
+                document.getElementById("unload").onbeforeunload = ""; 
+                $("body").addClass("showCursor"); 
+                closeFullscreen(); 
                 if (!src_subject_id) {
                     window.location.replace(redirectLink);
                 }

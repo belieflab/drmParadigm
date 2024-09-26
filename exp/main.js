@@ -1,9 +1,7 @@
 // main order in which things are pushed to timeline
-
 let practiceSection = {
     timeline: [trials],
     timeline_variables: practiceTrials,
-    
 };
 
 let testSection = {
@@ -33,8 +31,6 @@ timeline.push(instructions_7);
 
 timeline.push(dataSave);
 
-// don't allow experiment to start unless subjectId is set
 if (subjectId) {
-    // New jsPsych 7.x syntax
     jsPsych.run(timeline);
 }
