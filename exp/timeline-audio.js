@@ -174,7 +174,6 @@ let instructions_6 = {
     type: jsPsychAudioKeyboardResponse,
     stimulus: audioInstructions.instruction6,
     type: jsPsychAudioKeyboardResponse,
-    stimulus: audioInstructions.instruction1,
     choices: "NO_KEYS",
     response_ends_trial: false,
     trial_ends_after_audio: true,  
