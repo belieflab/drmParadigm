@@ -183,6 +183,10 @@ let continue_to_testSection = {
     stimulus: audioInstructions.silence,
     choices: [" "],  
     response_ends_trial: true,  
+    trial_ends_after_audio: false,
+    on_start: function () {
+        jsPsych.setProgressBar(0);
+    },
 }
 
 let trials = {
