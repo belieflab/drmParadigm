@@ -16,7 +16,6 @@ const preload = {
         trialStartTone,
         responsePromptTone,
         "stim/audio_tones/confidence.mp3",
-        "stim/audio_instructions/DRM_instructions_0.mp3",
         audioFiles,
     ],
     show_detailed_errors: true,
@@ -31,6 +30,19 @@ const preload = {
     },
 };
 
+const audioInstructions = {
+    silence: "stim/audio_instructions/silence.mp3",
+    instruction0: "stim/audio_instructions/DRM_instructions_0.mp3",
+    instruction1: "stim/audio_instructions/drm_instructions_1.mp3",
+    shortTone: "stim/audio_tones/tone_1.mp3",
+    instructionsAfterShortTone: "stim/audio_instructions/drm_instructions_after_short_tone.mp3",
+    instruction2: "stim/audio_instructions/drm_instructions_2.mp3",
+    instruction3: "stim/audio_instructions/drm_instructions_3.mp3",
+    instruction5: "stim/audio_instructions/drm_instructions_5.mp3",
+    instruction6: "stim/audio_instructions/drm_instructions_6.mp3",
+    instruction7: "stim/audio_instructions/drm_instructions_7.mp3",
+};
+
 let before_instructions = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus:
@@ -38,7 +50,7 @@ let before_instructions = {
         "<p>Please make sure that you increase the volume on your computer.</p>" +
         "<p>If you are blind and use a screenreader (e.g., JAWS, NVDA, VoiceOver), we highly recommend that you turn it off before starting the experiment.</p>" +
         "<p> <i> Press the spacebar to start hearing the instructions. </i> </p>",
-    choices: [" "], //ascii spacebar
+    choices: [" "], 
     on_start: function () {
         jsPsych.setProgressBar(0);
     },
@@ -47,26 +59,36 @@ let before_instructions = {
 let continue_trial = {
     type: jsPsychHtmlKeyboardResponse,
     choices: [" "],
-    stimulus: "stim/audio_instructions/silence.mp3",
+    stimulus: audioInstructions.silence,
     response_ends_trial: true,
 };
 
 let instructions_0 = {
     type: jsPsychAudioKeyboardResponse,
-    stimulus: "stim/audio_instructions/DRM_instructions_0.mp3",
-   response_ends_trial: true,
-    choices: [" "],
+    stimulus: audioInstructions.instruction0,
+    choices: "NO_KEYS",
+    response_ends_trial: false,
+    trial_ends_after_audio: true,
     on_start: function () {
         jsPsych.setProgressBar(0);
-    },
+    }
 };
 
+// take out short tone sound at end of audio here - added as short_tone object in timeline
 let instructions_1 = {
     type: jsPsychAudioKeyboardResponse,
-    stimulus: "stim/audio_instructions/drm_instructions_1.mp3",
-   response_ends_trial: true,
-    choices: [" "],
+    stimulus: audioInstructions.instruction1,
+    choices: "NO_KEYS",
+    response_ends_trial: false,
+    trial_ends_after_audio: true,
 };
+// (this is the last part of the instructions_1) - short tone is played after pressing spacebar 
+let short_tone = {
+    type: jsPsychAudioKeyboardResponse,
+    stimulus: audioInstructions.shortTone,
+    response_ends_trial: true,
+    choices: [" "],
+}
 
 let instructions_responsePromptTone = {
     type: jsPsychAudioKeyboardResponse,
@@ -78,22 +100,30 @@ let instructions_responsePromptTone = {
 
 let instructions_after_example_reponsePromptTone = {
     type: jsPsychAudioKeyboardResponse,
-    stimulus: "stim/audio_instructions/drm_instructions_after_short_tone.mp3",
+    stimulus: audioInstructions.instructionsAfterShortTone,
+    choices: "NO_KEYS",
+    response_ends_trial: false,
+    trial_ends_after_audio: true,
+};
+
+let pressJorF = {
+    type: jsPsychAudioKeyboardResponse,
+    stimulus: audioInstructions.silence,
     response_ends_trial: true,
     choices: ["f", "j"],
-};
+}
 
 let instructions_2 = {
     type: jsPsychAudioKeyboardResponse,
-    stimulus: "stim/audio_instructions/drm_instructions_2.mp3",
+    stimulus: audioInstructions.instruction2,
     choices: "NO KEYS",
-    response_ends_trial: false, // Trial ends automatically after audio completion
+    response_ends_trial: false,
     trial_ends_after_audio: true,
 };
 
 let instructions_2_continued= {
     type: jsPsychAudioKeyboardResponse,
-    stimulus: 'stim/audio_instructions/silence.mp3',
+    stimulus: audioInstructions.silence,
     prompt: 
         progressBar +
         fillUp +
@@ -118,9 +148,10 @@ let instructions_2_continued= {
 
 let instructions_3 = {
     type: jsPsychAudioKeyboardResponse,
-    stimulus: "stim/audio_instructions/drm_instructions_3.mp3",
-    response_ends_trial: true,
-    choices: [" "],
+    stimulus: audioInstructions.instruction3,
+    choices: "NO KEYS",
+    response_ends_trial: false,
+    trial_ends_after_audio: true,
 };
 
 let instructions_4 = {
@@ -133,30 +164,18 @@ let instructions_4 = {
 
 let instructions_5 = {
     type: jsPsychAudioKeyboardResponse,
-    stimulus: "stim/audio_instructions/drm_instructions_5.mp3",
+    stimulus: audioInstructions.instruction5,
     response_ends_trial: false,
     trial_ends_after_audio: true, 
     choices: "NO KEYS",
-    on_finish: function(data) {
-        if (data.response !== null) {
-            jsPsych.addNodeToEndOfTimeline({
-                timeline: [continue_trial]
-            });
-        }
-    }
 };
 
 let instructions_6 = {
     type: jsPsychAudioKeyboardResponse,
-    stimulus: "stim/audio_instructions/drm_instructions_6.mp3",
+    stimulus: audioInstructions.instruction6,
     choices: "NO_KEYS",
     response_ends_trial: false,
     trial_ends_after_audio: true,
-    on_finish: function() {
-        jsPsych.addNodeToEndOfTimeline({
-            timeline: [continue_trial]
-        });
-    }
 }
 
 let trials = {
@@ -173,7 +192,7 @@ let trials = {
     },
     trial_duration: jsPsych.timelineVariable("trial_duration"),
     response_ends_trial: jsPsych.timelineVariable("response_ends_trial"),
-    choices: ["NO KEYS"], // handled instead by buttonPress()
+    choices: ["NO KEYS"],
 
     on_load: () => {
         buttonPressWithArguments(70, 74, true);
@@ -199,9 +218,10 @@ let trials = {
 
 let instructions_7 = {
     type: jsPsychAudioKeyboardResponse,
-    stimulus: "stim/audio_instructions/drm_instructions_7.mp3",
-    choices: [" "],
-    response_ends_trial: true,
+    stimulus: audioInstructions.instruction7,
+    choices: "NO_KEYS",
+    response_ends_trial: false,
+    trial_ends_after_audio: true,
 };
 
 const dataSave = {

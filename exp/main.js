@@ -13,21 +13,26 @@ timeline.push(preload);
 
 timeline.push(before_instructions);
 timeline.push(instructions_0);
+timeline.push(continue_trial);
 timeline.push(instructions_1);
+timeline.push(short_tone);
 timeline.push(instructions_responsePromptTone);
 timeline.push(instructions_after_example_reponsePromptTone);
+timeline.push(pressJorF); 
 timeline.push(instructions_2);
 timeline.push(instructions_2_continued);
 timeline.push(instructions_3);
+timeline.push(continue_trial);
 timeline.push(instructions_4);
 timeline.push(instructions_5);
 timeline.push(continue_trial);
 timeline.push(practiceSection);
-// timeline.push(continue_trial);
+timeline.push(continue_trial);
 timeline.push(instructions_6);
 timeline.push(continue_trial);
 timeline.push(testSection);
 timeline.push(instructions_7);
+timeline.push(continue_trial);
 
 timeline.push(dataSave);
 
