@@ -1160,6 +1160,18 @@ incongruentPrototypeTrials.push({
 });
 
 incongruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentPrototype",
+    },
+    confidence: "x",
+});
+
+incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -1225,6 +1237,18 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+});
+
+incongruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentPrototype",
+    },
+    confidence: "x",
 });
 
 incongruentPrototypeTrials.push({
@@ -1296,6 +1320,18 @@ incongruentPrototypeTrials.push({
 });
 
 incongruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentPrototype",
+    },
+    confidence: "x",
+});
+
+incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -1361,6 +1397,18 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+});
+
+incongruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentPrototype",
+    },
+    confidence: "x",
 });
 
 incongruentPrototypeTrials.push({
@@ -1432,6 +1480,18 @@ incongruentPrototypeTrials.push({
 });
 
 incongruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentPrototype",
+    },
+    confidence: "x",
+});
+
+incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -1497,6 +1557,18 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+});
+
+incongruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentPrototype",
+    },
+    confidence: "x",
 });
 
 incongruentPrototypeTrials.push({
@@ -1568,6 +1640,18 @@ incongruentPrototypeTrials.push({
 });
 
 incongruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentPrototype",
+    },
+    confidence: "x",
+});
+
+incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -1633,6 +1717,18 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+});
+
+incongruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentPrototype",
+    },
+    confidence: "x",
 });
 
 incongruentPrototypeTrials.push({
@@ -1704,6 +1800,18 @@ incongruentPrototypeTrials.push({
 });
 
 incongruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentPrototype",
+    },
+    confidence: "x",
+});
+
+incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -1769,6 +1877,18 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+});
+
+incongruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentPrototype",
+    },
+    confidence: "x",
 });
 
 incongruentPrototypeTrials.push({
@@ -1840,6 +1960,18 @@ incongruentPrototypeTrials.push({
 }); 
 
 incongruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentPrototype",
+    },
+    confidence: "x",
+});
+
+incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -1905,6 +2037,18 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+});
+
+incongruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentPrototype",
+    },
+    confidence: "x",
 });
 
 incongruentPrototypeTrials.push({
@@ -1976,6 +2120,18 @@ incongruentPrototypeTrials.push({
 }); 
 
 incongruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentPrototype",
+    },
+    confidence: "x",
+});
+
+incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -2042,6 +2198,18 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
 }); 
+
+incongruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentPrototype",
+    },
+    confidence: "x",
+});
 
 incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
@@ -2112,6 +2280,18 @@ incongruentPrototypeTrials.push({
 }); 
 
 incongruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentPrototype",
+    },
+    confidence: "x",
+});
+
+incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -2177,6 +2357,18 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+});
+
+incongruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentPrototype",
+    },
+    confidence: "x",
 });
 
 incongruentPrototypeTrials.push({
@@ -2248,6 +2440,18 @@ incongruentPrototypeTrials.push({
 }); 
 
 incongruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentPrototype",
+    },
+    confidence: "x",
+});
+
+incongruentPrototypeTrials.push({
     stimulus: trialStartTone,
     trial_duration: fixationDuration,
     response_ends_trial: false,
@@ -2313,6 +2517,18 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
+});
+
+incongruentPrototypeTrials.push({
+    stimulus: "stim/audio_instructions/silence.mp3",
+    trial_duration: 1000,
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: "stim/audio_instructions/silence.mp3",
+        drmTrial_type: "incongruentPrototype",
+    },
+    confidence: "x",
 });
 
 incongruentPrototypeTrials.push({
