@@ -74,7 +74,6 @@ let instructions_0 = {
     }
 };
 
-// take out short tone sound at end of audio here - added as short_tone object in timeline
 let instructions_1 = {
     type: jsPsychAudioKeyboardResponse,
     stimulus: audioInstructions.instruction1,
@@ -82,17 +81,17 @@ let instructions_1 = {
     response_ends_trial: false,
     trial_ends_after_audio: true,
 };
-// (this is the last part of the instructions_1) - short tone is played after pressing spacebar 
+
+let pause_before_short_tone = {
+    type: jsPsychAudioKeyboardResponse,
+    stimulus: audioInstructions.silence,
+    choices: [" "],
+    response_ends_trial: true,
+};
+
 let short_tone = {
     type: jsPsychAudioKeyboardResponse,
     stimulus: audioInstructions.shortTone,
-    response_ends_trial: true,
-    choices: [" "],
-}
-
-let instructions_responsePromptTone = {
-    type: jsPsychAudioKeyboardResponse,
-    stimulus: responsePromptTone,
     choices: "NO_KEYS",
     response_ends_trial: false,
     trial_ends_after_audio: true,
