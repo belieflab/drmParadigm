@@ -165,24 +165,38 @@ let instructions_4 = {
 let instructions_5 = {
     type: jsPsychAudioKeyboardResponse,
     stimulus: audioInstructions.instruction5,
+    choices: "NO KEYS",
     response_ends_trial: false,
     trial_ends_after_audio: true, 
-    choices: "NO KEYS",
 };
 
 let instructions_6 = {
     type: jsPsychAudioKeyboardResponse,
     stimulus: audioInstructions.instruction6,
-    choices: "NO_KEYS",  
-    trial_ends_after_audio: true,
+    type: jsPsychAudioKeyboardResponse,
+    stimulus: audioInstructions.instruction1,
+    choices: "NO_KEYS",
     response_ends_trial: false,
+    trial_ends_after_audio: true,  
+    on_start: function() {
+        console.log("Starting instructions_6");
+    },
+    on_finish: function() {
+        console.log("Finished instructions_6");
+    }
 };
 
 let continue_to_testSection = {
     type: jsPsychAudioKeyboardResponse,
     stimulus: audioInstructions.silence,
-    response_ends_trial: true,
     choices: [" "],
+    response_ends_trial: true,
+    on_start: function() {
+        console.log("Starting continue_to_testSection");
+    },
+    on_finish: function() {
+        console.log("Finished continue_to_testSection");
+    }
 }
 
 let trials = {
