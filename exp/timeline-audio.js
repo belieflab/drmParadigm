@@ -173,9 +173,16 @@ let instructions_5 = {
 let instructions_6 = {
     type: jsPsychAudioKeyboardResponse,
     stimulus: audioInstructions.instruction6,
-    choices: "NO_KEYS",
+    choices: "NO_KEYS",  
     response_ends_trial: false,
     trial_ends_after_audio: true,
+};
+
+let continue_to_testSection = {
+    type: jsPsychHtmlKeyboardResponse,
+    stimulus: audioInstructions.silence,
+    choices: [" "],  
+    response_ends_trial: true,  
 }
 
 let trials = {
