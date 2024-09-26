@@ -1,5 +1,32 @@
 "use strict";
 
+let silentPause = "stim/audio_instructions/silence.mp3";
+let startTrial = "stim/audio_tones/tone_2.mp3";
+
+let pauseTrial = {
+    stimulus: silentPause, 
+    trial_duration: 500, 
+    response_ends_trial: false,
+    data: {
+        test_part: "practice",
+        stim: silentPause,
+        drmTrial_type: "practice",
+    },
+    confidence: "x",
+};
+
+let startToneTrial = {
+    stimulus: startTrial, 
+    trial_duration: 500,
+    response_ends_trial: false,
+    data: {
+        test_part: "practice",
+        stim: startTrial,
+        drmTrial_type: "practice",
+    },
+    confidence: "x",
+};
+
 let isTonePlaying = false;
 
 function createTrial(
@@ -25,15 +52,6 @@ function createTrial(
                 trial.stimulus = audio;
             });
         },
-        on_finish: function(data) {
-            if (wordPosition === "startTone") {
-            } else if (wordPosition === "list" && data.trial_index === 0) {
-                jsPsych.pauseExperiment();
-                setTimeout(() => {
-                    jsPsych.resumeExperiment();
-                }, 250); // 250ms delay after first word
-            }
-        }
     };
 }
 
@@ -67,13 +85,9 @@ function createTargetTrial(stimulus, trialType, isPractice = false) {
 function createTrialSet(list, trialType, isPractice = false) {
     let trials = [];
 
-    trials.push(createTrial(
-        { stimulus: trialStartTone }, 
-        trialType + "_startTone", 
-        "startTone", 
-        isPractice
-    ));
-    
+    trials.push(startToneTrial);
+    trials.push(pauseTrial);
+
     if (trials.length > 0) {
         if (trials[0]) {
             trials[0].trial_duration = fixationDuration;
