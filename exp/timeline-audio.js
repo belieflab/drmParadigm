@@ -175,10 +175,7 @@ let instructions_6 = {
     type: jsPsychAudioKeyboardResponse,
     choices: "NO_KEYS",
     response_ends_trial: false,
-    trial_ends_after_audio: true,  
-    on_start: function() {
-        console.log("Starting instructions_6");
-    },
+    trial_ends_after_audio: true, 
     on_finish: function() {
         console.log("Finished instructions_6");
     }

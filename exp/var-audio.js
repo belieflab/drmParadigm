@@ -1,21 +1,17 @@
 "use strict";
 
-// starts counting of trials at 1 to display in output file as trial
 let trialIterator = 1;
 
 var responseOptions =
     "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br><br>";
 
-// feedback contrainer
 let feedbackGenerator = '<p id="feedbackGenerator" style="color:black;"></p>';
 
 // tracks total taps per trial
 let totalConfidence = 0; // must be 0 to compensate for participant should they miss first trial
 
-// // user selection of allergy or no-allergy
 let responseKey;
 
-// progress bar container
 let progressBar =
     '<div id="counter" class="w3-container" style="color:black"><div class="w3-light-grey"><div class="w3-grey" id="keyBar" style="height:24px;width:0%;"></div></div><br><div>';
 let fillUp = '<p id="fillUp" style="color:white;"></p>';
@@ -24,7 +20,6 @@ let fillUp = '<p id="fillUp" style="color:white;"></p>';
 let timeRemaining =
     '<p id="timeRemaining" style="text-align:center; color:white;"></p>';
 
-// define tones that are used between list and target presentation and at ITI
 const trialStartTone = "stim/audio_tones/tone_2.mp3";
 const responsePromptTone = "stim/audio_tones/tone_1.mp3";
 const silence = "stim/audio_instructions/silence.mp3";

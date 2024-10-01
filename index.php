@@ -6,11 +6,11 @@
 <html>
   <head>
     <!-- add the title of the experiment that would be seen in the browser -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      document.title = `${experimentAlias.toUpperCase()}`;
-    });
-  </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        document.title = `${experimentAlias.toUpperCase()}`;
+      });
+    </script>
     <!-- favicon -->
     <script type="image/ico" rel="icon" src="./wrap/favicon.ico" ></script>
     <!-- PHP wrapper libraries -->

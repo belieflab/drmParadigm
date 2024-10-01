@@ -1,34 +1,28 @@
 "use strict";
 
-// starts counting of trials at 1 to display in output file as trial
 let trialIterator = 1;
 
 var responseOptions =
     "f &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspj  <br><br> Hold response key to indicate confidence level.";
 
-// feedback contrainer
 let feedbackGenerator = '<p id="feedbackGenerator" style="color:black;"></p>';
 
 // tracks total taps per trial
 let totalConfidence = [0]; // must be 0 to compensate for participant should they miss first trial
 
-// // user selection of yes or no
 let responseKey;
 
-// progress bar container
 let progressBar =
     '<div id="counter" class="w3-container" style="color:black"><div class="w3-light-grey"><div class="w3-grey" id="keyBar" style="height:24px;width:0%;"></div></div><br><div>';
 let fillUp = '<p id="fillUp" style="color:black;"></p>';
 
-// set the time remaining notification for participant
+// set time remaining notification for participant
 let timeRemaining =
     '<p id="timeRemaining" style="text-align:center; color:black;"></p>';
 
 let responseKeySelectionFigure = "<img src='stim/newdrm-keypressoptions.png'>";
 
-// define all language for experiment
-
-//First, create words to be used in practice trials
+// words to be used in practice trials
 const atom = "atom";
 const molecule = "molecule";
 const bond = "bond";
@@ -60,7 +54,6 @@ let practiceTrial1 = practiceLists[0];
 let practiceTrial2 = practiceLists[1];
 
 let practiceTrials = [];
-// pushes 6 items from listA
 for (let i = 0; i < practiceTrial1.listA.length; i++) {
     practiceTrials.push({
         prompt: "",
@@ -77,8 +70,7 @@ for (let i = 0; i < practiceTrial1.listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 
 practiceTrials.push({
@@ -102,7 +94,7 @@ practiceTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 practiceTrials.push({
     prompt: "",
     stimulus: "",
@@ -112,7 +104,7 @@ practiceTrials.push({
     prompt_end: " ",
     data: { test_part: "practice", stim: "fixation", condition: "practice" },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
 for (let i = 0; i < practiceTrial2.listA.length; i++) {
     practiceTrials.push({
@@ -130,8 +122,7 @@ for (let i = 0; i < practiceTrial2.listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 
 practiceTrials.push({
@@ -154,7 +145,7 @@ practiceTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 practiceTrials.push({
     prompt: "",
     stimulus: "",
@@ -164,9 +155,9 @@ practiceTrials.push({
     prompt_end: " ",
     data: { test_part: "practice", stim: "fixation", condition: "practice" },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// define all variables in listNumber1 : Anger
+// variables in listNumber1 : Anger
 const anger = "anger";
 const hate = "hate";
 const temper = "temper";
@@ -193,7 +184,7 @@ let Anger = {
     lowestAssociate: enrage,
 };
 
-// define all variables in listNumber2 : Army
+// variables in listNumber2 : Army
 const unitedStates = "united states";
 const airForce = "air force";
 const military = "military";
@@ -220,7 +211,7 @@ let Army = {
     lowestAssociate: combat,
 };
 
-// define all variables in listNumber3 : Black
+// variables in listNumber3 : Black
 const black = "black";
 const cat = "cat";
 const night = "night";
@@ -247,7 +238,7 @@ let Black = {
     lowestAssociate: gray,
 };
 
-//Define variables for list 4:Bread
+// variables for list 4:Bread
 const bread = "bread";
 const eat = "eat";
 const rye = "rye";
@@ -274,7 +265,7 @@ let Bread = {
     lowestAssociate: toast,
 };
 
-//Define all variables for list 5: Car
+// variables for list 5: Car
 const car = "car";
 const train = "train";
 const vehicle = "vehicle";
@@ -301,7 +292,7 @@ let Car = {
     lowestAssociate: taxi,
 };
 
-//Define all variables for list 6: Chair
+// variables for list 6: Chair
 const chair = "chair";
 const legs = "legs";
 const couch = "couch";
@@ -328,7 +319,7 @@ let Chair = {
     lowestAssociate: bench,
 };
 
-//Define all variables for list 7: City
+// variables for list 7: City
 const city = "city";
 const state = "state";
 const streets = "streets";
@@ -355,6 +346,7 @@ let City = {
     lowestAssociate: urban,
 };
 
+// variables for list 8: Cold
 const cold = "cold";
 const warm = "warm";
 const ice = "ice";
@@ -380,7 +372,8 @@ let Cold = {
     highestAssociates: [hot, snow],
     lowestAssociate: frost,
 };
-//Define all variables for list 9: Cup
+
+// variables for list 9: Cup
 const cup = "cup";
 const tea = "tea";
 const coaster = "coaster";
@@ -407,7 +400,7 @@ let Cup = {
     lowestAssociate: sip,
 };
 
-//Define all variables for list 10: Doctor
+// variables for list 10: Doctor
 const doctor = "doctor";
 const lawyer = "lawyer";
 const health = "health";
@@ -434,7 +427,7 @@ let Doctor = {
     lowestAssociate: cure,
 };
 
-//Define all variables for list 11: Flag
+// variables for list 11: Flag
 const flag = "flag";
 const symbol = "symbol";
 const anthem = "anthem";
@@ -461,7 +454,7 @@ let Flag = {
     lowestAssociate: pendant,
 };
 
-//Define all variables for list 12: Foot
+// variables for list 12: Foot
 const foot = "foot";
 const toe = "toe";
 const sandals = "sandals";
@@ -488,7 +481,7 @@ let Foot = {
     lowestAssociate: mouth,
 };
 
-//Define all variables for list 13: Fruit
+// variables for list 13: Fruit
 const fruit = "fruit";
 const orange = "orange";
 const citrus = "citrus";
@@ -515,7 +508,7 @@ let Fruit = {
     lowestAssociate: cocktail,
 };
 
-//Define all variables for list 14: Girl
+// variables for list 14: Girl
 const girl = "girl";
 const female = "female";
 const dress = "dress";
@@ -542,7 +535,7 @@ let Girl = {
     lowestAssociate: sister,
 };
 
-//Define all variables for list 15: High
+// variables for list 15: High
 const high = "high";
 const up = "up";
 const tower = "tower";
@@ -569,7 +562,7 @@ let High = {
     lowestAssociate: elevate,
 };
 
-//Define all variables for list 16: King
+// variables for list 16: King
 const king = "king";
 const crown = "crown";
 const george = "george";
@@ -596,7 +589,7 @@ let King = {
     lowestAssociate: reign,
 };
 
-//Define all variables for list 17: Lion
+// variables for list 17: Lion
 const lion = "lion";
 const jungle = "jungle";
 const den = "den";
@@ -623,7 +616,7 @@ let Lion = {
     lowestAssociate: pride,
 };
 
-//Define all variables for list 18: Man
+// variables for list 18: Man
 const man = "man";
 const uncle = "uncle";
 const mouse = "mouse";
@@ -650,7 +643,7 @@ let Man = {
     lowestAssociate: old,
 };
 
-//Define all variables for list 19: Mountain
+// variables for list 19: Mountain
 const mountain = "mountain";
 const climb = "climb";
 const top2 = "top";
@@ -677,7 +670,7 @@ let Mountain = {
     lowestAssociate: ski,
 };
 
-//Define all variables for list 20: Music
+// variables for list 20: Music
 const music = "music";
 const piano = "piano";
 const radio = "radio";
@@ -704,7 +697,7 @@ let Music = {
     lowestAssociate: rhythm,
 };
 
-//Define all variables for list 21: Needle
+// variables for list 21: Needle
 const needle = "needle";
 const eye = "eye";
 const sharp = "sharp";
@@ -731,7 +724,7 @@ let Needle = {
     lowestAssociate: knitting,
 };
 
-//Define all variables for list 22: Pen
+// variables for list 22: Pen
 const pen = "pen";
 const fountain = "fountain";
 const quill = "quill";
@@ -758,7 +751,7 @@ let Pen = {
     lowestAssociate: letter,
 };
 
-//Define all variables for list 23: River
+// variables for list 23: River
 const river = "river";
 const lake = "lake";
 const boat = "boat";
@@ -785,7 +778,7 @@ let River = {
     lowestAssociate: winding,
 };
 
-//Define all variables for list 24: Rough
+// variables for list 24: Rough
 const rough = "rough";
 const road = "road";
 const sandpaper = "sandpaper";
@@ -812,7 +805,7 @@ let Rough = {
     lowestAssociate: gravel,
 };
 
-//Define all variables for list 25: Rubber
+// variables for list 25: Rubber
 const rubber = "rubber";
 const gloves = "gloves";
 const ball = "ball";
@@ -839,7 +832,7 @@ let Rubber = {
     lowestAssociate: stretch,
 };
 
-//Define all variables for list 26: Shirt
+// variables for list 26: Shirt
 const shirt = "shirt";
 const pants = "pants";
 const button = "button";
@@ -866,7 +859,7 @@ let Shirt = {
     lowestAssociate: cuffs,
 };
 
-//Define all variables for list 27: Sleep
+// variables for list 27: Sleep
 const sleep = "sleep";
 const awake = "awake";
 const dream = "dream";
@@ -893,7 +886,7 @@ let Sleep = {
     lowestAssociate: drowsy,
 };
 
-//Define all variables for list 28: Slow
+// variables for list 28: Slow
 const slow = "slow";
 const stop = "stop";
 const snail = "snail";
@@ -920,7 +913,7 @@ let Slow = {
     lowestAssociate: molasses,
 };
 
-//Define all variables for list 29: Smell
+// variables for list 29: Smell
 const smell = "smell";
 const sniff = "sniff";
 const hear = "hear";
@@ -947,7 +940,7 @@ let Smell = {
     lowestAssociate: rose,
 };
 
-//Define all variables for list 30: Smoke
+// variables for list 30: Smoke
 const smoke = "smoke";
 const blaze = "blaze";
 const pollution = "pollution";
@@ -974,7 +967,7 @@ let Smoke = {
     lowestAssociate: stain,
 };
 
-//Define all variables for list 31: Soft
+// variables for list 31: Soft
 const soft = "soft";
 const pillow = "pillow";
 const loud = "loud";
@@ -1001,7 +994,7 @@ let Soft = {
     lowestAssociate: tender,
 };
 
-//Define all variables for list 32: Spider
+// variables for list 32: Spider
 const spider = "spider";
 const big2 = "big";
 const fly = "fly";
@@ -1028,7 +1021,7 @@ let Spider = {
     lowestAssociate: small,
 };
 
-//Define all variables for list 33: Sweet
+// variables for list 33: Sweet
 const sweet = "sweet";
 const sugar = "sugar";
 const good = "good";
@@ -1055,7 +1048,7 @@ let Sweet = {
     lowestAssociate: pie,
 };
 
-//Define all variables for list 34: Thief
+// variables for list 34: Thief
 const thief = "thief";
 const crook = "crook";
 const money = "money";
@@ -1082,7 +1075,7 @@ let Thief = {
     lowestAssociate: criminal,
 };
 
-//Define all variables for list 35: Trash
+// variables for list 35: Trash
 const trash = "trash";
 const can = "can";
 const sewage = "sewage";
@@ -1109,7 +1102,7 @@ let Trash = {
     lowestAssociate: litter,
 };
 
-//Define all variables for list 36: Window
+// variables for list 36: Window
 const window2 = "window";
 const pane = "pane";
 const ledge = "ledge";
@@ -1135,7 +1128,6 @@ let Window = {
     highestAssociates: [door, glass],
     lowestAssociate: shutter,
 };
-// ... after you have defined all of your lists
 
 let allLists = [
     Anger,
@@ -1174,12 +1166,12 @@ let allLists = [
     Thief,
     Trash,
     Window,
-]; // need to add all other lists to
+];
 
-// and randomize
 let randomizedLists = shuffleArray(allLists);
 
-let bucket1 = randomizedLists.slice(0, 18); // takes first 18 lists of randomize dlists and places them into "bucket"
+// takes lists of randomize dlists and places them into "bucket"
+let bucket1 = randomizedLists.slice(0, 18); 
 let bucket2 = randomizedLists.slice(0, 18);
 let bucket3 = randomizedLists.slice(18, 36);
 let bucket4 = randomizedLists.slice(18, 36);
@@ -1189,31 +1181,6 @@ let incongruentPrototype = bucket2;
 let congruentHighestAssociate = bucket3; // since bucket 3 and bucket4 contain the same objects, when we make congruent highest associate trials, be sure to use the objects' B lists
 let incongruentHighestAssociate = [bucket4, bucket1];
 
-//trial types
-// Each trial type will be presented 18 times
-//type 1 = congruent prototype
-// type 2 = incongruent prototype
-// type 3 = congruent highest associate
-// type 4 = incongruent highest associate
-
-// let listA = [];
-//pause
-//tone
-// some prototype or a list1A higher associate
-
-// congruent items
-// let congruentPrototype = Anger.prototype;
-// let congruentHighestAssociate1 = Anger.highestAssociates[0];
-// let congruentHighestAssociate2 = Anger.highestAssociates[1]/;
-
-// incongruent items
-
-// keep looping through the randmoized list until there is no match between prototypes, leading to a truly incongruent prototype
-// i=0;
-// while (i < randomizedLists.length) {
-
-// i++;
-// }
 let incongruentPrototypeTrial1 = incongruentPrototype[0];
 let incongruentPrototypeTrial2 = incongruentPrototype[1];
 let incongruentPrototypeTrial3 = incongruentPrototype[2];
@@ -1233,23 +1200,10 @@ let incongruentPrototypeTrial16 = incongruentPrototype[15];
 let incongruentPrototypeTrial17 = incongruentPrototype[16];
 let incongruentPrototypeTrial18 = incongruentPrototype[17];
 
-// // keep looping through the randmoized list until there is no match between prototypes, leading to a truly incongruent prototype
-// while (randomizedLists[0].prototype === Anger.highestAssociates[0]) {
-//     randomizedLists.push(randomizedLists[0].shift)
-// }
-// let incongruentHighestAssociate2 = randomizedLists[0].highestAssociates[0];
-
-// // keep looping through the randmoized list until there is no match between prototypes, leading to a truly incongruent prototype
-// while (randomizedLists[0].prototype === Anger.highestAssociates[1]) {
-//     randomizedLists.push(randomizedLists[0].shift)
-// }
-// let incongruentHighestAssociate5 = randomizedLists[0].highestAssociates[1];
-
-// re-randomize list to keep things as random as possible
 randomizedLists = shuffleArray(randomizedLists);
 
 let incongruentPrototypeTrials = [];
-// pushes 6 items from listA
+
 for (let i = 0; i < incongruentPrototypeTrial1.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial1.listA[i],
@@ -1263,8 +1217,7 @@ for (let i = 0; i < incongruentPrototypeTrial1.listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial18.prototype,
@@ -1286,7 +1239,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 incongruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -1298,9 +1251,8 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// pushes 6 items from listA
 for (let i = 0; i < incongruentPrototypeTrial2.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial2.listA[i],
@@ -1315,8 +1267,7 @@ for (let i = 0; i < incongruentPrototypeTrial2.listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial17.prototype,
@@ -1338,7 +1289,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 incongruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -1350,9 +1301,8 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// pushes 6 items from listA
 for (let i = 0; i < incongruentPrototypeTrial3.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial3.listA[i],
@@ -1366,8 +1316,7 @@ for (let i = 0; i < incongruentPrototypeTrial3.listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial16.prototype,
@@ -1389,7 +1338,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 incongruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -1401,9 +1350,8 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+}); 
 
-// pushes 6 items from listA
 for (let i = 0; i < incongruentPrototypeTrial4.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial4.listA[i],
@@ -1417,8 +1365,7 @@ for (let i = 0; i < incongruentPrototypeTrial4.listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial15.prototype,
@@ -1440,7 +1387,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 incongruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -1452,9 +1399,8 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// pushes 6 items from listA
 for (let i = 0; i < incongruentPrototypeTrial5.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial5.listA[i],
@@ -1468,8 +1414,7 @@ for (let i = 0; i < incongruentPrototypeTrial5.listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial14.prototype,
@@ -1491,7 +1436,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+}); 
 incongruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -1503,9 +1448,8 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// pushes 6 items from listA
 for (let i = 0; i < incongruentPrototypeTrial6.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial6.listA[i],
@@ -1519,8 +1463,7 @@ for (let i = 0; i < incongruentPrototypeTrial6.listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial13.prototype,
@@ -1542,7 +1485,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 incongruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -1554,9 +1497,8 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+}); 
 
-// pushes 6 items from listA
 for (let i = 0; i < incongruentPrototypeTrial7.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial7.listA[i],
@@ -1570,8 +1512,7 @@ for (let i = 0; i < incongruentPrototypeTrial7.listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial12.prototype,
@@ -1593,7 +1534,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 incongruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -1605,9 +1546,8 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// pushes 6 items from listA
 for (let i = 0; i < incongruentPrototypeTrial8.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial8.listA[i],
@@ -1621,8 +1561,7 @@ for (let i = 0; i < incongruentPrototypeTrial8.listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial11.prototype,
@@ -1644,7 +1583,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 incongruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -1656,9 +1595,8 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// pushes 6 items from listA
 for (let i = 0; i < incongruentPrototypeTrial9.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial9.listA[i],
@@ -1672,8 +1610,7 @@ for (let i = 0; i < incongruentPrototypeTrial9.listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial10.prototype,
@@ -1695,7 +1632,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 incongruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -1707,9 +1644,8 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// pushes 6 items from listA
 for (let i = 0; i < incongruentPrototypeTrial10.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial10.listA[i],
@@ -1723,8 +1659,7 @@ for (let i = 0; i < incongruentPrototypeTrial10.listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial9.prototype,
@@ -1746,7 +1681,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 incongruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -1758,9 +1693,8 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// pushes 6 items from listA
 for (let i = 0; i < incongruentPrototypeTrial11.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial11.listA[i],
@@ -1774,8 +1708,7 @@ for (let i = 0; i < incongruentPrototypeTrial11.listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial8.prototype,
@@ -1797,7 +1730,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 incongruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -1809,9 +1742,8 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// pushes 6 items from listA
 for (let i = 0; i < incongruentPrototypeTrial12.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial12.listA[i],
@@ -1825,8 +1757,7 @@ for (let i = 0; i < incongruentPrototypeTrial12.listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial7.prototype,
@@ -1848,7 +1779,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 incongruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -1860,9 +1791,8 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// pushes 6 items from listA
 for (let i = 0; i < incongruentPrototypeTrial13.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial13.listA[i],
@@ -1876,8 +1806,7 @@ for (let i = 0; i < incongruentPrototypeTrial13.listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial6.prototype,
@@ -1899,7 +1828,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 incongruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -1911,9 +1840,8 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// pushes 6 items from listA
 for (let i = 0; i < incongruentPrototypeTrial14.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial14.listA[i],
@@ -1927,8 +1855,7 @@ for (let i = 0; i < incongruentPrototypeTrial14.listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial5.prototype,
@@ -1950,7 +1877,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 incongruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -1962,9 +1889,8 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// pushes 6 items from listA
 for (let i = 0; i < incongruentPrototypeTrial15.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial15.listA[i],
@@ -1978,8 +1904,7 @@ for (let i = 0; i < incongruentPrototypeTrial15.listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial4.prototype,
@@ -2001,7 +1926,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 incongruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -2013,9 +1938,8 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// pushes 6 items from listA
 for (let i = 0; i < incongruentPrototypeTrial16.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial16.listA[i],
@@ -2029,8 +1953,7 @@ for (let i = 0; i < incongruentPrototypeTrial16.listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial3.prototype,
@@ -2052,7 +1975,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 incongruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -2064,9 +1987,8 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// pushes 6 items from listA
 for (let i = 0; i < incongruentPrototypeTrial17.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial17.listA[i],
@@ -2080,8 +2002,7 @@ for (let i = 0; i < incongruentPrototypeTrial17.listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial2.prototype,
@@ -2103,7 +2024,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 incongruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -2115,9 +2036,8 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// pushes 6 items from listA
 for (let i = 0; i < incongruentPrototypeTrial18.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial18.listA[i],
@@ -2131,8 +2051,7 @@ for (let i = 0; i < incongruentPrototypeTrial18.listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial1.prototype,
@@ -2154,7 +2073,7 @@ incongruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 incongruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -2166,9 +2085,8 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-////// Here starts replicating structure of incongruent protype tirals to create trials for congruent prototype
 let congruentPrototypeTrial1 = congruentPrototype[0];
 let congruentPrototypeTrial2 = congruentPrototype[1];
 let congruentPrototypeTrial3 = congruentPrototype[2];
@@ -2189,7 +2107,6 @@ let congruentPrototypeTrial17 = congruentPrototype[16];
 let congruentPrototypeTrial18 = congruentPrototype[17];
 
 let congruentPrototypeTrials = [];
-// pushes 6 items from listB
 for (let i = 0; i < congruentPrototypeTrial1.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial1.listB[i],
@@ -2203,8 +2120,7 @@ for (let i = 0; i < congruentPrototypeTrial1.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial1.prototype,
@@ -2226,7 +2142,7 @@ congruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+}); 
 congruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -2238,7 +2154,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
 for (let i = 0; i < congruentPrototypeTrial2.listB.length; i++) {
     congruentPrototypeTrials.push({
@@ -2253,8 +2169,7 @@ for (let i = 0; i < congruentPrototypeTrial2.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial2.prototype,
@@ -2276,7 +2191,7 @@ congruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 congruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -2288,7 +2203,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
 for (let i = 0; i < congruentPrototypeTrial3.listB.length; i++) {
     congruentPrototypeTrials.push({
@@ -2303,8 +2218,7 @@ for (let i = 0; i < congruentPrototypeTrial3.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial3.prototype,
@@ -2326,7 +2240,7 @@ congruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 congruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -2338,7 +2252,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
 for (let i = 0; i < congruentPrototypeTrial4.listB.length; i++) {
     congruentPrototypeTrials.push({
@@ -2353,8 +2267,7 @@ for (let i = 0; i < congruentPrototypeTrial4.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial4.prototype,
@@ -2376,7 +2289,7 @@ congruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 congruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -2388,7 +2301,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
 for (let i = 0; i < congruentPrototypeTrial5.listB.length; i++) {
     congruentPrototypeTrials.push({
@@ -2403,8 +2316,7 @@ for (let i = 0; i < congruentPrototypeTrial5.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial5.prototype,
@@ -2426,7 +2338,7 @@ congruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 congruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -2438,7 +2350,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
 for (let i = 0; i < congruentPrototypeTrial6.listB.length; i++) {
     congruentPrototypeTrials.push({
@@ -2453,8 +2365,7 @@ for (let i = 0; i < congruentPrototypeTrial6.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial6.prototype,
@@ -2476,7 +2387,7 @@ congruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 congruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -2488,7 +2399,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
 for (let i = 0; i < congruentPrototypeTrial7.listB.length; i++) {
     congruentPrototypeTrials.push({
@@ -2503,8 +2414,7 @@ for (let i = 0; i < congruentPrototypeTrial7.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial7.prototype,
@@ -2526,7 +2436,7 @@ congruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 congruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -2538,7 +2448,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
 for (let i = 0; i < congruentPrototypeTrial8.listB.length; i++) {
     congruentPrototypeTrials.push({
@@ -2553,8 +2463,7 @@ for (let i = 0; i < congruentPrototypeTrial8.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial8.prototype,
@@ -2576,7 +2485,7 @@ congruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 congruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -2588,7 +2497,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
 for (let i = 0; i < congruentPrototypeTrial9.listB.length; i++) {
     congruentPrototypeTrials.push({
@@ -2603,8 +2512,7 @@ for (let i = 0; i < congruentPrototypeTrial9.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial9.prototype,
@@ -2626,7 +2534,7 @@ congruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 congruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -2638,7 +2546,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
 for (let i = 0; i < congruentPrototypeTrial10.listB.length; i++) {
     congruentPrototypeTrials.push({
@@ -2653,8 +2561,7 @@ for (let i = 0; i < congruentPrototypeTrial10.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial10.prototype,
@@ -2676,7 +2583,7 @@ congruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 congruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -2688,7 +2595,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
 for (let i = 0; i < congruentPrototypeTrial11.listB.length; i++) {
     congruentPrototypeTrials.push({
@@ -2703,8 +2610,7 @@ for (let i = 0; i < congruentPrototypeTrial11.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial11.prototype,
@@ -2726,7 +2632,7 @@ congruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 congruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -2738,7 +2644,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
 for (let i = 0; i < congruentPrototypeTrial12.listB.length; i++) {
     congruentPrototypeTrials.push({
@@ -2753,8 +2659,7 @@ for (let i = 0; i < congruentPrototypeTrial12.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial12.prototype,
@@ -2776,7 +2681,7 @@ congruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 congruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -2788,7 +2693,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
 for (let i = 0; i < congruentPrototypeTrial13.listB.length; i++) {
     congruentPrototypeTrials.push({
@@ -2803,8 +2708,7 @@ for (let i = 0; i < congruentPrototypeTrial13.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial13.prototype,
@@ -2826,7 +2730,7 @@ congruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 congruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -2838,7 +2742,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+}); 
 
 for (let i = 0; i < congruentPrototypeTrial14.listB.length; i++) {
     congruentPrototypeTrials.push({
@@ -2853,8 +2757,7 @@ for (let i = 0; i < congruentPrototypeTrial14.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial14.prototype,
@@ -2876,7 +2779,7 @@ congruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 congruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -2888,7 +2791,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
 for (let i = 0; i < congruentPrototypeTrial15.listB.length; i++) {
     congruentPrototypeTrials.push({
@@ -2903,8 +2806,7 @@ for (let i = 0; i < congruentPrototypeTrial15.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial15.prototype,
@@ -2926,7 +2828,7 @@ congruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 congruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -2938,7 +2840,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
 for (let i = 0; i < congruentPrototypeTrial16.listB.length; i++) {
     congruentPrototypeTrials.push({
@@ -2953,8 +2855,7 @@ for (let i = 0; i < congruentPrototypeTrial16.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    }); 
 }
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial16.prototype,
@@ -2976,7 +2877,7 @@ congruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 congruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -2988,7 +2889,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
 for (let i = 0; i < congruentPrototypeTrial17.listB.length; i++) {
     congruentPrototypeTrials.push({
@@ -3003,8 +2904,7 @@ for (let i = 0; i < congruentPrototypeTrial17.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    }); 
 }
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial17.prototype,
@@ -3026,7 +2926,7 @@ congruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+}); 
 congruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -3038,7 +2938,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
 for (let i = 0; i < congruentPrototypeTrial18.listB.length; i++) {
     congruentPrototypeTrials.push({
@@ -3053,8 +2953,7 @@ for (let i = 0; i < congruentPrototypeTrial18.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial18.prototype,
@@ -3076,7 +2975,7 @@ congruentPrototypeTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // pushes 8th item placeholder for prototype
+});
 congruentPrototypeTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -3088,14 +2987,12 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
-
-/// trying to replicate structure from incongruent and congruent prototype trials to create incongruent highest associates
+});
 
 let incongruentHighestAssociateTrial1 = [
     incongruentHighestAssociate[0][0],
     incongruentHighestAssociate[1][0],
-]; // in each trial,  add 1 to the number in the second set of brackets for each item
+]; 
 let incongruentHighestAssociateTrial2 = [
     incongruentHighestAssociate[0][1],
     incongruentHighestAssociate[1][1],
@@ -3166,7 +3063,6 @@ let incongruentHighestAssociateTrial18 = [
 ];
 
 let incongruentHighestAssociateTrials = [];
-// pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial1 array)
 for (let i = 0; i < incongruentHighestAssociateTrial1[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial1[0].listA[i],
@@ -3180,8 +3076,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial1[0].listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial1[1].highestAssociates[0],
@@ -3203,7 +3098,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial1's 2nd list)
+}); 
 incongruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -3215,9 +3110,8 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial2 array)
 for (let i = 0; i < incongruentHighestAssociateTrial2[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial2[0].listA[i],
@@ -3231,8 +3125,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial2[0].listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial2[1].highestAssociates[0],
@@ -3254,7 +3147,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial2's 2nd list)
+}); 
 incongruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -3266,9 +3159,8 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i = 0; i < incongruentHighestAssociateTrial3[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial3[0].listA[i],
@@ -3282,8 +3174,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial3[0].listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    }); 
 }
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial3[1].highestAssociates[0],
@@ -3305,7 +3196,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+});
 incongruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -3317,9 +3208,8 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i = 0; i < incongruentHighestAssociateTrial4[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial4[0].listA[i],
@@ -3333,8 +3223,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial4[0].listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial4[1].highestAssociates[0],
@@ -3356,7 +3245,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+}); 
 incongruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -3368,9 +3257,8 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i = 0; i < incongruentHighestAssociateTrial5[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial5[0].listA[i],
@@ -3384,8 +3272,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial5[0].listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial5[1].highestAssociates[0],
@@ -3407,7 +3294,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+});
 incongruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -3419,9 +3306,8 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i = 0; i < incongruentHighestAssociateTrial6[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial6[0].listA[i],
@@ -3435,8 +3321,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial6[0].listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    }); 
 }
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial6[1].highestAssociates[0],
@@ -3458,7 +3343,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+});
 incongruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -3470,9 +3355,8 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i = 0; i < incongruentHighestAssociateTrial7[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial7[0].listA[i],
@@ -3486,8 +3370,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial7[0].listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial7[1].highestAssociates[0],
@@ -3509,7 +3392,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+});
 incongruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -3521,9 +3404,8 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+}); 
 
-// pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i = 0; i < incongruentHighestAssociateTrial8[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial8[0].listA[i],
@@ -3537,8 +3419,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial8[0].listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    }); 
 }
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial8[1].highestAssociates[0],
@@ -3560,7 +3441,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+}); 
 incongruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -3572,9 +3453,8 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i = 0; i < incongruentHighestAssociateTrial9[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial9[0].listA[i],
@@ -3588,8 +3468,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial9[0].listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    }); 
 }
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial9[1].highestAssociates[0],
@@ -3611,7 +3490,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+});
 incongruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -3623,9 +3502,8 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i = 0; i < incongruentHighestAssociateTrial10[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial10[0].listA[i],
@@ -3639,8 +3517,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial10[0].listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    }); 
 }
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial10[1].highestAssociates[0],
@@ -3662,7 +3539,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+}); 
 incongruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -3674,9 +3551,8 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+}); 
 
-// pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i = 0; i < incongruentHighestAssociateTrial11[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial11[0].listA[i],
@@ -3690,8 +3566,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial11[0].listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial11[1].highestAssociates[0],
@@ -3713,7 +3588,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+}); 
 incongruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -3725,9 +3600,8 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i = 0; i < incongruentHighestAssociateTrial12[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial12[0].listA[i],
@@ -3741,8 +3615,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial12[0].listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial12[1].highestAssociates[0],
@@ -3764,7 +3637,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+}); 
 incongruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -3776,9 +3649,8 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+}); 
 
-// pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i = 0; i < incongruentHighestAssociateTrial13[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial13[0].listA[i],
@@ -3792,8 +3664,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial13[0].listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial13[1].highestAssociates[0],
@@ -3815,7 +3686,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+}); 
 incongruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -3827,9 +3698,8 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i = 0; i < incongruentHighestAssociateTrial14[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial14[0].listA[i],
@@ -3843,8 +3713,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial14[0].listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial14[1].highestAssociates[0],
@@ -3866,7 +3735,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+});
 incongruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -3878,9 +3747,8 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i = 0; i < incongruentHighestAssociateTrial15[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial15[0].listA[i],
@@ -3894,8 +3762,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial15[0].listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial15[1].highestAssociates[0],
@@ -3917,7 +3784,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+});
 incongruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -3929,9 +3796,8 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i = 0; i < incongruentHighestAssociateTrial16[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial16[0].listA[i],
@@ -3945,8 +3811,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial16[0].listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    }); 
 }
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial16[1].highestAssociates[0],
@@ -3968,7 +3833,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+}); 
 incongruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -3980,9 +3845,8 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i = 0; i < incongruentHighestAssociateTrial17[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial17[0].listA[i],
@@ -3996,8 +3860,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial17[0].listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial17[1].highestAssociates[0],
@@ -4019,7 +3882,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+});
 incongruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -4031,9 +3894,8 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+}); 
 
-// pushes 6 items from 0th listA (which is the list A of the 0th item in the incongruentHighestAssociateTrial3 array)
 for (let i = 0; i < incongruentHighestAssociateTrial18[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial18[0].listA[i],
@@ -4047,8 +3909,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial18[0].listA.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial18[1].highestAssociates[0],
@@ -4070,7 +3931,7 @@ incongruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // grabs the highest assocaite from 1st item (so, in reality, it's the highest associate from incongruentHighestAssociateTrial3's 2nd list)
+}); 
 incongruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -4082,45 +3943,32 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// trying to create structure for congruent highest associate trials
-//use for 2nd position trials
 let congruentHighestAssociateTrial1 = congruentHighestAssociate[0];
 let congruentHighestAssociateTrial2 = congruentHighestAssociate[1];
 let congruentHighestAssociateTrial3 = congruentHighestAssociate[2];
 let congruentHighestAssociateTrial4 = congruentHighestAssociate[3];
 let congruentHighestAssociateTrial5 = congruentHighestAssociate[4];
 
-//use for 3rd position trials
 let congruentHighestAssociateTrial6 = congruentHighestAssociate[5];
 let congruentHighestAssociateTrial7 = congruentHighestAssociate[6];
 let congruentHighestAssociateTrial8 = congruentHighestAssociate[7];
 let congruentHighestAssociateTrial9 = congruentHighestAssociate[8];
 
-// use for 4th position trials
 let congruentHighestAssociateTrial10 = congruentHighestAssociate[9];
 let congruentHighestAssociateTrial11 = congruentHighestAssociate[10];
 let congruentHighestAssociateTrial12 = congruentHighestAssociate[11];
 let congruentHighestAssociateTrial13 = congruentHighestAssociate[12];
 
-// use for 5th position trials
 let congruentHighestAssociateTrial14 = congruentHighestAssociate[13];
 let congruentHighestAssociateTrial15 = congruentHighestAssociate[14];
 let congruentHighestAssociateTrial16 = congruentHighestAssociate[15];
 let congruentHighestAssociateTrial17 = congruentHighestAssociate[16];
 let congruentHighestAssociateTrial18 = congruentHighestAssociate[17];
 
-// for congruent Highest associate tirals, the number of "i"s that are pushed will differ
-// higheest associate will be palced in the 2-5 position. Since there are a total of 18 trials, create:
-// 5 with highest associate in 2nd word position
-// 4 trials with highest associate in 3rd word position
-// 4 with highest associate in 4th word positiion
-// 5 with highest associate in 5th word position
-
 let congruentHighestAssociateTrials = [];
 
-//this section shows how to make  trial where the highest assocaite is in the 2nd word position
 for (let i = 0; i < 1; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial1.listB[i],
@@ -4134,11 +3982,9 @@ for (let i = 0; i < 1; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
 
-// push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial1.highestAssociates[1],
     duration: durationForListWords,
@@ -4151,9 +3997,8 @@ congruentHighestAssociateTrials.push({
         word_position: "list",
     },
     confidence: "",
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+});
 
-//add in remaining list b items
 for (let i = 2; i < congruentHighestAssociateTrial1.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial1.listB[i],
@@ -4167,8 +4012,7 @@ for (let i = 2; i < congruentHighestAssociateTrial1.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    }); 
 }
 
 congruentHighestAssociateTrials.push({
@@ -4191,7 +4035,7 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+}); 
 congruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -4203,9 +4047,8 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_2",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+}); 
 
-//this section shows how to make  trial where the highest assocaite is in the 2nd word position
 for (let i = 0; i < 1; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial2.listB[i],
@@ -4219,11 +4062,8 @@ for (let i = 0; i < 1; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    }); 
 }
-
-// push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial2.highestAssociates[1],
     duration: durationForListWords,
@@ -4236,9 +4076,8 @@ congruentHighestAssociateTrials.push({
         word_position: "list",
     },
     confidence: "",
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+}); 
 
-//add in remaining list b items
 for (let i = 2; i < congruentHighestAssociateTrial2.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial2.listB[i],
@@ -4252,10 +4091,8 @@ for (let i = 2; i < congruentHighestAssociateTrial2.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
-
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial2.highestAssociates[1],
     duration: durationForTargetWords,
@@ -4276,7 +4113,7 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+}); 
 congruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -4288,9 +4125,8 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_2",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+}); 
 
-//this section shows how to make  trial where the highest assocaite is in the 2nd word position
 for (let i = 0; i < 1; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial3.listB[i],
@@ -4304,11 +4140,8 @@ for (let i = 0; i < 1; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
-
-// push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial3.highestAssociates[1],
     duration: durationForListWords,
@@ -4323,7 +4156,6 @@ congruentHighestAssociateTrials.push({
     confidence: "",
 });
 
-//add in remaining list b items
 for (let i = 2; i < congruentHighestAssociateTrial3.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial3.listB[i],
@@ -4337,10 +4169,8 @@ for (let i = 2; i < congruentHighestAssociateTrial3.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
-
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial3.highestAssociates[1],
     duration: durationForTargetWords,
@@ -4361,7 +4191,7 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+}); 
 congruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -4373,9 +4203,8 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_2",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-//this section shows how to make  trial where the highest assocaite is in the 2nd word position
 for (let i = 0; i < 1; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial4.listB[i],
@@ -4389,11 +4218,8 @@ for (let i = 0; i < 1; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    }); 
 }
-
-// push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial4.highestAssociates[1],
     duration: durationForListWords,
@@ -4408,7 +4234,6 @@ congruentHighestAssociateTrials.push({
     confidence: "",
 });
 
-//add in remaining list b items
 for (let i = 2; i < congruentHighestAssociateTrial4.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial4.listB[i],
@@ -4422,10 +4247,8 @@ for (let i = 2; i < congruentHighestAssociateTrial4.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
-
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial4.highestAssociates[1],
     duration: durationForTargetWords,
@@ -4446,7 +4269,7 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+}); 
 congruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -4458,9 +4281,8 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_2",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+}); 
 
-//this section shows how to make  trial where the highest assocaite is in the 2nd word position
 for (let i = 0; i < 1; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial5.listB[i],
@@ -4474,11 +4296,8 @@ for (let i = 0; i < 1; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
-
-// push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial5.highestAssociates[1],
     duration: durationForListWords,
@@ -4491,9 +4310,8 @@ congruentHighestAssociateTrials.push({
         word_position: "list",
     },
     confidence: "",
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+});
 
-//add in remaining list b items
 for (let i = 2; i < congruentHighestAssociateTrial5.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial5.listB[i],
@@ -4507,10 +4325,8 @@ for (let i = 2; i < congruentHighestAssociateTrial5.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
-
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial5.highestAssociates[1],
     duration: durationForTargetWords,
@@ -4531,7 +4347,7 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+}); 
 congruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -4543,9 +4359,8 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_2",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// how to create trial for highest associate in 3rd position
 for (let i = 0; i < 2; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial6.listB[i],
@@ -4559,11 +4374,8 @@ for (let i = 0; i < 2; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
-
-// push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial6.highestAssociates[1],
     duration: durationForListWords,
@@ -4576,9 +4388,8 @@ congruentHighestAssociateTrials.push({
         word_position: "list",
     },
     confidence: "",
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+}); 
 
-//add in remaining list b items
 for (let i = 3; i < congruentHighestAssociateTrial6.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial6.listB[i],
@@ -4592,10 +4403,8 @@ for (let i = 3; i < congruentHighestAssociateTrial6.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    }); 
 }
-
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial6.highestAssociates[1],
     duration: durationForTargetWords,
@@ -4616,7 +4425,7 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+}); 
 congruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -4628,9 +4437,8 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_3",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// how to create trial for highest associate in 3rd position
 for (let i = 0; i < 2; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial7.listB[i],
@@ -4644,11 +4452,8 @@ for (let i = 0; i < 2; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
-
-// push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial7.highestAssociates[1],
     duration: durationForListWords,
@@ -4661,9 +4466,8 @@ congruentHighestAssociateTrials.push({
         word_position: "list",
     },
     confidence: "",
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+}); 
 
-//add in remaining list b items
 for (let i = 3; i < congruentHighestAssociateTrial7.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial7.listB[i],
@@ -4677,10 +4481,8 @@ for (let i = 3; i < congruentHighestAssociateTrial7.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
-
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial7.highestAssociates[1],
     duration: durationForTargetWords,
@@ -4701,7 +4503,7 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+}); 
 congruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -4713,9 +4515,8 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_3",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+}); 
 
-// how to create trial for highest associate in 3rd position
 for (let i = 0; i < 2; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial8.listB[i],
@@ -4729,11 +4530,8 @@ for (let i = 0; i < 2; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
-
-// push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial8.highestAssociates[1],
     duration: durationForListWords,
@@ -4746,9 +4544,8 @@ congruentHighestAssociateTrials.push({
         word_position: "list",
     },
     confidence: "",
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+}); 
 
-//add in remaining list b items
 for (let i = 3; i < congruentHighestAssociateTrial8.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial8.listB[i],
@@ -4762,10 +4559,8 @@ for (let i = 3; i < congruentHighestAssociateTrial8.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    }); 
 }
-
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial8.highestAssociates[1],
     duration: durationForTargetWords,
@@ -4786,7 +4581,7 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+}); 
 congruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -4798,9 +4593,8 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_3",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+}); 
 
-// how to create trial for highest associate in 3rd position
 for (let i = 0; i < 2; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial9.listB[i],
@@ -4814,11 +4608,8 @@ for (let i = 0; i < 2; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    }); 
 }
-
-// push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial9.highestAssociates[1],
     duration: durationForListWords,
@@ -4831,9 +4622,8 @@ congruentHighestAssociateTrials.push({
         word_position: "list",
     },
     confidence: "",
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+});
 
-//add in remaining list b items
 for (let i = 3; i < congruentHighestAssociateTrial9.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial9.listB[i],
@@ -4847,10 +4637,8 @@ for (let i = 3; i < congruentHighestAssociateTrial9.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
-
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial9.highestAssociates[1],
     duration: durationForTargetWords,
@@ -4871,7 +4659,7 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+});
 congruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -4883,9 +4671,8 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_3",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// how to create trial for highest associate in 4th position
 for (let i = 0; i < 3; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial10.listB[i],
@@ -4899,11 +4686,8 @@ for (let i = 0; i < 3; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
-
-// push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial10.highestAssociates[1],
     duration: durationForListWords,
@@ -4916,9 +4700,8 @@ congruentHighestAssociateTrials.push({
         word_position: "list",
     },
     confidence: "",
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+});
 
-//add in remaining list b items
 for (let i = 4; i < congruentHighestAssociateTrial10.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial10.listB[i],
@@ -4932,10 +4715,8 @@ for (let i = 4; i < congruentHighestAssociateTrial10.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    }); 
 }
-
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial10.highestAssociates[1],
     duration: durationForTargetWords,
@@ -4956,7 +4737,7 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+});
 congruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -4968,9 +4749,8 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_4",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// how to create trial for highest associate in 4th position
 for (let i = 0; i < 3; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial11.listB[i],
@@ -4984,11 +4764,8 @@ for (let i = 0; i < 3; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
-
-// push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial11.highestAssociates[1],
     duration: durationForListWords,
@@ -5001,9 +4778,8 @@ congruentHighestAssociateTrials.push({
         word_position: "list",
     },
     confidence: "",
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+}); 
 
-//add in remaining list b items
 for (let i = 4; i < congruentHighestAssociateTrial11.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial11.listB[i],
@@ -5017,10 +4793,8 @@ for (let i = 4; i < congruentHighestAssociateTrial11.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    }); 
 }
-
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial11.highestAssociates[1],
     duration: durationForTargetWords,
@@ -5041,7 +4815,7 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+}); 
 congruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -5053,9 +4827,8 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_4",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+}); 
 
-// how to create trial for highest associate in 4th position
 for (let i = 0; i < 3; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial12.listB[i],
@@ -5069,11 +4842,8 @@ for (let i = 0; i < 3; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
-
-// push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial12.highestAssociates[1],
     duration: durationForListWords,
@@ -5086,9 +4856,8 @@ congruentHighestAssociateTrials.push({
         word_position: "list",
     },
     confidence: "",
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+}); 
 
-//add in remaining list b items
 for (let i = 4; i < congruentHighestAssociateTrial12.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial12.listB[i],
@@ -5102,10 +4871,8 @@ for (let i = 4; i < congruentHighestAssociateTrial12.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
-
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial12.highestAssociates[1],
     duration: durationForTargetWords,
@@ -5126,7 +4893,7 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+}); 
 congruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -5138,9 +4905,8 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_4",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// how to create trial for highest associate in 4th position
 for (let i = 0; i < 3; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial13.listB[i],
@@ -5154,11 +4920,8 @@ for (let i = 0; i < 3; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
-
-// push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial13.highestAssociates[1],
     duration: durationForListWords,
@@ -5171,9 +4934,8 @@ congruentHighestAssociateTrials.push({
         word_position: "list",
     },
     confidence: "",
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+}); 
 
-//add in remaining list b items
 for (let i = 4; i < congruentHighestAssociateTrial13.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial13.listB[i],
@@ -5187,10 +4949,8 @@ for (let i = 4; i < congruentHighestAssociateTrial13.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
-
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial13.highestAssociates[1],
     duration: durationForTargetWords,
@@ -5211,7 +4971,7 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+});
 congruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -5223,9 +4983,8 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_4",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// how to create congruent highest associate trials with highests associate in 5th position
 for (let i = 0; i < 4; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial14.listB[i],
@@ -5239,11 +4998,8 @@ for (let i = 0; i < 4; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    }); 
 }
-
-// push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial14.highestAssociates[1],
     duration: durationForListWords,
@@ -5256,9 +5012,8 @@ congruentHighestAssociateTrials.push({
         word_position: "list",
     },
     confidence: "",
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+}); 
 
-//add in remaining list b items
 for (let i = 5; i < congruentHighestAssociateTrial14.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial14.listB[i],
@@ -5272,10 +5027,8 @@ for (let i = 5; i < congruentHighestAssociateTrial14.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
-
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial14.highestAssociates[1],
     duration: durationForTargetWords,
@@ -5296,7 +5049,7 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+}); 
 congruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -5308,9 +5061,8 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_5",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// how to create congruent highest associate trials with highests associate in 5th position
 for (let i = 0; i < 4; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial15.listB[i],
@@ -5324,11 +5076,8 @@ for (let i = 0; i < 4; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    }); 
 }
-
-// push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial15.highestAssociates[1],
     duration: durationForListWords,
@@ -5341,9 +5090,8 @@ congruentHighestAssociateTrials.push({
         word_position: "list",
     },
     confidence: "",
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+}); 
 
-//add in remaining list b items
 for (let i = 5; i < congruentHighestAssociateTrial15.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial15.listB[i],
@@ -5357,10 +5105,8 @@ for (let i = 5; i < congruentHighestAssociateTrial15.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
-
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial15.highestAssociates[1],
     duration: durationForTargetWords,
@@ -5381,7 +5127,7 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+}); 
 congruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -5393,9 +5139,8 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_5",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// how to create congruent highest associate trials with highests associate in 5th position
 for (let i = 0; i < 4; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial16.listB[i],
@@ -5409,11 +5154,8 @@ for (let i = 0; i < 4; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    }); 
 }
-
-// push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial16.highestAssociates[1],
     duration: durationForListWords,
@@ -5426,9 +5168,8 @@ congruentHighestAssociateTrials.push({
         word_position: "list",
     },
     confidence: "",
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+}); 
 
-//add in remaining list b items
 for (let i = 5; i < congruentHighestAssociateTrial16.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial16.listB[i],
@@ -5442,10 +5183,8 @@ for (let i = 5; i < congruentHighestAssociateTrial16.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
-
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial16.highestAssociates[1],
     duration: durationForTargetWords,
@@ -5466,7 +5205,7 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+});
 congruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -5478,9 +5217,8 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_5",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// how to create congruent highest associate trials with highests associate in 5th position
 for (let i = 0; i < 4; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial17.listB[i],
@@ -5494,11 +5232,8 @@ for (let i = 0; i < 4; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
-
-// push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial17.highestAssociates[1],
     duration: durationForListWords,
@@ -5511,9 +5246,8 @@ congruentHighestAssociateTrials.push({
         word_position: "list",
     },
     confidence: "",
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+}); 
 
-//add in remaining list b items
 for (let i = 5; i < congruentHighestAssociateTrial17.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial17.listB[i],
@@ -5527,10 +5261,8 @@ for (let i = 5; i < congruentHighestAssociateTrial17.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
-
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial17.highestAssociates[1],
     duration: durationForTargetWords,
@@ -5551,7 +5283,7 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+}); 
 congruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -5563,9 +5295,8 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_5",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
-// how to create congruent highest associate trials with highests associate in 5th position
 for (let i = 0; i < 4; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial18.listB[i],
@@ -5579,11 +5310,8 @@ for (let i = 0; i < 4; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
-
-// push the highest associate into the list
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial18.highestAssociates[1],
     duration: durationForListWords,
@@ -5596,9 +5324,8 @@ congruentHighestAssociateTrials.push({
         word_position: "list",
     },
     confidence: "",
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+}); 
 
-//add in remaining list b items
 for (let i = 5; i < congruentHighestAssociateTrial18.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial18.listB[i],
@@ -5612,10 +5339,8 @@ for (let i = 5; i < congruentHighestAssociateTrial18.listB.length; i++) {
             word_position: "list",
         },
         confidence: "",
-    }); //creating csv file
-    //use underscores for data fields and headers and camel case for script
+    });
 }
-
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial18.highestAssociates[1],
     duration: durationForTargetWords,
@@ -5636,7 +5361,7 @@ congruentHighestAssociateTrials.push({
         timeRemaining +
         responseKeySelectionFigure +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); // need to check with Phil to see if there is a preference for using highest associate 0 or 1 since we are using the b lists.
+}); 
 congruentHighestAssociateTrials.push({
     stimulus: "",
     duration: fixationDuration,
@@ -5648,7 +5373,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_5",
     },
     confidence: "",
-}); // pushes 9th item placeholder for TONE2
+});
 
 let interleavedFinalStim = [];
 
@@ -5676,46 +5401,38 @@ for (let i = 0; i <= 17; i++) {
     //3s for congruent highest associate
     randomizationScheme.push(3);
 }
-//randomizationFinal = randomizationScheme; //shuffled array no repeats
-let randomizationFinal = shuffleArray(randomizationScheme); //shuffled array no repeats
+
+let randomizationFinal = shuffleArray(randomizationScheme);
 while (interleavedFinalStim.length > 0) {
     interleavedFinalStim.pop();
 }
 
 for (let i = 0; i <= randomizationFinal.length; i++) {
     if (randomizationFinal[i] === 0) {
-        // first add 8 incongruent prototype items
         for (let i = 0; i <= 7; i++) {
             interleavedFinalStim.push(incongruentPrototypeTrials[i]);
         }
-        // then remove 8 incongruent prototype items
         for (let i = 0; i <= 7; i++) {
             incongruentPrototypeTrials.shift();
         }
     } else if (randomizationFinal[i] === 1) {
-        // then! ADD 8 congruent prototype items
         for (let i = 0; i <= 7; i++) {
             interleavedFinalStim.push(congruentPrototypeTrials[i]);
         }
-        // then! Remove 8 congruent prototype items
         for (let i = 0; i <= 7; i++) {
             congruentPrototypeTrials.shift();
         }
     } else if (randomizationFinal[i] === 2) {
-        // then! ADD 8 items from incongruent highest associates trials
         for (let i = 0; i <= 7; i++) {
             interleavedFinalStim.push(incongruentHighestAssociateTrials[i]);
         }
-        // then! Remove 8 incongruent highest associates items
         for (let i = 0; i <= 7; i++) {
             incongruentHighestAssociateTrials.shift();
         }
     } else if (randomizationFinal[i] === 3) {
-        // then! ADD 8 congruent highest associate items
         for (let i = 0; i <= 7; i++) {
             interleavedFinalStim.push(congruentHighestAssociateTrials[i]);
         }
-        // then! Remove 8 congruent highest associate items
         for (let i = 0; i <= 7; i++) {
             congruentHighestAssociateTrials.shift();
         }
