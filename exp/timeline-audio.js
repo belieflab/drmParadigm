@@ -172,25 +172,47 @@ let instructions_5 = {
 let instructions_6 = {
     type: jsPsychAudioKeyboardResponse,
     stimulus: audioInstructions.instruction6,
-    type: jsPsychAudioKeyboardResponse,
     choices: "NO_KEYS",
     response_ends_trial: false,
     trial_ends_after_audio: true, 
     on_finish: function() {
         console.log("Finished instructions_6");
+        jsPsych.data.addProperties({ instructions_6_finished: true });
     }
 };
 
-let continue_to_testSection = {
+let instructions_6_duration;
+
+let audio = new Audio(audioInstructions.instruction6);
+audio.addEventListener('loadedmetadata', function() {
+    instructions_6_duration = audio.duration * 1000;
+    console.log("Instructions 6 Duration: " + instructions_6_duration + "ms");
+});
+
+let pause_before_continue_to_test_section = {
     type: jsPsychAudioKeyboardResponse,
     stimulus: audioInstructions.silence,
+    choices: "NO_KEYS",
+    trial_duration: function() {
+        return instructions_6_duration;
+    },
+    on_finish: function() {
+        console.log("Pause finished");
+    }
+};
+
+let continue_to_test_section = {
+    type: jsPsychHtmlKeyboardResponse,
+    // stimulus: audioInstructions.silence,
+    stimulus: "<p>Press the spacebar to continue to the test section.</p>", 
     choices: [" "],
     response_ends_trial: true,
     on_start: function() {
-        console.log("Starting continue_to_testSection");
+        console.log("Starting continue_to_test_section");
     },
-    on_finish: function() {
-        console.log("Finished continue_to_testSection");
+    conditional_function: function() {
+        // This ensures that the trial only runs after instructions_6 has finished
+        return jsPsych.data.get().last(1).values()[0].instructions_6_finished === true;
     }
 }
 
