@@ -203,8 +203,8 @@ let pause_before_continue_to_test_section = {
 
 let continue_to_test_section = {
     type: jsPsychHtmlKeyboardResponse,
-    // stimulus: audioInstructions.silence,
-    stimulus: "<p>Press the spacebar to continue to the test section.</p>", 
+    stimulus: audioInstructions.silence,
+    // stimulus: "<p>Press the spacebar to continue to the test section.</p>", 
     choices: [" "],
     response_ends_trial: true,
     on_start: function() {
