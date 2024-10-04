@@ -193,9 +193,10 @@ let pause_before_continue_to_test_section = {
     type: jsPsychAudioKeyboardResponse,
     stimulus: audioInstructions.silence,
     choices: "NO_KEYS",
-    trial_duration: function() {
-        return instructions_6_duration;
-    },
+   trial_duration: 100,
+    //trial_duration: function() {
+     //   return instructions_6_duration;
+   // },
     on_finish: function() {
         console.log("Pause finished");
     }
