@@ -15,6 +15,7 @@ const preload = {
         ...practiceTrial2.listA,
         trialStartTone,
         responsePromptTone,
+        "stim/audio_instructions/silence.mp3",
         "stim/audio_tones/confidence.mp3",
         audioFiles,
     ],
