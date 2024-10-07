@@ -8,6 +8,19 @@ const jsPsych = initJsPsych({
 
 let timeline = [];
 
+const audioInstructions = {
+    silence: "stim/audio_instructions/silence.mp3",
+    instruction0: "stim/audio_instructions/DRM_instructions_0.mp3",
+    instruction1: "stim/audio_instructions/drm_instructions_1.mp3",
+    shortTone: "stim/audio_tones/tone_1.mp3",
+    instructionsAfterShortTone: "stim/audio_instructions/drm_instructions_after_short_tone.mp3",
+    instruction2: "stim/audio_instructions/drm_instructions_2.mp3",
+    instruction3: "stim/audio_instructions/drm_instructions_3.mp3",
+    instruction5: "stim/audio_instructions/drm_instructions_5.mp3",
+    instruction6: "stim/audio_instructions/drm_instructions_6.mp3",
+    instruction7: "stim/audio_instructions/drm_instructions_7.mp3",
+};
+
 const preload = {
     type: jsPsychPreload,
     audio: [
@@ -15,7 +28,8 @@ const preload = {
         ...practiceTrial2.listA,
         trialStartTone,
         responsePromptTone,
-        "stim/audio_instructions/silence.mp3",
+        audioInstructions.silence,
+        audioInstructions.instruction6,
         "stim/audio_tones/confidence.mp3",
         audioFiles,
     ],
@@ -29,19 +43,6 @@ const preload = {
     on_complete: function (data) {
         console.log("Preloading completed");
     },
-};
-
-const audioInstructions = {
-    silence: "stim/audio_instructions/silence.mp3",
-    instruction0: "stim/audio_instructions/DRM_instructions_0.mp3",
-    instruction1: "stim/audio_instructions/drm_instructions_1.mp3",
-    shortTone: "stim/audio_tones/tone_1.mp3",
-    instructionsAfterShortTone: "stim/audio_instructions/drm_instructions_after_short_tone.mp3",
-    instruction2: "stim/audio_instructions/drm_instructions_2.mp3",
-    instruction3: "stim/audio_instructions/drm_instructions_3.mp3",
-    instruction5: "stim/audio_instructions/drm_instructions_5.mp3",
-    instruction6: "stim/audio_instructions/drm_instructions_6.mp3",
-    instruction7: "stim/audio_instructions/drm_instructions_7.mp3",
 };
 
 let before_instructions = {
