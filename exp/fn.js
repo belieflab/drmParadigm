@@ -5,8 +5,8 @@ let startTrial = "stim/audio_tones/tone_2.mp3";
 
 let pauseTrial = {
     stimulus: silentPause, 
-    trial_duration: 500, 
     response_ends_trial: false,
+    trial_ends_after_audio: true,
     data: {
         test_part: "practice",
         stim: silentPause,
@@ -17,8 +17,8 @@ let pauseTrial = {
 
 let startToneTrial = {
     stimulus: startTrial, 
-    trial_duration: 500,
     response_ends_trial: false,
+    trial_ends_after_audio: true,
     data: {
         test_part: "practice",
         stim: startTrial,
@@ -37,8 +37,9 @@ function createTrial(
 ) {
     return {
         stimulus: list.stimulus,
-        trial_duration: wordPosition === "startTone" ? fixationDuration : durationForListWords,
+        trial_duration: wordPosition === "startTone" ? 3000 : durationForListWords,
         response_ends_trial: false,
+        trial_ends_after_audio: true,
         data: {
             test_part: isPractice ? "practice" : "test",
             stim: list.stimulus,
@@ -60,6 +61,7 @@ function createTargetTrial(stimulus, trialType, isPractice = false) {
         stimulus: stimulus,
         trial_duration: durationForTargetWords,
         response_ends_trial: false,
+        trial_ends_after_audio: true,
         data: {
             test_part: isPractice ? "practice" : "test",
             stim: stimulus,
@@ -90,10 +92,10 @@ function createTrialSet(list, trialType, isPractice = false) {
 
     if (trials.length > 0) {
         if (trials[0]) {
-            trials[0].trial_duration = fixationDuration;
+            trials[0].trial_duration = 3000;
         }        
         if (trials.length > 1) {
-            trials[trials.length - 1].trial_duration = fixationDuration;
+            trials[trials.length - 1].trial_duration = 600;
         }
         list.listA.forEach((word) =>
             trials.push(

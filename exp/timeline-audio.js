@@ -194,10 +194,9 @@ let pause_before_continue_to_test_section = {
     type: jsPsychAudioKeyboardResponse,
     stimulus: audioInstructions.silence,
     choices: "NO_KEYS",
-   trial_duration: 100,
-    //trial_duration: function() {
-     //   return instructions_6_duration;
-   // },
+    trial_duration: function() {
+       return instructions_6_duration;
+   },
     on_finish: function() {
         console.log("Pause finished");
     }
@@ -206,14 +205,12 @@ let pause_before_continue_to_test_section = {
 let continue_to_test_section = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus: audioInstructions.silence,
-    // stimulus: "<p>Press the spacebar to continue to the test section.</p>", 
     choices: [" "],
     response_ends_trial: true,
     on_start: function() {
         console.log("Starting continue_to_test_section");
     },
     conditional_function: function() {
-        // This ensures that the trial only runs after instructions_6 has finished
         return jsPsych.data.get().last(1).values()[0].instructions_6_finished === true;
     }
 }

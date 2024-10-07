@@ -25,7 +25,7 @@ timeline.push(instructions_3);
 timeline.push(continue_trial);
 timeline.push(instructions_4);
 timeline.push(instructions_5);
- timeline.push(continue_trial);
+timeline.push(continue_trial);
 timeline.push(practiceSection);
 timeline.push(instructions_6);
 timeline.push(pause_before_continue_to_test_section);
