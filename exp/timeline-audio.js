@@ -183,9 +183,14 @@ let instructions_6 = {
     }
 };
 
-let instructions_6_duration;
-
+// Instructions 6 Duration: 15960ms
+let instructions_6_duration = 15960;
 let audio = new Audio(audioInstructions.instruction6);
+
+audio.addEventListener('error', function(e) {
+    console.error("Error loading audio:", e);
+});
+
 audio.addEventListener('loadedmetadata', function() {
     instructions_6_duration = audio.duration * 1000;
     console.log("Instructions 6 Duration: " + instructions_6_duration + "ms");
@@ -196,10 +201,12 @@ let pause_before_continue_to_test_section = {
     stimulus: audioInstructions.silence,
     choices: "NO_KEYS",
     trial_duration: function() {
-       return instructions_6_duration;
+        return instructions_6_duration || 15960;
    },
     on_finish: function() {
         console.log("Pause finished");
+        console.log("Finished instructions_6");
+        jsPsych.data.addProperties({ instructions_6_finished: true });
     }
 };
 
