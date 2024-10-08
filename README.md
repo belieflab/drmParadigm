@@ -8,24 +8,16 @@ In the DRM task, participants are presented with lists of words that are semanti
 
 ## 📊 Task Versions
 
-### Visual Version
-* Participants read lists of words presented on a screen
-* ...
-* ....
-* Approximate runtime: 20 minutes
+### 🎧 Auditory Version
+* 🔊 Participants listen to lists of words through headphones
+* ⏱️ Each word is presented for 1.5 seconds
+* 🎯 Target word is then presented to participant
+* 🤔 Participants then recall the word presented and rate their confidence in hearing it
+* 📏 Confidence rating is done by filling up a bar from 0% to 100% using the 'f' or 'j' key on their keyboard
+* ⏳ Approximate runtime: 30 minutes
 
-### Auditory Version
-* Participants listen to lists of words through headphones
-* ...
-* ...
-* Approximate runtime: 30 minutes
-
-## 🎯 Task Procedure:
-
-### Both Versions:
-1. Participants view a series of word lists on the screen
-2. Each word is presented for 1.5 seconds
-3. Participants then recall the word presented and rate their confidence in recalled word
+### 👁️ Visual Version
+* 🚧 UNDER CONSTRUCTION 🚧
 
 ### 🎯 Example
 
