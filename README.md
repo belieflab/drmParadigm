@@ -17,17 +17,17 @@ In the DRM task, participants are presented with lists of words that are semanti
 
 ### Auditory Version
 1. 🎧 Participants listen to a series of word lists through headphones.
-2. ⏱️ Each word is presented with a 1.5-second interval.
-3. 🎯 The target word is presented to the participant.
-4. 🤔 Participants recall the presented word.
-5. 📊 They rate their confidence in hearing the word by filling a confidence bar:
-   * 📉 Press the 'F' key to indicate the target word _was_ _not_ on the list. 
-   * 📈 Press the 'J' key to indicate the target word _was_ on the list. 
-   * 🔢 Participants fill the confidence bar based on their certainty. _Confidence bar ranges from 0% to 100%_
+2. ⏱️ Each word is played one at a time with a second interval at a specific speed.
+3. 🎯 After hearing the word list, a single "target word" is played to the participant.
+4. 🤔 Participants decide if the target word was part of the word list.
+5. 📊 They rate their confidence in hearing the word by filling a confidence bar using the keyboard:
+   * 📉 By pressing the 'F' key, they can indicate that the target word _was_ _not_ on the list. 
+   * 📈 By pressing the 'J' key, they can indicate that the target word _was_ on the list. 
+   * 🔢 Participants fill the confidence bar based on their certainty (confidence bar ranges from 0% to 100%). 
 
-⏳ Approximate runtime: 30 minutes.
+⚠️ _The task measures participants' recall accuracy and confidence levels for presented words._
 
-⚠️ The task measures participants' recall accuracy and confidence levels for presented words.
+**⏳ Approximate runtime: 30 minutes.**
 
 ### 🎯 Example
 
