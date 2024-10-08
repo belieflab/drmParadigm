@@ -51,21 +51,14 @@ When pulling changes, run:
 ./sync.sh
 ```
 
-- This ensures all submodules are up-to-date.
-- Pulling changes will not remove any data.
-
-## 📊 Task Procedure
-
-1. Participants are presented with lists of words semantically related to a critical target.
-2. They are then asked to recall the words they've seen.
-3. The task measures both correct recalls and false alarms (recalling words that weren't presented).
-4. Participants rate their confidence in their recalls.
+- 🔄 This ensures all submodules are up-to-date.
+- 📥 Pulling changes will not remove any data.
 
 ## ⚙️ Configuration
 
 Modify `exp/conf.js` to adjust task parameters such as:
-- version
-- time durations for lists/words 
+- 📊 Version
+- ⏱️ Time durations for lists/words
 
 ## 🛠 Development Guide
 
