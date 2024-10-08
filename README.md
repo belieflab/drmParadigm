@@ -6,6 +6,27 @@ Welcome to the DRM Task! This experiment explores false memory creation and conf
 
 In the DRM task, participants are presented with lists of words that are semantically related to a critical target word. Interestingly, participants sometimes falsely recall seeing the critical target word, even though it was never presented. This phenomenon provides insights into memory processes and belief formation.
 
+## 📊 Task Versions
+
+### Visual Version
+* Participants read lists of words presented on a screen
+* ...
+* ....
+* Approximate runtime: 20 minutes
+
+### Auditory Version
+* Participants listen to lists of words through headphones
+* ...
+* ...
+* Approximate runtime: 30 minutes
+
+## 🎯 Task Procedure:
+
+### Both Versions:
+1. Participants view a series of word lists on the screen
+2. Each word is presented for 1.5 seconds
+3. Participants then recall the word presented and rate their confidence in recalled word
+
 ### 🎯 Example
 
 - Critical target (congruent prototype): "mountain"
