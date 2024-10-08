@@ -8,21 +8,31 @@ In the DRM task, participants are presented with lists of words that are semanti
 
 ## 📊 Task Versions
 
-### 🎧 Auditory Version
-* 🔊 Participants listen to lists of words through headphones
-* ⏱️ Each word is presented for 1.5 seconds
-* 🎯 Target word is then presented to participant
-* 🤔 Participants then recall the word presented and rate their confidence in hearing it
-* 📏 Confidence rating is done by filling up a bar from 0% to 100% using the 'f' or 'j' key on their keyboard
-* ⏳ Approximate runtime: 30 minutes
+### 🎧 Auditory
 
-### 👁️ Visual Version
+### 👁️ Visual 
 * 🚧 UNDER CONSTRUCTION 🚧
+
+## 🎯 Task Procedure
+
+### Auditory Version
+1. 🎧 Participants listen to a series of word lists through headphones.
+2. ⏱️ Each word is presented with a 1.5-second interval.
+3. 🎯 The target word is presented to the participant.
+4. 🤔 Participants recall the presented word.
+5. 📊 They rate their confidence in hearing the word by filling a confidence bar:
+   * 📉 Use 'f' key to decrease confidence.
+   * 📈 Use 'j' key to increase confidence.
+   * 🔢 Confidence bar ranges from 0% to 100%
+
+⏳ Approximate runtime: 30 minutes.
+
+⚠️ The task measures participants' recall accuracy and confidence levels for presented words.
 
 ### 🎯 Example
 
-- Critical target (congruent prototype): "mountain"
-- Presented words: top, peak, range, glacier, bike, climb
+- Critical target (congruent prototype): _"mountain"_
+- Presented words: _top, peak, range, glacier, bike, climb_
 - When queried with "mountain", participants may report having seen it, despite it never being presented.
 
 ## 🚀 Getting Started
