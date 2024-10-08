@@ -6,6 +6,12 @@ Welcome to the DRM Task! This experiment explores false memory creation and conf
 
 In the DRM task, participants are presented with lists of words that are semantically related to a critical target word. Interestingly, participants sometimes falsely recall seeing the critical target word, even though it was never presented. This phenomenon provides insights into memory processes and belief formation.
 
+### 🎯 Example
+
+- Critical target (congruent prototype): "mountain"
+- Presented words: top, peak, range, glacier, bike, climb
+- When queried with "mountain", participants may report having seen it, despite it never being presented.
+
 ## 🚀 Getting Started
 
 Clone the Repository:
