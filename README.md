@@ -29,6 +29,9 @@ In the DRM task, participants are presented with lists of words that are semanti
 
 **⏳ Approximate runtime: 30 minutes.**
 
+### Visual Version
+* 🚧 UNDER CONSTRUCTION 🚧
+
 ### 🎯 Example
 
 - Critical target (congruent prototype): _"mountain"_
