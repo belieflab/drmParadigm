@@ -41,9 +41,8 @@ When pulling changes, run:
 ## ⚙️ Configuration
 
 Modify `exp/conf.js` to adjust task parameters such as:
-- Number of word lists
-- Presentation time for each word
-- Recall duration
+- version
+- time durations for lists/words 
 
 ## 🛠 Development Guide
 
