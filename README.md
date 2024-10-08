@@ -21,9 +21,9 @@ In the DRM task, participants are presented with lists of words that are semanti
 3. 🎯 The target word is presented to the participant.
 4. 🤔 Participants recall the presented word.
 5. 📊 They rate their confidence in hearing the word by filling a confidence bar:
-   * 📉 Use 'f' key to decrease confidence.
-   * 📈 Use 'j' key to increase confidence.
-   * 🔢 Confidence bar ranges from 0% to 100%
+   * 📉 Press the 'F' key to indicate the target word _was_ _not_ on the list. 
+   * 📈 Press the 'J' key to indicate the target word _was_ on the list. 
+   * 🔢 Participants fill the confidence bar based on their certainty. _Confidence bar ranges from 0% to 100%_
 
 ⏳ Approximate runtime: 30 minutes.
 
