@@ -46,7 +46,7 @@ Clone the Repository:
 git clone --recurse-submodules -j4 git@github.com:belieflab/drmParadigm.git && cd drmParadigm && git submodule foreach --recursive 'git checkout $(git config -f $toplevel/.gitmodules submodule.$name.branch || echo main)' && git update-index --assume-unchanged exp/conf.js
 ```
 
-## 🔄 Staying Updated
+## ✅ Staying Updated
 
 When pulling changes, run:
 
@@ -54,8 +54,9 @@ When pulling changes, run:
 ./sync.sh
 ```
 
-- 🔄 This ensures all submodules are up-to-date.
-- 📥 Pulling changes will not remove any data.
+> 🔄 This ensures all submodules are up-to-date.
+
+> 👌 Pulling changes will not remove any data.
 
 ## ⚙️ Configuration
 
