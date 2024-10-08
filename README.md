@@ -6,6 +6,14 @@ Welcome to the DRM Task! This experiment explores false memory creation and conf
 
 In the DRM task, participants are presented with lists of words that are semantically related to a critical target word. Interestingly, participants sometimes falsely recall seeing the critical target word, even though it was never presented. This phenomenon provides insights into memory processes and belief formation.
 
+There are 4 trial types:
+1. **Congruent Prototype**
+2. **Incongruent Prototype**
+3. **Congruent Highest Associate**
+4. **Incongruent Highest Associate**
+
+Each trial type is presented **18 times** during the task.
+
 ## 📊 Task Versions
 
 ### 🎧 Auditory
