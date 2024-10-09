@@ -25,20 +25,20 @@ const responsePromptTone = "stim/audio_tones/tone_1.mp3";
 const silence = "stim/audio_instructions/silence.mp3";
 
 // words to be used in practice trials
-const atom = "stim/audio_practice/atom.wav";
-const molecule = "stim/audio_practice/molecule.wav";
-const bond = "stim/audio_practice/bond.wav";
-const gas = "stim/audio_practice/gas.wav";
-const electron = "stim/audio_practice/electron.wav";
-const oxygen = "stim/audio_practice/oxygen.wav";
-const chemistry = "stim/audio_practice/chemistry.wav";
+const atom = "stim/audio_practice/atom.mp3";
+const molecule = "stim/audio_practice/molecule.mp3";
+const bond = "stim/audio_practice/bond.mp3";
+const gas = "stim/audio_practice/gas.mp3";
+const electron = "stim/audio_practice/electron.mp3";
+const oxygen = "stim/audio_practice/oxygen.mp3";
+const chemistry = "stim/audio_practice/chemistry.mp3";
 
-const shark = "stim/audio_practice/shark.wav";
-const island = "stim/audio_practice/island.wav";
-const waves = "stim/audio_practice/waves.wav";
-const shrimp = "stim/audio_practice/shrimp.wav";
-const whale = "stim/audio_practice/whale.wav";
-const ocean = "stim/audio_practice/ocean.wav";
+const shark = "stim/audio_practice/shark.mp3";
+const island = "stim/audio_practice/island.mp3";
+const waves = "stim/audio_practice/waves.mp3";
+const shrimp = "stim/audio_practice/shrimp.mp3";
+const whale = "stim/audio_practice/whale.mp3";
+const ocean = "stim/audio_practice/ocean.mp3";
 
 let practiceOne = {
     listA: [atom, molecule, bond, gas, electron, oxygen],
@@ -64,22 +64,22 @@ let practiceTrials = [];
 });
 
 // all variables in listNumber1 : Anger
-const anger = "stim/audio_stimuli/anger.wav";
-const hate = "stim/audio_stimuli/hate.wav";
-const temper = "stim/audio_stimuli/temper.wav";
-const ire = "stim/audio_stimuli/ire.wav";
-const happy = "stim/audio_stimuli/happy.wav";
-const hatred = "stim/audio_stimuli/hatred.wav";
-const calm = "stim/audio_stimuli/calm.wav";
-const rage = "stim/audio_stimuli/rage.wav";
-const fury = "stim/audio_stimuli/fury.wav";
-const wrath = "stim/audio_stimuli/wrath.wav";
-const fight = "stim/audio_stimuli/fight.wav";
-const mean = "stim/audio_stimuli/mean.wav";
-const emotion = "stim/audio_stimuli/emotion.wav";
-const mad = "stim/audio_stimuli/mad.wav";
-const fear = "stim/audio_stimuli/fear.wav";
-const enrage = "stim/audio_stimuli/enrage.wav";
+const anger = "stim/audio_stimuli/anger.mp3";
+const hate = "stim/audio_stimuli/hate.mp3";
+const temper = "stim/audio_stimuli/temper.mp3";
+const ire = "stim/audio_stimuli/ire.mp3";
+const happy = "stim/audio_stimuli/happy.mp3";
+const hatred = "stim/audio_stimuli/hatred.mp3";
+const calm = "stim/audio_stimuli/calm.mp3";
+const rage = "stim/audio_stimuli/rage.mp3";
+const fury = "stim/audio_stimuli/fury.mp3";
+const wrath = "stim/audio_stimuli/wrath.mp3";
+const fight = "stim/audio_stimuli/fight.mp3";
+const mean = "stim/audio_stimuli/mean.mp3";
+const emotion = "stim/audio_stimuli/emotion.mp3";
+const mad = "stim/audio_stimuli/mad.mp3";
+const fear = "stim/audio_stimuli/fear.mp3";
+const enrage = "stim/audio_stimuli/enrage.mp3";
 
 let Anger = {
     listNumber: 1,
@@ -91,22 +91,22 @@ let Anger = {
 };
 
 // all variables in listNumber2 : Army
-const unitedStates = "stim/audio_stimuli/unitedStates.wav";
-const airForce = "stim/audio_stimuli/airForce.wav";
-const military = "stim/audio_stimuli/military.wav";
-const march = "stim/audio_stimuli/march.wav";
-const captain = "stim/audio_stimuli/captain.wav";
-const uniform = "stim/audio_stimuli/uniform.wav";
-const rifle = "stim/audio_stimuli/rifle.wav";
-const draft = "stim/audio_stimuli/draft.wav";
-const marines = "stim/audio_stimuli/marines.wav";
-const infantry = "stim/audio_stimuli/infantry.wav";
-const war = "stim/audio_stimuli/war.wav";
-const pilot = "stim/audio_stimuli/pilot.wav";
-const army = "stim/audio_stimuli/army.wav";
-const navy = "stim/audio_stimuli/navy.wav";
-const soldier = "stim/audio_stimuli/soldier.wav";
-const combat = "stim/audio_stimuli/combat.wav";
+const unitedStates = "stim/audio_stimuli/unitedStates.mp3";
+const airForce = "stim/audio_stimuli/airForce.mp3";
+const military = "stim/audio_stimuli/military.mp3";
+const march = "stim/audio_stimuli/march.mp3";
+const captain = "stim/audio_stimuli/captain.mp3";
+const uniform = "stim/audio_stimuli/uniform.mp3";
+const rifle = "stim/audio_stimuli/rifle.mp3";
+const draft = "stim/audio_stimuli/draft.mp3";
+const marines = "stim/audio_stimuli/marines.mp3";
+const infantry = "stim/audio_stimuli/infantry.mp3";
+const war = "stim/audio_stimuli/war.mp3";
+const pilot = "stim/audio_stimuli/pilot.mp3";
+const army = "stim/audio_stimuli/army.mp3";
+const navy = "stim/audio_stimuli/navy.mp3";
+const soldier = "stim/audio_stimuli/soldier.mp3";
+const combat = "stim/audio_stimuli/combat.mp3";
 
 let Army = {
     listNumber: 2,
@@ -118,22 +118,22 @@ let Army = {
 };
 
 // all variables in listNumber3 : Black
-const black = "stim/audio_stimuli/black.wav";
-const cat = "stim/audio_stimuli/cat.wav";
-const night = "stim/audio_stimuli/night.wav";
-const color = "stim/audio_stimuli/color.wav";
-const blue = "stim/audio_stimuli/blue.wav";
-const ink = "stim/audio_stimuli/ink.wav";
-const coal = "stim/audio_stimuli/coal.wav";
-const charred = "stim/audio_stimuli/charred.wav";
-const funeral = "stim/audio_stimuli/funeral.wav";
-const grief = "stim/audio_stimuli/grief.wav";
-const death = "stim/audio_stimuli/death.wav";
-const bottom = "stim/audio_stimuli/bottom.wav";
-const brown = "stim/audio_stimuli/brown.wav";
-const white = "stim/audio_stimuli/white.wav";
-const dark = "stim/audio_stimuli/dark.wav";
-const gray = "stim/audio_stimuli/gray.wav";
+const black = "stim/audio_stimuli/black.mp3";
+const cat = "stim/audio_stimuli/cat.mp3";
+const night = "stim/audio_stimuli/night.mp3";
+const color = "stim/audio_stimuli/color.mp3";
+const blue = "stim/audio_stimuli/blue.mp3";
+const ink = "stim/audio_stimuli/ink.mp3";
+const coal = "stim/audio_stimuli/coal.mp3";
+const charred = "stim/audio_stimuli/charred.mp3";
+const funeral = "stim/audio_stimuli/funeral.mp3";
+const grief = "stim/audio_stimuli/grief.mp3";
+const death = "stim/audio_stimuli/death.mp3";
+const bottom = "stim/audio_stimuli/bottom.mp3";
+const brown = "stim/audio_stimuli/brown.mp3";
+const white = "stim/audio_stimuli/white.mp3";
+const dark = "stim/audio_stimuli/dark.mp3";
+const gray = "stim/audio_stimuli/gray.mp3";
 
 let Black = {
     listNumber: 3,
@@ -145,22 +145,22 @@ let Black = {
 };
 
 // all variables for list 4:Bread
-const bread = "stim/audio_stimuli/bread.wav";
-const eat = "stim/audio_stimuli/eat.wav";
-const rye = "stim/audio_stimuli/rye.wav";
-const milk = "stim/audio_stimuli/milk.wav";
-const jelly = "stim/audio_stimuli/jelly.wav";
-const crust = "stim/audio_stimuli/crust.wav";
-const wine = "stim/audio_stimuli/wine.wav";
-const sandwich = "stim/audio_stimuli/sandwich.wav";
-const jam = "stim/audio_stimuli/jam.wav";
-const flour = "stim/audio_stimuli/flour.wav";
-const dough = "stim/audio_stimuli/dough.wav";
-const slice = "stim/audio_stimuli/slice.wav";
-const loaf = "stim/audio_stimuli/loaf.wav";
-const butter = "stim/audio_stimuli/butter.wav";
-const food = "stim/audio_stimuli/food.wav";
-const toast = "stim/audio_stimuli/toast.wav";
+const bread = "stim/audio_stimuli/bread.mp3";
+const eat = "stim/audio_stimuli/eat.mp3";
+const rye = "stim/audio_stimuli/rye.mp3";
+const milk = "stim/audio_stimuli/milk.mp3";
+const jelly = "stim/audio_stimuli/jelly.mp3";
+const crust = "stim/audio_stimuli/crust.mp3";
+const wine = "stim/audio_stimuli/wine.mp3";
+const sandwich = "stim/audio_stimuli/sandwich.mp3";
+const jam = "stim/audio_stimuli/jam.mp3";
+const flour = "stim/audio_stimuli/flour.mp3";
+const dough = "stim/audio_stimuli/dough.mp3";
+const slice = "stim/audio_stimuli/slice.mp3";
+const loaf = "stim/audio_stimuli/loaf.mp3";
+const butter = "stim/audio_stimuli/butter.mp3";
+const food = "stim/audio_stimuli/food.mp3";
+const toast = "stim/audio_stimuli/toast.mp3";
 
 let Bread = {
     listNumber: 4,
@@ -172,22 +172,22 @@ let Bread = {
 };
 
 // all variables for list 5: Car
-const car = "stim/audio_stimuli/car.wav";
-const train = "stim/audio_stimuli/train.wav";
-const vehicle = "stim/audio_stimuli/vehicle.wav";
-const jeep = "stim/audio_stimuli/jeep.wav";
-const race = "stim/audio_stimuli/race.wav";
-const garage = "stim/audio_stimuli/garage.wav";
-const sedan = "stim/audio_stimuli/sedan.wav";
-const automobile = "stim/audio_stimuli/automobile.wav";
-const drive = "stim/audio_stimuli/drive.wav";
-const ford = "stim/audio_stimuli/ford.wav";
-const keys = "stim/audio_stimuli/keys.wav";
-const highway = "stim/audio_stimuli/highway.wav";
-const van = "stim/audio_stimuli/van.wav";
-const truck = "stim/audio_stimuli/truck.wav";
-const bus = "stim/audio_stimuli/bus.wav";
-const taxi = "stim/audio_stimuli/taxi.wav";
+const car = "stim/audio_stimuli/car.mp3";
+const train = "stim/audio_stimuli/train.mp3";
+const vehicle = "stim/audio_stimuli/vehicle.mp3";
+const jeep = "stim/audio_stimuli/jeep.mp3";
+const race = "stim/audio_stimuli/race.mp3";
+const garage = "stim/audio_stimuli/garage.mp3";
+const sedan = "stim/audio_stimuli/sedan.mp3";
+const automobile = "stim/audio_stimuli/automobile.mp3";
+const drive = "stim/audio_stimuli/drive.mp3";
+const ford = "stim/audio_stimuli/ford.mp3";
+const keys = "stim/audio_stimuli/keys.mp3";
+const highway = "stim/audio_stimuli/highway.mp3";
+const van = "stim/audio_stimuli/van.mp3";
+const truck = "stim/audio_stimuli/truck.mp3";
+const bus = "stim/audio_stimuli/bus.mp3";
+const taxi = "stim/audio_stimuli/taxi.mp3";
 
 let Car = {
     listNumber: 5,
@@ -199,22 +199,22 @@ let Car = {
 };
 
 // all variables for list 6: Chair
-const chair = "stim/audio_stimuli/chair.wav";
-const legs = "stim/audio_stimuli/legs.wav";
-const couch = "stim/audio_stimuli/couch.wav";
-const recliner = "stim/audio_stimuli/recliner.wav";
-const wood = "stim/audio_stimuli/wood.wav";
-const swivel = "stim/audio_stimuli/swivel.wav";
-const sitting = "stim/audio_stimuli/sitting.wav";
-const seat = "stim/audio_stimuli/seat.wav";
-const desk = "stim/audio_stimuli/desk.wav";
-const sofa = "stim/audio_stimuli/sofa.wav";
-const cushion = "stim/audio_stimuli/cushion.wav";
-const stool = "stim/audio_stimuli/stool.wav";
-const rocking = "stim/audio_stimuli/rocking.wav";
-const table = "stim/audio_stimuli/table.wav";
-const sit = "stim/audio_stimuli/sit.wav";
-const bench = "stim/audio_stimuli/bench.wav";
+const chair = "stim/audio_stimuli/chair.mp3";
+const legs = "stim/audio_stimuli/legs.mp3";
+const couch = "stim/audio_stimuli/couch.mp3";
+const recliner = "stim/audio_stimuli/recliner.mp3";
+const wood = "stim/audio_stimuli/wood.mp3";
+const swivel = "stim/audio_stimuli/swivel.mp3";
+const sitting = "stim/audio_stimuli/sitting.mp3";
+const seat = "stim/audio_stimuli/seat.mp3";
+const desk = "stim/audio_stimuli/desk.mp3";
+const sofa = "stim/audio_stimuli/sofa.mp3";
+const cushion = "stim/audio_stimuli/cushion.mp3";
+const stool = "stim/audio_stimuli/stool.mp3";
+const rocking = "stim/audio_stimuli/rocking.mp3";
+const table = "stim/audio_stimuli/table.mp3";
+const sit = "stim/audio_stimuli/sit.mp3";
+const bench = "stim/audio_stimuli/bench.mp3";
 
 let Chair = {
     listNumber: 6,
@@ -226,22 +226,22 @@ let Chair = {
 };
 
 // all variables for list 7: City
-const city = "stim/audio_stimuli/city.wav";
-const state = "stim/audio_stimuli/state.wav";
-const streets = "stim/audio_stimuli/streets.wav";
-const country = "stim/audio_stimuli/country.wav";
-const village = "stim/audio_stimuli/village.wav";
-const big = "stim/audio_stimuli/big.wav";
-const suburb = "stim/audio_stimuli/suburb.wav";
-const capital = "stim/audio_stimuli/capital.wav";
-const subway = "stim/audio_stimuli/subway.wav";
-const newYork = "stim/audio_stimuli/newYork.wav";
-const metropolis = "stim/audio_stimuli/metropolis.wav";
-const chicago = "stim/audio_stimuli/chicago.wav";
-const county = "stim/audio_stimuli/county.wav";
-const town = "stim/audio_stimuli/town.wav";
-const crowded = "stim/audio_stimuli/crowded.wav";
-const urban = "stim/audio_stimuli/urban.wav";
+const city = "stim/audio_stimuli/city.mp3";
+const state = "stim/audio_stimuli/state.mp3";
+const streets = "stim/audio_stimuli/streets.mp3";
+const country = "stim/audio_stimuli/country.mp3";
+const village = "stim/audio_stimuli/village.mp3";
+const big = "stim/audio_stimuli/big.mp3";
+const suburb = "stim/audio_stimuli/suburb.mp3";
+const capital = "stim/audio_stimuli/capital.mp3";
+const subway = "stim/audio_stimuli/subway.mp3";
+const newYork = "stim/audio_stimuli/newYork.mp3";
+const metropolis = "stim/audio_stimuli/metropolis.mp3";
+const chicago = "stim/audio_stimuli/chicago.mp3";
+const county = "stim/audio_stimuli/county.mp3";
+const town = "stim/audio_stimuli/town.mp3";
+const crowded = "stim/audio_stimuli/crowded.mp3";
+const urban = "stim/audio_stimuli/urban.mp3";
 
 let City = {
     listNumber: 7,
@@ -253,22 +253,22 @@ let City = {
 };
 
 // all variables for list 7: Cold
-const cold = "stim/audio_stimuli/cold.wav";
-const warm = "stim/audio_stimuli/warm.wav";
-const ice = "stim/audio_stimuli/ice.wav";
-const frigid = "stim/audio_stimuli/frigid.wav";
-const heat = "stim/audio_stimuli/heat.wav";
-const freeze = "stim/audio_stimuli/freeze.wav";
-const shiver = "stim/audio_stimuli/shiver.wav";
-const winter = "stim/audio_stimuli/winter.wav";
-const wet = "stim/audio_stimuli/wet.wav";
-const chilly = "stim/audio_stimuli/chilly.wav";
-const weather = "stim/audio_stimuli/weather.wav";
-const air = "stim/audio_stimuli/air.wav";
-const arctic = "stim/audio_stimuli/arctic.wav";
-const hot = "stim/audio_stimuli/hot.wav";
-const snow = "stim/audio_stimuli/snow.wav";
-const frost = "stim/audio_stimuli/frost.wav";
+const cold = "stim/audio_stimuli/cold.mp3";
+const warm = "stim/audio_stimuli/warm.mp3";
+const ice = "stim/audio_stimuli/ice.mp3";
+const frigid = "stim/audio_stimuli/frigid.mp3";
+const heat = "stim/audio_stimuli/heat.mp3";
+const freeze = "stim/audio_stimuli/freeze.mp3";
+const shiver = "stim/audio_stimuli/shiver.mp3";
+const winter = "stim/audio_stimuli/winter.mp3";
+const wet = "stim/audio_stimuli/wet.mp3";
+const chilly = "stim/audio_stimuli/chilly.mp3";
+const weather = "stim/audio_stimuli/weather.mp3";
+const air = "stim/audio_stimuli/air.mp3";
+const arctic = "stim/audio_stimuli/arctic.mp3";
+const hot = "stim/audio_stimuli/hot.mp3";
+const snow = "stim/audio_stimuli/snow.mp3";
+const frost = "stim/audio_stimuli/frost.mp3";
 
 let Cold = {
     listNumber: 8,
@@ -280,22 +280,22 @@ let Cold = {
 };
 
 // all variables for list 9: Cup
-const cup = "stim/audio_stimuli/cup.wav";
-const tea = "stim/audio_stimuli/tea.wav";
-const coaster = "stim/audio_stimuli/coaster.wav";
-const handle = "stim/audio_stimuli/handle.wav";
-const straw = "stim/audio_stimuli/straw.wav";
-const soup = "stim/audio_stimuli/soup.wav";
-const drink = "stim/audio_stimuli/drink.wav";
-const measuring = "stim/audio_stimuli/measuring.wav";
-const lid = "stim/audio_stimuli/lid.wav";
-const coffee = "stim/audio_stimuli/coffee.wav";
-const goblet = "stim/audio_stimuli/goblet.wav";
-const stein = "stim/audio_stimuli/stein.wav";
-const plastic = "stim/audio_stimuli/plastic.wav";
-const mug = "stim/audio_stimuli/mug.wav";
-const saucer = "stim/audio_stimuli/saucer.wav";
-const sip = "stim/audio_stimuli/sip.wav";
+const cup = "stim/audio_stimuli/cup.mp3";
+const tea = "stim/audio_stimuli/tea.mp3";
+const coaster = "stim/audio_stimuli/coaster.mp3";
+const handle = "stim/audio_stimuli/handle.mp3";
+const straw = "stim/audio_stimuli/straw.mp3";
+const soup = "stim/audio_stimuli/soup.mp3";
+const drink = "stim/audio_stimuli/drink.mp3";
+const measuring = "stim/audio_stimuli/measuring.mp3";
+const lid = "stim/audio_stimuli/lid.mp3";
+const coffee = "stim/audio_stimuli/coffee.mp3";
+const goblet = "stim/audio_stimuli/goblet.mp3";
+const stein = "stim/audio_stimuli/stein.mp3";
+const plastic = "stim/audio_stimuli/plastic.mp3";
+const mug = "stim/audio_stimuli/mug.mp3";
+const saucer = "stim/audio_stimuli/saucer.mp3";
+const sip = "stim/audio_stimuli/sip.mp3";
 
 let Cup = {
     listNumber: 9,
@@ -307,22 +307,22 @@ let Cup = {
 };
 
 // all variables for list 10: Doctor
-const doctor = "stim/audio_stimuli/doctor.wav";
-const lawyer = "stim/audio_stimuli/lawyer.wav";
-const health = "stim/audio_stimuli/health.wav";
-const dentist = "stim/audio_stimuli/dentist.wav";
-const ill = "stim/audio_stimuli/ill.wav";
-const office = "stim/audio_stimuli/office.wav";
-const surgeon = "stim/audio_stimuli/surgeon.wav";
-const medicine = "stim/audio_stimuli/medicine.wav";
-const hospital = "stim/audio_stimuli/hospital.wav";
-const physician = "stim/audio_stimuli/physician.wav";
-const patient = "stim/audio_stimuli/patient.wav";
-const stethoscope = "stim/audio_stimuli/stethoscope.wav";
-const clinic = "stim/audio_stimuli/clinic.wav";
-const nurse = "stim/audio_stimuli/nurse.wav";
-const sick = "stim/audio_stimuli/sick.wav";
-const cure = "stim/audio_stimuli/cure.wav";
+const doctor = "stim/audio_stimuli/doctor.mp3";
+const lawyer = "stim/audio_stimuli/lawyer.mp3";
+const health = "stim/audio_stimuli/health.mp3";
+const dentist = "stim/audio_stimuli/dentist.mp3";
+const ill = "stim/audio_stimuli/ill.mp3";
+const office = "stim/audio_stimuli/office.mp3";
+const surgeon = "stim/audio_stimuli/surgeon.mp3";
+const medicine = "stim/audio_stimuli/medicine.mp3";
+const hospital = "stim/audio_stimuli/hospital.mp3";
+const physician = "stim/audio_stimuli/physician.mp3";
+const patient = "stim/audio_stimuli/patient.mp3";
+const stethoscope = "stim/audio_stimuli/stethoscope.mp3";
+const clinic = "stim/audio_stimuli/clinic.mp3";
+const nurse = "stim/audio_stimuli/nurse.mp3";
+const sick = "stim/audio_stimuli/sick.mp3";
+const cure = "stim/audio_stimuli/cure.mp3";
 
 let Doctor = {
     listNumber: 10,
@@ -334,22 +334,22 @@ let Doctor = {
 };
 
 // all variables for list 11: Flag
-const flag = "stim/audio_stimuli/flag.wav";
-const symbol = "stim/audio_stimuli/symbol.wav";
-const anthem = "stim/audio_stimuli/anthem.wav";
-const pole = "stim/audio_stimuli/pole.wav";
-const raised = "stim/audio_stimuli/raised.wav";
-const checkered = "stim/audio_stimuli/checkered.wav";
-const sign = "stim/audio_stimuli/sign.wav";
-const stars = "stim/audio_stimuli/stars.wav";
-const stripes = "stim/audio_stimuli/stripes.wav";
-const wave = "stim/audio_stimuli/wave.wav";
-const national = "stim/audio_stimuli/national.wav";
-const emblem = "stim/audio_stimuli/emblem.wav";
-const freedom = "stim/audio_stimuli/freedom.wav";
-const banner = "stim/audio_stimuli/banner.wav";
-const american = "stim/audio_stimuli/american.wav";
-const pendant = "stim/audio_stimuli/pendant.wav";
+const flag = "stim/audio_stimuli/flag.mp3";
+const symbol = "stim/audio_stimuli/symbol.mp3";
+const anthem = "stim/audio_stimuli/anthem.mp3";
+const pole = "stim/audio_stimuli/pole.mp3";
+const raised = "stim/audio_stimuli/raised.mp3";
+const checkered = "stim/audio_stimuli/checkered.mp3";
+const sign = "stim/audio_stimuli/sign.mp3";
+const stars = "stim/audio_stimuli/stars.mp3";
+const stripes = "stim/audio_stimuli/stripes.mp3";
+const wave = "stim/audio_stimuli/wave.mp3";
+const national = "stim/audio_stimuli/national.mp3";
+const emblem = "stim/audio_stimuli/emblem.mp3";
+const freedom = "stim/audio_stimuli/freedom.mp3";
+const banner = "stim/audio_stimuli/banner.mp3";
+const american = "stim/audio_stimuli/american.mp3";
+const pendant = "stim/audio_stimuli/pendant.mp3";
 
 let Flag = {
     listNumber: 11,
@@ -361,22 +361,22 @@ let Flag = {
 };
 
 // all variables for list 12: Foot
-const foot = "stim/audio_stimuli/foot.wav";
-const toe = "stim/audio_stimuli/toe.wav";
-const sandals = "stim/audio_stimuli/sandals.wav";
-const yard = "stim/audio_stimuli/yard.wav";
-const ankle = "stim/audio_stimuli/ankle.wav";
-const boot = "stim/audio_stimuli/boot.wav";
-const sock = "stim/audio_stimuli/sock.wav";
-const kick = "stim/audio_stimuli/kick.wav";
-const soccer = "stim/audio_stimuli/soccer.wav";
-const walk = "stim/audio_stimuli/walk.wav";
-const arm = "stim/audio_stimuli/arm.wav";
-const inch = "stim/audio_stimuli/inch.wav";
-const knee = "stim/audio_stimuli/knee.wav";
-const shoe = "stim/audio_stimuli/shoe.wav";
-const hand = "stim/audio_stimuli/hand.wav";
-const mouth = "stim/audio_stimuli/mouth.wav";
+const foot = "stim/audio_stimuli/foot.mp3";
+const toe = "stim/audio_stimuli/toe.mp3";
+const sandals = "stim/audio_stimuli/sandals.mp3";
+const yard = "stim/audio_stimuli/yard.mp3";
+const ankle = "stim/audio_stimuli/ankle.mp3";
+const boot = "stim/audio_stimuli/boot.mp3";
+const sock = "stim/audio_stimuli/sock.mp3";
+const kick = "stim/audio_stimuli/kick.mp3";
+const soccer = "stim/audio_stimuli/soccer.mp3";
+const walk = "stim/audio_stimuli/walk.mp3";
+const arm = "stim/audio_stimuli/arm.mp3";
+const inch = "stim/audio_stimuli/inch.mp3";
+const knee = "stim/audio_stimuli/knee.mp3";
+const shoe = "stim/audio_stimuli/shoe.mp3";
+const hand = "stim/audio_stimuli/hand.mp3";
+const mouth = "stim/audio_stimuli/mouth.mp3";
 
 let Foot = {
     listNumber: 12,
@@ -388,22 +388,22 @@ let Foot = {
 };
 
 // all variables for list 13: Fruit
-const fruit = "stim/audio_stimuli/fruit.wav";
-const orange = "stim/audio_stimuli/orange.wav";
-const citrus = "stim/audio_stimuli/citrus.wav";
-const pear = "stim/audio_stimuli/pear.wav";
-const berry = "stim/audio_stimuli/berry.wav";
-const basket = "stim/audio_stimuli/basket.wav";
-const salad = "stim/audio_stimuli/salad.wav";
-const kiwi = "stim/audio_stimuli/kiwi.wav";
-const ripe = "stim/audio_stimuli/ripe.wav";
-const banana = "stim/audio_stimuli/banana.wav";
-const cherry = "stim/audio_stimuli/cherry.wav";
-const juice = "stim/audio_stimuli/juice.wav";
-const bowl = "stim/audio_stimuli/bowl.wav";
-const apple = "stim/audio_stimuli/apple.wav";
-const vegetable = "stim/audio_stimuli/vegetable.wav";
-const cocktail = "stim/audio_stimuli/cocktail.wav";
+const fruit = "stim/audio_stimuli/fruit.mp3";
+const orange = "stim/audio_stimuli/orange.mp3";
+const citrus = "stim/audio_stimuli/citrus.mp3";
+const pear = "stim/audio_stimuli/pear.mp3";
+const berry = "stim/audio_stimuli/berry.mp3";
+const basket = "stim/audio_stimuli/basket.mp3";
+const salad = "stim/audio_stimuli/salad.mp3";
+const kiwi = "stim/audio_stimuli/kiwi.mp3";
+const ripe = "stim/audio_stimuli/ripe.mp3";
+const banana = "stim/audio_stimuli/banana.mp3";
+const cherry = "stim/audio_stimuli/cherry.mp3";
+const juice = "stim/audio_stimuli/juice.mp3";
+const bowl = "stim/audio_stimuli/bowl.mp3";
+const apple = "stim/audio_stimuli/apple.mp3";
+const vegetable = "stim/audio_stimuli/vegetable.mp3";
+const cocktail = "stim/audio_stimuli/cocktail.mp3";
 
 let Fruit = {
     listNumber: 13,
@@ -415,22 +415,22 @@ let Fruit = {
 };
 
 // all variables for list 14: Girl
-const girl = "stim/audio_stimuli/girl.wav";
-const female = "stim/audio_stimuli/female.wav";
-const dress = "stim/audio_stimuli/dress.wav";
-const hair = "stim/audio_stimuli/hair.wav";
-const dance = "stim/audio_stimuli/dance.wav";
-const cute = "stim/audio_stimuli/cute.wav";
-const aunt = "stim/audio_stimuli/aunt.wav";
-const young = "stim/audio_stimuli/young.wav";
-const pretty = "stim/audio_stimuli/pretty.wav";
-const niece = "stim/audio_stimuli/niece.wav";
-const beautiful = "stim/audio_stimuli/beautiful.wav";
-const outing = "stim/audio_stimuli/date.wav";
-const daughter = "stim/audio_stimuli/daughter.wav";
-const boy = "stim/audio_stimuli/boy.wav";
-const dolls = "stim/audio_stimuli/dolls.wav";
-const sister = "stim/audio_stimuli/sister.wav";
+const girl = "stim/audio_stimuli/girl.mp3";
+const female = "stim/audio_stimuli/female.mp3";
+const dress = "stim/audio_stimuli/dress.mp3";
+const hair = "stim/audio_stimuli/hair.mp3";
+const dance = "stim/audio_stimuli/dance.mp3";
+const cute = "stim/audio_stimuli/cute.mp3";
+const aunt = "stim/audio_stimuli/aunt.mp3";
+const young = "stim/audio_stimuli/young.mp3";
+const pretty = "stim/audio_stimuli/pretty.mp3";
+const niece = "stim/audio_stimuli/niece.mp3";
+const beautiful = "stim/audio_stimuli/beautiful.mp3";
+const outing = "stim/audio_stimuli/date.mp3";
+const daughter = "stim/audio_stimuli/daughter.mp3";
+const boy = "stim/audio_stimuli/boy.mp3";
+const dolls = "stim/audio_stimuli/dolls.mp3";
+const sister = "stim/audio_stimuli/sister.mp3";
 
 let Girl = {
     listNumber: 14,
@@ -442,22 +442,22 @@ let Girl = {
 };
 
 // all variables for list 15: High
-const high = "stim/audio_stimuli/high.wav";
-const up = "stim/audio_stimuli/up.wav";
-const tower = "stim/audio_stimuli/tower.wav";
-const above = "stim/audio_stimuli/above.wav";
-const noon = "stim/audio_stimuli/noon.wav";
-const sky = "stim/audio_stimuli/sky.wav";
-const airplane = "stim/audio_stimuli/airplane.wav";
-const tall = "stim/audio_stimuli/tall.wav";
-const jump = "stim/audio_stimuli/jump.wav";
-const building = "stim/audio_stimuli/building.wav";
-const cliff = "stim/audio_stimuli/cliff.wav";
-const over = "stim/audio_stimuli/over.wav";
-const dive = "stim/audio_stimuli/dive.wav";
-const low = "stim/audio_stimuli/low.wav";
-const clouds = "stim/audio_stimuli/clouds.wav";
-const elevate = "stim/audio_stimuli/elevate.wav";
+const high = "stim/audio_stimuli/high.mp3";
+const up = "stim/audio_stimuli/up.mp3";
+const tower = "stim/audio_stimuli/tower.mp3";
+const above = "stim/audio_stimuli/above.mp3";
+const noon = "stim/audio_stimuli/noon.mp3";
+const sky = "stim/audio_stimuli/sky.mp3";
+const airplane = "stim/audio_stimuli/airplane.mp3";
+const tall = "stim/audio_stimuli/tall.mp3";
+const jump = "stim/audio_stimuli/jump.mp3";
+const building = "stim/audio_stimuli/building.mp3";
+const cliff = "stim/audio_stimuli/cliff.mp3";
+const over = "stim/audio_stimuli/over.mp3";
+const dive = "stim/audio_stimuli/dive.mp3";
+const low = "stim/audio_stimuli/low.mp3";
+const clouds = "stim/audio_stimuli/clouds.mp3";
+const elevate = "stim/audio_stimuli/elevate.mp3";
 
 let High = {
     listNumber: 15,
@@ -469,22 +469,22 @@ let High = {
 };
 
 // all variables for list 16: King
-const king = "stim/audio_stimuli/king.wav";
-const crown = "stim/audio_stimuli/crown.wav";
-const george = "stim/audio_stimuli/george.wav";
-const palace = "stim/audio_stimuli/palace.wav";
-const chess = "stim/audio_stimuli/chess.wav";
-const subjects = "stim/audio_stimuli/subjects.wav";
-const royal = "stim/audio_stimuli/royal.wav";
-const prince = "stim/audio_stimuli/prince.wav";
-const dictator = "stim/audio_stimuli/dictator.wav";
-const throne = "stim/audio_stimuli/throne.wav";
-const rule = "stim/audio_stimuli/rule.wav";
-const monarch = "stim/audio_stimuli/monarch.wav";
-const leader = "stim/audio_stimuli/leader.wav";
-const queen = "stim/audio_stimuli/queen.wav";
-const england = "stim/audio_stimuli/england.wav";
-const reign = "stim/audio_stimuli/reign.wav";
+const king = "stim/audio_stimuli/king.mp3";
+const crown = "stim/audio_stimuli/crown.mp3";
+const george = "stim/audio_stimuli/george.mp3";
+const palace = "stim/audio_stimuli/palace.mp3";
+const chess = "stim/audio_stimuli/chess.mp3";
+const subjects = "stim/audio_stimuli/subjects.mp3";
+const royal = "stim/audio_stimuli/royal.mp3";
+const prince = "stim/audio_stimuli/prince.mp3";
+const dictator = "stim/audio_stimuli/dictator.mp3";
+const throne = "stim/audio_stimuli/throne.mp3";
+const rule = "stim/audio_stimuli/rule.mp3";
+const monarch = "stim/audio_stimuli/monarch.mp3";
+const leader = "stim/audio_stimuli/leader.mp3";
+const queen = "stim/audio_stimuli/queen.mp3";
+const england = "stim/audio_stimuli/england.mp3";
+const reign = "stim/audio_stimuli/reign.mp3";
 
 let King = {
     listNumber: 16,
@@ -496,22 +496,22 @@ let King = {
 };
 
 // all variables for list 17: Lion
-const lion = "stim/audio_stimuli/lion.wav";
-const jungle = "stim/audio_stimuli/jungle.wav";
-const den = "stim/audio_stimuli/den.wav";
-const africa = "stim/audio_stimuli/africa.wav";
-const cage = "stim/audio_stimuli/cage.wav";
-const roar = "stim/audio_stimuli/roar.wav";
-const bears = "stim/audio_stimuli/bears.wav";
-const tamer = "stim/audio_stimuli/tamer.wav";
-const cub = "stim/audio_stimuli/cub.wav";
-const mane = "stim/audio_stimuli/mane.wav";
-const feline = "stim/audio_stimuli/feline.wav";
-const fierce = "stim/audio_stimuli/fierce.wav";
-const hunt = "stim/audio_stimuli/hunt.wav";
-const tiger = "stim/audio_stimuli/tiger.wav";
-const circus = "stim/audio_stimuli/circus.wav";
-const pride = "stim/audio_stimuli/pride.wav";
+const lion = "stim/audio_stimuli/lion.mp3";
+const jungle = "stim/audio_stimuli/jungle.mp3";
+const den = "stim/audio_stimuli/den.mp3";
+const africa = "stim/audio_stimuli/africa.mp3";
+const cage = "stim/audio_stimuli/cage.mp3";
+const roar = "stim/audio_stimuli/roar.mp3";
+const bears = "stim/audio_stimuli/bears.mp3";
+const tamer = "stim/audio_stimuli/tamer.mp3";
+const cub = "stim/audio_stimuli/cub.mp3";
+const mane = "stim/audio_stimuli/mane.mp3";
+const feline = "stim/audio_stimuli/feline.mp3";
+const fierce = "stim/audio_stimuli/fierce.mp3";
+const hunt = "stim/audio_stimuli/hunt.mp3";
+const tiger = "stim/audio_stimuli/tiger.mp3";
+const circus = "stim/audio_stimuli/circus.mp3";
+const pride = "stim/audio_stimuli/pride.mp3";
 
 let Lion = {
     listNumber: 17,
@@ -523,22 +523,22 @@ let Lion = {
 };
 
 // all variables for list 18: Man
-const man = "stim/audio_stimuli/man.wav";
-const uncle = "stim/audio_stimuli/uncle.wav";
-const mouse = "stim/audio_stimuli/mouse.wav";
-const father = "stim/audio_stimuli/father.wav";
-const friend = "stim/audio_stimuli/friend.wav";
-const person = "stim/audio_stimuli/person.wav";
-const muscle = "stim/audio_stimuli/muscle.wav";
-const lady = "stim/audio_stimuli/lady.wav";
-const male = "stim/audio_stimuli/male.wav";
-const strong = "stim/audio_stimuli/strong.wav";
-const beard = "stim/audio_stimuli/beard.wav";
-const handsome = "stim/audio_stimuli/handsome.wav";
-const suit = "stim/audio_stimuli/suit.wav";
-const woman = "stim/audio_stimuli/woman.wav";
-const husband = "stim/audio_stimuli/husband.wav";
-const old = "stim/audio_stimuli/old.wav";
+const man = "stim/audio_stimuli/man.mp3";
+const uncle = "stim/audio_stimuli/uncle.mp3";
+const mouse = "stim/audio_stimuli/mouse.mp3";
+const father = "stim/audio_stimuli/father.mp3";
+const friend = "stim/audio_stimuli/friend.mp3";
+const person = "stim/audio_stimuli/person.mp3";
+const muscle = "stim/audio_stimuli/muscle.mp3";
+const lady = "stim/audio_stimuli/lady.mp3";
+const male = "stim/audio_stimuli/male.mp3";
+const strong = "stim/audio_stimuli/strong.mp3";
+const beard = "stim/audio_stimuli/beard.mp3";
+const handsome = "stim/audio_stimuli/handsome.mp3";
+const suit = "stim/audio_stimuli/suit.mp3";
+const woman = "stim/audio_stimuli/woman.mp3";
+const husband = "stim/audio_stimuli/husband.mp3";
+const old = "stim/audio_stimuli/old.mp3";
 
 let Man = {
     listNumber: 18,
@@ -550,22 +550,22 @@ let Man = {
 };
 
 // all variables for list 19: Mountain
-const mountain = "stim/audio_stimuli/mountain.wav";
-const climb = "stim/audio_stimuli/climb.wav";
-const top2 = "stim/audio_stimuli/top2.wav";
-const peak = "stim/audio_stimuli/peak.wav";
-const glacier = "stim/audio_stimuli/glacier.wav";
-const bike = "stim/audio_stimuli/bike.wav";
-const range = "stim/audio_stimuli/range.wav";
-const summit = "stim/audio_stimuli/summit.wav";
-const molehill = "stim/audio_stimuli/molehill.wav";
-const plain = "stim/audio_stimuli/plain.wav";
-const goat = "stim/audio_stimuli/goat.wav";
-const climber = "stim/audio_stimuli/climber.wav";
-const steep = "stim/audio_stimuli/steep.wav";
-const hill = "stim/audio_stimuli/hill.wav";
-const valley = "stim/audio_stimuli/valley.wav";
-const ski = "stim/audio_stimuli/ski.wav";
+const mountain = "stim/audio_stimuli/mountain.mp3";
+const climb = "stim/audio_stimuli/climb.mp3";
+const top2 = "stim/audio_stimuli/top2.mp3";
+const peak = "stim/audio_stimuli/peak.mp3";
+const glacier = "stim/audio_stimuli/glacier.mp3";
+const bike = "stim/audio_stimuli/bike.mp3";
+const range = "stim/audio_stimuli/range.mp3";
+const summit = "stim/audio_stimuli/summit.mp3";
+const molehill = "stim/audio_stimuli/molehill.mp3";
+const plain = "stim/audio_stimuli/plain.mp3";
+const goat = "stim/audio_stimuli/goat.mp3";
+const climber = "stim/audio_stimuli/climber.mp3";
+const steep = "stim/audio_stimuli/steep.mp3";
+const hill = "stim/audio_stimuli/hill.mp3";
+const valley = "stim/audio_stimuli/valley.mp3";
+const ski = "stim/audio_stimuli/ski.mp3";
 
 let Mountain = {
     listNumber: 19,
@@ -577,22 +577,22 @@ let Mountain = {
 };
 
 // all variables for list 20: Music
-const music = "stim/audio_stimuli/music.wav";
-const piano = "stim/audio_stimuli/piano.wav";
-const radio = "stim/audio_stimuli/radio.wav";
-const melody = "stim/audio_stimuli/melody.wav";
-const concert = "stim/audio_stimuli/concert.wav";
-const symphony = "stim/audio_stimuli/symphony.wav";
-const orchestra = "stim/audio_stimuli/orchestra.wav";
-const sing = "stim/audio_stimuli/sing.wav";
-const band = "stim/audio_stimuli/band.wav";
-const horn = "stim/audio_stimuli/horn.wav";
-const instrument = "stim/audio_stimuli/instrument.wav";
-const jazz = "stim/audio_stimuli/jazz.wav";
-const art = "stim/audio_stimuli/art.wav";
-const note = "stim/audio_stimuli/note.wav";
-const sound = "stim/audio_stimuli/sound.wav";
-const rhythm = "stim/audio_stimuli/rhythm.wav";
+const music = "stim/audio_stimuli/music.mp3";
+const piano = "stim/audio_stimuli/piano.mp3";
+const radio = "stim/audio_stimuli/radio.mp3";
+const melody = "stim/audio_stimuli/melody.mp3";
+const concert = "stim/audio_stimuli/concert.mp3";
+const symphony = "stim/audio_stimuli/symphony.mp3";
+const orchestra = "stim/audio_stimuli/orchestra.mp3";
+const sing = "stim/audio_stimuli/sing.mp3";
+const band = "stim/audio_stimuli/band.mp3";
+const horn = "stim/audio_stimuli/horn.mp3";
+const instrument = "stim/audio_stimuli/instrument.mp3";
+const jazz = "stim/audio_stimuli/jazz.mp3";
+const art = "stim/audio_stimuli/art.mp3";
+const note = "stim/audio_stimuli/note.mp3";
+const sound = "stim/audio_stimuli/sound.mp3";
+const rhythm = "stim/audio_stimuli/rhythm.mp3";
 
 let Music = {
     listNumber: 20,
@@ -604,22 +604,22 @@ let Music = {
 };
 
 // all variables for list 21: Needle
-const needle = "stim/audio_stimuli/needle.wav";
-const eye = "stim/audio_stimuli/eye.wav";
-const sharp = "stim/audio_stimuli/sharp.wav";
-const prick = "stim/audio_stimuli/prick.wav";
-const haystack = "stim/audio_stimuli/haystack.wav";
-const hurt = "stim/audio_stimuli/hurt.wav";
-const syringe = "stim/audio_stimuli/syringe.wav";
-const sewing = "stim/audio_stimuli/sewing.wav";
-const point = "stim/audio_stimuli/point.wav";
-const thimble = "stim/audio_stimuli/thimble.wav";
-const thorn = "stim/audio_stimuli/thorn.wav";
-const injection = "stim/audio_stimuli/injection.wav";
-const cloth = "stim/audio_stimuli/cloth.wav";
-const thread = "stim/audio_stimuli/thread.wav";
-const pin = "stim/audio_stimuli/pin.wav";
-const knitting = "stim/audio_stimuli/knitting.wav";
+const needle = "stim/audio_stimuli/needle.mp3";
+const eye = "stim/audio_stimuli/eye.mp3";
+const sharp = "stim/audio_stimuli/sharp.mp3";
+const prick = "stim/audio_stimuli/prick.mp3";
+const haystack = "stim/audio_stimuli/haystack.mp3";
+const hurt = "stim/audio_stimuli/hurt.mp3";
+const syringe = "stim/audio_stimuli/syringe.mp3";
+const sewing = "stim/audio_stimuli/sewing.mp3";
+const point = "stim/audio_stimuli/point.mp3";
+const thimble = "stim/audio_stimuli/thimble.mp3";
+const thorn = "stim/audio_stimuli/thorn.mp3";
+const injection = "stim/audio_stimuli/injection.mp3";
+const cloth = "stim/audio_stimuli/cloth.mp3";
+const thread = "stim/audio_stimuli/thread.mp3";
+const pin = "stim/audio_stimuli/pin.mp3";
+const knitting = "stim/audio_stimuli/knitting.mp3";
 
 let Needle = {
     listNumber: 21,
@@ -631,22 +631,22 @@ let Needle = {
 };
 
 // all variables for list 22: Pen
-const pen = "stim/audio_stimuli/pen.wav";
-const fountain = "stim/audio_stimuli/fountain.wav";
-const quill = "stim/audio_stimuli/quill.wav";
-const bic = "stim/audio_stimuli/bic.wav";
-const crayon = "stim/audio_stimuli/crayon.wav";
-const tip = "stim/audio_stimuli/tip.wav";
-const red = "stim/audio_stimuli/red.wav";
-const leak = "stim/audio_stimuli/leak.wav";
-const felt = "stim/audio_stimuli/felt.wav";
-const scribble = "stim/audio_stimuli/scribble.wav";
-const cross = "stim/audio_stimuli/cross.wav";
-const marker = "stim/audio_stimuli/marker.wav";
-const cap = "stim/audio_stimuli/cap.wav";
-const pencil = "stim/audio_stimuli/pencil.wav";
-const write = "stim/audio_stimuli/write.wav";
-const letter = "stim/audio_stimuli/letter.wav";
+const pen = "stim/audio_stimuli/pen.mp3";
+const fountain = "stim/audio_stimuli/fountain.mp3";
+const quill = "stim/audio_stimuli/quill.mp3";
+const bic = "stim/audio_stimuli/bic.mp3";
+const crayon = "stim/audio_stimuli/crayon.mp3";
+const tip = "stim/audio_stimuli/tip.mp3";
+const red = "stim/audio_stimuli/red.mp3";
+const leak = "stim/audio_stimuli/leak.mp3";
+const felt = "stim/audio_stimuli/felt.mp3";
+const scribble = "stim/audio_stimuli/scribble.mp3";
+const cross = "stim/audio_stimuli/cross.mp3";
+const marker = "stim/audio_stimuli/marker.mp3";
+const cap = "stim/audio_stimuli/cap.mp3";
+const pencil = "stim/audio_stimuli/pencil.mp3";
+const write = "stim/audio_stimuli/write.mp3";
+const letter = "stim/audio_stimuli/letter.mp3";
 
 let Pen = {
     listNumber: 22,
@@ -658,22 +658,22 @@ let Pen = {
 };
 
 // all variables for list 23: River
-const river = "stim/audio_stimuli/river.wav";
-const lake = "stim/audio_stimuli/lake.wav";
-const boat = "stim/audio_stimuli/boat.wav";
-const swim = "stim/audio_stimuli/swim.wav";
-const run = "stim/audio_stimuli/run.wav";
-const creek = "stim/audio_stimuli/creek.wav";
-const fish = "stim/audio_stimuli/fish.wav";
-const mississippi = "stim/audio_stimuli/mississippi.wav";
-const tide = "stim/audio_stimuli/tide.wav";
-const flow = "stim/audio_stimuli/flow.wav";
-const barge = "stim/audio_stimuli/barge.wav";
-const brook = "stim/audio_stimuli/brook.wav";
-const bridge = "stim/audio_stimuli/bridge.wav";
-const water = "stim/audio_stimuli/water.wav";
-const stream = "stim/audio_stimuli/stream.wav";
-const winding = "stim/audio_stimuli/winding.wav";
+const river = "stim/audio_stimuli/river.mp3";
+const lake = "stim/audio_stimuli/lake.mp3";
+const boat = "stim/audio_stimuli/boat.mp3";
+const swim = "stim/audio_stimuli/swim.mp3";
+const run = "stim/audio_stimuli/run.mp3";
+const creek = "stim/audio_stimuli/creek.mp3";
+const fish = "stim/audio_stimuli/fish.mp3";
+const mississippi = "stim/audio_stimuli/mississippi.mp3";
+const tide = "stim/audio_stimuli/tide.mp3";
+const flow = "stim/audio_stimuli/flow.mp3";
+const barge = "stim/audio_stimuli/barge.mp3";
+const brook = "stim/audio_stimuli/brook.mp3";
+const bridge = "stim/audio_stimuli/bridge.mp3";
+const water = "stim/audio_stimuli/water.mp3";
+const stream = "stim/audio_stimuli/stream.mp3";
+const winding = "stim/audio_stimuli/winding.mp3";
 
 let River = {
     listNumber: 23,
@@ -685,22 +685,22 @@ let River = {
 };
 
 // all variables for list 24: Rough
-const rough = "stim/audio_stimuli/rough.wav";
-const road = "stim/audio_stimuli/road.wav";
-const sandpaper = "stim/audio_stimuli/sandpaper.wav";
-const ready = "stim/audio_stimuli/ready.wav";
-const uneven = "stim/audio_stimuli/uneven.wav";
-const rugged = "stim/audio_stimuli/rugged.wav";
-const boards = "stim/audio_stimuli/boards.wav";
-const tough = "stim/audio_stimuli/tough.wav";
-const jagged = "stim/audio_stimuli/jagged.wav";
-const coarse = "stim/audio_stimuli/coarse.wav";
-const riders = "stim/audio_stimuli/riders.wav";
-const sand = "stim/audio_stimuli/sand.wav";
-const ground = "stim/audio_stimuli/ground.wav";
-const smooth = "stim/audio_stimuli/smooth.wav";
-const bumpy = "stim/audio_stimuli/bumpy.wav";
-const gravel = "stim/audio_stimuli/gravel.wav";
+const rough = "stim/audio_stimuli/rough.mp3";
+const road = "stim/audio_stimuli/road.mp3";
+const sandpaper = "stim/audio_stimuli/sandpaper.mp3";
+const ready = "stim/audio_stimuli/ready.mp3";
+const uneven = "stim/audio_stimuli/uneven.mp3";
+const rugged = "stim/audio_stimuli/rugged.mp3";
+const boards = "stim/audio_stimuli/boards.mp3";
+const tough = "stim/audio_stimuli/tough.mp3";
+const jagged = "stim/audio_stimuli/jagged.mp3";
+const coarse = "stim/audio_stimuli/coarse.mp3";
+const riders = "stim/audio_stimuli/riders.mp3";
+const sand = "stim/audio_stimuli/sand.mp3";
+const ground = "stim/audio_stimuli/ground.mp3";
+const smooth = "stim/audio_stimuli/smooth.mp3";
+const bumpy = "stim/audio_stimuli/bumpy.mp3";
+const gravel = "stim/audio_stimuli/gravel.mp3";
 
 let Rough = {
     listNumber: 24,
@@ -712,22 +712,22 @@ let Rough = {
 };
 
 // all variables for list 25: Rubber
-const rubber = "stim/audio_stimuli/rubber.wav";
-const gloves = "stim/audio_stimuli/gloves.wav";
-const ball = "stim/audio_stimuli/ball.wav";
-const springy = "stim/audio_stimuli/springy.wav";
-const galoshes = "stim/audio_stimuli/galoshes.wav";
-const latex = "stim/audio_stimuli/latex.wav";
-const flexible = "stim/audio_stimuli/flexible.wav";
-const tire = "stim/audio_stimuli/tire.wav";
-const eraser = "stim/audio_stimuli/eraser.wav";
-const foam = "stim/audio_stimuli/foam.wav";
-const soles = "stim/audio_stimuli/soles.wav";
-const glue = "stim/audio_stimuli/glue.wav";
-const resilient = "stim/audio_stimuli/resilient.wav";
-const elastic = "stim/audio_stimuli/elastic.wav";
-const bounce = "stim/audio_stimuli/bounce.wav";
-const stretch = "stim/audio_stimuli/stretch.wav";
+const rubber = "stim/audio_stimuli/rubber.mp3";
+const gloves = "stim/audio_stimuli/gloves.mp3";
+const ball = "stim/audio_stimuli/ball.mp3";
+const springy = "stim/audio_stimuli/springy.mp3";
+const galoshes = "stim/audio_stimuli/galoshes.mp3";
+const latex = "stim/audio_stimuli/latex.mp3";
+const flexible = "stim/audio_stimuli/flexible.mp3";
+const tire = "stim/audio_stimuli/tire.mp3";
+const eraser = "stim/audio_stimuli/eraser.mp3";
+const foam = "stim/audio_stimuli/foam.mp3";
+const soles = "stim/audio_stimuli/soles.mp3";
+const glue = "stim/audio_stimuli/glue.mp3";
+const resilient = "stim/audio_stimuli/resilient.mp3";
+const elastic = "stim/audio_stimuli/elastic.mp3";
+const bounce = "stim/audio_stimuli/bounce.mp3";
+const stretch = "stim/audio_stimuli/stretch.mp3";
 
 let Rubber = {
     listNumber: 25,
@@ -739,22 +739,22 @@ let Rubber = {
 };
 
 // all variables for list 26: Shirt
-const shirt = "stim/audio_stimuli/shirt.wav";
-const pants = "stim/audio_stimuli/pants.wav";
-const button = "stim/audio_stimuli/button.wav";
-const iron = "stim/audio_stimuli/iron.wav";
-const collar = "stim/audio_stimuli/collar.wav";
-const pocket = "stim/audio_stimuli/pocket.wav";
-const belt = "stim/audio_stimuli/belt.wav";
-const tie = "stim/audio_stimuli/tie.wav";
-const shorts = "stim/audio_stimuli/shorts.wav";
-const polo = "stim/audio_stimuli/polo.wav";
-const vest = "stim/audio_stimuli/vest.wav";
-const jersey = "stim/audio_stimuli/jersey.wav";
-const linen = "stim/audio_stimuli/linen.wav";
-const blouse = "stim/audio_stimuli/blouse.wav";
-const sleeves = "stim/audio_stimuli/sleeves.wav";
-const cuffs = "stim/audio_stimuli/cuffs.wav";
+const shirt = "stim/audio_stimuli/shirt.mp3";
+const pants = "stim/audio_stimuli/pants.mp3";
+const button = "stim/audio_stimuli/button.mp3";
+const iron = "stim/audio_stimuli/iron.mp3";
+const collar = "stim/audio_stimuli/collar.mp3";
+const pocket = "stim/audio_stimuli/pocket.mp3";
+const belt = "stim/audio_stimuli/belt.mp3";
+const tie = "stim/audio_stimuli/tie.mp3";
+const shorts = "stim/audio_stimuli/shorts.mp3";
+const polo = "stim/audio_stimuli/polo.mp3";
+const vest = "stim/audio_stimuli/vest.mp3";
+const jersey = "stim/audio_stimuli/jersey.mp3";
+const linen = "stim/audio_stimuli/linen.mp3";
+const blouse = "stim/audio_stimuli/blouse.mp3";
+const sleeves = "stim/audio_stimuli/sleeves.mp3";
+const cuffs = "stim/audio_stimuli/cuffs.mp3";
 
 let Shirt = {
     listNumber: 26,
@@ -766,22 +766,22 @@ let Shirt = {
 };
 
 // all variables for list 27: Sleep
-const sleep = "stim/audio_stimuli/sleep.wav";
-const awake = "stim/audio_stimuli/awake.wav";
-const dream = "stim/audio_stimuli/dream.wav";
-const snooze = "stim/audio_stimuli/snooze.wav";
-const doze = "stim/audio_stimuli/doze.wav";
-const snore = "stim/audio_stimuli/snore.wav";
-const peace = "stim/audio_stimuli/peace.wav";
-const tired = "stim/audio_stimuli/tired.wav";
-const wake = "stim/audio_stimuli/wake.wav";
-const blanket = "stim/audio_stimuli/blanket.wav";
-const slumber = "stim/audio_stimuli/slumber.wav";
-const nap = "stim/audio_stimuli/nap.wav";
-const yawn = "stim/audio_stimuli/yawn.wav";
-const bed = "stim/audio_stimuli/bed.wav";
-const rest = "stim/audio_stimuli/rest.wav";
-const drowsy = "stim/audio_stimuli/drowsy.wav";
+const sleep = "stim/audio_stimuli/sleep.mp3";
+const awake = "stim/audio_stimuli/awake.mp3";
+const dream = "stim/audio_stimuli/dream.mp3";
+const snooze = "stim/audio_stimuli/snooze.mp3";
+const doze = "stim/audio_stimuli/doze.mp3";
+const snore = "stim/audio_stimuli/snore.mp3";
+const peace = "stim/audio_stimuli/peace.mp3";
+const tired = "stim/audio_stimuli/tired.mp3";
+const wake = "stim/audio_stimuli/wake.mp3";
+const blanket = "stim/audio_stimuli/blanket.mp3";
+const slumber = "stim/audio_stimuli/slumber.mp3";
+const nap = "stim/audio_stimuli/nap.mp3";
+const yawn = "stim/audio_stimuli/yawn.mp3";
+const bed = "stim/audio_stimuli/bed.mp3";
+const rest = "stim/audio_stimuli/rest.mp3";
+const drowsy = "stim/audio_stimuli/drowsy.mp3";
 
 let Sleep = {
     listNumber: 27,
@@ -793,22 +793,22 @@ let Sleep = {
 };
 
 // all variables for list 28: Slow
-const slow = "stim/audio_stimuli/slow.wav";
-const stops = "stim/audio_stimuli/stop.wav";
-const snail = "stim/audio_stimuli/snail.wav";
-const delay = "stim/audio_stimuli/delay.wav";
-const turtle = "stim/audio_stimuli/turtle.wav";
-const speed = "stim/audio_stimuli/speed.wav";
-const sluggish = "stim/audio_stimuli/sluggish.wav";
-const listless = "stim/audio_stimuli/listless.wav";
-const cautious = "stim/audio_stimuli/cautious.wav";
-const traffic = "stim/audio_stimuli/traffic.wav";
-const hesitant = "stim/audio_stimuli/hesitant.wav";
-const quick = "stim/audio_stimuli/quick.wav";
-const wait = "stim/audio_stimuli/wait.wav";
-const fast = "stim/audio_stimuli/fast.wav";
-const lethargic = "stim/audio_stimuli/lethargic.wav";
-const molasses = "stim/audio_stimuli/molasses.wav";
+const slow = "stim/audio_stimuli/slow.mp3";
+const stops = "stim/audio_stimuli/stop.mp3";
+const snail = "stim/audio_stimuli/snail.mp3";
+const delay = "stim/audio_stimuli/delay.mp3";
+const turtle = "stim/audio_stimuli/turtle.mp3";
+const speed = "stim/audio_stimuli/speed.mp3";
+const sluggish = "stim/audio_stimuli/sluggish.mp3";
+const listless = "stim/audio_stimuli/listless.mp3";
+const cautious = "stim/audio_stimuli/cautious.mp3";
+const traffic = "stim/audio_stimuli/traffic.mp3";
+const hesitant = "stim/audio_stimuli/hesitant.mp3";
+const quick = "stim/audio_stimuli/quick.mp3";
+const wait = "stim/audio_stimuli/wait.mp3";
+const fast = "stim/audio_stimuli/fast.mp3";
+const lethargic = "stim/audio_stimuli/lethargic.mp3";
+const molasses = "stim/audio_stimuli/molasses.mp3";
 
 let Slow = {
     listNumber: 28,
@@ -820,22 +820,22 @@ let Slow = {
 };
 
 // all variables for list 29: Smell
-const smell = "stim/audio_stimuli/smell.wav";
-const sniff = "stim/audio_stimuli/sniff.wav";
-const hear = "stim/audio_stimuli/hear.wav";
-const nostril = "stim/audio_stimuli/nostril.wav";
-const scent = "stim/audio_stimuli/scent.wav";
-const stench = "stim/audio_stimuli/stench.wav";
-const perfume = "stim/audio_stimuli/perfume.wav";
-const aroma = "stim/audio_stimuli/aroma.wav";
-const see = "stim/audio_stimuli/see.wav";
-const whiff = "stim/audio_stimuli/whiff.wav";
-const reek = "stim/audio_stimuli/reek.wav";
-const fragrance = "stim/audio_stimuli/fragrance.wav";
-const salts = "stim/audio_stimuli/salts.wav";
-const nose = "stim/audio_stimuli/nose.wav";
-const breathe = "stim/audio_stimuli/breathe.wav";
-const rose = "stim/audio_stimuli/rose.wav";
+const smell = "stim/audio_stimuli/smell.mp3";
+const sniff = "stim/audio_stimuli/sniff.mp3";
+const hear = "stim/audio_stimuli/hear.mp3";
+const nostril = "stim/audio_stimuli/nostril.mp3";
+const scent = "stim/audio_stimuli/scent.mp3";
+const stench = "stim/audio_stimuli/stench.mp3";
+const perfume = "stim/audio_stimuli/perfume.mp3";
+const aroma = "stim/audio_stimuli/aroma.mp3";
+const see = "stim/audio_stimuli/see.mp3";
+const whiff = "stim/audio_stimuli/whiff.mp3";
+const reek = "stim/audio_stimuli/reek.mp3";
+const fragrance = "stim/audio_stimuli/fragrance.mp3";
+const salts = "stim/audio_stimuli/salts.mp3";
+const nose = "stim/audio_stimuli/nose.mp3";
+const breathe = "stim/audio_stimuli/breathe.mp3";
+const rose = "stim/audio_stimuli/rose.mp3";
 
 let Smell = {
     listNumber: 29,
@@ -847,22 +847,22 @@ let Smell = {
 };
 
 // all variables for list 30: Smoke
-const smoke = "stim/audio_stimuli/smoke.wav";
-const blaze = "stim/audio_stimuli/blaze.wav";
-const pollution = "stim/audio_stimuli/pollution.wav";
-const cigar = "stim/audio_stimuli/cigar.wav";
-const fire = "stim/audio_stimuli/fire.wav";
-const stink = "stim/audio_stimuli/stink.wav";
-const lungs = "stim/audio_stimuli/lungs.wav";
-const billows = "stim/audio_stimuli/billows.wav";
-const ashes = "stim/audio_stimuli/ashes.wav";
-const chimney = "stim/audio_stimuli/chimney.wav";
-const tobacco = "stim/audio_stimuli/tobacco.wav";
-const pipe = "stim/audio_stimuli/pipe.wav";
-const flames = "stim/audio_stimuli/flames.wav";
-const cigarette = "stim/audio_stimuli/cigarette.wav";
-const puff = "stim/audio_stimuli/puff.wav";
-const stain = "stim/audio_stimuli/stain.wav";
+const smoke = "stim/audio_stimuli/smoke.mp3";
+const blaze = "stim/audio_stimuli/blaze.mp3";
+const pollution = "stim/audio_stimuli/pollution.mp3";
+const cigar = "stim/audio_stimuli/cigar.mp3";
+const fire = "stim/audio_stimuli/fire.mp3";
+const stink = "stim/audio_stimuli/stink.mp3";
+const lungs = "stim/audio_stimuli/lungs.mp3";
+const billows = "stim/audio_stimuli/billows.mp3";
+const ashes = "stim/audio_stimuli/ashes.mp3";
+const chimney = "stim/audio_stimuli/chimney.mp3";
+const tobacco = "stim/audio_stimuli/tobacco.mp3";
+const pipe = "stim/audio_stimuli/pipe.mp3";
+const flames = "stim/audio_stimuli/flames.mp3";
+const cigarette = "stim/audio_stimuli/cigarette.mp3";
+const puff = "stim/audio_stimuli/puff.mp3";
+const stain = "stim/audio_stimuli/stain.mp3";
 
 let Smoke = {
     listNumber: 30,
@@ -874,22 +874,22 @@ let Smoke = {
 };
 
 // all variables for list 31: Soft
-const soft = "stim/audio_stimuli/soft.wav";
-const pillow = "stim/audio_stimuli/pillow.wav";
-const loud = "stim/audio_stimuli/loud.wav";
-const fur = "stim/audio_stimuli/fur.wav";
-const fluffy = "stim/audio_stimuli/fluffy.wav";
-const furry = "stim/audio_stimuli/furry.wav";
-const kitten = "stim/audio_stimuli/kitten.wav";
-const plush = "stim/audio_stimuli/plush.wav";
-const cotton = "stim/audio_stimuli/cotton.wav";
-const touch = "stim/audio_stimuli/touch.wav";
-const feather = "stim/audio_stimuli/feather.wav";
-const downy = "stim/audio_stimuli/downy.wav";
-const skin = "stim/audio_stimuli/skin.wav";
-const hard = "stim/audio_stimuli/hard.wav";
-const light = "stim/audio_stimuli/light.wav";
-const tender = "stim/audio_stimuli/tender.wav";
+const soft = "stim/audio_stimuli/soft.mp3";
+const pillow = "stim/audio_stimuli/pillow.mp3";
+const loud = "stim/audio_stimuli/loud.mp3";
+const fur = "stim/audio_stimuli/fur.mp3";
+const fluffy = "stim/audio_stimuli/fluffy.mp3";
+const furry = "stim/audio_stimuli/furry.mp3";
+const kitten = "stim/audio_stimuli/kitten.mp3";
+const plush = "stim/audio_stimuli/plush.mp3";
+const cotton = "stim/audio_stimuli/cotton.mp3";
+const touch = "stim/audio_stimuli/touch.mp3";
+const feather = "stim/audio_stimuli/feather.mp3";
+const downy = "stim/audio_stimuli/downy.mp3";
+const skin = "stim/audio_stimuli/skin.mp3";
+const hard = "stim/audio_stimuli/hard.mp3";
+const light = "stim/audio_stimuli/light.mp3";
+const tender = "stim/audio_stimuli/tender.mp3";
 
 let Soft = {
     listNumber: 31,
@@ -901,22 +901,22 @@ let Soft = {
 };
 
 // all variables for list 32: Spider
-const spider = "stim/audio_stimuli/spider.wav";
-const big2 = "stim/audio_stimuli/big2.wav";
-const fly = "stim/audio_stimuli/fly.wav ";
-const crawl = "stim/audio_stimuli/crawl.wav";
-const poison = "stim/audio_stimuli/poison.wav";
-const creepy = "stim/audio_stimuli/creepy.wav";
-const ugly = "stim/audio_stimuli/ugly.wav";
-const fright = "stim/audio_stimuli/fright.wav";
-const arachnid = "stim/audio_stimuli/arachnid.wav";
-const tarantula = "stim/audio_stimuli/tarantula.wav";
-const bite = "stim/audio_stimuli/bite.wav";
-const animal = "stim/audio_stimuli/animal.wav";
-const feelers = "stim/audio_stimuli/feelers.wav";
-const web = "stim/audio_stimuli/web.wav";
-const insect = "stim/audio_stimuli/insect.wav";
-const small = "stim/audio_stimuli/small.wav";
+const spider = "stim/audio_stimuli/spider.mp3";
+const big2 = "stim/audio_stimuli/big2.mp3";
+const fly = "stim/audio_stimuli/fly.mp3 ";
+const crawl = "stim/audio_stimuli/crawl.mp3";
+const poison = "stim/audio_stimuli/poison.mp3";
+const creepy = "stim/audio_stimuli/creepy.mp3";
+const ugly = "stim/audio_stimuli/ugly.mp3";
+const fright = "stim/audio_stimuli/fright.mp3";
+const arachnid = "stim/audio_stimuli/arachnid.mp3";
+const tarantula = "stim/audio_stimuli/tarantula.mp3";
+const bite = "stim/audio_stimuli/bite.mp3";
+const animal = "stim/audio_stimuli/animal.mp3";
+const feelers = "stim/audio_stimuli/feelers.mp3";
+const web = "stim/audio_stimuli/web.mp3";
+const insect = "stim/audio_stimuli/insect.mp3";
+const small = "stim/audio_stimuli/small.mp3";
 
 let Spider = {
     listNumber: 32,
@@ -928,22 +928,22 @@ let Spider = {
 };
 
 // all variables for list 33: Sweet
-const sweet = "stim/audio_stimuli/sweet.wav";
-const sugar = "stim/audio_stimuli/sugar.wav";
-const good = "stim/audio_stimuli/good.wav";
-const tooth = "stim/audio_stimuli/tooth.wav";
-const honey = "stim/audio_stimuli/honey.wav";
-const chocolate = "stim/audio_stimuli/chocolate.wav";
-const cake = "stim/audio_stimuli/cake.wav";
-const bitter = "stim/audio_stimuli/bitter.wav";
-const taste = "stim/audio_stimuli/taste.wav";
-const nice = "stim/audio_stimuli/nice.wav";
-const soda = "stim/audio_stimuli/soda.wav";
-const heart = "stim/audio_stimuli/heart.wav";
-const tart = "stim/audio_stimuli/tart.wav";
-const sour = "stim/audio_stimuli/sour.wav";
-const candy = "stim/audio_stimuli/candy.wav";
-const pie = "stim/audio_stimuli/pie.wav";
+const sweet = "stim/audio_stimuli/sweet.mp3";
+const sugar = "stim/audio_stimuli/sugar.mp3";
+const good = "stim/audio_stimuli/good.mp3";
+const tooth = "stim/audio_stimuli/tooth.mp3";
+const honey = "stim/audio_stimuli/honey.mp3";
+const chocolate = "stim/audio_stimuli/chocolate.mp3";
+const cake = "stim/audio_stimuli/cake.mp3";
+const bitter = "stim/audio_stimuli/bitter.mp3";
+const taste = "stim/audio_stimuli/taste.mp3";
+const nice = "stim/audio_stimuli/nice.mp3";
+const soda = "stim/audio_stimuli/soda.mp3";
+const heart = "stim/audio_stimuli/heart.mp3";
+const tart = "stim/audio_stimuli/tart.mp3";
+const sour = "stim/audio_stimuli/sour.mp3";
+const candy = "stim/audio_stimuli/candy.mp3";
+const pie = "stim/audio_stimuli/pie.mp3";
 
 let Sweet = {
     listNumber: 33,
@@ -955,22 +955,22 @@ let Sweet = {
 };
 
 // all variables for list 34: Thief
-const thief = "stim/audio_stimuli/thief.wav";
-const crook = "stim/audio_stimuli/crook.wav";
-const money = "stim/audio_stimuli/money.wav";
-const bad = "stim/audio_stimuli/bad.wav";
-const jail = "stim/audio_stimuli/jail.wav";
-const villain = "stim/audio_stimuli/villain.wav";
-const bank = "stim/audio_stimuli/bank.wav";
-const burglar = "stim/audio_stimuli/burglar.wav";
-const cop = "stim/audio_stimuli/cop.wav";
-const rob = "stim/audio_stimuli/rob.wav";
-const gun = "stim/audio_stimuli/gun.wav";
-const crime = "stim/audio_stimuli/crime.wav";
-const bandit = "stim/audio_stimuli/bandit.wav";
-const steal = "stim/audio_stimuli/steal.wav";
-const robber = "stim/audio_stimuli/robber.wav";
-const criminal = "stim/audio_stimuli/criminal.wav";
+const thief = "stim/audio_stimuli/thief.mp3";
+const crook = "stim/audio_stimuli/crook.mp3";
+const money = "stim/audio_stimuli/money.mp3";
+const bad = "stim/audio_stimuli/bad.mp3";
+const jail = "stim/audio_stimuli/jail.mp3";
+const villain = "stim/audio_stimuli/villain.mp3";
+const bank = "stim/audio_stimuli/bank.mp3";
+const burglar = "stim/audio_stimuli/burglar.mp3";
+const cop = "stim/audio_stimuli/cop.mp3";
+const rob = "stim/audio_stimuli/rob.mp3";
+const gun = "stim/audio_stimuli/gun.mp3";
+const crime = "stim/audio_stimuli/crime.mp3";
+const bandit = "stim/audio_stimuli/bandit.mp3";
+const steal = "stim/audio_stimuli/steal.mp3";
+const robber = "stim/audio_stimuli/robber.mp3";
+const criminal = "stim/audio_stimuli/criminal.mp3";
 
 let Thief = {
     listNumber: 34,
@@ -982,22 +982,22 @@ let Thief = {
 };
 
 // all variables for list 35: Trash
-const trash = "stim/audio_stimuli/trash.wav";
-const can = "stim/audio_stimuli/can.wav";
-const sewage = "stim/audio_stimuli/sewage.wav";
-const junk = "stim/audio_stimuli/junk.wav";
-const sweep = "stim/audio_stimuli/sweep.wav";
-const pile = "stim/audio_stimuli/pile.wav";
-const landfill = "stim/audio_stimuli/landfill.wav";
-const refuse = "stim/audio_stimuli/refuse.wav";
-const bag = "stim/audio_stimuli/bag.wav";
-const rubbish = "stim/audio_stimuli/rubbish.wav";
-const scraps = "stim/audio_stimuli/scraps.wav";
-const dump = "stim/audio_stimuli/dump.wav";
-const debris = "stim/audio_stimuli/debris.wav";
-const garbage = "stim/audio_stimuli/garbage.wav";
-const waster = "stim/audio_stimuli/waster.wav";
-const litter = "stim/audio_stimuli/litter.wav";
+const trash = "stim/audio_stimuli/trash.mp3";
+const can = "stim/audio_stimuli/can.mp3";
+const sewage = "stim/audio_stimuli/sewage.mp3";
+const junk = "stim/audio_stimuli/junk.mp3";
+const sweep = "stim/audio_stimuli/sweep.mp3";
+const pile = "stim/audio_stimuli/pile.mp3";
+const landfill = "stim/audio_stimuli/landfill.mp3";
+const refuse = "stim/audio_stimuli/refuse.mp3";
+const bag = "stim/audio_stimuli/bag.mp3";
+const rubbish = "stim/audio_stimuli/rubbish.mp3";
+const scraps = "stim/audio_stimuli/scraps.mp3";
+const dump = "stim/audio_stimuli/dump.mp3";
+const debris = "stim/audio_stimuli/debris.mp3";
+const garbage = "stim/audio_stimuli/garbage.mp3";
+const waster = "stim/audio_stimuli/waster.mp3";
+const litter = "stim/audio_stimuli/litter.mp3";
 
 let Trash = {
     listNumber: 35,
@@ -1009,22 +1009,22 @@ let Trash = {
 };
 
 // all variables for list 36: Window
-const windows = "stim/audio_stimuli/window.wav";
-const pane = "stim/audio_stimuli/pane.wav";
-const ledge = "stim/audio_stimuli/ledge.wav";
-const house = "stim/audio_stimuli/house.wav";
-const curtain = "stim/audio_stimuli/curtain.wav";
-const view = "stim/audio_stimuli/view.wav";
-const sash = "stim/audio_stimuli/sash.wav";
-const shade = "stim/audio_stimuli/shade.wav";
-const sill = "stim/audio_stimuli/sill.wav";
-const opens = "stim/audio_stimuli/open.wav";
-const frame = "stim/audio_stimuli/frame.wav";
-const breeze = "stim/audio_stimuli/breeze.wav";
-const screens = "stim/audio_stimuli/screen.wav";
-const door = "stim/audio_stimuli/door.wav";
-const glass = "stim/audio_stimuli/glass.wav";
-const shutter = "stim/audio_stimuli/shutter.wav";
+const windows = "stim/audio_stimuli/window.mp3";
+const pane = "stim/audio_stimuli/pane.mp3";
+const ledge = "stim/audio_stimuli/ledge.mp3";
+const house = "stim/audio_stimuli/house.mp3";
+const curtain = "stim/audio_stimuli/curtain.mp3";
+const view = "stim/audio_stimuli/view.mp3";
+const sash = "stim/audio_stimuli/sash.mp3";
+const shade = "stim/audio_stimuli/shade.mp3";
+const sill = "stim/audio_stimuli/sill.mp3";
+const opens = "stim/audio_stimuli/open.mp3";
+const frame = "stim/audio_stimuli/frame.mp3";
+const breeze = "stim/audio_stimuli/breeze.mp3";
+const screens = "stim/audio_stimuli/screen.mp3";
+const door = "stim/audio_stimuli/door.mp3";
+const glass = "stim/audio_stimuli/glass.mp3";
+const shutter = "stim/audio_stimuli/shutter.mp3";
 
 let Windows = {
     listNumber: 36,
