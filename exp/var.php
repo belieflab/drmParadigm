@@ -53,7 +53,7 @@ switch (version) {
         const instr_audio = createStimuli(instructionsAudio, "instr");
         const stim_audio = createStimuli(stimuliAudio, "stim");
 
-        $.getScript("exp/var-audio.js");
+        document.write('<script src="exp/var-audio.js"></' + 'script>');
         break;
 
     case "visual":
