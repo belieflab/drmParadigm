@@ -4,25 +4,25 @@ let silentPause = "stim/audio_instructions/silence.mp3";
 let startTrial = "stim/audio_tones/tone_2.mp3";
 
 let pauseTrial = {
-    stimulus: silentPause, 
+    stimulus: silentPause,
     response_ends_trial: false,
     trial_ends_after_audio: true,
     data: {
         test_part: "practice",
         stim: silentPause,
-        drmTrial_type: "practice",
+        trial_type: "practice",
     },
     confidence: "x",
 };
 
 let startToneTrial = {
-    stimulus: startTrial, 
+    stimulus: startTrial,
     response_ends_trial: false,
     trial_ends_after_audio: true,
     data: {
         test_part: "practice",
         stim: startTrial,
-        drmTrial_type: "practice",
+        trial_type: "practice",
     },
     confidence: "x",
 };
@@ -33,23 +33,24 @@ function createTrial(
     list,
     trialType,
     wordPosition = "list",
-    isPractice = false,
+    isPractice = false
 ) {
     return {
         stimulus: list.stimulus,
-        trial_duration: wordPosition === "startTone" ? 3000 : durationForListWords,
+        trial_duration:
+            wordPosition === "startTone" ? 3000 : durationForListWords,
         response_ends_trial: false,
         trial_ends_after_audio: true,
         data: {
             test_part: isPractice ? "practice" : "test",
             stim: list.stimulus,
-            drmTrial_type: trialType,
+            trial_type: trialType,
             word_position: wordPosition,
         },
         confidence: "x",
         on_start: function (trial) {
             let audio = new Audio(trial.stimulus);
-            audio.addEventListener('canplaythrough', function() {
+            audio.addEventListener("canplaythrough", function () {
                 trial.stimulus = audio;
             });
         },
@@ -65,7 +66,7 @@ function createTargetTrial(stimulus, trialType, isPractice = false) {
         data: {
             test_part: isPractice ? "practice" : "test",
             stim: stimulus,
-            drmTrial_type: trialType,
+            trial_type: trialType,
             word_position: "target",
             correct_response: "74",
         },
@@ -75,12 +76,12 @@ function createTargetTrial(stimulus, trialType, isPractice = false) {
             feedbackGenerator +
             timeRemaining +
             '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-            on_start: function (trial) {
-                let audio = new Audio(trial.stimulus);
-                audio.addEventListener('canplaythrough', function() {
-                    trial.stimulus = audio;
-                });
-            },
+        on_start: function (trial) {
+            let audio = new Audio(trial.stimulus);
+            audio.addEventListener("canplaythrough", function () {
+                trial.stimulus = audio;
+            });
+        },
     };
 }
 
@@ -93,7 +94,7 @@ function createTrialSet(list, trialType, isPractice = false) {
     if (trials.length > 0) {
         if (trials[0]) {
             trials[0].trial_duration = 3000;
-        }        
+        }
         if (trials.length > 1) {
             trials[trials.length - 1].trial_duration = 600;
         }
@@ -103,7 +104,7 @@ function createTrialSet(list, trialType, isPractice = false) {
             )
         );
     }
-    
+
     trials.push(
         createTrial(
             { stimulus: responsePromptTone },
@@ -113,6 +114,6 @@ function createTrialSet(list, trialType, isPractice = false) {
         )
     );
     trials.push(createTargetTrial(list.prototype, trialType, isPractice));
-    
+
     return trials;
 }
