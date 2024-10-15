@@ -24,8 +24,8 @@ Each trial type is presented **18 times** during the task.
 ## 🎯 Task Procedure
 
 ### Auditory Version
-1. 🎧 Participants listen to a series of word lists through headphones.
-2. ⏱️ Each word is played one at a time with a second interval at a specific speed.
+1. 🎧 Participants listen to a series of word lists - ideally through headphones.
+2. ⏱️ Each word in the list is played one at a time with one second in-between each word.
 3. 🎯 After hearing the word list, a single "target word" is played to the participant.
 4. 🤔 Participants decide if the target word was part of the word list.
 5. 📊 They rate their confidence in hearing the word by filling a confidence bar using the keyboard:
