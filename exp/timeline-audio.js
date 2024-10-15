@@ -178,10 +178,6 @@ let instructions_6 = {
     choices: "NO_KEYS",
     response_ends_trial: false,
     trial_ends_after_audio: true,
-    on_finish: function () {
-        console.log("Finished instructions_6");
-        jsPsych.data.addProperties({ instructions_6_finished: true });
-    },
 };
 
 // Instructions 6 Duration: 15960ms
@@ -203,11 +199,6 @@ let pause_before_continue_to_test_section = {
     choices: "NO_KEYS",
     trial_duration: function () {
         return instructions_6_duration || 15960;
-    },
-    on_finish: function () {
-        console.log("Pause finished");
-        console.log("Finished instructions_6");
-        jsPsych.data.addProperties({ instructions_6_finished: true });
     },
 };
 
@@ -267,6 +258,8 @@ let trials = {
             data.confidence = "";
         }
         totalConfidence = 0; // need to reset totalConfidence to 0 after each trial !!IMPORTANT
+        data.index = trialIterator;
+        trialIterator++;
     },
 };
 
