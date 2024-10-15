@@ -2,6 +2,14 @@
 
 let trialIterator = 1;
 
+let trialIteratorCongruentPrototype = 1;
+
+let trialIteratorIncongruentPrototype = 1;
+
+let trialIteratorCongruentHighestAssociate = 1;
+
+let trialIteratorIncongruentHighestAssociate = 1;
+
 var responseOptions =
     "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br><br>";
 
@@ -1035,7 +1043,7 @@ let Windows = {
     lowestAssociate: shutter,
 };
 
-// all lists 
+// all lists
 let allLists = [
     Anger,
     Army,
@@ -1107,15 +1115,14 @@ let incongruentPrototypeTrial16 = incongruentPrototype[15];
 let incongruentPrototypeTrial17 = incongruentPrototype[16];
 let incongruentPrototypeTrial18 = incongruentPrototype[17];
 
-
 randomizedLists = shuffleArray(randomizedLists);
 let incongruentPrototypeTrials = [];
 
 for (let i = 0; i < incongruentPrototypeTrial1.listA.length; i++) {
-incongruentPrototypeTrials.push({
+    incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial1.listA[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial1.listA[i],
@@ -1135,11 +1142,11 @@ incongruentPrototypeTrials.push({
         drmTrial_type: "incongruentPrototype",
     },
     confidence: "x",
-}); 
+});
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial18.prototype,
-   trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    trial_duration: durationForTargetWords,
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentPrototypeTrial18.prototype,
@@ -1195,7 +1202,7 @@ for (let i = 0; i < incongruentPrototypeTrial2.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial2.listA[i],
         trial_duration: durationForListWords,
-      response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial2.listA[i],
@@ -1219,7 +1226,7 @@ incongruentPrototypeTrials.push({
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial17.prototype,
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentPrototypeTrial17.prototype,
@@ -1299,7 +1306,7 @@ incongruentPrototypeTrials.push({
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial16.prototype,
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentPrototypeTrial16.prototype,
@@ -1379,7 +1386,7 @@ incongruentPrototypeTrials.push({
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial15.prototype,
     trial_duration: durationForTargetWords,
-    response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentPrototypeTrial15.prototype,
@@ -1435,7 +1442,7 @@ for (let i = 0; i < incongruentPrototypeTrial5.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial5.listA[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial5.listA[i],
@@ -1459,7 +1466,7 @@ incongruentPrototypeTrials.push({
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial14.prototype,
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentPrototypeTrial14.prototype,
@@ -1515,7 +1522,7 @@ for (let i = 0; i < incongruentPrototypeTrial6.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial6.listA[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial6.listA[i],
@@ -1539,7 +1546,7 @@ incongruentPrototypeTrials.push({
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial13.prototype,
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentPrototypeTrial13.prototype,
@@ -1595,7 +1602,7 @@ for (let i = 0; i < incongruentPrototypeTrial7.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial7.listA[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial7.listA[i],
@@ -1619,7 +1626,7 @@ incongruentPrototypeTrials.push({
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial12.prototype,
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentPrototypeTrial12.prototype,
@@ -1675,7 +1682,7 @@ for (let i = 0; i < incongruentPrototypeTrial8.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial8.listA[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial8.listA[i],
@@ -1699,7 +1706,7 @@ incongruentPrototypeTrials.push({
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial11.prototype,
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentPrototypeTrial11.prototype,
@@ -1768,7 +1775,7 @@ for (let i = 0; i < incongruentPrototypeTrial9.listA.length; i++) {
 incongruentPrototypeTrials.push({
     stimulus: responsePromptTone,
     trial_duration: durationForTone1,
-    response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: responsePromptTone,
@@ -1779,7 +1786,7 @@ incongruentPrototypeTrials.push({
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial10.prototype,
     trial_duration: durationForTargetWords,
-    response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentPrototypeTrial10.prototype,
@@ -1835,7 +1842,7 @@ for (let i = 0; i < incongruentPrototypeTrial10.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial10.listA[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial10.listA[i],
@@ -1859,7 +1866,7 @@ incongruentPrototypeTrials.push({
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial9.prototype,
     trial_duration: durationForTargetWords,
-    response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentPrototypeTrial9.prototype,
@@ -1939,7 +1946,7 @@ incongruentPrototypeTrials.push({
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial8.prototype,
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentPrototypeTrial8.prototype,
@@ -1953,7 +1960,7 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 incongruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -2019,7 +2026,7 @@ incongruentPrototypeTrials.push({
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial7.prototype,
     trial_duration: durationForTargetWords,
-    response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentPrototypeTrial7.prototype,
@@ -2075,7 +2082,7 @@ for (let i = 0; i < incongruentPrototypeTrial13.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial13.listA[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial13.listA[i],
@@ -2083,7 +2090,7 @@ for (let i = 0; i < incongruentPrototypeTrial13.listA.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); 
+    });
 }
 incongruentPrototypeTrials.push({
     stimulus: responsePromptTone,
@@ -2099,7 +2106,7 @@ incongruentPrototypeTrials.push({
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial6.prototype,
     trial_duration: durationForTargetWords,
-    response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentPrototypeTrial6.prototype,
@@ -2113,7 +2120,7 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 incongruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -2137,7 +2144,7 @@ incongruentPrototypeTrials.push({
         drmTrial_type: "incongruentPrototype",
     },
     confidence: "x",
-}); 
+});
 
 incongruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -2155,7 +2162,7 @@ for (let i = 0; i < incongruentPrototypeTrial14.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial14.listA[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial14.listA[i],
@@ -2163,7 +2170,7 @@ for (let i = 0; i < incongruentPrototypeTrial14.listA.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); 
+    });
 }
 incongruentPrototypeTrials.push({
     stimulus: responsePromptTone,
@@ -2175,11 +2182,11 @@ incongruentPrototypeTrials.push({
         drmTrial_type: "incongruentPrototype",
     },
     confidence: "x",
-}); 
+});
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial5.prototype,
     trial_duration: durationForTargetWords,
-    response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentPrototypeTrial5.prototype,
@@ -2193,7 +2200,7 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 incongruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -2217,7 +2224,7 @@ incongruentPrototypeTrials.push({
         drmTrial_type: "incongruentPrototype",
     },
     confidence: "x",
-}); 
+});
 
 incongruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -2235,7 +2242,7 @@ for (let i = 0; i < incongruentPrototypeTrial15.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial15.listA[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial15.listA[i],
@@ -2259,7 +2266,7 @@ incongruentPrototypeTrials.push({
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial4.prototype,
     trial_duration: durationForTargetWords,
-    response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentPrototypeTrial4.prototype,
@@ -2273,7 +2280,7 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 incongruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -2297,7 +2304,7 @@ incongruentPrototypeTrials.push({
         drmTrial_type: "incongruentPrototype",
     },
     confidence: "x",
-}); 
+});
 
 incongruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -2315,7 +2322,7 @@ for (let i = 0; i < incongruentPrototypeTrial16.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial16.listA[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial16.listA[i],
@@ -2323,7 +2330,7 @@ for (let i = 0; i < incongruentPrototypeTrial16.listA.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); 
+    });
 }
 incongruentPrototypeTrials.push({
     stimulus: responsePromptTone,
@@ -2335,11 +2342,11 @@ incongruentPrototypeTrials.push({
         drmTrial_type: "incongruentPrototype",
     },
     confidence: "x",
-}); 
+});
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial3.prototype,
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentPrototypeTrial3.prototype,
@@ -2395,7 +2402,7 @@ for (let i = 0; i < incongruentPrototypeTrial17.listA.length; i++) {
     incongruentPrototypeTrials.push({
         stimulus: incongruentPrototypeTrial17.listA[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: incongruentPrototypeTrial17.listA[i],
@@ -2403,7 +2410,7 @@ for (let i = 0; i < incongruentPrototypeTrial17.listA.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); 
+    });
 }
 incongruentPrototypeTrials.push({
     stimulus: responsePromptTone,
@@ -2419,7 +2426,7 @@ incongruentPrototypeTrials.push({
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial2.prototype,
     trial_duration: durationForTargetWords,
-    response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentPrototypeTrial2.prototype,
@@ -2433,7 +2440,7 @@ incongruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 incongruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -2499,7 +2506,7 @@ incongruentPrototypeTrials.push({
 incongruentPrototypeTrials.push({
     stimulus: incongruentPrototypeTrial1.prototype,
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentPrototypeTrial1.prototype,
@@ -2577,7 +2584,7 @@ for (let i = 0; i < congruentPrototypeTrial1.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial1.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial1.listB[i],
@@ -2601,7 +2608,7 @@ congruentPrototypeTrials.push({
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial1.prototype,
     trial_duration: durationForTargetWords,
-    response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial1.prototype,
@@ -2615,7 +2622,7 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -2657,7 +2664,7 @@ for (let i = 0; i < congruentPrototypeTrial2.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial2.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial2.listB[i],
@@ -2665,23 +2672,23 @@ for (let i = 0; i < congruentPrototypeTrial2.listB.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); 
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
     trial_duration: durationForTone1,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: responsePromptTone,
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); 
+});
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial2.prototype,
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial2.prototype,
@@ -2695,7 +2702,7 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -2719,7 +2726,7 @@ congruentPrototypeTrials.push({
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); 
+});
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -2737,7 +2744,7 @@ for (let i = 0; i < congruentPrototypeTrial3.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial3.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial3.listB[i],
@@ -2745,7 +2752,7 @@ for (let i = 0; i < congruentPrototypeTrial3.listB.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); 
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
@@ -2761,7 +2768,7 @@ congruentPrototypeTrials.push({
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial3.prototype,
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial3.prototype,
@@ -2799,7 +2806,7 @@ congruentPrototypeTrials.push({
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); 
+});
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -2817,7 +2824,7 @@ for (let i = 0; i < congruentPrototypeTrial4.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial4.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial4.listB[i],
@@ -2825,7 +2832,7 @@ for (let i = 0; i < congruentPrototypeTrial4.listB.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); 
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
@@ -2841,7 +2848,7 @@ congruentPrototypeTrials.push({
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial4.prototype,
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial4.prototype,
@@ -2855,7 +2862,7 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -2879,7 +2886,7 @@ congruentPrototypeTrials.push({
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); 
+});
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -2897,7 +2904,7 @@ for (let i = 0; i < congruentPrototypeTrial5.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial5.listB[i],
         trial_duration: durationForListWords,
-      response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial5.listB[i],
@@ -2905,7 +2912,7 @@ for (let i = 0; i < congruentPrototypeTrial5.listB.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); 
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
@@ -2917,11 +2924,11 @@ congruentPrototypeTrials.push({
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); 
+});
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial5.prototype,
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial5.prototype,
@@ -2959,7 +2966,7 @@ congruentPrototypeTrials.push({
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); 
+});
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -2977,7 +2984,7 @@ for (let i = 0; i < congruentPrototypeTrial6.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial6.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial6.listB[i],
@@ -2985,7 +2992,7 @@ for (let i = 0; i < congruentPrototypeTrial6.listB.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); 
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
@@ -3001,7 +3008,7 @@ congruentPrototypeTrials.push({
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial6.prototype,
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial6.prototype,
@@ -3039,7 +3046,7 @@ congruentPrototypeTrials.push({
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); 
+});
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -3081,7 +3088,7 @@ congruentPrototypeTrials.push({
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial7.prototype,
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial7.prototype,
@@ -3119,7 +3126,7 @@ congruentPrototypeTrials.push({
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); 
+});
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -3137,7 +3144,7 @@ for (let i = 0; i < congruentPrototypeTrial8.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial8.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial8.listB[i],
@@ -3145,7 +3152,7 @@ for (let i = 0; i < congruentPrototypeTrial8.listB.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); 
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
@@ -3161,21 +3168,21 @@ congruentPrototypeTrials.push({
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial8.prototype,
     trial_duration: durationForTargetWords,
-    response_ends_trial: false, 
-        data: {
-            test_part: "test",
-            stim: congruentPrototypeTrial8.prototype,
-            drmTrial_type: "congruentPrototype",
-            word_position: "target",
-            correct_response: "70",
-        },
+    response_ends_trial: false,
+    data: {
+        test_part: "test",
+        stim: congruentPrototypeTrial8.prototype,
+        drmTrial_type: "congruentPrototype",
+        word_position: "target",
+        correct_response: "70",
+    },
     confidence:
         progressBar +
         fillUp +
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -3199,7 +3206,7 @@ congruentPrototypeTrials.push({
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); 
+});
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -3217,7 +3224,7 @@ for (let i = 0; i < congruentPrototypeTrial9.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial9.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial9.listB[i],
@@ -3225,7 +3232,7 @@ for (let i = 0; i < congruentPrototypeTrial9.listB.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); 
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
@@ -3237,11 +3244,11 @@ congruentPrototypeTrials.push({
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); 
+});
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial9.prototype,
     trial_duration: durationForTargetWords,
-    response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial9.prototype,
@@ -3255,7 +3262,7 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -3305,7 +3312,7 @@ for (let i = 0; i < congruentPrototypeTrial10.listB.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); 
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
@@ -3317,11 +3324,11 @@ congruentPrototypeTrials.push({
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); 
+});
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial10.prototype,
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial10.prototype,
@@ -3335,7 +3342,7 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -3377,7 +3384,7 @@ for (let i = 0; i < congruentPrototypeTrial11.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial11.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial11.listB[i],
@@ -3401,7 +3408,7 @@ congruentPrototypeTrials.push({
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial11.prototype,
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial11.prototype,
@@ -3457,7 +3464,7 @@ for (let i = 0; i < congruentPrototypeTrial12.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial12.listB[i],
         trial_duration: durationForListWords,
-      response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial12.listB[i],
@@ -3465,7 +3472,7 @@ for (let i = 0; i < congruentPrototypeTrial12.listB.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); 
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
@@ -3477,11 +3484,11 @@ congruentPrototypeTrials.push({
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); 
+});
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial12.prototype,
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial12.prototype,
@@ -3495,7 +3502,7 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -3519,7 +3526,7 @@ congruentPrototypeTrials.push({
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); 
+});
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -3537,7 +3544,7 @@ for (let i = 0; i < congruentPrototypeTrial13.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial13.listB[i],
         trial_duration: durationForListWords,
-     response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial13.listB[i],
@@ -3545,7 +3552,7 @@ for (let i = 0; i < congruentPrototypeTrial13.listB.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); 
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
@@ -3557,11 +3564,11 @@ congruentPrototypeTrials.push({
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); 
+});
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial13.prototype,
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial13.prototype,
@@ -3575,7 +3582,7 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -3599,7 +3606,7 @@ congruentPrototypeTrials.push({
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); 
+});
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -3617,7 +3624,7 @@ for (let i = 0; i < congruentPrototypeTrial14.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial14.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial14.listB[i],
@@ -3625,7 +3632,7 @@ for (let i = 0; i < congruentPrototypeTrial14.listB.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); 
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
@@ -3637,11 +3644,11 @@ congruentPrototypeTrials.push({
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); 
+});
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial14.prototype,
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial14.prototype,
@@ -3655,7 +3662,7 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -3679,7 +3686,7 @@ congruentPrototypeTrials.push({
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); 
+});
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -3705,7 +3712,7 @@ for (let i = 0; i < congruentPrototypeTrial15.listB.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); 
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
@@ -3721,7 +3728,7 @@ congruentPrototypeTrials.push({
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial15.prototype,
     trial_duration: durationForTargetWords,
-    response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial15.prototype,
@@ -3735,7 +3742,7 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -3777,7 +3784,7 @@ for (let i = 0; i < congruentPrototypeTrial16.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial16.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial16.listB[i],
@@ -3801,7 +3808,7 @@ congruentPrototypeTrials.push({
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial16.prototype,
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial15.prototype,
@@ -3815,7 +3822,7 @@ congruentPrototypeTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -3839,7 +3846,7 @@ congruentPrototypeTrials.push({
         drmTrial_type: "congruentPrototype",
     },
     confidence: "x",
-}); 
+});
 
 congruentPrototypeTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -3857,7 +3864,7 @@ for (let i = 0; i < congruentPrototypeTrial17.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial17.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial17.listB[i],
@@ -3865,7 +3872,7 @@ for (let i = 0; i < congruentPrototypeTrial17.listB.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); 
+    });
 }
 congruentPrototypeTrials.push({
     stimulus: responsePromptTone,
@@ -3881,7 +3888,7 @@ congruentPrototypeTrials.push({
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial17.prototype,
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial17.prototype,
@@ -3937,7 +3944,7 @@ for (let i = 0; i < congruentPrototypeTrial18.listB.length; i++) {
     congruentPrototypeTrials.push({
         stimulus: congruentPrototypeTrial18.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentPrototypeTrial18.listB[i],
@@ -3961,7 +3968,7 @@ congruentPrototypeTrials.push({
 congruentPrototypeTrials.push({
     stimulus: congruentPrototypeTrial18.prototype,
     trial_duration: durationForTargetWords,
-    response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentPrototypeTrial18.prototype,
@@ -4092,7 +4099,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial1[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial1[0].listA[i],
         trial_duration: durationForListWords,
-      response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial1[0].listA[i],
@@ -4116,7 +4123,7 @@ incongruentHighestAssociateTrials.push({
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial1[1].highestAssociates[0],
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentHighestAssociateTrial3[1].highestAssociates[0],
@@ -4130,7 +4137,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -4154,7 +4161,7 @@ incongruentHighestAssociateTrials.push({
         drmTrial_type: "incongruentHighestAssociate",
     },
     confidence: "x",
-}); 
+});
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -4172,7 +4179,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial2[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial2[0].listA[i],
         trial_duration: durationForListWords,
-     response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial2[0].listA[i],
@@ -4180,7 +4187,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial2[0].listA.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); 
+    });
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
@@ -4196,7 +4203,7 @@ incongruentHighestAssociateTrials.push({
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial2[1].highestAssociates[0],
     trial_duration: durationForTargetWords,
-    response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentHighestAssociateTrial2[1].highestAssociates[0],
@@ -4234,7 +4241,7 @@ incongruentHighestAssociateTrials.push({
         drmTrial_type: "incongruentHighestAssociate",
     },
     confidence: "x",
-}); 
+});
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -4252,7 +4259,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial3[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial3[0].listA[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial3[0].listA[i],
@@ -4260,7 +4267,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial3[0].listA.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); 
+    });
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
@@ -4276,7 +4283,7 @@ incongruentHighestAssociateTrials.push({
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial3[1].highestAssociates[0],
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentHighestAssociateTrial3[1].highestAssociates[0],
@@ -4290,7 +4297,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -4314,7 +4321,7 @@ incongruentHighestAssociateTrials.push({
         drmTrial_type: "incongruentHighestAssociate",
     },
     confidence: "x",
-}); 
+});
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -4356,7 +4363,7 @@ incongruentHighestAssociateTrials.push({
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial4[1].highestAssociates[0],
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentHighestAssociateTrial4[1].highestAssociates[0],
@@ -4370,7 +4377,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -4394,7 +4401,7 @@ incongruentHighestAssociateTrials.push({
         drmTrial_type: "incongruentHighestAssociate",
     },
     confidence: "x",
-}); 
+});
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -4412,7 +4419,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial5[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial5[0].listA[i],
         trial_duration: durationForListWords,
-      response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial5[0].listA[i],
@@ -4420,7 +4427,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial5[0].listA.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); 
+    });
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
@@ -4436,7 +4443,7 @@ incongruentHighestAssociateTrials.push({
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial5[1].highestAssociates[0],
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentHighestAssociateTrial5[1].highestAssociates[0],
@@ -4492,7 +4499,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial6[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial6[0].listA[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial6[0].listA[i],
@@ -4516,7 +4523,7 @@ incongruentHighestAssociateTrials.push({
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial6[1].highestAssociates[0],
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentHighestAssociateTrial6[1].highestAssociates[0],
@@ -4530,7 +4537,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -4554,7 +4561,7 @@ incongruentHighestAssociateTrials.push({
         drmTrial_type: "incongruentHighestAssociate",
     },
     confidence: "x",
-}); 
+});
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -4572,7 +4579,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial7[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial7[0].listA[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial7[0].listA[i],
@@ -4596,7 +4603,7 @@ incongruentHighestAssociateTrials.push({
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial7[1].highestAssociates[0],
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentHighestAssociateTrial7[1].highestAssociates[0],
@@ -4652,7 +4659,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial8[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial8[0].listA[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial8[0].listA[i],
@@ -4660,7 +4667,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial8[0].listA.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); 
+    });
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
@@ -4676,7 +4683,7 @@ incongruentHighestAssociateTrials.push({
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial8[1].highestAssociates[0],
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentHighestAssociateTrial8[1].highestAssociates[0],
@@ -4690,7 +4697,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -4732,7 +4739,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial9[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial9[0].listA[i],
         trial_duration: durationForListWords,
-      response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial9[0].listA[i],
@@ -4740,7 +4747,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial9[0].listA.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); 
+    });
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
@@ -4752,11 +4759,11 @@ incongruentHighestAssociateTrials.push({
         drmTrial_type: "incongruentHighestAssociate",
     },
     confidence: "x",
-}); 
+});
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial9[1].highestAssociates[0],
     trial_duration: durationForTargetWords,
-    response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentHighestAssociateTrial9[1].highestAssociates[0],
@@ -4770,7 +4777,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -4794,7 +4801,7 @@ incongruentHighestAssociateTrials.push({
         drmTrial_type: "incongruentHighestAssociate",
     },
     confidence: "x",
-}); 
+});
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -4812,7 +4819,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial10[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial10[0].listA[i],
         trial_duration: durationForListWords,
-     response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial10[0].listA[i],
@@ -4820,7 +4827,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial10[0].listA.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); 
+    });
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
@@ -4836,7 +4843,7 @@ incongruentHighestAssociateTrials.push({
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial10[1].highestAssociates[0],
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentHighestAssociateTrial10[1].highestAssociates[0],
@@ -4850,7 +4857,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -4874,7 +4881,7 @@ incongruentHighestAssociateTrials.push({
         drmTrial_type: "incongruentHighestAssociate",
     },
     confidence: "x",
-}); 
+});
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -4892,7 +4899,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial11[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial11[0].listA[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial11[0].listA[i],
@@ -4916,7 +4923,7 @@ incongruentHighestAssociateTrials.push({
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial11[1].highestAssociates[0],
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentHighestAssociateTrial11[1].highestAssociates[0],
@@ -4930,7 +4937,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -4954,7 +4961,7 @@ incongruentHighestAssociateTrials.push({
         drmTrial_type: "incongruentHighestAssociate",
     },
     confidence: "x",
-}); 
+});
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -4972,7 +4979,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial12[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial12[0].listA[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial12[0].listA[i],
@@ -4996,7 +5003,7 @@ incongruentHighestAssociateTrials.push({
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial12[1].highestAssociates[0],
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentHighestAssociateTrial12[1].highestAssociates[0],
@@ -5034,7 +5041,7 @@ incongruentHighestAssociateTrials.push({
         drmTrial_type: "incongruentHighestAssociate",
     },
     confidence: "x",
-}); 
+});
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -5072,11 +5079,11 @@ incongruentHighestAssociateTrials.push({
         drmTrial_type: "incongruentHighestAssociate",
     },
     confidence: "x",
-}); 
+});
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial13[1].highestAssociates[0],
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentHighestAssociateTrial13[1].highestAssociates[0],
@@ -5114,7 +5121,7 @@ incongruentHighestAssociateTrials.push({
         drmTrial_type: "incongruentHighestAssociate",
     },
     confidence: "x",
-}); 
+});
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -5132,7 +5139,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial14[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial14[0].listA[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial14[0].listA[i],
@@ -5156,7 +5163,7 @@ incongruentHighestAssociateTrials.push({
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial14[1].highestAssociates[0],
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentHighestAssociateTrial14[1].highestAssociates[0],
@@ -5170,7 +5177,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -5212,7 +5219,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial15[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial15[0].listA[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial15[0].listA[i],
@@ -5220,7 +5227,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial15[0].listA.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); 
+    });
 }
 incongruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
@@ -5236,7 +5243,7 @@ incongruentHighestAssociateTrials.push({
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial15[1].highestAssociates[0],
     trial_duration: durationForTargetWords,
-    response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentHighestAssociateTrial15[1].highestAssociates[0],
@@ -5250,7 +5257,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -5292,7 +5299,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial16[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial16[0].listA[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial16[0].listA[i],
@@ -5316,7 +5323,7 @@ incongruentHighestAssociateTrials.push({
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial16[1].highestAssociates[0],
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentHighestAssociateTrial16[1].highestAssociates[0],
@@ -5330,7 +5337,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -5372,7 +5379,7 @@ for (let i = 0; i < incongruentHighestAssociateTrial17[0].listA.length; i++) {
     incongruentHighestAssociateTrials.push({
         stimulus: incongruentHighestAssociateTrial17[0].listA[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: incongruentHighestAssociateTrial17[0].listA[i],
@@ -5396,7 +5403,7 @@ incongruentHighestAssociateTrials.push({
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial17[1].highestAssociates[0],
     trial_duration: durationForTargetWords,
-    response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentHighestAssociateTrial17[1].highestAssociates[0],
@@ -5434,7 +5441,7 @@ incongruentHighestAssociateTrials.push({
         drmTrial_type: "incongruentHighestAssociate",
     },
     confidence: "x",
-}); 
+});
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -5476,7 +5483,7 @@ incongruentHighestAssociateTrials.push({
 incongruentHighestAssociateTrials.push({
     stimulus: incongruentHighestAssociateTrial18[1].highestAssociates[0],
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: incongruentHighestAssociateTrial18[1].highestAssociates[0],
@@ -5490,7 +5497,7 @@ incongruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -5514,7 +5521,7 @@ incongruentHighestAssociateTrials.push({
         drmTrial_type: "incongruentHighestAssociate",
     },
     confidence: "x",
-}); 
+});
 
 incongruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -5527,7 +5534,6 @@ incongruentHighestAssociateTrials.push({
     },
     confidence: "x",
 });
-
 
 // creating structure for congruent highest associate trials
 // use for 2nd position trials
@@ -5569,7 +5575,7 @@ for (let i = 0; i < 1; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial1.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial1.listB[i],
@@ -5582,7 +5588,7 @@ for (let i = 0; i < 1; i++) {
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial1.highestAssociates[0],
     trial_duration: durationForListWords,
-    response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial1.highestAssociates[0],
@@ -5595,7 +5601,7 @@ for (let i = 2; i < congruentHighestAssociateTrial1.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial1.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial1.listB[i],
@@ -5603,7 +5609,7 @@ for (let i = 2; i < congruentHighestAssociateTrial1.listB.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); 
+    });
 }
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
@@ -5619,7 +5625,7 @@ congruentHighestAssociateTrials.push({
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial1.highestAssociates[0],
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial1.highestAssociates[0],
@@ -5633,7 +5639,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -5676,19 +5682,19 @@ for (let i = 0; i < 1; i++) {
         stimulus: congruentHighestAssociateTrial2.listB[i],
         trial_duration: durationForListWords,
         response_ends_trial: false,
-            data: {
-                test_part: "test",
-                stim: congruentHighestAssociateTrial2.listB[i],
-                drmTrial_type: "congruentHighestAssociate_2",
-                word_position: "list",
-            },
-            confidence: "x",
+        data: {
+            test_part: "test",
+            stim: congruentHighestAssociateTrial2.listB[i],
+            drmTrial_type: "congruentHighestAssociate_2",
+            word_position: "list",
+        },
+        confidence: "x",
     });
 }
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial2.highestAssociates[0],
     trial_duration: durationForListWords,
-    response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial2.highestAssociates[0],
@@ -5697,12 +5703,12 @@ congruentHighestAssociateTrials.push({
         correct_response: "74",
     },
     confidence: "x",
-}); 
+});
 for (let i = 2; i < congruentHighestAssociateTrial2.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial2.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial2.listB[i],
@@ -5726,7 +5732,7 @@ congruentHighestAssociateTrials.push({
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial2.highestAssociates[0],
     trial_duration: durationForTargetWords,
-    response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial2.highestAssociates[0],
@@ -5764,7 +5770,7 @@ congruentHighestAssociateTrials.push({
         drmTrial_type: "congruentHighestAssociate_2",
     },
     confidence: "x",
-}); 
+});
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -5782,7 +5788,7 @@ for (let i = 0; i < 1; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial3.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial3.listB[i],
@@ -5790,12 +5796,12 @@ for (let i = 0; i < 1; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); 
+    });
 }
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial3.highestAssociates[0],
     trial_duration: durationForListWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial3.highestAssociates[0],
@@ -5804,12 +5810,12 @@ congruentHighestAssociateTrials.push({
         correct_response: "74",
     },
     confidence: "x",
-}); 
+});
 for (let i = 2; i < congruentHighestAssociateTrial3.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial3.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial3.listB[i],
@@ -5833,7 +5839,7 @@ congruentHighestAssociateTrials.push({
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial3.highestAssociates[0],
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial3.highestAssociates[0],
@@ -5847,7 +5853,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -5889,7 +5895,7 @@ for (let i = 0; i < 1; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial4.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial4.listB[i],
@@ -5902,7 +5908,7 @@ for (let i = 0; i < 1; i++) {
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial4.highestAssociates[0],
     trial_duration: durationForListWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial4.highestAssociates[0],
@@ -5940,7 +5946,7 @@ congruentHighestAssociateTrials.push({
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial4.highestAssociates[0],
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial4.highestAssociates[0],
@@ -5954,7 +5960,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -5978,7 +5984,7 @@ congruentHighestAssociateTrials.push({
         drmTrial_type: "congruentHighestAssociate_2",
     },
     confidence: "x",
-})
+});
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -5996,7 +6002,7 @@ for (let i = 0; i < 1; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial5.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial5.listB[i],
@@ -6009,7 +6015,7 @@ for (let i = 0; i < 1; i++) {
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial5.highestAssociates[0],
     trial_duration: durationForListWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial5.highestAssociates[0],
@@ -6023,7 +6029,7 @@ for (let i = 2; i < congruentHighestAssociateTrial5.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial5.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial5.listB[i],
@@ -6047,7 +6053,7 @@ congruentHighestAssociateTrials.push({
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial5.highestAssociates[0],
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial5.highestAssociates[0],
@@ -6061,7 +6067,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -6103,7 +6109,7 @@ for (let i = 0; i < 2; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial6.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial6.listB[i],
@@ -6116,7 +6122,7 @@ for (let i = 0; i < 2; i++) {
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial6.highestAssociates[0],
     trial_duration: durationForListWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial6.highestAssociates[0],
@@ -6124,12 +6130,12 @@ congruentHighestAssociateTrials.push({
         word_position: "list",
     },
     confidence: "x",
-}); 
+});
 for (let i = 3; i < congruentHighestAssociateTrial6.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial6.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial6.listB[i],
@@ -6153,7 +6159,7 @@ congruentHighestAssociateTrials.push({
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial6.highestAssociates[0],
     trial_duration: durationForTargetWords,
-    response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial6.highestAssociates[0],
@@ -6167,7 +6173,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -6210,19 +6216,19 @@ for (let i = 0; i < 2; i++) {
         stimulus: congruentHighestAssociateTrial7.listB[i],
         trial_duration: durationForListWords,
         response_ends_trial: false,
-            data: {
-                test_part: "test",
-                stim: congruentHighestAssociateTrial7.listB[i],
-                drmTrial_type: "congruentHighestAssociate_3",
-                word_position: "list",
-            },
-            confidence: "x",
+        data: {
+            test_part: "test",
+            stim: congruentHighestAssociateTrial7.listB[i],
+            drmTrial_type: "congruentHighestAssociate_3",
+            word_position: "list",
+        },
+        confidence: "x",
     });
 }
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial7.highestAssociates[0],
     trial_duration: durationForListWords,
-    response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial7.highestAssociates[0],
@@ -6231,7 +6237,7 @@ congruentHighestAssociateTrials.push({
         correct_response: "74",
     },
     confidence: "x",
-}); 
+});
 for (let i = 3; i < congruentHighestAssociateTrial7.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial7.listB[i],
@@ -6256,11 +6262,11 @@ congruentHighestAssociateTrials.push({
         drmTrial_type: "congruentHighestAssociate_3",
     },
     confidence: "x",
-}); 
+});
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial7.highestAssociates[0],
     trial_duration: durationForTargetWords,
-    response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial7.highestAssociates[0],
@@ -6274,7 +6280,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -6316,7 +6322,7 @@ for (let i = 0; i < 2; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial8.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial8.listB[i],
@@ -6329,7 +6335,7 @@ for (let i = 0; i < 2; i++) {
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial8.highestAssociates[0],
     trial_duration: durationForListWords,
-    response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial8.highestAssociates[0],
@@ -6367,7 +6373,7 @@ congruentHighestAssociateTrials.push({
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial8.highestAssociates[0],
     trial_duration: durationForTargetWords,
-    response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial8.highestAssociates[0],
@@ -6405,7 +6411,7 @@ congruentHighestAssociateTrials.push({
         drmTrial_type: "congruentHighestAssociate_3",
     },
     confidence: "x",
-}); 
+});
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -6424,19 +6430,19 @@ for (let i = 0; i < 2; i++) {
         stimulus: congruentHighestAssociateTrial9.listB[i],
         trial_duration: durationForListWords,
         response_ends_trial: false,
-            data: {
-                test_part: "test",
-                stim: congruentHighestAssociateTrial9.listB[i],
-                drmTrial_type: "congruentHighestAssociate_3",
-                word_position: "list",
-            },
-            confidence: "x",
+        data: {
+            test_part: "test",
+            stim: congruentHighestAssociateTrial9.listB[i],
+            drmTrial_type: "congruentHighestAssociate_3",
+            word_position: "list",
+        },
+        confidence: "x",
     });
 }
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial9.highestAssociates[0],
     trial_duration: durationForListWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial9.highestAssociates[0],
@@ -6445,12 +6451,12 @@ congruentHighestAssociateTrials.push({
         correct_response: "74",
     },
     confidence: "x",
-}); 
+});
 for (let i = 3; i < congruentHighestAssociateTrial9.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial9.listB[i],
         trial_duration: durationForListWords,
-      response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial9.listB[i],
@@ -6474,7 +6480,7 @@ congruentHighestAssociateTrials.push({
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial9.highestAssociates[0],
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial9.highestAssociates[0],
@@ -6530,7 +6536,7 @@ for (let i = 0; i < 3; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial10.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial10.listB[i],
@@ -6543,7 +6549,7 @@ for (let i = 0; i < 3; i++) {
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial10.highestAssociates[0],
     trial_duration: durationForListWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial10.highestAssociates[0],
@@ -6551,7 +6557,7 @@ congruentHighestAssociateTrials.push({
         word_position: "list",
     },
     confidence: "x",
-}); 
+});
 for (let i = 4; i < congruentHighestAssociateTrial10.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial10.listB[i],
@@ -6580,7 +6586,7 @@ congruentHighestAssociateTrials.push({
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial10.highestAssociates[0],
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial10.highestAssociates[0],
@@ -6594,7 +6600,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -6618,7 +6624,7 @@ congruentHighestAssociateTrials.push({
         drmTrial_type: "congruentHighestAssociate_4",
     },
     confidence: "x",
-}); 
+});
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -6636,7 +6642,7 @@ for (let i = 0; i < 3; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial11.listB[i],
         trial_duration: durationForListWords,
-      response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial11.listB[i],
@@ -6649,7 +6655,7 @@ for (let i = 0; i < 3; i++) {
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial11.highestAssociates[0],
     trial_duration: durationForListWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial11.highestAssociates[0],
@@ -6658,12 +6664,12 @@ congruentHighestAssociateTrials.push({
         correct_response: "74",
     },
     confidence: "x",
-}); 
+});
 for (let i = 4; i < congruentHighestAssociateTrial11.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial11.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial11.listB[i],
@@ -6687,7 +6693,7 @@ congruentHighestAssociateTrials.push({
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial11.highestAssociates[0],
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial11.highestAssociates[0],
@@ -6701,7 +6707,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -6744,19 +6750,19 @@ for (let i = 0; i < 3; i++) {
         stimulus: congruentHighestAssociateTrial12.listB[i],
         trial_duration: durationForListWords,
         response_ends_trial: false,
-            data: {
-                test_part: "test",
-                stim: congruentHighestAssociateTrial12.listB[i],
-                drmTrial_type: "congruentHighestAssociate_4",
-                word_position: "list",
-            },
-            confidence: "x",
+        data: {
+            test_part: "test",
+            stim: congruentHighestAssociateTrial12.listB[i],
+            drmTrial_type: "congruentHighestAssociate_4",
+            word_position: "list",
+        },
+        confidence: "x",
     });
 }
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial12.highestAssociates[0],
     trial_duration: durationForListWords,
-    response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial12.highestAssociates[0],
@@ -6765,12 +6771,12 @@ congruentHighestAssociateTrials.push({
         correct_response: "74",
     },
     confidence: "x",
-}); 
+});
 for (let i = 4; i < congruentHighestAssociateTrial12.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial12.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial12.listB[i],
@@ -6790,11 +6796,11 @@ congruentHighestAssociateTrials.push({
         drmTrial_type: "congruentHighestAssociate_4",
     },
     confidence: "x",
-}); 
+});
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial12.highestAssociates[0],
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial12.highestAssociates[0],
@@ -6850,7 +6856,7 @@ for (let i = 0; i < 3; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial13.listB[i],
         trial_duration: durationForListWords,
-      response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial13.listB[i],
@@ -6863,7 +6869,7 @@ for (let i = 0; i < 3; i++) {
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial13.highestAssociates[0],
     trial_duration: durationForListWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial13.highestAssociates[0],
@@ -6877,7 +6883,7 @@ for (let i = 4; i < congruentHighestAssociateTrial13.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial13.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial13.listB[i],
@@ -6901,7 +6907,7 @@ congruentHighestAssociateTrials.push({
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial13.highestAssociates[0],
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial13.highestAssociates[0],
@@ -6915,7 +6921,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -6958,19 +6964,19 @@ for (let i = 0; i < 4; i++) {
         stimulus: congruentHighestAssociateTrial14.listB[i],
         trial_duration: durationForListWords,
         response_ends_trial: false,
-            data: {
-                test_part: "test",
-                stim: congruentHighestAssociateTrial14.listB[i],
-                drmTrial_type: "congruentHighestAssociate_5",
-                word_position: "list",
-            },
-            confidence: "x",
+        data: {
+            test_part: "test",
+            stim: congruentHighestAssociateTrial14.listB[i],
+            drmTrial_type: "congruentHighestAssociate_5",
+            word_position: "list",
+        },
+        confidence: "x",
     });
 }
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial14.highestAssociates[0],
     trial_duration: durationForListWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial14.highestAssociates[0],
@@ -6978,7 +6984,7 @@ congruentHighestAssociateTrials.push({
         word_position: "list",
     },
     confidence: "x",
-}); 
+});
 for (let i = 5; i < congruentHighestAssociateTrial14.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial14.listB[i],
@@ -6991,7 +6997,7 @@ for (let i = 5; i < congruentHighestAssociateTrial14.listB.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); 
+    });
 }
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
@@ -7007,7 +7013,7 @@ congruentHighestAssociateTrials.push({
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial14.highestAssociates[0],
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial14.highestAssociates[0],
@@ -7021,7 +7027,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -7045,7 +7051,7 @@ congruentHighestAssociateTrials.push({
         drmTrial_type: "congruentHighestAssociate_5",
     },
     confidence: "x",
-}); 
+});
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -7063,7 +7069,7 @@ for (let i = 0; i < 4; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial15.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial15.listB[i],
@@ -7076,7 +7082,7 @@ for (let i = 0; i < 4; i++) {
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial15.highestAssociates[0],
     trial_duration: durationForListWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial15.highestAssociates[0],
@@ -7085,12 +7091,12 @@ congruentHighestAssociateTrials.push({
         correct_response: "74",
     },
     confidence: "x",
-}); 
+});
 for (let i = 5; i < congruentHighestAssociateTrial15.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial15.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial15.listB[i],
@@ -7114,7 +7120,7 @@ congruentHighestAssociateTrials.push({
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial15.highestAssociates[0],
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial15.highestAssociates[0],
@@ -7152,7 +7158,7 @@ congruentHighestAssociateTrials.push({
         drmTrial_type: "congruentHighestAssociate_5",
     },
     confidence: "x",
-}); 
+});
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -7170,7 +7176,7 @@ for (let i = 0; i < 4; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial16.listB[i],
         trial_duration: durationForListWords,
-      response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial16.listB[i],
@@ -7183,7 +7189,7 @@ for (let i = 0; i < 4; i++) {
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial16.highestAssociates[0],
     trial_duration: durationForListWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial15.highestAssociates[0],
@@ -7197,7 +7203,7 @@ for (let i = 5; i < congruentHighestAssociateTrial16.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial16.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial16.listB[i],
@@ -7206,7 +7212,7 @@ for (let i = 5; i < congruentHighestAssociateTrial16.listB.length; i++) {
         },
         confidence: "x",
     });
-};
+}
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
     trial_duration: durationForTone1,
@@ -7221,7 +7227,7 @@ congruentHighestAssociateTrials.push({
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial16.highestAssociates[0],
     trial_duration: durationForTargetWords,
-    response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial16.highestAssociates[0],
@@ -7235,7 +7241,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -7277,7 +7283,7 @@ for (let i = 0; i < 4; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial17.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial17.listB[i],
@@ -7290,7 +7296,7 @@ for (let i = 0; i < 4; i++) {
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial17.highestAssociates[0],
     trial_duration: durationForListWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial17.highestAssociates[0],
@@ -7304,7 +7310,7 @@ for (let i = 5; i < congruentHighestAssociateTrial17.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial17.listB[i],
         trial_duration: durationForListWords,
-       response_ends_trial: false,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial17.listB[i],
@@ -7328,7 +7334,7 @@ congruentHighestAssociateTrials.push({
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial17.highestAssociates[0],
     trial_duration: durationForTargetWords,
-   response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial17.highestAssociates[0],
@@ -7342,7 +7348,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -7366,7 +7372,7 @@ congruentHighestAssociateTrials.push({
         drmTrial_type: "congruentHighestAssociate_5",
     },
     confidence: "x",
-}); 
+});
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -7383,8 +7389,8 @@ congruentHighestAssociateTrials.push({
 for (let i = 0; i < 4; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial18.listB[i],
-        trial_duration:durationForListWords,
-       response_ends_trial: false,
+        trial_duration: durationForListWords,
+        response_ends_trial: false,
         data: {
             test_part: "test",
             stim: congruentHighestAssociateTrial18.listB[i],
@@ -7397,7 +7403,7 @@ for (let i = 0; i < 4; i++) {
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial18.highestAssociates[0],
     trial_duration: durationForListWords,
-    response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial18.highestAssociates[0],
@@ -7406,7 +7412,7 @@ congruentHighestAssociateTrials.push({
         correct_response: "74",
     },
     confidence: "x",
-}); 
+});
 for (let i = 5; i < congruentHighestAssociateTrial18.listB.length; i++) {
     congruentHighestAssociateTrials.push({
         stimulus: congruentHighestAssociateTrial18.listB[i],
@@ -7419,7 +7425,7 @@ for (let i = 5; i < congruentHighestAssociateTrial18.listB.length; i++) {
             word_position: "list",
         },
         confidence: "x",
-    }); 
+    });
 }
 congruentHighestAssociateTrials.push({
     stimulus: responsePromptTone,
@@ -7435,7 +7441,7 @@ congruentHighestAssociateTrials.push({
 congruentHighestAssociateTrials.push({
     stimulus: congruentHighestAssociateTrial18.highestAssociates[0],
     trial_duration: durationForTargetWords,
-    response_ends_trial: false, 
+    response_ends_trial: false,
     data: {
         test_part: "test",
         stim: congruentHighestAssociateTrial18.highestAssociates[0],
@@ -7449,7 +7455,7 @@ congruentHighestAssociateTrials.push({
         feedbackGenerator +
         timeRemaining +
         '<input autocomplete="autocomplete_off_hack_xfr4!k" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none" onkeypress="">',
-}); 
+});
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -7473,7 +7479,7 @@ congruentHighestAssociateTrials.push({
         drmTrial_type: "congruentHighestAssociate_5",
     },
     confidence: "x",
-}); 
+});
 
 congruentHighestAssociateTrials.push({
     stimulus: "stim/audio_instructions/silence.mp3",
@@ -7486,7 +7492,6 @@ congruentHighestAssociateTrials.push({
     },
     confidence: "x",
 });
-
 
 let interleavedFinalStim = [];
 
@@ -7516,48 +7521,48 @@ for (let i = 0; i <= 17; i++) {
 }
 
 // randomizationFinal = randomizationScheme; //shuffled array no repeats
-let randomizationFinal = shuffleArray(randomizationScheme); 
+let randomizationFinal = shuffleArray(randomizationScheme);
 while (interleavedFinalStim.length > 0) {
     interleavedFinalStim.pop();
 }
 
 for (let i = 0; i <= randomizationFinal.length; i++) {
     if (randomizationFinal[i] === 0) {
-            // first add 9 incongruent prototype items
-            for (let i = 0; i <= 10; i++) {
-                interleavedFinalStim.push(incongruentPrototypeTrials[i]);
+        // first add 9 incongruent prototype items
+        for (let i = 0; i <= 10; i++) {
+            interleavedFinalStim.push(incongruentPrototypeTrials[i]);
         }
-            // then remove 9 incongruent prototype items
-            for (let i = 0; i <= 10; i++) {
-                incongruentPrototypeTrials.shift();
-            }
+        // then remove 9 incongruent prototype items
+        for (let i = 0; i <= 10; i++) {
+            incongruentPrototypeTrials.shift();
+        }
     } else if (randomizationFinal[i] === 1) {
-            // ADD 9 congruent prototype items
-            for (let i = 0; i <= 10; i++) {
-                interleavedFinalStim.push(congruentPrototypeTrials[i]);
-            }
-            // Remove 9 congruent prototype items
-            for (let i = 0; i <= 10; i++) {
-                congruentPrototypeTrials.shift();
-            }
+        // ADD 9 congruent prototype items
+        for (let i = 0; i <= 10; i++) {
+            interleavedFinalStim.push(congruentPrototypeTrials[i]);
+        }
+        // Remove 9 congruent prototype items
+        for (let i = 0; i <= 10; i++) {
+            congruentPrototypeTrials.shift();
+        }
     } else if (randomizationFinal[i] === 2) {
-            // ADD 9 items from incongruent highest associates trials
-            for (let i = 0; i <= 10; i++) {
-                interleavedFinalStim.push(incongruentHighestAssociateTrials[i]);
-            }
-            // Remove 9 incongruent highest associates items
-            for (let i = 0; i <= 10; i++) {
-                incongruentHighestAssociateTrials.shift();
-            }
+        // ADD 9 items from incongruent highest associates trials
+        for (let i = 0; i <= 10; i++) {
+            interleavedFinalStim.push(incongruentHighestAssociateTrials[i]);
+        }
+        // Remove 9 incongruent highest associates items
+        for (let i = 0; i <= 10; i++) {
+            incongruentHighestAssociateTrials.shift();
+        }
     } else if (randomizationFinal[i] === 3) {
-            // ADD 9 congruent highest associate items
-            for (let i = 0; i <= 10; i++) {
-                interleavedFinalStim.push(congruentHighestAssociateTrials[i]);
-            }
-            // Remove 9 congruent highest associate items
-            for (let i = 0; i <= 10; i++) {
-                congruentHighestAssociateTrials.shift();
-            }
+        // ADD 9 congruent highest associate items
+        for (let i = 0; i <= 10; i++) {
+            interleavedFinalStim.push(congruentHighestAssociateTrials[i]);
+        }
+        // Remove 9 congruent highest associate items
+        for (let i = 0; i <= 10; i++) {
+            congruentHighestAssociateTrials.shift();
+        }
     }
 }
 
@@ -7576,4 +7581,3 @@ allLists.forEach((list) => {
 
 // Remove duplicates (if any)
 audioFiles = [...new Set(audioFiles)];
-

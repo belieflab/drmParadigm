@@ -260,6 +260,26 @@ let trials = {
         totalConfidence = 0; // need to reset totalConfidence to 0 after each trial !!IMPORTANT
         data.index = trialIterator;
         trialIterator++;
+        switch (data.word_position) {
+            case "congruentPrototype":
+                data.index_by_trial_type = trialIteratorCongruentPrototype;
+                trialIteratorCongruentPrototype++;
+                break;
+            case "incogruentPrototype":
+                data.index_by_trial_type = trialIteratorIncongruentPrototype;
+                trialIteratorIncongruentPrototype++;
+                break;
+            case "congruentHighestAssociate":
+                data.index_by_trial_type =
+                    trialIteratorCongruentHighestAssociate;
+                trialIteratorCongruentHighestAssociate++;
+                break;
+            case "incogruentHighestAssociate":
+                data.index_by_trial_type =
+                    trialIteratorIncongruentHighestAssociate;
+                trialIteratorIncongruentHighestAssociate++;
+                break;
+        }
     },
 };
 
