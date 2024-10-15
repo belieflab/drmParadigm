@@ -13,7 +13,8 @@ const audioInstructions = {
     instruction0: "stim/audio_instructions/DRM_instructions_0.mp3",
     instruction1: "stim/audio_instructions/drm_instructions_1.mp3",
     shortTone: "stim/audio_tones/tone_1.mp3",
-    instructionsAfterShortTone: "stim/audio_instructions/drm_instructions_after_short_tone.mp3",
+    instructionsAfterShortTone:
+        "stim/audio_instructions/drm_instructions_after_short_tone.mp3",
     instruction2: "stim/audio_instructions/drm_instructions_2.mp3",
     instruction3: "stim/audio_instructions/drm_instructions_3.mp3",
     instruction5: "stim/audio_instructions/drm_instructions_5.mp3",
@@ -52,7 +53,7 @@ let before_instructions = {
         "<p>Please make sure that you increase the volume on your computer.</p>" +
         "<p>If you are blind and use a screenreader (e.g., JAWS, NVDA, VoiceOver), we highly recommend that you turn it off before starting the experiment.</p>" +
         "<p> <i> Press the spacebar to start hearing the instructions. </i> </p>",
-    choices: [" "], 
+    choices: [" "],
     on_start: function () {
         jsPsych.setProgressBar(0);
     },
@@ -73,7 +74,7 @@ let instructions_0 = {
     trial_ends_after_audio: true,
     on_start: function () {
         jsPsych.setProgressBar(0);
-    }
+    },
 };
 
 let instructions_1 = {
@@ -112,7 +113,7 @@ let pressJorF = {
     stimulus: audioInstructions.silence,
     response_ends_trial: true,
     choices: ["f", "j"],
-}
+};
 
 let instructions_2 = {
     type: jsPsychAudioKeyboardResponse,
@@ -122,29 +123,29 @@ let instructions_2 = {
     trial_ends_after_audio: true,
 };
 
-let instructions_2_continued= {
+let instructions_2_continued = {
     type: jsPsychAudioKeyboardResponse,
     stimulus: audioInstructions.silence,
-    prompt: 
+    prompt:
         progressBar +
         fillUp +
         feedbackGenerator +
         timeRemaining +
         '<audio id="beep" src="stim/audio_tones/confidence.mp3"></audio>' +
         '<form autocomplete="off" action=""> <input autocomplete="false" name="hidden" id="tapTap" type="text" style="background-color:black; color: transparent; outline:none; border:none; background:none;" onkeypress="">',
-   choices: "NO_KEYS", 
-   on_load: () => {
+    choices: "NO_KEYS",
+    on_load: () => {
         buttonPressWithArguments(70, 74, true);
     },
     response_ends_trial: false,
     on_finish: () => {
-        document.getElementById('keyBar').remove();
-        document.getElementById('fillUp').remove();
-        document.getElementById('feedbackGenerator').remove();
-        document.getElementById('timeRemaining').remove();
-        document.getElementById('beep').remove();
-        document.getElementById('tapTap').remove();
-    }
+        document.getElementById("keyBar").remove();
+        document.getElementById("fillUp").remove();
+        document.getElementById("feedbackGenerator").remove();
+        document.getElementById("timeRemaining").remove();
+        document.getElementById("beep").remove();
+        document.getElementById("tapTap").remove();
+    },
 };
 
 let instructions_3 = {
@@ -168,7 +169,7 @@ let instructions_5 = {
     stimulus: audioInstructions.instruction5,
     choices: "NO KEYS",
     response_ends_trial: false,
-    trial_ends_after_audio: true, 
+    trial_ends_after_audio: true,
 };
 
 let instructions_6 = {
@@ -176,22 +177,22 @@ let instructions_6 = {
     stimulus: audioInstructions.instruction6,
     choices: "NO_KEYS",
     response_ends_trial: false,
-    trial_ends_after_audio: true, 
-    on_finish: function() {
+    trial_ends_after_audio: true,
+    on_finish: function () {
         console.log("Finished instructions_6");
         jsPsych.data.addProperties({ instructions_6_finished: true });
-    }
+    },
 };
 
 // Instructions 6 Duration: 15960ms
 let instructions_6_duration = 15960;
 let audio = new Audio(audioInstructions.instruction6);
 
-audio.addEventListener('error', function(e) {
+audio.addEventListener("error", function (e) {
     console.error("Error loading audio:", e);
 });
 
-audio.addEventListener('loadedmetadata', function() {
+audio.addEventListener("loadedmetadata", function () {
     instructions_6_duration = audio.duration * 1000;
     console.log("Instructions 6 Duration: " + instructions_6_duration + "ms");
 });
@@ -200,14 +201,14 @@ let pause_before_continue_to_test_section = {
     type: jsPsychAudioKeyboardResponse,
     stimulus: audioInstructions.silence,
     choices: "NO_KEYS",
-    trial_duration: function() {
+    trial_duration: function () {
         return instructions_6_duration || 15960;
-   },
-    on_finish: function() {
+    },
+    on_finish: function () {
         console.log("Pause finished");
         console.log("Finished instructions_6");
         jsPsych.data.addProperties({ instructions_6_finished: true });
-    }
+    },
 };
 
 let continue_to_test_section = {
@@ -215,20 +216,23 @@ let continue_to_test_section = {
     stimulus: audioInstructions.silence,
     choices: [" "],
     response_ends_trial: true,
-    on_start: function() {
+    on_start: function () {
         console.log("Starting continue_to_test_section");
     },
-    conditional_function: function() {
-        return jsPsych.data.get().last(1).values()[0].instructions_6_finished === true;
-    }
-}
+    conditional_function: function () {
+        return (
+            jsPsych.data.get().last(1).values()[0].instructions_6_finished ===
+            true
+        );
+    },
+};
 
 let trials = {
     type: jsPsychAudioKeyboardResponse,
     data: jsPsych.timelineVariable("data"),
     stimulus: jsPsych.timelineVariable("stimulus"),
     prompt: () => {
-        var html = 
+        var html =
             "<p>" +
             jsPsych.timelineVariable("confidence", true) +
             "</p>" +
@@ -246,15 +250,21 @@ let trials = {
         jsPsych.setProgressBar(currentProgressBarValue + 1 / numberOfTrials);
     },
     on_finish: (data) => {
-        if (data.key_press === data.correct_response) {
+        if (
+            data.key_press === data.correct_response &&
+            data.word_position === "target"
+        ) {
             data.accuracy = true;
             data.confidence = totalConfidence;
-        } else if (data.key_press !== data.correct_response) {
+        } else if (
+            data.key_press !== data.correct_response &&
+            data.word_position === "target"
+        ) {
             data.accuracy = false;
             data.confidence = totalConfidence;
         } else {
-            data.accuracy = '';
-            data.confidence = '';
+            data.accuracy = "";
+            data.confidence = "";
         }
         totalConfidence = 0; // need to reset totalConfidence to 0 after each trial !!IMPORTANT
     },
@@ -312,9 +322,9 @@ const dataSave = {
                     dataFailure;
             })
             .finally(() => {
-                document.getElementById("unload").onbeforeunload = ""; 
-                $("body").addClass("showCursor"); 
-                closeFullscreen(); 
+                document.getElementById("unload").onbeforeunload = "";
+                $("body").addClass("showCursor");
+                closeFullscreen();
                 if (!src_subject_id) {
                     window.location.replace(redirectLink);
                 }
