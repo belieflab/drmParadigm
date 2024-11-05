@@ -240,22 +240,24 @@ let trials = {
         var currentProgressBarValue = jsPsych.getProgressBarCompleted();
         jsPsych.setProgressBar(currentProgressBarValue + 1 / numberOfTrials);
     },
-    on_finish: (data) => {
-        if (
-            data.key_press === data.correct_response &&
-            data.word_position === "target"
-        ) {
-            data.accuracy = true;
-            data.confidence = totalConfidence;
-        } else if (
-            data.key_press !== data.correct_response &&
-            data.word_position === "target"
-        ) {
-            data.accuracy = false;
-            data.confidence = totalConfidence;
-        } else {
-            data.accuracy = "";
+    on_finish: function (data) {
+        data.response = responseKey;
+        if (data.word_position != "target") {
+            data.response = "";
             data.confidence = "";
+            data.accuracy_experiment = "";
+        } else if (responseKey == data.correct_response) {
+            data.accuracy_experiment = "correct";
+            data.confidence = totalConfidence;
+            responseKey = "";
+        } else if (responseKey == data.incorrect_response) {
+            data.accuracy_experiment = "incorrect";
+            data.confidence = totalConfidence;
+            responseKey = "";
+        } else if (responseKey == "") {
+            data.accuracy_experiment = "incorrect";
+            data.confidence = 0;
+            responseKey = "";
         }
         totalConfidence = 0; // need to reset totalConfidence to 0 after each trial !!IMPORTANT
         data.index = trialIterator;
