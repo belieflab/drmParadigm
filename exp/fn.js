@@ -69,6 +69,7 @@ function createTargetTrial(stimulus, trialType, isPractice = false) {
             trial_type: trialType,
             word_position: "target",
             correct_response: "74",
+            incorrect_response: "70",
         },
         confidence:
             progressBar +
