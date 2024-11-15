@@ -8,11 +8,10 @@ const jsPsych = initJsPsych({
 
 let timeline = [];
 
-
 const practiceTrialsCount = 20;  
 const testTrialsCount = 792; 
-const otherEvents = 25; 
-const totalTimelineEvents = practiceTrialsCount + testTrialsCount + otherEvents;
+const timelineEventCount = 25; 
+const totalTimelineEvents = practiceTrialsCount + testTrialsCount + timelineEventCount;
 let currentEvent = 0;
 
 function updateProgressBar() {
@@ -261,7 +260,6 @@ let trials = {
         buttonPressWithArguments(70, 74, true);
     },
     on_start: function () {
-        // Set progress bar based on currentEvent
         const progress = currentEvent / totalTimelineEvents;
         jsPsych.setProgressBar(progress);  // Set the progress bar before incrementing currentEvent
     },
