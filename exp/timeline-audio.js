@@ -8,6 +8,19 @@ const jsPsych = initJsPsych({
 
 let timeline = [];
 
+
+const practiceTrialsCount = 20;  
+const testTrialsCount = 792; 
+const otherEvents = 25; 
+const totalTimelineEvents = practiceTrialsCount + testTrialsCount + otherEvents;
+let currentEvent = 0;
+
+function updateProgressBar() {
+    const progress = currentEvent / totalTimelineEvents;  
+    jsPsych.setProgressBar(progress);  
+    currentEvent++;
+}
+
 const audioInstructions = {
     silence: "stim/audio_instructions/silence.mp3",
     instruction0: "stim/audio_instructions/DRM_instructions_0.mp3",
@@ -44,6 +57,7 @@ const preload = {
     on_complete: function (data) {
         console.log("Preloading completed");
     },
+    on_start: updateProgressBar,
 };
 
 let before_instructions = {
@@ -54,9 +68,7 @@ let before_instructions = {
         "<p>If you are blind and use a screenreader (e.g., JAWS, NVDA, VoiceOver), we highly recommend that you turn it off before starting the experiment.</p>" +
         "<p> <i> Press the spacebar to start hearing the instructions. </i> </p>",
     choices: [" "],
-    on_start: function () {
-        jsPsych.setProgressBar(0);
-    },
+    on_start: updateProgressBar,
 };
 
 let continue_trial = {
@@ -64,6 +76,7 @@ let continue_trial = {
     choices: [" "],
     stimulus: audioInstructions.silence,
     response_ends_trial: true,
+    on_start: updateProgressBar,
 };
 
 let instructions_0 = {
@@ -72,9 +85,7 @@ let instructions_0 = {
     choices: "NO_KEYS",
     response_ends_trial: false,
     trial_ends_after_audio: true,
-    on_start: function () {
-        jsPsych.setProgressBar(0);
-    },
+    on_start: updateProgressBar,
 };
 
 let instructions_1 = {
@@ -83,6 +94,7 @@ let instructions_1 = {
     choices: "NO_KEYS",
     response_ends_trial: false,
     trial_ends_after_audio: true,
+    on_start: updateProgressBar,
 };
 
 let pause_before_short_tone = {
@@ -90,6 +102,7 @@ let pause_before_short_tone = {
     stimulus: audioInstructions.silence,
     choices: [" "],
     response_ends_trial: true,
+    on_start: updateProgressBar,
 };
 
 let short_tone = {
@@ -98,6 +111,7 @@ let short_tone = {
     choices: "NO_KEYS",
     response_ends_trial: false,
     trial_ends_after_audio: true,
+    on_start: updateProgressBar,
 };
 
 let instructions_after_example_reponsePromptTone = {
@@ -106,6 +120,7 @@ let instructions_after_example_reponsePromptTone = {
     choices: "NO_KEYS",
     response_ends_trial: false,
     trial_ends_after_audio: true,
+    on_start: updateProgressBar,
 };
 
 let pressJorF = {
@@ -113,6 +128,7 @@ let pressJorF = {
     stimulus: audioInstructions.silence,
     response_ends_trial: true,
     choices: ["f", "j"],
+    on_start: updateProgressBar,
 };
 
 let instructions_2 = {
@@ -121,6 +137,7 @@ let instructions_2 = {
     choices: "NO KEYS",
     response_ends_trial: false,
     trial_ends_after_audio: true,
+    on_start: updateProgressBar,
 };
 
 let instructions_2_continued = {
@@ -146,6 +163,7 @@ let instructions_2_continued = {
         document.getElementById("beep").remove();
         document.getElementById("tapTap").remove();
     },
+    on_start: updateProgressBar,
 };
 
 let instructions_3 = {
@@ -154,6 +172,7 @@ let instructions_3 = {
     choices: "NO KEYS",
     response_ends_trial: false,
     trial_ends_after_audio: true,
+    on_start: updateProgressBar,
 };
 
 let instructions_4 = {
@@ -162,6 +181,7 @@ let instructions_4 = {
     choices: "NO_KEYS",
     response_ends_trial: false,
     trial_ends_after_audio: true,
+    on_start: updateProgressBar,
 };
 
 let instructions_5 = {
@@ -170,6 +190,7 @@ let instructions_5 = {
     choices: "NO KEYS",
     response_ends_trial: false,
     trial_ends_after_audio: true,
+    on_start: updateProgressBar,
 };
 
 let instructions_6 = {
@@ -178,6 +199,7 @@ let instructions_6 = {
     choices: "NO_KEYS",
     response_ends_trial: false,
     trial_ends_after_audio: true,
+    on_start: updateProgressBar,
 };
 
 // Instructions 6 Duration: 15960ms
@@ -200,6 +222,7 @@ let pause_before_continue_to_test_section = {
     trial_duration: function () {
         return instructions_6_duration || 15960;
     },
+    on_start: updateProgressBar,
 };
 
 let continue_to_test_section = {
@@ -208,6 +231,7 @@ let continue_to_test_section = {
     choices: [" "],
     response_ends_trial: true,
     on_start: function () {
+        updateProgressBar,
         console.log("Starting continue_to_test_section");
     },
     conditional_function: function () {
@@ -236,11 +260,14 @@ let trials = {
     on_load: () => {
         buttonPressWithArguments(70, 74, true);
     },
-    on_start: () => {
-        var currentProgressBarValue = jsPsych.getProgressBarCompleted();
-        jsPsych.setProgressBar(currentProgressBarValue + 1 / numberOfTrials);
+    on_start: function () {
+        // Set progress bar based on currentEvent
+        const progress = currentEvent / totalTimelineEvents;
+        jsPsych.setProgressBar(progress);  // Set the progress bar before incrementing currentEvent
     },
     on_finish: function (data) {
+        currentEvent++;
+
         data.response = responseKey;
         if (data.word_position != "target") {
             data.response = "";
@@ -291,6 +318,7 @@ let instructions_7 = {
     choices: "NO_KEYS",
     response_ends_trial: false,
     trial_ends_after_audio: true,
+    on_start: updateProgressBar,
 };
 
 const dataSave = {
@@ -298,6 +326,7 @@ const dataSave = {
     stimulus: dataSaveAnimation(),
     choices: "NO_KEYS",
     trial_duration: 5000,
+    on_start: updateProgressBar,
     on_finish: () => {
         var curr_progress_bar_value = jsPsych.getProgressBarCompleted();
         jsPsych.setProgressBar(curr_progress_bar_value + 1 / 720);
