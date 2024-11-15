@@ -1153,6 +1153,7 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -1233,6 +1234,7 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -1313,6 +1315,7 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -1393,6 +1396,7 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -1473,6 +1477,7 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -1553,6 +1558,7 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -1633,6 +1639,7 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -1713,6 +1720,7 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -1793,6 +1801,7 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -1873,6 +1882,7 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -1953,6 +1963,7 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -2033,6 +2044,7 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -2113,6 +2125,7 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -2193,6 +2206,7 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -2273,6 +2287,7 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -2353,6 +2368,7 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -2433,6 +2449,7 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -2513,6 +2530,7 @@ incongruentPrototypeTrials.push({
         condition: "incongruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -2615,6 +2633,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -2695,6 +2714,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -2775,6 +2795,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -2855,6 +2876,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -2935,6 +2957,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -3015,6 +3038,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -3095,6 +3119,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -3175,6 +3200,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -3255,6 +3281,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -3335,6 +3362,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -3415,6 +3443,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -3495,6 +3524,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -3575,6 +3605,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -3655,6 +3686,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -3735,6 +3767,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -3815,6 +3848,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -3895,6 +3929,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -3975,6 +4010,7 @@ congruentPrototypeTrials.push({
         condition: "congruentPrototype",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -4130,6 +4166,7 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -4210,6 +4247,7 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -4290,6 +4328,7 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -4370,6 +4409,7 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -4450,6 +4490,7 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -4530,6 +4571,7 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -4610,6 +4652,7 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -4690,6 +4733,7 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -4770,6 +4814,7 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -4850,6 +4895,7 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -4930,6 +4976,7 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -5010,6 +5057,7 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -5090,6 +5138,7 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -5170,6 +5219,7 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -5250,6 +5300,7 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -5330,6 +5381,7 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -5410,6 +5462,7 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -5490,6 +5543,7 @@ incongruentHighestAssociateTrials.push({
         condition: "incongruentHighestAssociate",
         word_position: "target",
         correct_response: "70",
+        incorrect_response: "74",
     },
     confidence:
         progressBar +
@@ -5632,6 +5686,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_2",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence:
         progressBar +
@@ -5701,6 +5756,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_2",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence: "x",
 });
@@ -5739,6 +5795,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_2",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence:
         progressBar +
@@ -5808,6 +5865,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_2",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence: "x",
 });
@@ -5846,6 +5904,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_2",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence:
         progressBar +
@@ -5915,6 +5974,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_2",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence: "x",
 });
@@ -5953,6 +6013,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_2",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence:
         progressBar +
@@ -6022,6 +6083,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_2",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence: "x",
 });
@@ -6060,6 +6122,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_2",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence:
         progressBar +
@@ -6166,6 +6229,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_3",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence:
         progressBar +
@@ -6235,6 +6299,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_3",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence: "x",
 });
@@ -6273,6 +6338,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_3",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence:
         progressBar +
@@ -6342,6 +6408,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_3",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence: "x",
 });
@@ -6380,6 +6447,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_3",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence:
         progressBar +
@@ -6449,6 +6517,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_3",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence: "x",
 });
@@ -6487,6 +6556,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_3",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence:
         progressBar +
@@ -6593,6 +6663,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_4",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence:
         progressBar +
@@ -6662,6 +6733,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_4",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence: "x",
 });
@@ -6700,6 +6772,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_4",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence:
         progressBar +
@@ -6769,6 +6842,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_4",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence: "x",
 });
@@ -6807,6 +6881,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_4",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence:
         progressBar +
@@ -6876,6 +6951,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_4",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence: "x",
 });
@@ -6914,6 +6990,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_4",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence:
         progressBar +
@@ -7020,6 +7097,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_5",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence:
         progressBar +
@@ -7089,6 +7167,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_5",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence: "x",
 });
@@ -7127,6 +7206,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_5",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence:
         progressBar +
@@ -7196,6 +7276,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_5",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence: "x",
 });
@@ -7234,6 +7315,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_5",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence:
         progressBar +
@@ -7303,6 +7385,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_5",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence: "x",
 });
@@ -7341,6 +7424,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_5",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence:
         progressBar +
@@ -7410,6 +7494,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_5",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence: "x",
 });
@@ -7448,6 +7533,7 @@ congruentHighestAssociateTrials.push({
         condition: "congruentHighestAssociate_5",
         word_position: "target",
         correct_response: "74",
+        incorrect_response: "70",
     },
     confidence:
         progressBar +
