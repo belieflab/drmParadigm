@@ -177,10 +177,10 @@ let instructions_6 = {
     choices: "NO_KEYS",
     response_ends_trial: false,
     trial_ends_after_audio: true, 
-    on_finish: function() {
-        console.log("Finished instructions_6");
-        jsPsych.data.addProperties({ instructions_6_finished: true });
-    }
+    // on_finish: function() {
+    //     console.log("Finished instructions_6");
+    //     jsPsych.data.addProperties({ instructions_6_finished: true });
+    // }
 };
 
 // Instructions 6 Duration: 15960ms
