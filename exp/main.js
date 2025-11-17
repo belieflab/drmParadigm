@@ -9,6 +9,9 @@ let testSection = {
     timeline_variables: interleavedFinalStim,
 };
 
+console.log("Number of practice trials:", practiceTrials.length);
+console.log("Number of test trials:", interleavedFinalStim.length);
+
 timeline.push(preload);
 
 timeline.push(before_instructions);

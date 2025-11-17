@@ -34,7 +34,7 @@ function [] = changePlayRate(rateIncreaseFactor, nSemiTones, directoryPath)
              
         % If you want to save the modified audio:
         % audiowrite(strcat(fileName,'_x',num2str(rateIncreaseFactor),'_t',num2str(nSemiTones),'.wav'), y, newFs); % Save the modified audio file
-        audiowrite(strcat(fileName,'.wav'), y, newFs);
+        audiowrite(strcat(fileName,'.mp3'), y, newFs);
 
         % Step 3: Play the modified audio
         sound(y, newFs); % Play the audio at the new sample rate
