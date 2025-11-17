@@ -23,7 +23,7 @@ const theme = "dark"; // Default theme setting for the user interface
 // Options: "audio", "visual"
 const version = "audio"; //"visual";
 
-const counterbalance = false; // Ensures that the experiment's order can be randomized to control for potential biases.
+// const counterbalance = false; // Ensures that the experiment's order can be randomized to control for potential biases.
 
 let phase = undefined; // Tracks the stage of the experiment to apply different logic or content depending on the current phase.
 
@@ -50,9 +50,11 @@ const fixationDuration = 4000;
 const numberOfTrials = debug ? 6 : interleavedFinalStim.length;
 const durationForTone1 = 2000;
 
+const counterbalance = true;
 
-// Redirect Configuration (Daisy Chaining)
 const urlConfig = {
-    audio: "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_2hk9hrLndCovfM2",
-    default: "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_2hk9hrLndCovfM2",
-};
+    audio: {
+        1: "https://belieflab.yale.edu/medlearn/mediatedLearning/",
+        0: "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_9z7mh9OjwDi0hr8/?participantId=${e://Field/participantId?format=urlencode}",
+    }
+}
