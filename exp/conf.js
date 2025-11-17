@@ -50,11 +50,11 @@ const fixationDuration = 4000;
 const numberOfTrials = debug ? 6 : interleavedFinalStim.length;
 const durationForTone1 = 2000;
 
-const counterbalance = true;
+const counterbalance = true; 
 
 const urlConfig = {
     audio: {
-        1: "https://belieflab.yale.edu/medlearn/mediatedLearning/",
-        0: "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_9z7mh9OjwDi0hr8/?participantId=${e://Field/participantId?format=urlencode}",
+        1: "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_9z7mh9OjwDi0hr8/?participantId=${e://Field/participantId?format=urlencode}",
+        0: "https://belieflab.yale.edu/medlearn/mediatedLearning/",  
     }
 }
