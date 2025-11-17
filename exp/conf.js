@@ -50,6 +50,7 @@ const fixationDuration = 4000;
 const numberOfTrials = debug ? 6 : interleavedFinalStim.length;
 const durationForTone1 = 2000;
 
+
 const counterbalance = true; 
 
 const urlConfig = {
