@@ -56,34 +56,5 @@
     <script type="text/javascript" src="./exp/fn.js"></script>
     <?php require_once './exp/var.php'; ?>
     <script type="text/javascript" src="./exp/lang.js"></script>
-
-  <script>
-  console.log("=== DRM REDIRECT CALCULATION ===");
-
-  // Get phase from URL
-  let phaseFromURL = getParamFromUrl('phase');
-  if (phaseFromURL !== undefined) {
-      phase = parseInt(phaseFromURL);
-      window.phase = phase;
-      console.log("Phase from URL:", phase);
-  } else {
-      phase = counterbalance ? 1 : 0;
-      window.phase = phase;
-      console.log("Phase calculated:", phase);
-  }
-
-  console.log("version:", version);
-  console.log("counterbalance:", counterbalance);
-  console.log("phase:", phase);
-
-  // Calculate redirect - just assign, don't declare
-  if (typeof getRedirectLink === "function") {
-      redirectLink = getRedirectLink(version, urlConfig);  // NO var/let/const!
-      console.log("redirectLink:", redirectLink);
-  } else {
-      console.error("getRedirectLink not found!");
-  }
-  console.log("====================================");
-  </script>
   </footer>
 </html>

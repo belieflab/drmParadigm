@@ -23,7 +23,7 @@ const theme = "dark"; // Default theme setting for the user interface
 // Options: "audio", "visual"
 const version = "audio"; //"visual";
 
-// const counterbalance = false; // Ensures that the experiment's order can be randomized to control for potential biases.
+const counterbalance = true; // Ensures that the experiment's order can be randomized to control for potential biases.
 
 let phase = undefined; // Tracks the stage of the experiment to apply different logic or content depending on the current phase.
 
@@ -31,8 +31,19 @@ let phase = undefined; // Tracks the stage of the experiment to apply different 
 const adminEmail = undefined;
 
 // Global variables for sites and phenotypes
-const sites = ["Yale", "UChicago", "MPRC"];
-const phenotypes = ["hc"];
+// Intake Settings
+const intake = {
+    subject: {
+        minLength: 7,
+        maxLength: 7,
+        prefix: "VIP",
+    },
+    sites: ["Vanderbilt"], // Add your sites here
+    phenotypes: ["sz"], // Add your phenotypes here
+    visits: [1, 3], // Define which visits are allowed (maps to stimulus sets 0, 1)
+    weeks: [], // Define which weeks are allowed if using weeks instead of visits
+    nih: false, // Set to true if this is an NIH study requiring GUID
+};
 
 // Number of repetitions for each phase, user-defined object
 // reference in main procedures object repetitions property:
@@ -48,10 +59,7 @@ const durationForListWords = 1000;
 const durationForTargetWords = 5000; //3000;
 const fixationDuration = 4000;
 const numberOfTrials = debug ? 6 : interleavedFinalStim.length;
-const durationForTone1 = 2000;
-
-
-const counterbalance = true; 
+const durationForTone1 = 2000; 
 
 const urlConfig = {
     audio: {
