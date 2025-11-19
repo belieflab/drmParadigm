@@ -379,7 +379,7 @@ const sock = "stim/audio_stimuli/sock.mp3";
 const kick = "stim/audio_stimuli/kick.mp3";
 const soccer = "stim/audio_stimuli/soccer.mp3";
 const walk = "stim/audio_stimuli/walk.mp3";
-const arm = "stim/audio_stimuli/arm.mp3";
+const arms = "stim/audio_stimuli/arm.mp3";
 const inch = "stim/audio_stimuli/inch.mp3";
 const knee = "stim/audio_stimuli/knee.mp3";
 const shoe = "stim/audio_stimuli/shoe.mp3";
@@ -389,7 +389,7 @@ const mouth = "stim/audio_stimuli/mouth.mp3";
 let Foot = {
     listNumber: 12,
     listA: [toe, sandals, yard, ankle, boot, sock],
-    listB: [kick, soccer, walk, arm, inch, knee],
+    listB: [kick, soccer, walk, arms, inch, knee],
     prototype: foot,
     highestAssociates: [shoe, hand],
     lowestAssociate: mouth,
