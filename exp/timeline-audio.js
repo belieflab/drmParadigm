@@ -8,15 +8,16 @@ const jsPsych = initJsPsych({
 
 let timeline = [];
 
-const practiceTrialsCount = 20;  
-const testTrialsCount = 792; 
-const timelineEventCount = 25; 
-const totalTimelineEvents = practiceTrialsCount + testTrialsCount + timelineEventCount;
+const practiceTrialsCount = 20;
+const testTrialsCount = 792;
+const timelineEventCount = 25;
+const totalTimelineEvents =
+    practiceTrialsCount + testTrialsCount + timelineEventCount;
 let currentEvent = 0;
 
 function updateProgressBar() {
-    const progress = currentEvent / totalTimelineEvents;  
-    jsPsych.setProgressBar(progress);  
+    const progress = currentEvent / totalTimelineEvents;
+    jsPsych.setProgressBar(progress);
     currentEvent++;
 }
 
@@ -230,8 +231,7 @@ let continue_to_test_section = {
     choices: [" "],
     response_ends_trial: true,
     on_start: function () {
-        updateProgressBar,
-        console.log("Starting continue_to_test_section");
+        updateProgressBar, console.log("Starting continue_to_test_section");
     },
     conditional_function: function () {
         return (
@@ -261,7 +261,7 @@ let trials = {
     },
     on_start: function () {
         const progress = currentEvent / totalTimelineEvents;
-        jsPsych.setProgressBar(progress);  // Set the progress bar before incrementing currentEvent
+        jsPsych.setProgressBar(progress); // Set the progress bar before incrementing currentEvent
     },
     on_finish: function (data) {
         currentEvent++;
@@ -325,53 +325,7 @@ const dataSave = {
     choices: "NO_KEYS",
     trial_duration: 5000,
     on_start: updateProgressBar,
-    on_finish: () => {
-        var curr_progress_bar_value = jsPsych.getProgressBarCompleted();
-        jsPsych.setProgressBar(curr_progress_bar_value + 1 / 720);
-
-        const thankYou = instructions[10];
-        saveDataPromise(
-            `${experimentAlias}_${subjectId}`,
-            jsPsych.data.get().csv()
-        )
-            .then((response) => {
-                console.log("Data saved successfully.", response);
-                document.querySelector("#jspsych-content").innerHTML = thankYou;
-            })
-            .catch((error) => {
-                console.log("Failed to save data.", error);
-                let errorMessage = error.error || JSON.stringify(error);
-                switch (errorMessage) {
-                    case '{"success":false}':
-                        errorMessage =
-                            "The ./data directory does not exit on this server.";
-                        break;
-                    case "Not Found":
-                        errorMessage =
-                            "There was an error saving the file to disk.";
-                        break;
-                    default:
-                        errorMessage = "Unknown error.";
-                }
-                const dataFailure = `
-                <div class="error-page">
-                    <p>Oh no!</p>
-                    <p>An error has occured and your data has not been saved:</p>
-                    <p>${errorMessage}</p>
-                    <p>Please wait for the experimenter to continue.</p>
-                </div>`;
-                document.querySelector("#jspsych-content").innerHTML =
-                    dataFailure;
-            })
-            .finally(() => {
-                document.getElementById("unload").onbeforeunload = "";
-                $("body").addClass("showCursor");
-                closeFullscreen();
-                if (!src_subject_id) {
-                    window.location.replace(redirectLink);
-                }
-            });
-    },
+    on_finish: writeCsvRedirect,
 };
 
 $.getScript("exp/main.js");
